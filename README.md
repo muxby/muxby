@@ -603,6 +603,60 @@ This decade: intelligent systems that amplify human creativity instead of replac
 
 </div>
 
+<img src="assets/divider-wave.svg" width="100%" alt=""/>
+
+<!-- ══════ SECTION 06½ : THE OBSERVATORY — LIVE TELEMETRY DECK ══════ -->
+<!-- Every chart below is a hand-built, SMIL-animated SVG. No libraries.  -->
+<!-- No JavaScript. Just geometry, patience, and an unhealthy love of     -->
+<!-- stroke-dasharray. Edit values directly inside assets/graph-*.svg.    -->
+
+<div align="center">
+
+<!-- ── 06½.1 · Aurora header (custom SVG) ── -->
+<img src="assets/aurora-header.svg" width="100%" alt="The Observatory — live telemetry deck"/>
+
+<sub><code>DOME OPEN · SKIES CLEAR · EVERY CHART BELOW IS HAND-BUILT SVG — ZERO LIBRARIES, ZERO JS</code></sub>
+
+<br/><br/>
+
+<!-- ── 06½.2 · Cockpit gauge cluster ── -->
+<img src="assets/graph-gauges.svg" width="92%" alt="Cockpit gauges — velocity, focus, uptime"/>
+
+<br/><br/>
+
+<!-- ── 06½.3 · Code DNA donut + Skill equalizer ── -->
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="assets/graph-donut.svg" width="100%" alt="Code DNA donut chart"/>
+</td>
+<td align="center" width="50%">
+<img src="assets/graph-bars.svg" width="100%" alt="Skill equalizer bar chart"/>
+</td>
+</tr>
+</table>
+
+<!-- ── 06½.4 · XP timeline ── -->
+<img src="assets/graph-growth.svg" width="96%" alt="XP timeline — ten years of leveling up"/>
+
+<br/><br/>
+
+<!-- ── 06½.5 · Energy grid + Circadian clock ── -->
+<table>
+<tr>
+<td align="center" width="58%">
+<img src="assets/graph-heatmap.svg" width="100%" alt="Energy grid — commit intensity heatmap"/>
+</td>
+<td align="center" width="42%">
+<img src="assets/graph-polar-clock.svg" width="100%" alt="Circadian commit clock"/>
+</td>
+</tr>
+</table>
+
+<sub><i>Observatory findings: output peaks at 01:47 AM, spikes on Wednesdays, and correlates strongly with synthwave BPM.</i></sub>
+
+</div>
+
 <img src="assets/divider-circuit.svg" width="100%" alt=""/>
 
 <!-- ══════ SECTION 07 : THE 3D GALLERY ══════ -->
@@ -1104,6 +1158,14 @@ muxby@arcade:~$ fortune
 muxby@arcade:~$ exit
 logout — but the arcade never really closes.
 ```
+
+<!-- ── 13.2½ · Dev vitals oscilloscope (custom SVG) ── -->
+
+<div align="center">
+
+<img src="assets/graph-oscilloscope.svg" width="92%" alt="Dev vitals monitor — live oscilloscope"/>
+
+</div>
 
 <!-- ── 13.3 · ASCII mascot ── -->
 

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250" role="img" aria-label="Developer vitals — live oscilloscope">
+  <defs>
+    <filter id="osGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="osFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="8%" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="92%" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="250" rx="16" fill="#0D1117" stroke="#30363D"/>
+  <text x="450" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#8B949E">💓 DEV VITALS MONITOR — ALL SIGNS STABLE(ISH)</text>
+
+  <!-- scope screen -->
+  <rect x="40" y="46" width="820" height="150" rx="8" fill="#0A0E14" stroke="#21262D"/>
+
+  <!-- graticule -->
+  <g stroke="#161B22" stroke-width="1">
+    <line x1="40"  y1="84"  x2="860" y2="84"/>
+    <line x1="40"  y1="121" x2="860" y2="121"/>
+    <line x1="40"  y1="158" x2="860" y2="158"/>
+    <line x1="142" y1="46"  x2="142" y2="196"/>
+    <line x1="245" y1="46"  x2="245" y2="196"/>
+    <line x1="347" y1="46"  x2="347" y2="196"/>
+    <line x1="450" y1="46"  x2="450" y2="196"/>
+    <line x1="552" y1="46"  x2="552" y2="196"/>
+    <line x1="655" y1="46"  x2="655" y2="196"/>
+    <line x1="757" y1="46"  x2="757" y2="196"/>
+  </g>
+
+  <!-- CH1: commit heartbeat (EKG) — pattern repeats every 300px, slides left seamlessly -->
+  <g clip-path="none">
+    <path d="M 40 100
+             L 90 100 L 100 92 L 110 100 L 130 100 L 140 120 L 150 62 L 160 128 L 170 100 L 220 100 L 230 94 L 240 100
+             L 390 100 L 400 92 L 410 100 L 430 100 L 440 120 L 450 62 L 460 128 L 470 100 L 520 100 L 530 94 L 540 100
+             L 690 100 L 700 92 L 710 100 L 730 100 L 740 120 L 750 62 L 760 128 L 770 100 L 820 100 L 830 94 L 840 100
+             L 990 100 L 1000 92 L 1010 100 L 1030 100 L 1040 120 L 1050 62 L 1060 128 L 1070 100 L 1120 100 L 1130 94 L 1140 100 L 1160 100"
+          fill="none" stroke="#00F5FF" stroke-width="2" stroke-linecap="round" filter="url(#osGlow)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -300 0" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- CH2: flow-state wave (smooth sine) — repeats every 240px -->
+  <path d="M 40 170 Q 70 150 100 170 T 160 170 T 220 170 T 280 170 T 340 170 T 400 170 T 460 170 T 520 170 T 580 170 T 640 170 T 700 170 T 760 170 T 820 170 T 880 170 T 940 170 T 1000 170 T 1060 170 T 1120 170"
+        fill="none" stroke="#FF00E5" stroke-width="1.8" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -240 0" dur="6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- edge fade so the sliding paths vanish cleanly -->
+  <rect x="40" y="46" width="820" height="150" rx="8" fill="url(#osFade)"/>
+
+  <!-- trigger dot at CH1 head -->
+  <circle cx="840" cy="100" r="4" fill="#00F5FF" filter="url(#osGlow)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- readouts -->
+  <g font-family="'Courier New', monospace" font-size="11">
+    <text x="52" y="216" fill="#00F5FF">CH1 · COMMIT PULSE</text>
+    <text x="52" y="232" fill="#8B949E">BPM 140 — synced to the playlist</text>
+    <text x="460" y="216" fill="#FF00E5">CH2 · FLOW STATE</text>
+    <text x="460" y="232" fill="#8B949E">amplitude rises after midnight</text>
+    <text x="848" y="216" fill="#3FB950" text-anchor="end">● REC</text>
+    <text x="848" y="232" fill="#484F58" text-anchor="end">uptime: heroic</text>
+  </g>
+  <circle cx="782" cy="212" r="3.5" fill="#3FB950">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="420" viewBox="0 0 440 420" role="img" aria-label="Skill equalizer bar chart">
+  <defs>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#9D4EDD"/>
+      <stop offset="60%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#FF00E5"/>
+    </linearGradient>
+    <filter id="bGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="440" height="420" rx="16" fill="#0D1117" stroke="#30363D"/>
+  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E">🎚 SKILL EQUALIZER — LIVE MIX</text>
+
+  <!-- grid lines: baseline y=330, 100% at y=90 (240px range) -->
+  <g stroke="#21262D" stroke-width="1">
+    <line x1="40" y1="90"  x2="400" y2="90"/>
+    <line x1="40" y1="150" x2="400" y2="150"/>
+    <line x1="40" y1="210" x2="400" y2="210"/>
+    <line x1="40" y1="270" x2="400" y2="270"/>
+    <line x1="40" y1="330" x2="400" y2="330"/>
+  </g>
+  <g font-family="'Courier New', monospace" font-size="9" fill="#484F58">
+    <text x="36" y="94"  text-anchor="end">100</text>
+    <text x="36" y="154" text-anchor="end">75</text>
+    <text x="36" y="214" text-anchor="end">50</text>
+    <text x="36" y="274" text-anchor="end">25</text>
+  </g>
+
+  <!-- bars: width 30, gap ~14. rise once, then breathe like an EQ -->
+  <!-- PY 95% → h=228, y=102 -->
+  <rect x="52" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="102" height="228">
+    <animate attributeName="y"      values="330;102" dur="1.2s" fill="freeze"/>
+    <animate attributeName="height" values="0;228"   dur="1.2s" fill="freeze"/>
+    <animate attributeName="y"      values="102;110;102" dur="2.6s" begin="1.4s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="228;220;228" dur="2.6s" begin="1.4s" repeatCount="indefinite"/>
+  </rect>
+  <!-- TS 90% → h=216, y=114 -->
+  <rect x="96" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="114" height="216">
+    <animate attributeName="y"      values="330;114" dur="1.2s" begin="0.15s" fill="freeze"/>
+    <animate attributeName="height" values="0;216"   dur="1.2s" begin="0.15s" fill="freeze"/>
+    <animate attributeName="y"      values="114;124;114" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="216;206;216" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+  <!-- AI 92% → h=220.8, y=109 -->
+  <rect x="140" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="109" height="221">
+    <animate attributeName="y"      values="330;109" dur="1.2s" begin="0.3s" fill="freeze"/>
+    <animate attributeName="height" values="0;221"   dur="1.2s" begin="0.3s" fill="freeze"/>
+    <animate attributeName="y"      values="109;117;109" dur="2.2s" begin="1.6s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="221;213;221" dur="2.2s" begin="1.6s" repeatCount="indefinite"/>
+  </rect>
+  <!-- API 88% → h=211, y=119 -->
+  <rect x="184" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="119" height="211">
+    <animate attributeName="y"      values="330;119" dur="1.2s" begin="0.45s" fill="freeze"/>
+    <animate attributeName="height" values="0;211"   dur="1.2s" begin="0.45s" fill="freeze"/>
+    <animate attributeName="y"      values="119;129;119" dur="2.8s" begin="1.7s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="211;201;211" dur="2.8s" begin="1.7s" repeatCount="indefinite"/>
+  </rect>
+  <!-- DB 85% → h=204, y=126 -->
+  <rect x="228" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="126" height="204">
+    <animate attributeName="y"      values="330;126" dur="1.2s" begin="0.6s" fill="freeze"/>
+    <animate attributeName="height" values="0;204"   dur="1.2s" begin="0.6s" fill="freeze"/>
+    <animate attributeName="y"      values="126;134;126" dur="3.4s" begin="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="204;196;204" dur="3.4s" begin="1.8s" repeatCount="indefinite"/>
+  </rect>
+  <!-- OPS 80% → h=192, y=138 -->
+  <rect x="272" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="138" height="192">
+    <animate attributeName="y"      values="330;138" dur="1.2s" begin="0.75s" fill="freeze"/>
+    <animate attributeName="height" values="0;192"   dur="1.2s" begin="0.75s" fill="freeze"/>
+    <animate attributeName="y"      values="138;148;138" dur="2.4s" begin="1.9s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="192;182;192" dur="2.4s" begin="1.9s" repeatCount="indefinite"/>
+  </rect>
+  <!-- UI 84% → h=201.6, y=128 -->
+  <rect x="316" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="128" height="202">
+    <animate attributeName="y"      values="330;128" dur="1.2s" begin="0.9s" fill="freeze"/>
+    <animate attributeName="height" values="0;202"   dur="1.2s" begin="0.9s" fill="freeze"/>
+    <animate attributeName="y"      values="128;138;128" dur="3.1s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="202;192;202" dur="3.1s" begin="2s" repeatCount="indefinite"/>
+  </rect>
+  <!-- SEC 72% → h=172.8, y=157 -->
+  <rect x="360" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="157" height="173">
+    <animate attributeName="y"      values="330;157" dur="1.2s" begin="1.05s" fill="freeze"/>
+    <animate attributeName="height" values="0;173"   dur="1.2s" begin="1.05s" fill="freeze"/>
+    <animate attributeName="y"      values="157;167;157" dur="2.7s" begin="2.1s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="173;163;173" dur="2.7s" begin="2.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- peak-hold caps -->
+  <g fill="#FFD700">
+    <rect x="52"  y="96"  width="30" height="3" rx="1.5"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.2s" fill="freeze"/></rect>
+    <rect x="140" y="103" width="30" height="3" rx="1.5"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/></rect>
+  </g>
+
+  <!-- baseline -->
+  <line x1="40" y1="330" x2="400" y2="330" stroke="#30363D" stroke-width="2"/>
+
+  <!-- labels -->
+  <g font-family="'Courier New', monospace" font-size="11" fill="#8B949E" text-anchor="middle">
+    <text x="67"  y="350">PY</text>
+    <text x="111" y="350">TS</text>
+    <text x="155" y="350">AI</text>
+    <text x="199" y="350">API</text>
+    <text x="243" y="350">DB</text>
+    <text x="287" y="350">OPS</text>
+    <text x="331" y="350">UI</text>
+    <text x="375" y="350">SEC</text>
+  </g>
+  <g font-family="'Courier New', monospace" font-size="10" fill="#00F5FF" text-anchor="middle">
+    <text x="67"  y="366">95</text>
+    <text x="111" y="366">90</text>
+    <text x="155" y="366">92</text>
+    <text x="199" y="366">88</text>
+    <text x="243" y="366">85</text>
+    <text x="287" y="366">80</text>
+    <text x="331" y="366">84</text>
+    <text x="375" y="366">72</text>
+  </g>
+  <text x="220" y="398" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#484F58">gold caps mark all-time peaks · mix mastered in the void</text>
+</svg>

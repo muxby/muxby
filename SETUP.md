@@ -23,6 +23,14 @@ complete find-and-replace map and activation checklist.
 | `assets/hologram.svg` | Hologram projector (Section 07) |
 | `assets/glitch-restricted.svg` | Glitch "restricted area" banner (Section 09) |
 | `assets/signature.svg` | Self-drawing signature (Section 16) |
+| `assets/aurora-header.svg` | Aurora borealis header for The Observatory (Section 06½) |
+| `assets/graph-gauges.svg` | Cockpit gauge cluster — animated needles & arcs (Section 06½) |
+| `assets/graph-donut.svg` | "Code DNA" donut chart with staggered segment draw-in (Section 06½) |
+| `assets/graph-bars.svg` | Skill equalizer — bars rise once, then breathe like an EQ (Section 06½) |
+| `assets/graph-growth.svg` | Self-drawing XP line chart with milestone markers (Section 06½) |
+| `assets/graph-heatmap.svg` | Commit-intensity heatmap with pulsing "supernova" cells (Section 06½) |
+| `assets/graph-polar-clock.svg` | 24-hour circadian commit clock with rotating sweep (Section 06½) |
+| `assets/graph-oscilloscope.svg` | Dev-vitals oscilloscope — scrolling EKG + flow wave (Section 13) |
 | `.github/workflows/snake.yml` | Contribution snake generator → `output` branch |
 | `.github/workflows/profile-3d.yml` | 3D contribution graph → `output-3d` branch |
 
