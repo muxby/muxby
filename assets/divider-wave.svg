@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="90" viewBox="0 0 1200 90" role="img" aria-label="Neon wave divider">
+  <defs>
+    <linearGradient id="waveA" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#9D4EDD"/>
+    </linearGradient>
+    <linearGradient id="waveB" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9D4EDD"/>
+      <stop offset="100%" stop-color="#FF00E5"/>
+    </linearGradient>
+    <linearGradient id="waveC" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF00E5"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+  </defs>
+
+  <!-- three phase-shifted sine ribbons; each path is 2x width and slides for a seamless loop -->
+  <path fill="none" stroke="url(#waveA)" stroke-width="2.5" opacity="0.9"
+        d="M 0 45 Q 150 5 300 45 T 600 45 T 900 45 T 1200 45 T 1500 45 T 1800 45 T 2100 45 T 2400 45">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -600 0" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <path fill="none" stroke="url(#waveB)" stroke-width="2" opacity="0.6"
+        d="M 0 45 Q 150 85 300 45 T 600 45 T 900 45 T 1200 45 T 1500 45 T 1800 45 T 2100 45 T 2400 45">
+    <animateTransform attributeName="transform" type="translate" values="-600 0; 0 0" dur="9s" repeatCount="indefinite"/>
+  </path>
+  <path fill="none" stroke="url(#waveC)" stroke-width="1.5" opacity="0.45"
+        d="M 0 45 Q 150 15 300 45 T 600 45 T 900 45 T 1200 45 T 1500 45 T 1800 45 T 2100 45 T 2400 45">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -600 0" dur="12s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- sparkles riding the wave -->
+  <circle r="2.5" fill="#FFD700">
+    <animateMotion path="M 0 45 Q 150 5 300 45 T 600 45 T 900 45 T 1200 45" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2" fill="#00F5FF">
+    <animateMotion path="M 1200 45 Q 1050 85 900 45 T 600 45 T 300 45 T 0 45" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="10s" repeatCount="indefinite"/>
+  </circle>
+</svg>

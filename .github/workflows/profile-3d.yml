@@ -1,0 +1,39 @@
+# ══════════════════════════════════════════════════════════════
+#  🗻 THE COMMIT MOUNTAINS — 3D contribution terrain
+#  Renders an isometric 3D chart of the contribution graph and
+#  publishes it to the `output-3d` branch for the README.
+# ══════════════════════════════════════════════════════════════
+name: Generate 3D Contribution Graph
+
+on:
+  schedule:
+    # once a day at 18:00 UTC — the mountains grow slowly
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate 3D contribution chart
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Publish to output-3d branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output-3d
+          build_dir: profile-3d-contrib
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

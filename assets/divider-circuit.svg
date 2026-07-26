@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="70" viewBox="0 0 1200 70" role="img" aria-label="Circuit board divider">
+  <defs>
+    <linearGradient id="trace" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#FF00E5" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="70" fill="#0D1117" opacity="0"/>
+
+  <!-- circuit traces -->
+  <g stroke="#30363D" stroke-width="1.5" fill="none">
+    <path d="M 0 35 H 340 L 370 15 H 480"/>
+    <path d="M 1200 35 H 860 L 830 55 H 720"/>
+    <path d="M 60 35 V 55 H 180"/>
+    <path d="M 1140 35 V 15 H 1020"/>
+    <path d="M 480 15 H 520"/>
+    <path d="M 680 55 H 720"/>
+  </g>
+  <!-- glowing overlay traces -->
+  <g stroke="url(#trace)" stroke-width="1.5" fill="none" opacity="0.8">
+    <path d="M 0 35 H 340 L 370 15 H 520"/>
+    <path d="M 1200 35 H 860 L 830 55 H 680"/>
+  </g>
+
+  <!-- solder pads -->
+  <g fill="#0D1117" stroke="#00F5FF" stroke-width="1.5">
+    <circle cx="180" cy="55" r="4"/>
+    <circle cx="520" cy="15" r="4"/>
+    <circle cx="680" cy="55" r="4"/>
+    <circle cx="1020" cy="15" r="4"/>
+  </g>
+
+  <!-- central hex node (sigil echo) -->
+  <polygon points="600,15 618,25 618,45 600,55 582,45 582,25"
+           fill="#0D1117" stroke="url(#trace)" stroke-width="2" filter="url(#cGlow)"/>
+  <path d="M 592 44 L 592 28 L 600 38 L 608 28 L 608 44" fill="none" stroke="#00F5FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- data pulses traveling the traces -->
+  <circle r="3" fill="#00F5FF" filter="url(#cGlow)">
+    <animateMotion path="M 0 35 H 340 L 370 15 H 520" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3" fill="#FF00E5" filter="url(#cGlow)">
+    <animateMotion path="M 1200 35 H 860 L 830 55 H 680" dur="4s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4s" begin="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#9D4EDD" filter="url(#cGlow)">
+    <animateMotion path="M 60 35 V 55 H 180" dur="3s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#FFD700" filter="url(#cGlow)">
+    <animateMotion path="M 1140 35 V 15 H 1020" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- heartbeat at the node -->
+  <circle cx="600" cy="35" r="4" fill="none" stroke="#00F5FF" stroke-width="1.5">
+    <animate attributeName="r" values="4;16" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

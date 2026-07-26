@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="60" viewBox="0 0 1200 60" role="img" aria-label="Starfield divider">
+  <defs>
+    <linearGradient id="sfFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#0D1117"/>
+      <stop offset="85%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="60" rx="12" fill="url(#sfFade)"/>
+
+  <!-- constellation line -->
+  <polyline points="120,40 260,22 420,38 600,18 780,40 940,24 1080,38"
+            fill="none" stroke="#9D4EDD" stroke-width="1" stroke-dasharray="3 5" opacity="0.5"/>
+
+  <!-- constellation stars -->
+  <g fill="#E6EDF3">
+    <circle cx="120" cy="40" r="2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="260" cy="22" r="2.4"><animate attributeName="opacity" values="1;0.25;1" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="38" r="1.8"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="18" r="2.6" fill="#FFD700"><animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="40" r="1.8"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="940" cy="24" r="2.4"><animate attributeName="opacity" values="1;0.3;1" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="38" r="2"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- dust stars -->
+  <g fill="#8B949E">
+    <circle cx="190" cy="50" r="1"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="340" cy="12" r="1"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="510" cy="50" r="1"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="690" cy="10" r="1"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="4.4s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="52" r="1"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="1010" cy="12" r="1"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- comet crossing -->
+  <g>
+    <circle r="2.2" fill="#00F5FF">
+      <animateMotion path="M -40 30 L 1240 30" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="-26" y1="0" x2="0" y2="0" stroke="#00F5FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6">
+      <animateMotion path="M -40 30 L 1240 30" dur="9s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>
