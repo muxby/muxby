@@ -1,0 +1,5 @@
+# Distributed federated deployment (Flower + PyTorch nodes).
+# The API server and test suite only need backend/requirements.txt.
+torch>=2.2
+flwr>=1.8
+numpy>=1.26

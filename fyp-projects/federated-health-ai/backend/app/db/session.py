@@ -1,0 +1,43 @@
+"""SQLAlchemy engine/session wiring.
+
+SQLite is the default for local development and tests; docker-compose points
+FHA_DATABASE_URL at Postgres. ``StaticPool`` + shared in-memory URI keeps the
+test database alive across TestClient requests.
+"""
+
+from __future__ import annotations
+
+from collections.abc import Generator
+
+from sqlalchemy import create_engine
+from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
+from sqlalchemy.pool import StaticPool
+
+from app.core.config import get_settings
+
+
+class Base(DeclarativeBase):
+    pass
+
+
+def make_engine(url: str | None = None):
+    url = url or get_settings().database_url
+    kwargs: dict = {}
+    if url.startswith("sqlite"):
+        kwargs["connect_args"] = {"check_same_thread": False}
+        in_memory = ":memory:" in url or url.rstrip("/") in ("sqlite:", "sqlite:/")
+        if in_memory or url == "sqlite://":
+            kwargs["poolclass"] = StaticPool
+    return create_engine(url, **kwargs)
+
+
+engine = make_engine()
+SessionLocal = sessionmaker(bind=engine, autoflush=False, expire_on_commit=False)
+
+
+def get_db() -> Generator[Session, None, None]:
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

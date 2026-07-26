@@ -1,0 +1,17 @@
+[project]
+name = "federated-health-ai"
+version = "1.0.0"
+description = "Federated learning platform for hospital diagnosis without sharing patient data"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "backend/tests"]
+pythonpath = [".", "backend"]
+addopts = "-q"
+filterwarnings = [
+    "ignore::DeprecationWarning:passlib.*",
+]
+
+[tool.coverage.run]
+source = ["fl_core", "backend/app"]
+omit = ["fl_core/flower_client.py", "fl_core/flower_server.py"]

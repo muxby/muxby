@@ -1,0 +1,86 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: fha
+      POSTGRES_USER: fha
+      POSTGRES_PASSWORD: fha-dev-password
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fha"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      FHA_DATABASE_URL: postgresql+psycopg2://fha:fha-dev-password@db:5432/fha
+      FHA_SECRET_KEY: ${FHA_SECRET_KEY:-dev-only-secret-change-me}
+    depends_on:
+      db:
+        condition: service_healthy
+    command: >
+      sh -c "pip install --no-cache-dir psycopg2-binary &&
+             cd backend && python -m alembic upgrade head && cd .. &&
+             python scripts/seed.py &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000 --app-dir backend"
+    ports:
+      - "8000:8000"
+
+  web:
+    build:
+      context: frontend
+    depends_on:
+      - api
+    ports:
+      - "5173:80"
+
+  # --- optional real federated deployment (profile: flower) ---------------
+  fl-server:
+    build:
+      context: .
+      dockerfile: fl_core/Dockerfile
+    profiles: ["flower"]
+    command: >
+      python -m fl_core.flower_server --rounds 10 --min-clients 3
+      --checkpoint /data/global_model.npz
+    volumes:
+      - fl-checkpoints:/data
+
+  fl-client-1:
+    build:
+      context: .
+      dockerfile: fl_core/Dockerfile
+    profiles: ["flower"]
+    depends_on: [fl-server]
+    command: >
+      python -m fl_core.flower_client --server fl-server:8080
+      --client-id 1 --num-clients 3 --samples 2000
+
+  fl-client-2:
+    build:
+      context: .
+      dockerfile: fl_core/Dockerfile
+    profiles: ["flower"]
+    depends_on: [fl-server]
+    command: >
+      python -m fl_core.flower_client --server fl-server:8080
+      --client-id 2 --num-clients 3 --samples 2000
+
+  fl-client-3:
+    build:
+      context: .
+      dockerfile: fl_core/Dockerfile
+    profiles: ["flower"]
+    depends_on: [fl-server]
+    command: >
+      python -m fl_core.flower_client --server fl-server:8080
+      --client-id 3 --num-clients 3 --samples 2000
+
+volumes:
+  pgdata:
+  fl-checkpoints:
