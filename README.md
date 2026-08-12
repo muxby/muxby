@@ -1,1363 +1,583 @@
-<!-- ════════════════════════════════════════════════════════════════════════ -->
-<!-- ║                                                                      ║ -->
-<!-- ║   M U X B Y   ·   D I G I T A L   M A S T E R P I E C E   v ∞        ║ -->
-<!-- ║                                                                      ║ -->
-<!-- ║   A sci-fi operating system booting up inside a Markdown file.       ║ -->
-<!-- ║   Designed & engineered in the void.                                 ║ -->
-<!-- ║                                                                      ║ -->
-<!-- ║   CUSTOMIZE: search for "muxby" to swap in your own username,        ║ -->
-<!-- ║   and see SETUP.md for the full find-and-replace map.                ║ -->
-<!-- ║                                                                      ║ -->
-<!-- ════════════════════════════════════════════════════════════════════════ -->
-
-<!-- ══════ SECTION 01 : CINEMATIC BOOT SEQUENCE ══════ -->
+<p align="center">
+  <img src="assets/hero-editorial.svg" width="100%" alt="Abstract architectural banner in graphite, navy, and bronze" />
+</p>
 
 <div align="center">
 
-<!-- ── 01.1 · Full-width animated nebula banner (custom SVG) ── -->
-<img src="assets/hero-banner.svg" width="100%" alt="MUXBY — animated nebula banner"/>
+# Mubeen
+
+### Creative Software Engineer · AI Developer
+
+<img src="https://readme-typing-svg.demolab.com?font=DM+Mono&weight=500&size=20&duration=3500&pause=1200&color=C9A36A&center=true&vCenter=true&width=650&height=45&lines=I+build+thoughtful+software+and+intelligent+systems;From+clear+ideas+to+reliable+products;Designing+for+people%2C+maintaining+for+teams" alt="Professional introduction" />
+
+[![Profile views](https://komarev.com/ghpvc/?username=muxby&style=flat-square&color=7D91A8&label=PROFILE+VIEWS)](https://github.com/muxby)
+[![GitHub followers](https://img.shields.io/github/followers/muxby?style=flat-square&logo=github&color=7D91A8&label=FOLLOWERS)](https://github.com/muxby)
+[![GitHub stars](https://img.shields.io/github/stars/muxby?style=flat-square&logo=github&color=C9A36A&label=STARS)](https://github.com/muxby)
 
 </div>
 
-<!-- ── 01.2 · OS boot log ── -->
+---
 
-```console
- ┌──────────────────────────────────────────────────────────────┐
- │  MUXBY-OS v5.0.1 — "NEON VOID" KERNEL                        │
- ├──────────────────────────────────────────────────────────────┤
- │  > INITIALIZING NEURAL INTERFACE...................... [OK]  │
- │  > LOADING CREATIVE ENGINE v∞......................... [OK]  │
- │  > MOUNTING /dev/imagination.......................... [OK]  │
- │  > CALIBRATING CAFFEINE INJECTORS..................... [OK]  │
- │  > COMPILING DREAMS INTO SOFTWARE..................... [OK]  │
- │  > ESTABLISHING UPLINK TO github.com/muxby............ [OK]  │
- │  > WELCOME, VISITOR. IDENTITY CONFIRMED: HUMAN ✔             │
- └──────────────────────────────────────────────────────────────┘
-```
-
-<!-- ── 01.3 · Multi-line typing animation ── -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=800&color=00F5FF&center=true&vCenter=true&width=640&height=60&lines=Creative+Software+Engineer;I+build+intelligent+systems+that+feel+like+magic;Turning+caffeine+into+architecture+since+2016;Welcome+to+my+digital+universe+%F0%9F%8C%8C" alt="Typing animation"/>
-
-<!-- ── 01.4 · Holographic identity card ── -->
+## 01 — Profile
 
 <table>
 <tr>
-<td align="center" width="180">
-<img src="assets/sigil.svg" width="120" alt="Muxby sigil"/>
-<br/>
-<img src="https://img.shields.io/badge/CLEARANCE-LEVEL%20%CE%A9-FFD700?style=flat-square&labelColor=0D1117" alt="Clearance"/>
+<td width="22%" align="center">
+  <img src="assets/sigil.svg" width="104" alt="Muxby monogram" />
 </td>
-<td width="440">
+<td width="78%">
 
-<h3 align="center">⬡ &nbsp;H O L O G R A P H I C &nbsp; I D · C A R D&nbsp; ⬡</h3>
+I am a creative software engineer focused on **AI-enabled products, full-stack systems, and practical developer experience**. I value products that are clear to use, resilient in production, and considerate of the people who will maintain them.
 
-<table width="100%">
-<tr><td><code>DESIGNATION</code></td><td><b>MUXBY</b></td></tr>
-<tr><td><code>CALLSIGN</code></td><td><i>"The Void Architect"</i></td></tr>
-<tr><td><code>ROLE</code></td><td>Creative Software Engineer · AI Developer</td></tr>
-<tr><td><code>COORDINATES</code></td><td>𝟒𝟏.𝟎𝟎𝟖𝟐° 𝐍 · 𝟐𝟖.𝟗𝟕𝟖𝟒° 𝐄 · Planet Earth (mostly)</td></tr>
-<tr><td><code>STATUS</code></td><td>🟢 <b>ONLINE — BUILDING THE FUTURE</b></td></tr>
-<tr><td><code>THREAT LEVEL</code></td><td>Only to badly written legacy code</td></tr>
-</table>
+| Focus | Approach |
+|---|---|
+| **Product engineering** | Interfaces and systems that feel coherent from first interaction to long-term operation. |
+| **Applied AI** | Intelligent workflows with measurable value, strong evaluation, and human oversight. |
+| **Platform thinking** | Reliable foundations: APIs, data models, deployment, observability, and documentation. |
+| **Collaboration** | Clear communication, useful reviews, and solutions that make teams faster. |
 
 </td>
 </tr>
 </table>
 
-<!-- ── 01.5 · Floating tech icons (orbit row) ── -->
-
-<img src="https://skillicons.dev/icons?i=python,ts,react,nodejs,docker,kubernetes,pytorch,linux&theme=dark" alt="Orbiting tech"/>
-
-<!-- ── 01.6 · Signature quote ── -->
-
-<img src="https://readme-typing-svg.demolab.com?font=Georgia&size=17&duration=4000&pause=2500&color=9D4EDD&center=true&vCenter=true&width=720&height=40&lines=%E2%80%9CSoftware+is+the+closest+thing+we+have+to+casting+spells.%E2%80%9D" alt="Signature quote"/>
-
-<!-- ── 01.7 · Social proof HUD strip ── -->
-
-<img src="https://komarev.com/ghpvc/?username=muxby&style=for-the-badge&color=00F5FF&label=SOULS+DETECTED" alt="Profile views"/>
-&nbsp;
-<img src="https://img.shields.io/github/followers/muxby?style=for-the-badge&logo=github&color=9D4EDD&labelColor=0D1117&label=CREW" alt="Followers"/>
-&nbsp;
-<img src="https://img.shields.io/github/stars/muxby?style=for-the-badge&logo=github&color=FFD700&labelColor=0D1117&label=STARS+COLLECTED" alt="Stars"/>
-
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,ts,react,nodejs,docker,kubernetes,pytorch,linux&theme=dark" alt="Primary technologies" />
 </div>
 
-<img src="assets/divider-circuit.svg" width="100%" alt=""/>
+---
 
-<!-- ══════ SECTION 02 : IDENTITY MATRIX ══════ -->
+## 02 — Professional Profile
 
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00F5FF,50:9D4EDD,100:FF00E5&height=64&section=header&text=◈%20IDENTITY%20MATRIX%20◈&fontSize=28&fontColor=0D1117&animation=fadeIn" width="100%" alt="Identity Matrix"/>
-
-<i>SELECT YOUR CHARACTER — all eight are the same person. That's the trick.</i>
-
-<br/><br/>
-
-<!-- character-select grid: 4 × 2 class cards -->
 <table>
 <tr>
-<td align="center" width="25%">
-<h3>🎨</h3>
-<b>CREATIVE ENGINEER</b><br/>
-<sub><i>« The Architect of Experiences »</i></sub><br/><br/>
-<sub>⚡ Turns blank screens into places people want to live</sub><br/><br/>
-<code>CREATIVITY ▓▓▓▓▓▓▓▓▓░ 95%</code>
+<td width="25%" align="center">
+<b>Creative engineering</b><br/>
+<sub>Turning an idea into an experience people want to use.</sub>
 </td>
-<td align="center" width="25%">
-<h3>🤖</h3>
-<b>AI DEVELOPER</b><br/>
-<sub><i>« The Machine Whisperer »</i></sub><br/><br/>
-<sub>⚡ Convinces matrices to hold opinions</sub><br/><br/>
-<code>NEURAL AFFINITY ▓▓▓▓▓▓▓▓▓░ 92%</code>
+<td width="25%" align="center">
+<b>AI development</b><br/>
+<sub>Building intelligent systems with grounded, practical outcomes.</sub>
 </td>
-<td align="center" width="25%">
-<h3>🌐</h3>
-<b>FULL STACK DEV</b><br/>
-<sub><i>« Master of Both Realms »</i></sub><br/><br/>
-<sub>⚡ Crosses the client/server border without a passport</sub><br/><br/>
-<code>RANGE ▓▓▓▓▓▓▓▓░░ 88%</code>
+<td width="25%" align="center">
+<b>Full-stack delivery</b><br/>
+<sub>Working comfortably from interface details to service boundaries.</sub>
 </td>
-<td align="center" width="25%">
-<h3>⚙️</h3>
-<b>BACKEND ENGINEER</b><br/>
-<sub><i>« Guardian of the Server Room »</i></sub><br/><br/>
-<sub>⚡ Hears a failing health check in his sleep</sub><br/><br/>
-<code>RELIABILITY ▓▓▓▓▓▓▓▓▓▓ 99.99%</code>
+<td width="25%" align="center">
+<b>Systems design</b><br/>
+<sub>Designing foundations that stay understandable as products grow.</sub>
 </td>
 </tr>
 <tr>
-<td align="center">
-<h3>🏗️</h3>
-<b>SYSTEM DESIGNER</b><br/>
-<sub><i>« The Blueprint Mind »</i></sub><br/><br/>
-<sub>⚡ Sees the diagram before the whiteboard exists</sub><br/><br/>
-<code>FORESIGHT ▓▓▓▓▓▓▓▓▓░ 90%</code>
-</td>
-<td align="center">
-<h3>🧩</h3>
-<b>PROBLEM SOLVER</b><br/>
-<sub><i>« Debugger of Reality »</i></sub><br/><br/>
-<sub>⚡ Bisects any disaster down to one bad commit</sub><br/><br/>
-<code>PERSISTENCE ▓▓▓▓▓▓▓▓▓▓ 100%</code>
-</td>
-<td align="center">
-<h3>💚</h3>
-<b>OSS ENTHUSIAST</b><br/>
-<sub><i>« Citizen of the Commons »</i></sub><br/><br/>
-<sub>⚡ Leaves every codebase better than found</sub><br/><br/>
-<code>GENEROSITY ▓▓▓▓▓▓▓▓▓░ 93%</code>
-</td>
-<td align="center">
-<h3>🔭</h3>
-<b>TECH EXPLORER</b><br/>
-<sub><i>« Cartographer of the Unknown »</i></sub><br/><br/>
-<sub>⚡ Reads changelogs the way others read novels</sub><br/><br/>
-<code>CURIOSITY ▓▓▓▓▓▓▓▓▓▓ ∞%</code>
-</td>
+<td align="center"><b>Backend reliability</b><br/><sub>Healthy services, clear contracts, and operational discipline.</sub></td>
+<td align="center"><b>Problem solving</b><br/><sub>Reducing ambiguous problems into useful next decisions.</sub></td>
+<td align="center"><b>Open source</b><br/><sub>Learning in public and leaving codebases better than found.</sub></td>
+<td align="center"><b>Continuous learning</b><br/><sub>Following the technologies that change how software is made.</sub></td>
 </tr>
 </table>
 
-</div>
+---
 
-<img src="assets/divider-starfield.svg" width="100%" alt=""/>
+## 03 — Background & Direction
 
-<!-- ══════ SECTION 03 : THE ORIGIN STORY ══════ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3500&pause=9999&color=FF00E5&center=true&vCenter=true&width=520&height=52&lines=%F0%9F%93%96+THE+ORIGIN+STORY" alt="The Origin Story"/>
-
-<sub><code>MISSION LOG · DECRYPTED · EYES ONLY</code></sub>
-
-</div>
-
-<br/>
-
-<!-- vertical mission-log timeline -->
 <table>
 <tr>
-<td align="center" width="110"><h3>🌱</h3><b><code>ACT I</code></b></td>
-<td>
-<b>THE SPARK</b><br/>
-<sub>A borrowed laptop, a blinking cursor, and the discovery that typing the right words makes machines obey.
-Most kids wanted a magic wand. I realized I already had one — it just needed semicolons.</sub>
-</td>
+<td width="14%" align="center"><b>01</b></td>
+<td><b>Early curiosity</b><br/><sub>A borrowed laptop, a blinking cursor, and the discovery that a carefully written instruction can make a machine do something useful.</sub></td>
 </tr>
-<tr><td align="center">┃<br/>┃</td><td></td></tr>
 <tr>
-<td align="center"><h3>⚔️</h3><b><code>ACT II</code></b></td>
-<td>
-<b>THE GRIND</b><br/>
-<sub>Years of stack traces at 2 AM. Projects that collapsed under their own ambition, rebuilt smaller, smarter, sharper.
-I didn't learn to code from tutorials — I learned from the wreckage of my own beautiful mistakes.</sub>
-</td>
+<td align="center"><b>02</b></td>
+<td><b>Learning through building</b><br/><sub>Early projects taught the durable lessons: make the first version small, learn from its failures, and return with sharper questions.</sub></td>
 </tr>
-<tr><td align="center">┃<br/>┃</td><td></td></tr>
 <tr>
-<td align="center"><h3>🚀</h3><b><code>ACT III</code></b></td>
-<td>
-<b>LIFTOFF</b><br/>
-<sub>The first project a stranger actually used. The first pull request merged into someone else's dream.
-Somewhere between those two moments, a hobby quietly became a calling.</sub>
-</td>
+<td align="center"><b>03</b></td>
+<td><b>From hobby to craft</b><br/><sub>The first products used by other people made the work more serious—and far more rewarding.</sub></td>
 </tr>
-<tr><td align="center">┃<br/>┃</td><td></td></tr>
 <tr>
-<td align="center"><h3>🧠</h3><b><code>ACT IV</code></b></td>
-<td>
-<b>THE AI AWAKENING</b><br/>
-<sub>Then the machines started talking back. I fell into machine learning the way you fall into a black hole —
-slowly at first, then all at once, and now I build software that learns faster than I do.</sub>
-</td>
+<td align="center"><b>04</b></td>
+<td><b>Applied intelligence</b><br/><sub>Machine learning and agentic systems became a natural extension of product engineering: software that can understand context, help people decide, and improve workflows.</sub></td>
 </tr>
-<tr><td align="center">┃<br/>┃</td><td></td></tr>
 <tr>
-<td align="center"><h3>🎯</h3><b><code>MISSION</code></b></td>
-<td>
-<sub>To build systems so thoughtfully engineered they feel inevitable — tools people stop noticing because
-they simply work, every time, everywhere.</sub>
-</td>
-</tr>
-<tr><td align="center">┃<br/>┃</td><td></td></tr>
-<tr>
-<td align="center"><h3>🧭</h3><b><code>PHILOSOPHY</code></b></td>
-<td>
-<sub>Complexity is a loan you take out against your future self. Ship simple. Refactor fearlessly.
-Leave elegance in every file you touch.</sub>
-</td>
-</tr>
-<tr><td align="center">┃<br/>┃</td><td></td></tr>
-<tr>
-<td align="center"><h3>🔥</h3><b><code>NOW</code></b></td>
-<td>
-<b>CURRENT OBSESSION</b><br/>
-<sub>Autonomous AI agents — software that plans, acts, fails, retries, and improves without being told to.
-Teaching code to want things is the strangest job description I've ever written.</sub>
-</td>
-</tr>
-<tr><td align="center">┃<br/>┃</td><td></td></tr>
-<tr>
-<td align="center"><h3>🌌</h3><b><code>NEXT</code></b></td>
-<td>
-<b>FUTURE VISION</b> &nbsp;<sub><i>(read in a movie-trailer voice)</i></sub><br/>
-<sub>In a world drowning in software… one engineer builds the kind that thinks.
-This decade: intelligent systems that amplify human creativity instead of replacing it.
-<b>Coming soon to a production environment near you.</b></sub>
-</td>
+<td align="center"><b>Now</b></td>
+<td><b>Current direction</b><br/><sub>Exploring autonomous and agent-assisted systems that plan, act, recover, and remain accountable to the people who use them.</sub></td>
 </tr>
 </table>
 
-<img src="assets/divider-beam.svg" width="100%" alt=""/>
+> **Working principle:** complexity is a cost. The goal is not to make software look sophisticated; it is to make it dependable, legible, and useful.
 
-<!-- ══════ SECTION 04 : THE SKILL NEXUS ══════ -->
+---
 
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:0D1117,50:9D4EDD,100:0D1117&height=90&text=⚡%20THE%20SKILL%20NEXUS%20⚡&fontSize=30&fontColor=00F5FF&animation=twinkling" width="100%" alt="The Skill Nexus"/>
-
-<sub><code>COMMAND CENTER · ALL PANELS NOMINAL</code></sub>
-
-</div>
-
-<br/>
+## 04 — Technical Strengths
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-<h4 align="center">💻 PROGRAMMING LANGUAGES</h4>
-<div align="center">
+#### Languages
+<p align="center">
+<img src="https://img.shields.io/badge/Python-26313D?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/TypeScript-26313D?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/JavaScript-26313D?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript"/>
+<img src="https://img.shields.io/badge/Go-26313D?style=flat-square&logo=go&logoColor=white" alt="Go"/>
+<img src="https://img.shields.io/badge/SQL-26313D?style=flat-square&logo=postgresql&logoColor=white" alt="SQL"/>
+<img src="https://img.shields.io/badge/Bash-26313D?style=flat-square&logo=gnubash&logoColor=white" alt="Bash"/>
+</p>
 
-<img src="https://img.shields.io/badge/Python-00F5FF?style=for-the-badge&logo=python&logoColor=0D1117" alt="Python"/>
-<img src="https://img.shields.io/badge/TypeScript-00F5FF?style=for-the-badge&logo=typescript&logoColor=0D1117" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/JavaScript-00F5FF?style=for-the-badge&logo=javascript&logoColor=0D1117" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/Go-00F5FF?style=for-the-badge&logo=go&logoColor=0D1117" alt="Go"/>
-<img src="https://img.shields.io/badge/SQL-00F5FF?style=for-the-badge&logo=postgresql&logoColor=0D1117" alt="SQL"/>
-<img src="https://img.shields.io/badge/Bash-00F5FF?style=for-the-badge&logo=gnubash&logoColor=0D1117" alt="Bash"/>
+#### Frontend
+<p align="center">
+<img src="https://img.shields.io/badge/React-526D82?style=flat-square&logo=react&logoColor=white" alt="React"/>
+<img src="https://img.shields.io/badge/Next.js-526D82?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+<img src="https://img.shields.io/badge/Tailwind-526D82?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
+<img src="https://img.shields.io/badge/SVG-526D82?style=flat-square&logo=svg&logoColor=white" alt="SVG"/>
+<img src="https://img.shields.io/badge/Framer_Motion-526D82?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion"/>
+</p>
 
-<code>POWER ▓▓▓▓▓▓▓▓▓░ 95%</code>
-</div>
+#### Backend & APIs
+<p align="center">
+<img src="https://img.shields.io/badge/Node.js-455A64?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+<img src="https://img.shields.io/badge/FastAPI-455A64?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+<img src="https://img.shields.io/badge/Django-455A64?style=flat-square&logo=django&logoColor=white" alt="Django"/>
+<img src="https://img.shields.io/badge/GraphQL-455A64?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL"/>
+<img src="https://img.shields.io/badge/gRPC-455A64?style=flat-square&logo=google&logoColor=white" alt="gRPC"/>
+</p>
 
 </td>
 <td width="50%" valign="top">
 
-<h4 align="center">🎨 FRONTEND</h4>
-<div align="center">
+#### Data & Storage
+<p align="center">
+<img src="https://img.shields.io/badge/PostgreSQL-5C6F7B?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/Redis-5C6F7B?style=flat-square&logo=redis&logoColor=white" alt="Redis"/>
+<img src="https://img.shields.io/badge/MongoDB-5C6F7B?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
+<img src="https://img.shields.io/badge/SQLite-5C6F7B?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/>
+<img src="https://img.shields.io/badge/pgvector-5C6F7B?style=flat-square&logo=postgresql&logoColor=white" alt="pgvector"/>
+</p>
 
-<img src="https://img.shields.io/badge/React-FF00E5?style=for-the-badge&logo=react&logoColor=0D1117" alt="React"/>
-<img src="https://img.shields.io/badge/Next.js-FF00E5?style=for-the-badge&logo=nextdotjs&logoColor=0D1117" alt="Next.js"/>
-<img src="https://img.shields.io/badge/Tailwind-FF00E5?style=for-the-badge&logo=tailwindcss&logoColor=0D1117" alt="Tailwind"/>
-<img src="https://img.shields.io/badge/SVG%20Wizardry-FF00E5?style=for-the-badge&logo=svg&logoColor=0D1117" alt="SVG"/>
-<img src="https://img.shields.io/badge/Framer%20Motion-FF00E5?style=for-the-badge&logo=framer&logoColor=0D1117" alt="Framer"/>
+#### Infrastructure
+<p align="center">
+<img src="https://img.shields.io/badge/AWS-526D82?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS"/>
+<img src="https://img.shields.io/badge/Docker-526D82?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
+<img src="https://img.shields.io/badge/Kubernetes-526D82?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
+<img src="https://img.shields.io/badge/Terraform-526D82?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"/>
+<img src="https://img.shields.io/badge/Cloudflare-526D82?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare"/>
+</p>
 
-<code>POWER ▓▓▓▓▓▓▓▓░░ 85%</code>
-</div>
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-<h4 align="center">⚙️ BACKEND</h4>
-<div align="center">
-
-<img src="https://img.shields.io/badge/Node.js-9D4EDD?style=for-the-badge&logo=nodedotjs&logoColor=0D1117" alt="Node"/>
-<img src="https://img.shields.io/badge/FastAPI-9D4EDD?style=for-the-badge&logo=fastapi&logoColor=0D1117" alt="FastAPI"/>
-<img src="https://img.shields.io/badge/Django-9D4EDD?style=for-the-badge&logo=django&logoColor=0D1117" alt="Django"/>
-<img src="https://img.shields.io/badge/GraphQL-9D4EDD?style=for-the-badge&logo=graphql&logoColor=0D1117" alt="GraphQL"/>
-<img src="https://img.shields.io/badge/gRPC-9D4EDD?style=for-the-badge&logo=google&logoColor=0D1117" alt="gRPC"/>
-
-<code>POWER ▓▓▓▓▓▓▓▓▓░ 95%</code>
-</div>
-
-</td>
-<td valign="top">
-
-<h4 align="center">🗄️ DATABASES</h4>
-<div align="center">
-
-<img src="https://img.shields.io/badge/PostgreSQL-9D4EDD?style=for-the-badge&logo=postgresql&logoColor=0D1117" alt="PostgreSQL"/>
-<img src="https://img.shields.io/badge/Redis-9D4EDD?style=for-the-badge&logo=redis&logoColor=0D1117" alt="Redis"/>
-<img src="https://img.shields.io/badge/MongoDB-9D4EDD?style=for-the-badge&logo=mongodb&logoColor=0D1117" alt="MongoDB"/>
-<img src="https://img.shields.io/badge/SQLite-9D4EDD?style=for-the-badge&logo=sqlite&logoColor=0D1117" alt="SQLite"/>
-<img src="https://img.shields.io/badge/pgvector-9D4EDD?style=for-the-badge&logo=postgresql&logoColor=0D1117" alt="pgvector"/>
-
-<code>POWER ▓▓▓▓▓▓▓▓░░ 88%</code>
-</div>
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-<h4 align="center">☁️ CLOUD &amp; INFRASTRUCTURE</h4>
-<div align="center">
-
-<img src="https://img.shields.io/badge/AWS-00F5FF?style=for-the-badge&logo=amazonwebservices&logoColor=0D1117" alt="AWS"/>
-<img src="https://img.shields.io/badge/Docker-00F5FF?style=for-the-badge&logo=docker&logoColor=0D1117" alt="Docker"/>
-<img src="https://img.shields.io/badge/Kubernetes-00F5FF?style=for-the-badge&logo=kubernetes&logoColor=0D1117" alt="Kubernetes"/>
-<img src="https://img.shields.io/badge/Terraform-00F5FF?style=for-the-badge&logo=terraform&logoColor=0D1117" alt="Terraform"/>
-<img src="https://img.shields.io/badge/Cloudflare-00F5FF?style=for-the-badge&logo=cloudflare&logoColor=0D1117" alt="Cloudflare"/>
-
-<code>POWER ▓▓▓▓▓▓▓▓░░ 80%</code>
-</div>
-
-</td>
-<td valign="top">
-
-<h4 align="center">🤖 AI &amp; LLMs</h4>
-<div align="center">
-
-<img src="https://img.shields.io/badge/Anthropic-FFD700?style=for-the-badge&logo=anthropic&logoColor=0D1117" alt="Anthropic"/>
-<img src="https://img.shields.io/badge/OpenAI-FFD700?style=for-the-badge&logo=openai&logoColor=0D1117" alt="OpenAI"/>
-<img src="https://img.shields.io/badge/LangChain-FFD700?style=for-the-badge&logo=langchain&logoColor=0D1117" alt="LangChain"/>
-<img src="https://img.shields.io/badge/Hugging%20Face-FFD700?style=for-the-badge&logo=huggingface&logoColor=0D1117" alt="Hugging Face"/>
-<img src="https://img.shields.io/badge/MCP-FFD700?style=for-the-badge&logo=modelcontextprotocol&logoColor=0D1117" alt="MCP"/>
-
-<code>POWER ▓▓▓▓▓▓▓▓▓░ 92%</code>
-</div>
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-<h4 align="center">🧠 MACHINE LEARNING &nbsp;·&nbsp; 📊 DATA SCIENCE</h4>
-<div align="center">
-
-<img src="https://img.shields.io/badge/PyTorch-FF00E5?style=for-the-badge&logo=pytorch&logoColor=0D1117" alt="PyTorch"/>
-<img src="https://img.shields.io/badge/TensorFlow-FF00E5?style=for-the-badge&logo=tensorflow&logoColor=0D1117" alt="TensorFlow"/>
-<img src="https://img.shields.io/badge/scikit--learn-FF00E5?style=for-the-badge&logo=scikitlearn&logoColor=0D1117" alt="scikit-learn"/>
-<img src="https://img.shields.io/badge/Pandas-FF00E5?style=for-the-badge&logo=pandas&logoColor=0D1117" alt="Pandas"/>
-<img src="https://img.shields.io/badge/NumPy-FF00E5?style=for-the-badge&logo=numpy&logoColor=0D1117" alt="NumPy"/>
-
-<code>POWER ▓▓▓▓▓▓▓▓░░ 85%</code>
-</div>
-
-</td>
-<td valign="top">
-
-<h4 align="center">🛡️ CYBERSECURITY &nbsp;·&nbsp; 🔄 DEVOPS &amp; CI/CD</h4>
-<div align="center">
-
-<img src="https://img.shields.io/badge/OWASP-9D4EDD?style=for-the-badge&logo=owasp&logoColor=0D1117" alt="OWASP"/>
-<img src="https://img.shields.io/badge/GitHub%20Actions-9D4EDD?style=for-the-badge&logo=githubactions&logoColor=0D1117" alt="GitHub Actions"/>
-<img src="https://img.shields.io/badge/Prometheus-9D4EDD?style=for-the-badge&logo=prometheus&logoColor=0D1117" alt="Prometheus"/>
-<img src="https://img.shields.io/badge/Grafana-9D4EDD?style=for-the-badge&logo=grafana&logoColor=0D1117" alt="Grafana"/>
-<img src="https://img.shields.io/badge/Nginx-9D4EDD?style=for-the-badge&logo=nginx&logoColor=0D1117" alt="Nginx"/>
-
-<code>POWER ▓▓▓▓▓▓▓░░░ 75%</code>
-</div>
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-<h4 align="center">🐧 OS &nbsp;·&nbsp; 🧰 TOOLS</h4>
-<div align="center">
-
-<img src="https://img.shields.io/badge/Linux-00F5FF?style=for-the-badge&logo=linux&logoColor=0D1117" alt="Linux"/>
-<img src="https://img.shields.io/badge/Neovim-00F5FF?style=for-the-badge&logo=neovim&logoColor=0D1117" alt="Neovim"/>
-<img src="https://img.shields.io/badge/VS%20Code-00F5FF?style=for-the-badge&logo=vsco&logoColor=0D1117" alt="VS Code"/>
-<img src="https://img.shields.io/badge/Git-00F5FF?style=for-the-badge&logo=git&logoColor=0D1117" alt="Git"/>
-<img src="https://img.shields.io/badge/tmux-00F5FF?style=for-the-badge&logo=tmux&logoColor=0D1117" alt="tmux"/>
-
-<code>POWER ▓▓▓▓▓▓▓▓▓░ 90%</code>
-</div>
-
-</td>
-<td valign="top">
-
-<h4 align="center">🧪 TESTING &nbsp;·&nbsp; 📐 ARCHITECTURE</h4>
-<div align="center">
-
-<img src="https://img.shields.io/badge/pytest-FF00E5?style=for-the-badge&logo=pytest&logoColor=0D1117" alt="pytest"/>
-<img src="https://img.shields.io/badge/Playwright-FF00E5?style=for-the-badge&logo=playwright&logoColor=0D1117" alt="Playwright"/>
-<img src="https://img.shields.io/badge/Vitest-FF00E5?style=for-the-badge&logo=vitest&logoColor=0D1117" alt="Vitest"/>
-<img src="https://img.shields.io/badge/Event--Driven-FF00E5?style=for-the-badge&logo=apachekafka&logoColor=0D1117" alt="Event-driven"/>
-<img src="https://img.shields.io/badge/Microservices-FF00E5?style=for-the-badge&logo=micropython&logoColor=0D1117" alt="Microservices"/>
-
-<code>POWER ▓▓▓▓▓▓▓▓░░ 85%</code>
-</div>
+#### AI, ML & Evaluation
+<p align="center">
+<img src="https://img.shields.io/badge/OpenAI-6B5E4B?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/>
+<img src="https://img.shields.io/badge/Anthropic-6B5E4B?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic"/>
+<img src="https://img.shields.io/badge/LangChain-6B5E4B?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"/>
+<img src="https://img.shields.io/badge/Hugging_Face-6B5E4B?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face"/>
+<img src="https://img.shields.io/badge/MCP-6B5E4B?style=flat-square&logo=modelcontextprotocol&logoColor=white" alt="MCP"/>
+</p>
 
 </td>
 </tr>
 </table>
 
-<br/>
+<table>
+<tr>
+<td width="50%" align="center"><img src="assets/radar-chart.svg" width="405" alt="Technical strengths overview"/></td>
+<td width="50%">
+
+#### Core stack
+
+| Technology | How I use it |
+|---|---|
+| **Python** | From small utilities to production AI and backend workflows. |
+| **TypeScript + React** | Product interfaces with strong interaction and maintainability. |
+| **PyTorch** | Prototyping and building intelligent system components. |
+| **PostgreSQL** | Durable data models and pragmatic querying. |
+| **Kubernetes** | Making dependable services survive real operational conditions. |
+
+</td>
+</tr>
+</table>
+
+---
+
+## 05 — Working Toolkit
+
+<p align="center">
+  <img src="assets/constellation.svg" width="92%" alt="Technology map" />
+</p>
 
 <div align="center">
+  <img src="https://skillicons.dev/icons?i=python,ts,js,go,react,nextjs,tailwind,nodejs,fastapi,django,graphql&theme=dark" alt="Application technologies" />
+  <br/>
+  <img src="https://skillicons.dev/icons?i=postgres,redis,mongodb,aws,docker,kubernetes,terraform,pytorch,tensorflow,linux,neovim&theme=dark" alt="Infrastructure and machine learning technologies" />
+</div>
 
-<!-- ── 04.x · Radar chart + Signature Stack ── -->
+<table>
+<tr>
+<td align="center" width="20%"><b>Python</b><br/><sub>General-purpose development, automation, data, and AI workflows.</sub></td>
+<td align="center" width="20%"><b>PyTorch</b><br/><sub>Experimentation and model-backed product capabilities.</sub></td>
+<td align="center" width="20%"><b>TypeScript</b><br/><sub>Reliable product surfaces and service integrations.</sub></td>
+<td align="center" width="20%"><b>React</b><br/><sub>Interfaces that communicate clearly and respond gracefully.</sub></td>
+<td align="center" width="20%"><b>Kubernetes</b><br/><sub>Operational foundations for services that need to last.</sub></td>
+</tr>
+</table>
+
+---
+
+## 06 — GitHub Activity
+
 <table>
 <tr>
 <td align="center" width="50%">
-<img src="assets/radar-chart.svg" width="420" alt="Domain radar chart"/>
-</td>
-<td valign="top" width="50%">
-
-<h4 align="center">⭐ SIGNATURE STACK</h4>
-<sub><i>The five that define me:</i></sub>
-
-<table width="100%">
-<tr><td>🐍</td><td><b>Python</b></td><td><sub>my native tongue — from scripts to production ML</sub></td></tr>
-<tr><td>⚛️</td><td><b>TypeScript + React</b></td><td><sub>where interfaces stop being screens and start being places</sub></td></tr>
-<tr><td>🔥</td><td><b>PyTorch</b></td><td><sub>the forge where the intelligent parts get made</sub></td></tr>
-<tr><td>🐘</td><td><b>PostgreSQL</b></td><td><sub>the one database I'd trust with my diary</sub></td></tr>
-<tr><td>☸️</td><td><b>Kubernetes</b></td><td><sub>because good software deserves to survive bad days</sub></td></tr>
-</table>
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<img src="assets/divider-wave.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 05 : ANIMATED TECH CONSTELLATION ══════ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3500&pause=9999&color=00F5FF&center=true&vCenter=true&width=640&height=52&lines=%F0%9F%8E%9E%EF%B8%8F+THE+TECH+CONSTELLATION" alt="Tech Constellation"/>
-
-<!-- ── 05.1 · Custom constellation map (SVG starfield) ── -->
-<img src="assets/constellation.svg" width="92%" alt="Tech constellation map"/>
-
-<br/><br/>
-
-<!-- ── 05.2 · Scrolling badge belts ── -->
-<img src="https://skillicons.dev/icons?i=python,ts,js,go,react,nextjs,tailwind,nodejs,fastapi,django,graphql&theme=dark" alt="Belt 1"/>
-<br/>
-<img src="https://skillicons.dev/icons?i=postgres,redis,mongodb,aws,docker,kubernetes,terraform,pytorch,tensorflow,linux,neovim&theme=dark" alt="Belt 2"/>
-
-<br/><br/>
-
-<!-- ── 05.3 · Technology trading cards (rarity tiers) ── -->
-<h4>◈ COLLECTOR'S EDITION — TECH TRADING CARDS ◈</h4>
-
-<table>
-<tr>
-<td align="center" width="20%">
-🟨 <b>LEGENDARY</b>
-<h3>🐍</h3>
-<b>PYTHON</b><br/>
-<sub>⏳ 9 yrs · ⚡ 95%</sub><br/><br/>
-<sub><i>"Started as a hobby, became a personality."</i></sub>
-</td>
-<td align="center" width="20%">
-🟨 <b>LEGENDARY</b>
-<h3>🔥</h3>
-<b>PYTORCH</b><br/>
-<sub>⏳ 5 yrs · ⚡ 90%</sub><br/><br/>
-<sub><i>"Deals fire damage to unsolved problems."</i></sub>
-</td>
-<td align="center" width="20%">
-🟪 <b>EPIC</b>
-<h3>⚛️</h3>
-<b>REACT</b><br/>
-<sub>⏳ 6 yrs · ⚡ 88%</sub><br/><br/>
-<sub><i>"Re-renders reality when state changes."</i></sub>
-</td>
-<td align="center" width="20%">
-🟦 <b>RARE</b>
-<h3>☸️</h3>
-<b>KUBERNETES</b><br/>
-<sub>⏳ 4 yrs · ⚡ 80%</sub><br/><br/>
-<sub><i>"Summons three replicas of any fallen ally."</i></sub>
-</td>
-<td align="center" width="20%">
-⬜ <b>COMMON</b>
-<h3>📟</h3>
-<b>BASH</b><br/>
-<sub>⏳ 9 yrs · ⚡ 85%</sub><br/><br/>
-<sub><i>"Common rarity. Uncommon power. Handle with quotes."</i></sub>
-</td>
-</tr>
-</table>
-
-</div>
-
-<img src="assets/divider-beam.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 06 : MISSION CONTROL ══════ -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=shark&color=0:00F5FF,100:9D4EDD&height=110&text=📊%20MISSION%20CONTROL&fontSize=32&fontColor=0D1117&animation=fadeIn" width="100%" alt="Mission Control"/>
-
-<sub><code>HOUSTON, WE HAVE TELEMETRY · ALL SYSTEMS GREEN</code></sub>
-
-<br/><br/>
-
-<!-- ── 06.1 · Primary flight instruments ── -->
-<table>
-<tr>
-<td align="center" width="50%">
-<sub><code>🧮 CORE TELEMETRY</code></sub><br/>
-<img src="https://github-readme-stats.vercel.app/api?username=muxby&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=FF00E5&text_color=E6EDF3&ring_color=9D4EDD&include_all_commits=true&count_private=true" width="100%" alt="GitHub stats"/>
+<img src="https://github-readme-stats.vercel.app/api?username=muxby&show_icons=true&hide_border=true&bg_color=0D1117&title_color=C9A36A&icon_color=7D91A8&text_color=E6EDF3&ring_color=C9A36A&include_all_commits=true&count_private=true" width="100%" alt="GitHub statistics"/>
 </td>
 <td align="center" width="50%">
-<sub><code>🔥 CONSECUTIVE FLIGHT DAYS</code></sub><br/>
-<img src="https://streak-stats.demolab.com?user=muxby&hide_border=true&background=0D1117&ring=9D4EDD&fire=FF00E5&currStreakLabel=00F5FF&sideLabels=00F5FF&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B949E" width="100%" alt="Streak stats"/>
+<img src="https://streak-stats.demolab.com?user=muxby&hide_border=true&background=0D1117&ring=C9A36A&fire=C9A36A&currStreakLabel=7D91A8&sideLabels=7D91A8&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B949E" width="100%" alt="GitHub contribution streak"/>
 </td>
 </tr>
 <tr>
-<td align="center">
-<sub><code>🧬 CODE DNA ANALYSIS</code></sub><br/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=muxby&layout=compact&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=E6EDF3&langs_count=10" width="100%" alt="Top languages"/>
-</td>
-<td align="center">
-<sub><code>⏱️ HOURS IN THE MATRIX (WakaTime)</code></sub><br/>
-<!-- Connect wakatime.com and uncomment:
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=muxby&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=E6EDF3" width="100%" alt="WakaTime"/>
--->
-<br/><code>▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ TRACKING…</code><br/>
-<sub><i>time dilation detected near deadline horizons</i></sub><br/><br/>
-</td>
+<td align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=muxby&layout=compact&hide_border=true&bg_color=0D1117&title_color=C9A36A&text_color=E6EDF3&langs_count=10" width="100%" alt="Top languages"/></td>
+<td align="center"><sub><b>Time tracking</b><br/>Optional WakaTime data can be added here when available.</sub></td>
 </tr>
 </table>
 
-<!-- ── 06.2 · Signal transmission log ── -->
-<sub><code>📡 SIGNAL TRANSMISSION LOG</code></sub><br/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=muxby&bg_color=0D1117&color=00F5FF&line=9D4EDD&point=FF00E5&area=true&area_color=1B1035&hide_border=true" width="100%" alt="Activity graph"/>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=muxby&bg_color=0D1117&color=C9A36A&line=7D91A8&point=E6EDF3&area=true&area_color=17202B&hide_border=true" width="100%" alt="GitHub activity graph"/>
+</p>
 
-<!-- ── 06.3 · Profile summary cards ── -->
-<sub><code>🛰️ ORBITAL SUMMARY ARRAY</code></sub><br/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=muxby&theme=tokyonight" width="100%" alt="Profile details"/>
 <table>
 <tr>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=muxby&theme=tokyonight" width="100%" alt="Repos per language"/></td>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=muxby&theme=tokyonight" width="100%" alt="Commits per language"/></td>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=muxby&theme=github_dark" width="100%" alt="Repositories per language"/></td>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=muxby&theme=github_dark" width="100%" alt="Most committed language"/></td>
 </tr>
 <tr>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=muxby&theme=tokyonight" width="100%" alt="Stats"/></td>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=muxby&theme=tokyonight&utcOffset=3" width="100%" alt="Productive time"/></td>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=muxby&theme=github_dark" width="100%" alt="GitHub statistics summary"/></td>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=muxby&theme=github_dark&utcOffset=3" width="100%" alt="Productive time"/></td>
 </tr>
 </table>
 
-<!-- ── 06.4 · Hall of achievements ── -->
-<sub><code>🏆 HALL OF ACHIEVEMENTS</code></sub><br/>
-<img src="https://github-profile-trophy.vercel.app/?username=muxby&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=6" width="100%" alt="Trophies"/>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=muxby&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=6" width="100%" alt="GitHub achievements"/>
+</p>
 
-<!-- ── 06.5 · Metrics readout row ── -->
-<img src="https://img.shields.io/badge/⭐_TOTAL_STARS-COUNTING-FFD700?style=for-the-badge&labelColor=0D1117" alt="Stars"/>
-<img src="https://img.shields.io/badge/📦_REPOS-DEPLOYED-00F5FF?style=for-the-badge&labelColor=0D1117" alt="Repos"/>
-<img src="https://img.shields.io/badge/🔀_PULL_REQUESTS-MERGED-9D4EDD?style=for-the-badge&labelColor=0D1117" alt="PRs"/>
-<img src="https://img.shields.io/badge/🐛_ISSUES-HUNTED-FF00E5?style=for-the-badge&labelColor=0D1117" alt="Issues"/>
-
-<br/><br/>
-
-<!-- ── 06.6 · The contribution snake ── -->
-<sub><code>🐍 SPECIMEN 001 — FEEDS EXCLUSIVELY ON COMMITS</code></sub><br/><br/>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake.svg"/>
-  <img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution snake"/>
+  <img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution activity"/>
 </picture>
 
-</div>
+---
 
-<img src="assets/divider-wave.svg" width="100%" alt=""/>
+## 06.5 — Engineering Signals
 
-<!-- ══════ SECTION 06½ : THE OBSERVATORY — LIVE TELEMETRY DECK ══════ -->
-<!-- Every chart below is a hand-built, SMIL-animated SVG. No libraries.  -->
-<!-- No JavaScript. Just geometry, patience, and an unhealthy love of     -->
-<!-- stroke-dasharray. Edit values directly inside assets/graph-*.svg.    -->
+<p align="center">
+  <img src="assets/aurora-header.svg" width="100%" alt="Engineering signals" />
+</p>
 
-<div align="center">
+These handcrafted SVGs are retained as a visual record of the engineering interests behind the profile: reliability, technology breadth, sustained learning, and a deliberate approach to craft.
 
-<!-- ── 06½.1 · Aurora header (custom SVG) ── -->
-<img src="assets/aurora-header.svg" width="100%" alt="The Observatory — live telemetry deck"/>
-
-<sub><code>DOME OPEN · SKIES CLEAR · EVERY CHART BELOW IS HAND-BUILT SVG — ZERO LIBRARIES, ZERO JS</code></sub>
-
-<br/><br/>
-
-<!-- ── 06½.2 · Cockpit gauge cluster ── -->
-<img src="assets/graph-gauges.svg" width="92%" alt="Cockpit gauges — velocity, focus, uptime"/>
-
-<br/><br/>
-
-<!-- ── 06½.3 · Code DNA donut + Skill equalizer ── -->
 <table>
 <tr>
-<td align="center" width="50%">
-<img src="assets/graph-donut.svg" width="100%" alt="Code DNA donut chart"/>
-</td>
-<td align="center" width="50%">
-<img src="assets/graph-bars.svg" width="100%" alt="Skill equalizer bar chart"/>
-</td>
+<td align="center" width="50%"><img src="assets/graph-gauges.svg" width="92%" alt="Focus and reliability indicators"/></td>
+<td align="center" width="50%"><img src="assets/graph-donut.svg" width="100%" alt="Technology distribution"/></td>
+</tr>
+<tr>
+<td align="center"><img src="assets/graph-bars.svg" width="100%" alt="Technical practice overview"/></td>
+<td align="center"><img src="assets/graph-growth.svg" width="96%" alt="Learning progression"/></td>
+</tr>
+<tr>
+<td align="center"><img src="assets/graph-heatmap.svg" width="100%" alt="Activity rhythm"/></td>
+<td align="center"><img src="assets/graph-polar-clock.svg" width="100%" alt="Working rhythm"/></td>
 </tr>
 </table>
 
-<!-- ── 06½.4 · XP timeline ── -->
-<img src="assets/graph-growth.svg" width="96%" alt="XP timeline — ten years of leveling up"/>
+---
 
-<br/><br/>
+## 07 — Visual Systems
 
-<!-- ── 06½.5 · Energy grid + Circadian clock ── -->
 <table>
 <tr>
-<td align="center" width="58%">
-<img src="assets/graph-heatmap.svg" width="100%" alt="Energy grid — commit intensity heatmap"/>
+<td width="55%" align="center">
+  <img src="assets/hologram.svg" width="100%" alt="Visual systems study"/>
 </td>
-<td align="center" width="42%">
-<img src="assets/graph-polar-clock.svg" width="100%" alt="Circadian commit clock"/>
-</td>
-</tr>
-</table>
+<td width="45%">
 
-<sub><i>Observatory findings: output peaks at 01:47 AM, spikes on Wednesdays, and correlates strongly with synthwave BPM.</i></sub>
+### Design through implementation
 
-</div>
+I care about the relationship between visual hierarchy and technical clarity. Good product work brings together the interface, the service contract, the data model, and the operational story—each should reinforce the others.
 
-<img src="assets/divider-circuit.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 07 : THE 3D GALLERY ══════ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3500&pause=9999&color=9D4EDD&center=true&vCenter=true&width=520&height=52&lines=%F0%9F%A7%8A+THE+3D+GALLERY" alt="The 3D Gallery"/>
-
-<sub><i>Depth is an illusion. So is the deadline. Only the glow is real.</i></sub>
-
-<br/><br/>
-
-<!-- ── 07.1 · Hologram projector (custom SVG) + isometric cubes ── -->
-<table>
-<tr>
-<td align="center" width="55%">
-<img src="assets/hologram.svg" width="100%" alt="Hologram projector"/>
-<sub><code>HOLOGRAM PROJECTOR MK.IV — projecting featured build</code></sub>
-</td>
-<td align="center" width="45%" valign="middle">
-
-<!-- isometric skill cubes, hand-carved from unicode -->
-<pre>
-      ▄▄▄▄▄▄▄
-    ▄█▓▒░PY░▒▓█▄        FRONT: shipped
-   ██▓▒░░░░░▒▓██        LEFT:  tested
-    ▀█▓▒░░░▒▓█▀         TOP:   documented
-      ▀▀▀▀▀▀▀           (all sides load-bearing)
-
-   ┌───────────┐
-   │  ╱▔▔▔▔▔╱│ │
-   │ ╱  TS  ╱ │ │   an isometric cube
-   │▕▁▁▁▁▁▁▏ ╱  │   rendered in pure
-   │▕▁▁▁▁▁▁▏╱   │   monospace stubbornness
-   └───────────┘
-</pre>
+- **Interface:** designed for attention, context, and accessibility.
+- **Logic:** structured for clarity, testing, and predictable change.
+- **Data:** modeled for useful questions, not just easy storage.
 
 </td>
 </tr>
 </table>
 
-<!-- ── 07.2 · The commit mountains (3D contribution graph) ── -->
-<sub><code>🗻 THE COMMIT MOUNTAINS — TOPOGRAPHIC SURVEY</code></sub><br/><br/>
-<img src="https://raw.githubusercontent.com/muxby/muxby/output-3d/profile-night-rainbow.svg" width="92%" alt="3D contribution graph"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/muxby/muxby/output-3d/profile-night-rainbow.svg" width="92%" alt="Contribution history visualization"/>
+</p>
 
-<br/>
+---
 
-<!-- ── 07.3 · Floating depth cards ── -->
-<table>
-<tr>
-<td align="center" width="33%">
-<br/>
-▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜<br/>
-▌ &nbsp;💠 LAYER 01&nbsp; ▐<br/>
-▌ &nbsp;<b>INTERFACE</b>&nbsp; ▐<br/>
-▙▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟<br/>
-<sub>░░ shadow depth: 4px ░░</sub><br/><br/>
-</td>
-<td align="center" width="33%">
-<br/>
-▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜<br/>
-▌ &nbsp;💠 LAYER 02&nbsp; ▐<br/>
-▌ &nbsp;<b>LOGIC CORE</b>&nbsp; ▐<br/>
-▙▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟<br/>
-<sub>░░░ shadow depth: 8px ░░░</sub><br/><br/>
-</td>
-<td align="center" width="33%">
-<br/>
-▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜<br/>
-▌ &nbsp;💠 LAYER 03&nbsp; ▐<br/>
-▌ &nbsp;<b>DATA ABYSS</b>&nbsp; ▐<br/>
-▙▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟<br/>
-<sub>░░░░ shadow depth: ∞ ░░░░</sub><br/><br/>
-</td>
-</tr>
-</table>
+## 08 — Selected Work
 
-</div>
-
-<img src="assets/divider-starfield.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 08 : THE SHOWCASE HANGAR ══════ -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF00E5,100:9D4EDD&height=64&text=🛸%20THE%20SHOWCASE%20HANGAR&fontSize=28&fontColor=0D1117&animation=fadeIn" width="100%" alt="The Showcase Hangar"/>
-
-<sub><code>BAY DOORS OPEN · 4 VESSELS DOCKED · 2 PROTOTYPES IN THE LAB</code></sub>
-
-</div>
-
-<br/>
-
-<!-- ═══ HANGAR BAY 01 ═══ -->
-<!-- CUSTOMIZE: replace repo names, links, and blurbs with your real projects -->
 <table>
 <tr>
 <td width="55%">
 
-<h3>🚀 CODENAME: <code>NEBULA-ENGINE</code></h3>
-<sub>🏷️ <code>MISSION CLASSIFICATION: CLASS-S PROJECT</code> · 🟢 <b>STATUS: LIVE</b></sub>
+### Nebula Engine
 
-<blockquote><i>"Some engines run on fuel. This one runs on ideas."</i></blockquote>
+A concept for an AI-powered creative engine that turns natural-language briefs into production-ready design systems.
 
-An AI-powered creative engine that turns natural-language briefs into production-ready design systems.
+- LLM-guided component generation and review.
+- Theme synthesis from a concise brand direction.
+- Fast visual feedback loops for product teams.
+- Extensible integration points for custom generators.
 
-✨ <b>Key features</b>
-<ul>
-<sub>
-<li>🧠 LLM-driven component generation with taste</li>
-<li>🎨 Theme synthesis from a single brand color</li>
-<li>⚡ Sub-second hot-reload preview pipeline</li>
-<li>🔌 Plugin API for custom generators</li>
-</sub>
-</ul>
-
-🧱 <sub><b>Architecture:</b> Event-driven microservices · Redis Streams · K8s</sub><br/>
-📈 <sub><b>Difficulty:</b> ▰▰▰▰▱</sub> &nbsp; 🗺️ <sub><b>Next up:</b> multiplayer editing</sub>
+<sub>**Architecture direction:** event-driven services · Redis Streams · Kubernetes</sub>
 
 </td>
 <td width="45%" align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:00F5FF,100:9D4EDD&height=120&text=NEBULA-ENGINE&fontSize=24&fontColor=0D1117" width="100%" alt="Nebula Engine banner"/>
-
-<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=00F5FF" alt=""/>
-<img src="https://img.shields.io/badge/FastAPI-0D1117?style=flat-square&logo=fastapi&logoColor=00F5FF" alt=""/>
-<img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=00F5FF" alt=""/>
-<img src="https://img.shields.io/badge/K8s-0D1117?style=flat-square&logo=kubernetes&logoColor=00F5FF" alt=""/>
-
-<br/><br/>
-
-<a href="https://github.com/muxby"><img src="https://img.shields.io/badge/「%20🔴%20LIVE%20DEMO%20」-0D1117?style=for-the-badge&color=FF00E5" alt="Live demo"/></a>
-<a href="https://github.com/muxby"><img src="https://img.shields.io/badge/「%20📂%20SOURCE%20」-0D1117?style=for-the-badge&color=00F5FF" alt="Source"/></a>
-<a href="https://github.com/muxby"><img src="https://img.shields.io/badge/「%20📘%20DOCS%20」-0D1117?style=for-the-badge&color=9D4EDD" alt="Docs"/></a>
-
-</td>
-</tr>
-</table>
-
-<!-- ═══ HANGAR BAY 02 ═══ -->
-<table>
-<tr>
-<td width="45%" align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:FF00E5,100:FFD700&height=120&text=SENTINEL-7&fontSize=24&fontColor=0D1117" width="100%" alt="Sentinel-7 banner"/>
-
-<img src="https://img.shields.io/badge/Go-0D1117?style=flat-square&logo=go&logoColor=FF00E5" alt=""/>
-<img src="https://img.shields.io/badge/gRPC-0D1117?style=flat-square&logo=google&logoColor=FF00E5" alt=""/>
-<img src="https://img.shields.io/badge/Prometheus-0D1117?style=flat-square&logo=prometheus&logoColor=FF00E5" alt=""/>
-<img src="https://img.shields.io/badge/Grafana-0D1117?style=flat-square&logo=grafana&logoColor=FF00E5" alt=""/>
-
-<br/><br/>
-
-<a href="https://github.com/muxby"><img src="https://img.shields.io/badge/「%20📂%20SOURCE%20」-0D1117?style=for-the-badge&color=00F5FF" alt="Source"/></a>
-<a href="https://github.com/muxby"><img src="https://img.shields.io/badge/「%20📘%20DOCS%20」-0D1117?style=for-the-badge&color=9D4EDD" alt="Docs"/></a>
-
-</td>
-<td width="55%">
-
-<h3 align="right">🛰️ CODENAME: <code>SENTINEL-7</code></h3>
-<div align="right"><sub>🟢 <b>STATUS: LIVE</b> · 🏷️ <code>MISSION CLASSIFICATION: CLASS-A PROJECT</code></sub></div>
-
-<blockquote><i>"It watches your services so you can watch the sunset."</i></blockquote>
-
-A self-healing observability agent: anomaly detection, root-cause hints, and automated remediation for distributed systems.
-
-✨ <b>Key features</b>
-<ul>
-<sub>
-<li>📡 Zero-config service discovery</li>
-<li>🧬 Statistical + ML anomaly detection</li>
-<li>🔧 Safe, reversible auto-remediation playbooks</li>
-<li>🗣️ Incident summaries written in plain human</li>
-</sub>
-</ul>
-
-🧱 <sub><b>Architecture:</b> Agent mesh · gRPC · time-series pipeline</sub><br/>
-📈 <sub><b>Difficulty:</b> ▰▰▰▰▰</sub> &nbsp; 🗺️ <sub><b>Next up:</b> eBPF deep-tracing</sub>
-
-</td>
-</tr>
-</table>
-
-<!-- ═══ HANGAR BAY 03 ═══ -->
-<table>
-<tr>
-<td width="55%">
-
-<h3>🧠 CODENAME: <code>ORACLE-RAG</code></h3>
-<sub>🏷️ <code>MISSION CLASSIFICATION: CLASS-A PROJECT</code> · 🛠️ <b>STATUS: IN DEVELOPMENT</b></sub>
-
-<blockquote><i>"Every company has answers buried somewhere. This digs."</i></blockquote>
-
-A retrieval-augmented knowledge engine that turns scattered docs, wikis, and repos into one honest, citable brain.
-
-✨ <b>Key features</b>
-<ul>
-<sub>
-<li>📚 Hybrid search: dense vectors + BM25 + reranking</li>
-<li>🔍 Answers with receipts — every claim cited</li>
-<li>🧊 Cold-start ingestion of 100k docs in minutes</li>
-<li>🛡️ Permission-aware retrieval (no leaked secrets)</li>
-</sub>
-</ul>
-
-🧱 <sub><b>Architecture:</b> pgvector · streaming ETL · LLM orchestration</sub><br/>
-📈 <sub><b>Difficulty:</b> ▰▰▰▰▱</sub> &nbsp; 🗺️ <sub><b>Next up:</b> multi-hop reasoning</sub>
-
-</td>
-<td width="45%" align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:9D4EDD,100:00F5FF&height=120&text=ORACLE-RAG&fontSize=24&fontColor=0D1117" width="100%" alt="Oracle RAG banner"/>
-
-<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=9D4EDD" alt=""/>
-<img src="https://img.shields.io/badge/LangChain-0D1117?style=flat-square&logo=langchain&logoColor=9D4EDD" alt=""/>
-<img src="https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=9D4EDD" alt=""/>
-<img src="https://img.shields.io/badge/Anthropic-0D1117?style=flat-square&logo=anthropic&logoColor=9D4EDD" alt=""/>
-
-<br/><br/>
-
-<a href="https://github.com/muxby"><img src="https://img.shields.io/badge/「%20📂%20SOURCE%20」-0D1117?style=for-the-badge&color=00F5FF" alt="Source"/></a>
-<a href="https://github.com/muxby"><img src="https://img.shields.io/badge/「%20📘%20DOCS%20」-0D1117?style=for-the-badge&color=9D4EDD" alt="Docs"/></a>
-
-</td>
-</tr>
-</table>
-
-<!-- ═══ HANGAR BAY 04 ═══ -->
-<table>
-<tr>
-<td width="45%" align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:FFD700,100:FF00E5&height=120&text=PIXELFORGE&fontSize=24&fontColor=0D1117" width="100%" alt="Pixelforge banner"/>
-
-<img src="https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=FFD700" alt=""/>
-<img src="https://img.shields.io/badge/WebGL-0D1117?style=flat-square&logo=webgl&logoColor=FFD700" alt=""/>
-<img src="https://img.shields.io/badge/Canvas-0D1117?style=flat-square&logo=html5&logoColor=FFD700" alt=""/>
-
-<br/><br/>
-
-<a href="https://github.com/muxby"><img src="https://img.shields.io/badge/「%20🔴%20LIVE%20DEMO%20」-0D1117?style=for-the-badge&color=FF00E5" alt="Live demo"/></a>
-<a href="https://github.com/muxby"><img src="https://img.shields.io/badge/「%20📂%20SOURCE%20」-0D1117?style=for-the-badge&color=00F5FF" alt="Source"/></a>
-
-</td>
-<td width="55%">
-
-<h3 align="right">🎮 CODENAME: <code>PIXELFORGE</code></h3>
-<div align="right"><sub>🧪 <b>STATUS: EXPERIMENTAL</b> · 🏷️ <code>MISSION CLASSIFICATION: CLASS-B PROJECT</code></sub></div>
-
-<blockquote><i>"A game engine small enough to read, fun enough to lose a weekend to."</i></blockquote>
-
-A minimalist 2D game engine for the browser — ECS core, pixel-perfect renderer, and a level editor that runs in a URL.
-
-✨ <b>Key features</b>
-<ul>
-<sub>
-<li>🧩 Entity-Component-System in &lt; 2k lines</li>
-<li>🖼️ Deterministic pixel renderer (no jitter, ever)</li>
-<li>🎵 Chiptune audio synth built on WebAudio</li>
-<li>💾 Levels serialized into shareable links</li>
-</sub>
-</ul>
-
-🧱 <sub><b>Architecture:</b> ECS · requestAnimationFrame loop · zero deps</sub><br/>
-📈 <sub><b>Difficulty:</b> ▰▰▰▱▱</sub> &nbsp; 🗺️ <sub><b>Next up:</b> co-op netcode</sub>
-
-</td>
-</tr>
-</table>
-
-<!-- ═══ EXPERIMENTAL LAB STRIP ═══ -->
-<div align="center">
-
-<h4>🔬 THE EXPERIMENTAL LAB — <sub><i>small vessels, big ideas</i></sub></h4>
-
-<table>
-<tr>
-<td align="center" width="33%">
-🧪 <b><code>whisper-cli</code></b><br/>
-<sub>Terminal voice notes → tidy markdown</sub><br/>
-<sub>🧪 EXPERIMENTAL · ▰▰▱▱▱</sub>
-</td>
-<td align="center" width="33%">
-🧪 <b><code>git-haiku</code></b><br/>
-<sub>Commits summarized as haiku. Yes, really.</sub><br/>
-<sub>🧪 EXPERIMENTAL · ▰▱▱▱▱</sub>
-</td>
-<td align="center" width="33%">
-🏛️ <b><code>void-theme</code></b><br/>
-<sub>The Neon Void palette for every editor</sub><br/>
-<sub>🏛️ ARCHIVED · ▰▰▱▱▱</sub>
-</td>
-</tr>
-</table>
-
-</div>
-
-<img src="assets/divider-circuit.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 09 : THE AI LABORATORY ══════ -->
-
-<div align="center">
-
-<!-- glitch entry banner (custom SVG) -->
-<img src="assets/glitch-restricted.svg" width="100%" alt="Restricted area — neural research division"/>
-
-</div>
-
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:26313D,100:526D82&height=120&text=NEBULA%20ENGINE&fontSize=24&fontColor=E6EDF3" width="100%" alt="Nebula Engine"/>
 <br/>
+<img src="https://img.shields.io/badge/Python-26313D?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/FastAPI-26313D?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+<img src="https://img.shields.io/badge/React-26313D?style=flat-square&logo=react&logoColor=white" alt="React"/>
+</td>
+</tr>
+<tr>
+<td width="45%" align="center">
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:455A64,100:6B5E4B&height=120&text=SENTINEL%207&fontSize=24&fontColor=E6EDF3" width="100%" alt="Sentinel 7"/>
+<br/>
+<img src="https://img.shields.io/badge/Go-455A64?style=flat-square&logo=go&logoColor=white" alt="Go"/>
+<img src="https://img.shields.io/badge/gRPC-455A64?style=flat-square&logo=google&logoColor=white" alt="gRPC"/>
+<img src="https://img.shields.io/badge/Prometheus-455A64?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus"/>
+</td>
+<td width="55%">
 
-<!-- lab stations grid -->
-<table>
-<tr>
-<td align="center" width="33%">🗣️ <b>LARGE LANGUAGE MODELS</b><br/><sub><i>"Teaching machines to speak human."</i></sub></td>
-<td align="center" width="33%">🎨 <b>GENERATIVE AI</b><br/><sub><i>"Where math dreams in color."</i></sub></td>
-<td align="center" width="33%">👁️ <b>COMPUTER VISION</b><br/><sub><i>"Giving silicon the gift of sight."</i></sub></td>
+### Sentinel 7
+
+A self-healing observability concept for distributed systems, combining anomaly signals, explainable root-cause hints, and safe remediation practices.
+
+- Service discovery without excess operational overhead.
+- Statistical and model-assisted anomaly detection.
+- Reversible remediation playbooks.
+- Incident summaries written for people, not dashboards.
+
+<sub>**Architecture direction:** agent mesh · gRPC · time-series pipeline</sub>
+
+</td>
 </tr>
 <tr>
-<td align="center">📝 <b>NLP</b><br/><sub><i>"Decoding the human protocol."</i></sub></td>
-<td align="center">📚 <b>RAG SYSTEMS</b><br/><sub><i>"Memory augmentation for machines."</i></sub></td>
-<td align="center">🤖 <b>AUTONOMOUS AGENTS</b><br/><sub><i>"Software that acts on its own."</i></sub></td>
+<td width="55%">
+
+### Oracle RAG
+
+A retrieval-augmented knowledge engine designed to make dispersed organisational knowledge easier to find, verify, and use.
+
+- Retrieval with citations and source-aware answers.
+- Evaluation loops for quality and regressions.
+- Clear access boundaries for sensitive material.
+- A workflow designed around human review.
+
+<sub>**Architecture direction:** vector search · Python services · lightweight product interface</sub>
+
+</td>
+<td width="45%" align="center">
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:6B5E4B,100:26313D&height=120&text=ORACLE%20RAG&fontSize=24&fontColor=E6EDF3" width="100%" alt="Oracle RAG"/>
+<br/>
+<img src="https://img.shields.io/badge/Python-6B5E4B?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/PostgreSQL-6B5E4B?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/LLM_Evaluation-6B5E4B?style=flat-square" alt="LLM evaluation"/>
+</td>
 </tr>
 <tr>
-<td align="center">🎯 <b>PROMPT ENGINEERING</b><br/><sub><i>"The art of speaking to gods politely."</i></sub></td>
-<td align="center">🔧 <b>FINE-TUNING</b><br/><sub><i>"Sculpting intelligence."</i></sub></td>
-<td align="center">🧮 <b>EMBEDDINGS &amp; VECTOR DBs</b><br/><sub><i>"Mapping meaning into space."</i></sub></td>
-</tr>
-<tr>
-<td align="center">🔌 <b>MCP &amp; TOOL USE</b><br/><sub><i>"Wiring AI into the real world."</i></sub></td>
-<td align="center">⚙️ <b>AI AUTOMATION PIPELINES</b><br/><sub><i>"Self-driving workflows."</i></sub></td>
-<td align="center">🧑‍🔬 <b>STATION 12 — VACANT</b><br/><sub><i>"Reserved for whatever comes next."</i></sub></td>
+<td width="45%" align="center">
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:526D82,100:26313D&height=120&text=ATLAS&fontSize=24&fontColor=E6EDF3" width="100%" alt="Atlas"/>
+<br/>
+<img src="https://img.shields.io/badge/TypeScript-526D82?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Next.js-526D82?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+<img src="https://img.shields.io/badge/PostgreSQL-526D82?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+</td>
+<td width="55%">
+
+### Atlas
+
+A product concept for turning operational information into clear decisions through shared context, lightweight workflow design, and purposeful analytics.
+
+- Structured inputs that reduce reporting friction.
+- A concise view of the decisions that need attention.
+- Simple collaboration trails for teams.
+- Reporting that values context as much as a metric.
+
+<sub>**Architecture direction:** Next.js · TypeScript · PostgreSQL</sub>
+
+</td>
 </tr>
 </table>
 
-<br/>
+---
 
-<!-- experiment log terminal -->
+## 09 — Applied AI & Research
 
-```console
-muxby@neural-lab:~$ tail -f /var/log/experiments.log
-[04:12:07] EXP-0198  fine-tune: loss 0.023 ▼   status: promising
-[04:26:41] EXP-0199  agent-swarm: 4 agents negotiated an API contract unsupervised
-[04:31:02] EXP-0199  NOTE: they also renamed all my variables. reviewing trust settings.
-[05:02:55] EXP-0200  RAG eval: 96.4% citation accuracy — new lab record 🏆
-[05:03:12] SYSTEM    coffee reserves at 11%. initiating resupply protocol.
-muxby@neural-lab:~$ █
-```
+I am currently interested in multi-agent systems that can critique code, evaluate plans, and provide useful review before work reaches a human teammate. The aim is not novelty for its own sake; it is a more thoughtful and dependable development process.
 
-<div align="center">
+<p align="center">
+<img src="https://img.shields.io/badge/PyTorch-26313D?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+<img src="https://img.shields.io/badge/TensorFlow-26313D?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+<img src="https://img.shields.io/badge/Hugging_Face-26313D?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face"/>
+<img src="https://img.shields.io/badge/LangChain-26313D?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"/>
+<img src="https://img.shields.io/badge/OpenAI-26313D?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/>
+<img src="https://img.shields.io/badge/Anthropic-26313D?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic"/>
+</p>
 
-<b>🧪 CURRENT EXPERIMENT:</b> <sub>multi-agent systems that critique each other's code before I ever see it — peer review at machine speed</sub>
+---
 
-<br/><br/>
+## 10 — Engineering Principles
 
-<img src="https://img.shields.io/badge/PyTorch-0D1117?style=for-the-badge&logo=pytorch&logoColor=FFD700" alt="PyTorch"/>
-<img src="https://img.shields.io/badge/TensorFlow-0D1117?style=for-the-badge&logo=tensorflow&logoColor=FFD700" alt="TensorFlow"/>
-<img src="https://img.shields.io/badge/Hugging%20Face-0D1117?style=for-the-badge&logo=huggingface&logoColor=FFD700" alt="Hugging Face"/>
-<img src="https://img.shields.io/badge/LangChain-0D1117?style=for-the-badge&logo=langchain&logoColor=FFD700" alt="LangChain"/>
-<img src="https://img.shields.io/badge/OpenAI-0D1117?style=for-the-badge&logo=openai&logoColor=FFD700" alt="OpenAI"/>
-<img src="https://img.shields.io/badge/Anthropic-0D1117?style=for-the-badge&logo=anthropic&logoColor=FFD700" alt="Anthropic"/>
-
-</div>
-
-<img src="assets/divider-beam.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 10 : THE DEVELOPER MANIFESTO ══════ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=700&size=26&duration=3500&pause=9999&color=FFD700&center=true&vCenter=true&width=560&height=52&lines=%F0%9F%93%9C+THE+DEVELOPER+MANIFESTO" alt="The Developer Manifesto"/>
-
-<sub><code>ILLUMINATED MANUSCRIPT · v1.0 · SIGNED IN INK AND ANSI</code></sub>
-
-<br/><br/>
-
-<table width="88%">
+<table>
 <tr><td align="center">
 
-<br/>
-
-<sub>𝐈.</sub> &nbsp;<i>I write code the way architects draw cathedrals — meant to outlive the moment.</i>
-
-<sub>𝐈𝐈.</sub> &nbsp;<i>Clean code isn't vanity; it's a letter of respect to the stranger who inherits it.</i>
-
-<sub>𝐈𝐈𝐈.</sub> &nbsp;<i>Milliseconds are promises. I keep them.</i>
-
-<sub>𝐈𝐕.</sub> &nbsp;<i>I design for the day the traffic graph goes vertical — and smile when it does.</i>
-
-<sub>𝐕.</sub> &nbsp;<i>Creativity is not decoration; it is the load-bearing wall.</i>
-
-<sub>𝐕𝐈.</sub> &nbsp;<i>The best idea in the room doesn't care whose it was. Neither do I.</i>
-
-<sub>𝐕𝐈𝐈.</sub> &nbsp;<i>Users don't read manuals. My interfaces don't require apologies.</i>
-
-<sub>𝐕𝐈𝐈𝐈.</sub> &nbsp;<i>Every technology I don't know yet is just a future version of me waiting.</i>
-
-<sub>𝐈𝐗.</sub> &nbsp;<i>Curiosity is my only unrecoverable dependency.</i>
-
-<sub>𝐗.</sub> &nbsp;<i>Genius ships once. Consistency ships every week. I bet on consistency.</i>
-
-<br/>
+1. **Build for the next maintainer.** Clear code is a practical form of respect.
+2. **Prefer a small honest system to a large fragile one.**
+3. **Treat performance, accessibility, and documentation as product work.**
+4. **Design for change.** Good boundaries make growth less expensive.
+5. **Make ideas testable.** A useful system should explain why it behaves as it does.
+6. **Listen for the best idea, not the loudest author.**
+7. **Ship consistently.** Great work is the accumulated effect of responsible iterations.
 
 </td></tr>
 </table>
 
-</div>
+---
 
-<img src="assets/divider-starfield.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 11 : THE SACRED SCROLLS ══════ -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=egg&color=0:9D4EDD,100:FF00E5&height=120&text=🧩%20THE%20SACRED%20SCROLLS&fontSize=26&fontColor=0D1117&animation=scaleIn" width="60%" alt="The Sacred Scrolls"/>
-
-<sub><i>Ancient wisdom, version-controlled.</i></sub>
-
-<br/><br/>
+## 11 — Foundations
 
 <table>
 <tr>
-<td align="center" width="25%">📜 <b>SOLID</b><br/><sub><i>Five vows that keep castles from becoming sandcastles.</i></sub><br/><sub>😅 <code>// single responsibility: this joke</code></sub></td>
-<td align="center" width="25%">📜 <b>KISS</b><br/><sub><i>Complexity flatters the author and punishes everyone else.</i></sub><br/><sub>😅 <code>if (clever) { dont(); }</code></sub></td>
-<td align="center" width="25%">📜 <b>DRY</b><br/><sub><i>Say it once, mean it everywhere.</i></sub><br/><sub>😅 <code>// see: DRY. see: DRY.</code></sub></td>
-<td align="center" width="25%">📜 <b>YAGNI</b><br/><sub><i>The feature you might need is the bug you already have.</i></sub><br/><sub>😅 <code>delete futureProofing;</code></sub></td>
+<td align="center" width="25%"><b>SOLID</b><br/><sub>Responsibilities and dependencies that stay understandable.</sub></td>
+<td align="center" width="25%"><b>KISS</b><br/><sub>Clarity is an engineering advantage, not an aesthetic preference.</sub></td>
+<td align="center" width="25%"><b>DRY</b><br/><sub>Share stable knowledge; do not duplicate uncertainty.</sub></td>
+<td align="center" width="25%"><b>YAGNI</b><br/><sub>Build the capability the product needs, when it needs it.</sub></td>
 </tr>
 <tr>
-<td align="center">🏛️ <b>CLEAN ARCHITECTURE</b><br/><sub><i>Dependencies point inward; ego points nowhere.</i></sub><br/><sub>😅 <code>domain/ has no imports. bliss.</code></sub></td>
-<td align="center">🕸️ <b>MICROSERVICES</b><br/><sub><i>Small enough to understand, distributed enough to humble you.</i></sub><br/><sub>😅 <code>1 outage, 12 dashboards</code></sub></td>
-<td align="center">♟️ <b>DESIGN PATTERNS</b><br/><sub><i>Old solutions wearing new type signatures.</i></sub><br/><sub>😅 <code>new SingletonFactoryObserver()</code></sub></td>
-<td align="center">🧪 <b>TDD</b><br/><sub><i>Write the promise before the product.</i></sub><br/><sub>😅 <code>red → green → refactor → coffee</code></sub></td>
+<td align="center"><b>Clean architecture</b><br/><sub>Keep the important decisions independent from volatile details.</sub></td>
+<td align="center"><b>Microservices</b><br/><sub>Use boundaries deliberately; distributed systems earn their complexity.</sub></td>
+<td align="center"><b>Design patterns</b><br/><sub>Use familiar solutions when they make the trade-off clearer.</sub></td>
+<td align="center"><b>Test-driven practice</b><br/><sub>Make desired behavior explicit before implementation drifts.</sub></td>
 </tr>
 <tr>
-<td align="center">🛡️ <b>SECURITY-FIRST</b><br/><sub><i>Paranoia, professionally applied.</i></sub><br/><sub>😅 <code>trust: none; verify: all</code></sub></td>
-<td align="center">♿ <b>ACCESSIBILITY</b><br/><sub><i>If everyone can't use it, it isn't finished.</i></sub><br/><sub>😅 <code>alt="actually descriptive"</code></sub></td>
-<td align="center">⚡ <b>PERFORMANCE BUDGETS</b><br/><sub><i>Every byte pays rent or leaves.</i></sub><br/><sub>😅 <code>bundle.size &lt; ego.size</code></sub></td>
-<td align="center">💌 <b>DOCUMENTATION</b><br/><sub><i>Love letters to future me.</i></sub><br/><sub>😅 <code>// dear future me: sorry</code></sub></td>
+<td align="center"><b>Security</b><br/><sub>Thoughtful defaults and verification make trust practical.</sub></td>
+<td align="center"><b>Accessibility</b><br/><sub>If people cannot use it, the work is incomplete.</sub></td>
+<td align="center"><b>Performance budgets</b><br/><sub>Every byte and millisecond should justify itself.</sub></td>
+<td align="center"><b>Documentation</b><br/><sub>Good explanations turn local knowledge into team capability.</sub></td>
 </tr>
 </table>
 
-</div>
+---
 
-<img src="assets/divider-wave.svg" width="100%" alt=""/>
+## 12 — Learning Path
 
-<!-- ══════ SECTION 12 : THE LEARNING ODYSSEY ══════ -->
+<p align="center">
+  <img src="assets/odyssey.svg" width="96%" alt="Learning roadmap" />
+</p>
 
-<div align="center">
+The roadmap remains a record of the technologies I am exploring and the areas where I want to deepen my judgement. It is a direction of travel, not a checklist.
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3500&pause=9999&color=00F5FF&center=true&vCenter=true&width=560&height=52&lines=%F0%9F%97%BA%EF%B8%8F+THE+LEARNING+ODYSSEY" alt="The Learning Odyssey"/>
+---
 
-<!-- metro-map skill tree (custom SVG) -->
-<img src="assets/odyssey.svg" width="96%" alt="Learning odyssey metro map"/>
+## 13 — Working Notes
 
-<sub><i>Service runs daily. Delays caused by production incidents and particularly good books.</i></sub>
-
-</div>
-
-<img src="assets/divider-beam.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 13 : THE ARCADE ══════ -->
-
-<!-- 🕹️ KONAMI CODE DETECTED: ↑ ↑ ↓ ↓ ← → ← → B A ... unfortunately GitHub sanitized the 30 extra lives. -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF00E5,50:9D4EDD,100:00F5FF&height=140&text=🎮%20THE%20ARCADE&fontSize=36&fontColor=0D1117&animation=fadeIn" width="100%" alt="The Arcade"/>
-
-<sub><code>INSERT COIN · PLAYER 1 READY · HIGH SCORE: still trying</code></sub>
-
-<br/><br/>
-
-<!-- ── 13.1 · Random dev quote (auto-refreshing) ── -->
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" width="70%" alt="Random dev quote"/>
-
-<br/>
-
-🌅 <sub><i>Daily motivation: the bug you fix today can't page you tonight.</i></sub>
-
-</div>
-
-<br/>
-
-<!-- ── 13.2 · Fake interactive terminal ── -->
-
-```console
-muxby@arcade:~$ whoami
-architect of small universes, debugger of large ones
-
-muxby@arcade:~$ sudo hire-me
-[sudo] password for visitor: ********
-Access granted. Opening transmission channels... 📡 (see Section 15)
-
-muxby@arcade:~$ cat secrets.txt
-cat: secrets.txt: Permission denied 😏
-
-muxby@arcade:~$ fortune
-"Weeks of coding can save you hours of planning."
-
-muxby@arcade:~$ exit
-logout — but the arcade never really closes.
-```
-
-<!-- ── 13.2½ · Dev vitals oscilloscope (custom SVG) ── -->
-
-<div align="center">
-
-<img src="assets/graph-oscilloscope.svg" width="92%" alt="Dev vitals monitor — live oscilloscope"/>
-
-</div>
-
-<!-- ── 13.3 · ASCII mascot ── -->
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github_dark" width="70%" alt="Developer quote" />
+</p>
 
 ```text
-        ▄▄▄▄▄▄▄▄▄▄▄
-      ▄█▀         ▀█▄        ╔════════════════════════════╗
-     ██   ▄▄   ▄▄   ██       ║  V O I D B O T   v 5 . 0   ║
-     ██   ██   ██   ██  ...  ║  official mascot of the    ║
-     ██      ▄      ██       ║  muxby digital universe    ║
-      ██  ▀▄▄▄▄▄▀  ██        ║  hobbies: orbiting, glow   ║
-       ▀█▄▄▄▄▄▄▄▄▄█▀         ╚════════════════════════════╝
-          ▀▀ ▀▀▀ ▀▀
+whoami
+creative software engineer, systems thinker, persistent debugger
+
+working style
+plan clearly → build deliberately → test honestly → document the useful parts
+
+current reading
+Designing Data-Intensive Applications — a reliable return point for product and systems thinking
+
+current soundtrack
+Focused work, no fixed playlist required
 ```
 
-<div align="center">
+<p align="center">
+  <img src="assets/graph-oscilloscope.svg" width="92%" alt="Working rhythm visualization" />
+</p>
 
-<!-- ── 13.4 · Stat cabinet ── -->
 <table>
 <tr>
-<td align="center" width="25%">🌡️ <b>MOOD RING</b><br/><br/><code>[ 🟢 FLOW STATE ]</code><br/><sub>recalibrates hourly</sub></td>
-<td align="center" width="25%">☕ <b>COFFEE COUNTER</b><br/><br/><code>∞ and counting</code><br/><sub>decaf detected: never</sub></td>
-<td align="center" width="25%">🌙 <b>LATE NIGHT METER</b><br/><br/><code>▓▓▓▓▓▓▓▓░░ 82%</code><br/><sub>peak output: 01:47 AM</sub></td>
-<td align="center" width="25%">⏳ <b>TIME IN SERVICE</b><br/><br/><code>10 YEARS</code><br/><sub>and still Googling regex</sub></td>
-</tr>
-<tr>
-<td align="center">🐛 <b>BUGS CREATED</b><br/><br/><code>9,742</code><br/><sub>a lifetime body of work</sub></td>
-<td align="center">🔨 <b>BUGS FIXED</b><br/><br/><code>9,741</code><br/><sub>we don't talk about #4023</sub></td>
-<td align="center">📏 <b>LINES OF CODE</b><br/><br/><code>1,004,822 km… *lines</code><br/><sub>odometer needs service</sub></td>
-<td align="center">🎲 <b>RANDOM FACT</b><br/><br/><sub>I once fixed a production bug from a ski lift. The lift was more stable than the service.</sub></td>
+<td align="center" width="25%"><b>Flow state</b><br/><sub>Protected time for concentrated building.</sub></td>
+<td align="center" width="25%"><b>Curiosity</b><br/><sub>Questions are treated as productive work.</sub></td>
+<td align="center" width="25%"><b>Late work</b><br/><sub>Used carefully, never mistaken for a process.</sub></td>
+<td align="center" width="25%"><b>Iteration</b><br/><sub>Consistent refinement outperforms dramatic rewrites.</sub></td>
 </tr>
 </table>
 
-<br/>
+---
 
-📖 <b>CURRENTLY READING:</b> <sub><i>Designing Data-Intensive Applications</i> — again. It gets better every re-read.</sub>
-&nbsp;·&nbsp;
-🎧 <b>NOW PLAYING:</b> <sub>synthwave at 140 BPM <!-- Spotify widget slot: https://spotify-github-profile.kittinanx.com --></sub>
+## 14 — Open Source
 
-</div>
-
-<!-- 👾 EASTER EGG #1: You found the first secret. The snake in Section 06 is named "Bytey". Tell no one. -->
-
-<img src="assets/divider-starfield.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 14 : OPEN SOURCE GALAXY ══════ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3500&pause=9999&color=9D4EDD&center=true&vCenter=true&width=560&height=52&lines=%F0%9F%8C%8D+OPEN+SOURCE+GALAXY" alt="Open Source Galaxy"/>
-
-<sub><code>CHARTED SYSTEMS: growing · UNCHARTED: infinite</code></sub>
-
-<br/><br/>
-
-<!-- 🪐 planets: pinned repo cards (swap repo= values for your real repositories) -->
 <table>
 <tr>
 <td align="center" width="50%">
-🪐 <sub><code>PLANET 01</code></sub><br/>
 <a href="https://github.com/muxby/muxby">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=muxby&repo=muxby&bg_color=0D1117&title_color=00F5FF&text_color=E6EDF3&icon_color=FF00E5&hide_border=true" alt="Pinned repo"/>
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=muxby&repo=muxby&bg_color=0D1117&title_color=C9A36A&text_color=E6EDF3&icon_color=7D91A8&hide_border=true" alt="muxby profile repository"/>
 </a>
 </td>
-<td align="center" width="50%">
-🛰️ <sub><code>SATELLITE NETWORK</code></sub><br/><br/>
-<img src="https://img.shields.io/badge/☄️_PRs-ACROSS_THE_GALAXY-FF00E5?style=for-the-badge&labelColor=0D1117" alt="PRs"/><br/><br/>
-<img src="https://img.shields.io/badge/🐛_ISSUES-TRIAGED_&_CLOSED-00F5FF?style=for-the-badge&labelColor=0D1117" alt="Issues"/><br/><br/>
-<img src="https://img.shields.io/badge/💬_DISCUSSIONS-ALWAYS_OPEN-9D4EDD?style=for-the-badge&labelColor=0D1117" alt="Discussions"/>
+<td width="50%">
+
+### Contribution philosophy
+
+Open source is a long conversation between people who may never meet. I value contributions that make software easier to understand, easier to operate, and easier for the next person to improve.
+
+[View repositories →](https://github.com/muxby?tab=repositories)
+
 </td>
 </tr>
 </table>
 
-<br/>
+---
 
-<table width="80%">
-<tr><td align="center">
-
-<b>🌟 CONTRIBUTION PHILOSOPHY</b>
-
-<sub><i>Open source is the only cathedral built entirely by strangers who never met —
-and it still stands. I contribute because every function I publish is a hand extended
-across time zones, and because someone once did the same for a confused kid
-with a borrowed laptop.</i></sub>
-
-</td></tr>
-</table>
-
-<br/>
-
-<b>Want to build together?</b><br/><br/>
-<a href="https://github.com/muxby?tab=repositories">
-<img src="https://img.shields.io/badge/⚡_COLLABORATE-OPEN_A_CHANNEL-FFD700?style=for-the-badge&labelColor=0D1117" alt="Collaborate"/>
-</a>
-
-</div>
-
-<img src="assets/divider-circuit.svg" width="100%" alt=""/>
-
-<!-- ══════ SECTION 15 : TRANSMISSION CHANNELS ══════ -->
+## 15 — Connect
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00F5FF,100:FF00E5&height=64&text=📡%20TRANSMISSION%20CHANNELS&fontSize=28&fontColor=0D1117&animation=fadeIn" width="100%" alt="Transmission Channels"/>
+The contact structure is kept intentionally simple. Replace the placeholders below with the channels that best represent your work.
 
-<sub><code>COMMS CONSOLE ONLINE · ALL FREQUENCIES MONITORED</code></sub>
-
-<br/><br/>
-
-<!-- CUSTOMIZE: replace # with your actual profile links -->
-<table>
-<tr>
-<td align="center" width="20%"><a href="#"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=00F5FF" alt="LinkedIn"/></a></td>
-<td align="center" width="20%"><a href="#"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=aboutdotme&logoColor=00F5FF" alt="Portfolio"/></a></td>
-<td align="center" width="20%"><a href="#"><img src="https://img.shields.io/badge/Website-0D1117?style=for-the-badge&logo=firefoxbrowser&logoColor=00F5FF" alt="Website"/></a></td>
-<td align="center" width="20%"><a href="mailto:hello@example.com"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=00F5FF" alt="Email"/></a></td>
-<td align="center" width="20%"><a href="#"><img src="https://img.shields.io/badge/X_/_Twitter-0D1117?style=for-the-badge&logo=x&logoColor=00F5FF" alt="Twitter/X"/></a></td>
-</tr>
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/Discord-0D1117?style=for-the-badge&logo=discord&logoColor=9D4EDD" alt="Discord"/></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/YouTube-0D1117?style=for-the-badge&logo=youtube&logoColor=9D4EDD" alt="YouTube"/></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/Dev.to-0D1117?style=for-the-badge&logo=devdotto&logoColor=9D4EDD" alt="Dev.to"/></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/Hashnode-0D1117?style=for-the-badge&logo=hashnode&logoColor=9D4EDD" alt="Hashnode"/></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/Medium-0D1117?style=for-the-badge&logo=medium&logoColor=9D4EDD" alt="Medium"/></a></td>
-</tr>
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/LeetCode-0D1117?style=for-the-badge&logo=leetcode&logoColor=FF00E5" alt="LeetCode"/></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/Codeforces-0D1117?style=for-the-badge&logo=codeforces&logoColor=FF00E5" alt="Codeforces"/></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/HackerRank-0D1117?style=for-the-badge&logo=hackerrank&logoColor=FF00E5" alt="HackerRank"/></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/Kaggle-0D1117?style=for-the-badge&logo=kaggle&logoColor=FF00E5" alt="Kaggle"/></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/Stack_Overflow-0D1117?style=for-the-badge&logo=stackoverflow&logoColor=FF00E5" alt="Stack Overflow"/></a></td>
-</tr>
-</table>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-26313D?style=flat-square&logo=linkedin&logoColor=white)](#)
+[![Portfolio](https://img.shields.io/badge/Portfolio-26313D?style=flat-square&logo=aboutdotme&logoColor=white)](#)
+[![Website](https://img.shields.io/badge/Website-26313D?style=flat-square&logo=firefoxbrowser&logoColor=white)](#)
+[![Email](https://img.shields.io/badge/Email-26313D?style=flat-square&logo=gmail&logoColor=white)](mailto:hello@example.com)
+[![X](https://img.shields.io/badge/X-26313D?style=flat-square&logo=x&logoColor=white)](#)
 
 <br/>
 
-<table width="70%">
-<tr><td align="center">
-⭐ <b>PRIORITY CHANNEL</b> ⭐<br/>
-<sub>Fastest route to a reply: <b>Email</b> → average response time: <i>faster than my CI pipeline</i> (a low bar, admittedly)</sub><br/><br/>
-<a href="mailto:hello@example.com">
-<img src="https://img.shields.io/badge/📨_SEND_TRANSMISSION-INITIATE_UPLINK-FFD700?style=for-the-badge&labelColor=0D1117" alt="Send transmission"/>
-</a>
-</td></tr>
-</table>
+For product conversations, collaboration, or useful questions: **[hello@example.com](mailto:hello@example.com)**
 
 </div>
 
-<!-- 👾 EASTER EGG #2: The coordinates in the ID card point at a café with dangerously good baklava. -->
+---
 
-<!-- ══════ SECTION 16 : THE GRAND FINALE ══════ -->
+## 16 — Closing Note
 
 <div align="center">
 
-<img src="assets/divider-wave.svg" width="100%" alt=""/>
-<img src="assets/divider-starfield.svg" width="100%" alt=""/>
+<img src="assets/signature.svg" width="260" alt="Muxby signature" />
 
 <br/>
 
-<img src="assets/signature.svg" width="300" alt="Muxby signature"/>
+> Build something this week that your future self—and the people who work with you—will be glad exists.
 
-<br/>
+<img src="assets/sigil.svg" width="62" alt="Muxby monogram" />
 
-<table width="72%">
-<tr><td align="center">
-<br/>
-<sub>Thank you for scrolling all the way into the void. Most visitors turn back at the hangar.
-Whatever brought you here — curiosity, code, or a wrong click — I'm glad the orbit crossed.
-Build something this week that your future self will thank you for.</sub>
-<br/><br/>
-</td></tr>
-</table>
-
-<img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=4500&pause=3000&color=FFD700&center=true&vCenter=true&width=680&height=44&lines=%E2%80%9CThe+future+is+built+by+those+who+show+up+and+commit.%E2%80%9D" alt="Final quote"/>
-
-<br/>
-
-⭐ <sub><i>If something here made you smile, star something you loved on the way out — stars are how lighthouses find each other.</i></sub>
-
-<br/><br/>
-
-<img src="assets/sigil.svg" width="72" alt="Sigil"/>
-
-<sub><code>Designed &amp; engineered in the void by muxby — © 2026</code></sub>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F5FF,50:9D4EDD,100:FF00E5&height=160&section=footer" width="100%" alt=""/>
+<sub>Designed and maintained by muxby · © 2026</sub>
 
 </div>
 
-<!-- ════════════════════════════════════════════════════════════════════════ -->
-<!--                                                                          -->
-<!--   👾 EASTER EGG #3: You read the source. You're my kind of person. 🖤    -->
-<!--                                                                          -->
-<!--   END OF TRANSMISSION · MUXBY-OS SHUTTING DOWN · SEE YOU IN THE VOID     -->
-<!--                                                                          -->
-<!-- ════════════════════════════════════════════════════════════════════════ -->
+<!--
+  The original sixteen-section structure and custom asset roles are retained.
+  The visual system has been converted from Neon Void / cyberpunk language into
+  a restrained editorial portfolio treatment: graphite, navy, steel blue, and bronze.
+-->
