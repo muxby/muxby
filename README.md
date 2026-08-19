@@ -544,17 +544,40 @@ Open source is a long conversation between people who may never meet. I value co
 
 <div align="center">
 
-The contact structure is kept intentionally simple. Replace the placeholders below with the channels that best represent your work.
+The contact structure is kept intentionally simple. Scan the relevant QR code to connect on **LinkedIn** or visit the **GitHub** profile.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-26313D?style=flat-square&logo=linkedin&logoColor=white)](#)
-[![Portfolio](https://img.shields.io/badge/Portfolio-26313D?style=flat-square&logo=aboutdotme&logoColor=white)](#)
-[![Website](https://img.shields.io/badge/Website-26313D?style=flat-square&logo=firefoxbrowser&logoColor=white)](#)
-[![Email](https://img.shields.io/badge/Email-26313D?style=flat-square&logo=gmail&logoColor=white)](mailto:hello@example.com)
-[![X](https://img.shields.io/badge/X-26313D?style=flat-square&logo=x&logoColor=white)](#)
+<table>
+<tr>
+<td align="center" width="50%">
+
+### LinkedIn
+
+<img src="assets/linkedin-qr.png" width="190" alt="QR code for Mubeen's LinkedIn profile" />
+
+<br/>
+<sub>Scan to connect on LinkedIn</sub>
+
+</td>
+<td align="center" width="50%">
+
+### GitHub
+
+<a href="https://github.com/muxby">
+<img src="assets/github-qr.png" width="190" alt="QR code for Mubeen's GitHub profile" />
+</a>
+
+<br/>
+<sub><a href="https://github.com/muxby">Scan to visit github.com/muxby</a></sub>
+
+</td>
+</tr>
+</table>
 
 <br/>
 
-For product conversations, collaboration, or useful questions: **[hello@example.com](mailto:hello@example.com)**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-26313D?style=flat-square&logo=linkedin&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-26313D?style=flat-square&logo=github&logoColor=white)](https://github.com/muxby)
+[![Email](https://img.shields.io/badge/Email-26313D?style=flat-square&logo=gmail&logoColor=white)](mailto:hello@example.com)
 
 </div>
 
