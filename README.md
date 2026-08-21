@@ -209,10 +209,5 @@ The roadmap remains a record of the technologies I am exploring and the areas wh
 
 
 <div align="center">
-  <img src="assets/fox/fox-transparent-fast.gif" width="96" alt="Animated pixel fox" />
-</div>
-
-
-<div align="center">
   <sub>Thanks for stopping by.</sub>
 </div>
