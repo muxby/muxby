@@ -67,11 +67,11 @@
     <text x="148" y="128">PYTHON</text>
     <text x="332" y="96">TYPESCRIPT</text>
     <text x="615" y="116">REACT</text>
-    <text x="772" y="146">NODE.JS</text>
+    <text x="772" y="146">GO</text>
     <text x="752" y="288">DOCKER</text>
     <text x="610" y="336">KUBERNETES</text>
-    <text x="300" y="310">PYTORCH</text>
-    <text x="118" y="272">LLMs</text>
+    <text x="300" y="310">OPENAI</text>
+    <text x="118" y="272">FEDERATED ML</text>
   </g>
 
   <g fill="#E6EDF3" stroke="#8B949E" stroke-width="1">

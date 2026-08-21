@@ -37,13 +37,13 @@
   </g>
 
   <!-- data polygon:
-       Backend 95%  → (220, 77.5)
-       AI/ML   90%  → (336.9, 152.5)
+       Backend/API 70%  → (220, 115)
+       AI/ML   57%  → (294.1, 177.25)
        Frontend 85% → (330.4, 283.75)
-       Cloud   80%  → (220, 340)
-       Data    75%  → (122.6, 276.25)
-       Security 70% → (129.1, 167.5)  -->
-  <polygon points="220,77.5 336.9,152.5 330.4,283.75 220,340 122.6,276.25 129.1,167.5"
+       Cloud/OPS 60% → (220, 310)
+       Data/DB 43% → (164.1, 252.25)
+       Security 43% → (164.1, 187.75)  -->
+  <polygon points="220,115 294.1,177.25 307.0,270.25 220,310 164.1,252.25 164.1,187.75"
            fill="url(#radarGrad)" stroke="url(#radarStroke)" stroke-width="2.5" filter="url(#rGlow)">
     <animate attributeName="opacity" values="0;1" dur="1.8s" fill="freeze"/>
     <animate attributeName="fill-opacity" values="0.5;0.85;0.5" dur="5s" begin="1.8s" repeatCount="indefinite"/>
@@ -51,12 +51,12 @@
 
   <!-- pulsing vertices -->
   <g fill="#E6EDF3">
-    <circle cx="220" cy="77.5" r="4" fill="#00F5FF" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="336.9" cy="152.5" r="4" fill="#FFD700" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <circle cx="330.4" cy="283.75" r="4" fill="#FF00E5" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="0.8s" repeatCount="indefinite"/></circle>
-    <circle cx="220" cy="340" r="4" fill="#9D4EDD" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="1.2s" repeatCount="indefinite"/></circle>
-    <circle cx="122.6" cy="276.25" r="4" fill="#00F5FF" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="1.6s" repeatCount="indefinite"/></circle>
-    <circle cx="129.1" cy="167.5" r="4" fill="#FF00E5" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="2s" repeatCount="indefinite"/></circle>
+    <circle cx="220" cy="115" r="4" fill="#00F5FF" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="294.1" cy="177.25" r="4" fill="#FFD700" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="307.0" cy="270.25" r="4" fill="#FF00E5" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="220" cy="310" r="4" fill="#9D4EDD" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="164.1" cy="252.25" r="4" fill="#00F5FF" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="164.1" cy="187.75" r="4" fill="#FF00E5" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="2s" repeatCount="indefinite"/></circle>
   </g>
 
   <!-- radar sweep -->
@@ -66,11 +66,11 @@
 
   <!-- axis labels -->
   <g font-family="'Courier New', monospace" font-size="12" fill="#8B949E" text-anchor="middle">
-    <text x="220" y="60">BACKEND · 95</text>
-    <text x="372" y="136">AI/ML · 90</text>
-    <text x="371" y="312">FRONTEND · 85</text>
-    <text x="220" y="390">CLOUD · 80</text>
-    <text x="70" y="312">DATA · 75</text>
-    <text x="70" y="136">SECURITY · 70</text>
+    <text x="220" y="60">BACKEND/API · 70</text>
+    <text x="372" y="136">AI/ML · 57</text>
+    <text x="371" y="312">FRONTEND/UI · 67</text>
+    <text x="220" y="390">CLOUD/OPS · 60</text>
+    <text x="70" y="312">DATA/DB · 43</text>
+    <text x="70" y="136">SECURITY · 43</text>
   </g>
 </svg>

@@ -13,30 +13,30 @@
   <!-- track -->
   <circle cx="220" cy="190" r="95" fill="none" stroke="#161B22" stroke-width="30"/>
 
-  <!-- Python 34% (starts at 12 o'clock) -->
+  <!-- TypeScript 33% (starts at 12 o'clock) -->
   <circle cx="220" cy="190" r="95" fill="none" stroke="#58A6FF" stroke-width="30" pathLength="100"
           stroke-dasharray="33 67" transform="rotate(-90 220 190)" filter="url(#dGlow)">
     <animate attributeName="stroke-dasharray" values="0 100;33 67" dur="1.2s" fill="freeze"/>
   </circle>
-  <!-- TypeScript 26% -->
+  <!-- Python 27% -->
   <circle cx="220" cy="190" r="95" fill="none" stroke="#79C0FF" stroke-width="30" pathLength="100"
-          stroke-dasharray="25 75" transform="rotate(32.4 220 190)" filter="url(#dGlow)">
-    <animate attributeName="stroke-dasharray" values="0 100;25 75" dur="1.2s" begin="0.5s" fill="freeze"/>
+          stroke-dasharray="27 73" transform="rotate(28.8 220 190)" filter="url(#dGlow)">
+    <animate attributeName="stroke-dasharray" values="0 100;27 73" dur="1.2s" begin="0.5s" fill="freeze"/>
   </circle>
-  <!-- Go 14% -->
+  <!-- C++ 10% -->
   <circle cx="220" cy="190" r="95" fill="none" stroke="#6E7681" stroke-width="30" pathLength="100"
-          stroke-dasharray="13 87" transform="rotate(126 220 190)" filter="url(#dGlow)">
-    <animate attributeName="stroke-dasharray" values="0 100;13 87" dur="1s" begin="1s" fill="freeze"/>
+          stroke-dasharray="10 90" transform="rotate(126 220 190)" filter="url(#dGlow)">
+    <animate attributeName="stroke-dasharray" values="0 100;10 90" dur="1s" begin="1s" fill="freeze"/>
   </circle>
-  <!-- Rust 6% -->
+  <!-- Go 3% -->
   <circle cx="220" cy="190" r="95" fill="none" stroke="#D0D7DE" stroke-width="30" pathLength="100"
-          stroke-dasharray="5 95" transform="rotate(176.4 220 190)" filter="url(#dGlow)">
-    <animate attributeName="stroke-dasharray" values="0 100;5 95" dur="0.8s" begin="1.4s" fill="freeze"/>
+          stroke-dasharray="3 97" transform="rotate(162 220 190)" filter="url(#dGlow)">
+    <animate attributeName="stroke-dasharray" values="0 100;3 97" dur="0.8s" begin="1.4s" fill="freeze"/>
   </circle>
-  <!-- Everything else 20% -->
+  <!-- Other/unspecified 27% -->
   <circle cx="220" cy="190" r="95" fill="none" stroke="#30363D" stroke-width="30" pathLength="100"
-          stroke-dasharray="19 81" transform="rotate(198 220 190)">
-    <animate attributeName="stroke-dasharray" values="0 100;19 81" dur="1s" begin="1.7s" fill="freeze"/>
+          stroke-dasharray="27 73" transform="rotate(172.8 220 190)">
+    <animate attributeName="stroke-dasharray" values="0 100;27 73" dur="1s" begin="1.7s" fill="freeze"/>
   </circle>
 
   <!-- rotating scanner ring -->
@@ -45,8 +45,8 @@
   </circle>
 
   <!-- center readout -->
-  <text x="220" y="182" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="3" fill="#8B949E">SAMPLE</text>
-  <text x="220" y="206" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#E6EDF3">1.2M LOC</text>
+  <text x="220" y="182" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="3" fill="#8B949E">INDEXED</text>
+  <text x="220" y="206" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#E6EDF3">30 REPOS</text>
   <text x="220" y="226" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#8B949E">
     ● ANALYZING
     <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/>
@@ -54,11 +54,11 @@
 
   <!-- legend -->
   <g font-family="'Courier New', monospace" font-size="12">
-    <rect x="46" y="330" width="10" height="10" rx="2" fill="#58A6FF"/><text x="62" y="340" fill="#E6EDF3">Python 34%</text>
-    <rect x="176" y="330" width="10" height="10" rx="2" fill="#79C0FF"/><text x="192" y="340" fill="#E6EDF3">TypeScript 26%</text>
-    <rect x="330" y="330" width="10" height="10" rx="2" fill="#6E7681"/><text x="346" y="340" fill="#E6EDF3">Go 14%</text>
-    <rect x="46" y="356" width="10" height="10" rx="2" fill="#D0D7DE"/><text x="62" y="366" fill="#E6EDF3">Rust 6%</text>
-    <rect x="176" y="356" width="10" height="10" rx="2" fill="#30363D"/><text x="192" y="366" fill="#8B949E">everything else 20%</text>
+    <rect x="46" y="330" width="10" height="10" rx="2" fill="#58A6FF"/><text x="62" y="340" fill="#E6EDF3">TypeScript 33%</text>
+    <rect x="176" y="330" width="10" height="10" rx="2" fill="#79C0FF"/><text x="192" y="340" fill="#E6EDF3">Python 27%</text>
+    <rect x="330" y="330" width="10" height="10" rx="2" fill="#6E7681"/><text x="346" y="340" fill="#E6EDF3">C++ 10%</text>
+    <rect x="46" y="356" width="10" height="10" rx="2" fill="#D0D7DE"/><text x="62" y="366" fill="#E6EDF3">Go 3%</text>
+    <rect x="176" y="356" width="10" height="10" rx="2" fill="#30363D"/><text x="192" y="366" fill="#8B949E">other/unspecified 27%</text>
   </g>
   <text x="220" y="398" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#484F58">no genome was harmed during sequencing</text>
 </svg>

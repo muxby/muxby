@@ -12,7 +12,7 @@
   </defs>
 
   <rect width="440" height="420" rx="16" fill="#0D1117" stroke="#30363D"/>
-  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E">🎚 SKILL EQUALIZER — LIVE MIX</text>
+  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E">🎚 REPOSITORY COVERAGE — 30 REPOS</text>
 
   <!-- grid lines: baseline y=330, 100% at y=90 (240px range) -->
   <g stroke="#21262D" stroke-width="1">
@@ -30,61 +30,61 @@
   </g>
 
   <!-- bars: width 30, gap ~14. rise once, then breathe like an EQ -->
-  <!-- PY 95% → h=228, y=102 -->
-  <rect x="52" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="102" height="228">
-    <animate attributeName="y"      values="330;102" dur="1.2s" fill="freeze"/>
-    <animate attributeName="height" values="0;228"   dur="1.2s" fill="freeze"/>
-    <animate attributeName="y"      values="102;110;102" dur="2.6s" begin="1.4s" repeatCount="indefinite"/>
-    <animate attributeName="height" values="228;220;228" dur="2.6s" begin="1.4s" repeatCount="indefinite"/>
+  <!-- PY 33% → h=79, y=251 -->
+  <rect x="52" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="251" height="79">
+    <animate attributeName="y"      values="330;251" dur="1.2s" fill="freeze"/>
+    <animate attributeName="height" values="0;79"   dur="1.2s" fill="freeze"/>
+    <animate attributeName="y"      values="251;259;251" dur="2.6s" begin="1.4s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="79;71;79" dur="2.6s" begin="1.4s" repeatCount="indefinite"/>
   </rect>
-  <!-- TS 90% → h=216, y=114 -->
-  <rect x="96" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="114" height="216">
-    <animate attributeName="y"      values="330;114" dur="1.2s" begin="0.15s" fill="freeze"/>
-    <animate attributeName="height" values="0;216"   dur="1.2s" begin="0.15s" fill="freeze"/>
-    <animate attributeName="y"      values="114;124;114" dur="3s" begin="1.5s" repeatCount="indefinite"/>
-    <animate attributeName="height" values="216;206;216" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  <!-- TS 37% → h=89, y=241 -->
+  <rect x="96" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="241" height="89">
+    <animate attributeName="y"      values="330;241" dur="1.2s" begin="0.15s" fill="freeze"/>
+    <animate attributeName="height" values="0;89"   dur="1.2s" begin="0.15s" fill="freeze"/>
+    <animate attributeName="y"      values="241;251;241" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="89;79;89" dur="3s" begin="1.5s" repeatCount="indefinite"/>
   </rect>
-  <!-- AI 92% → h=220.8, y=109 -->
-  <rect x="140" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="109" height="221">
-    <animate attributeName="y"      values="330;109" dur="1.2s" begin="0.3s" fill="freeze"/>
-    <animate attributeName="height" values="0;221"   dur="1.2s" begin="0.3s" fill="freeze"/>
-    <animate attributeName="y"      values="109;117;109" dur="2.2s" begin="1.6s" repeatCount="indefinite"/>
-    <animate attributeName="height" values="221;213;221" dur="2.2s" begin="1.6s" repeatCount="indefinite"/>
+  <!-- AI 57% → h=137, y=193 -->
+  <rect x="140" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="193" height="137">
+    <animate attributeName="y"      values="330;193" dur="1.2s" begin="0.3s" fill="freeze"/>
+    <animate attributeName="height" values="0;137"   dur="1.2s" begin="0.3s" fill="freeze"/>
+    <animate attributeName="y"      values="193;201;193" dur="2.2s" begin="1.6s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="137;129;137" dur="2.2s" begin="1.6s" repeatCount="indefinite"/>
   </rect>
-  <!-- API 88% → h=211, y=119 -->
-  <rect x="184" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="119" height="211">
-    <animate attributeName="y"      values="330;119" dur="1.2s" begin="0.45s" fill="freeze"/>
-    <animate attributeName="height" values="0;211"   dur="1.2s" begin="0.45s" fill="freeze"/>
-    <animate attributeName="y"      values="119;129;119" dur="2.8s" begin="1.7s" repeatCount="indefinite"/>
-    <animate attributeName="height" values="211;201;211" dur="2.8s" begin="1.7s" repeatCount="indefinite"/>
+  <!-- API 70% → h=168, y=162 -->
+  <rect x="184" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="162" height="168">
+    <animate attributeName="y"      values="330;162" dur="1.2s" begin="0.45s" fill="freeze"/>
+    <animate attributeName="height" values="0;168"   dur="1.2s" begin="0.45s" fill="freeze"/>
+    <animate attributeName="y"      values="162;172;162" dur="2.8s" begin="1.7s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="168;158;168" dur="2.8s" begin="1.7s" repeatCount="indefinite"/>
   </rect>
-  <!-- DB 85% → h=204, y=126 -->
-  <rect x="228" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="126" height="204">
-    <animate attributeName="y"      values="330;126" dur="1.2s" begin="0.6s" fill="freeze"/>
-    <animate attributeName="height" values="0;204"   dur="1.2s" begin="0.6s" fill="freeze"/>
-    <animate attributeName="y"      values="126;134;126" dur="3.4s" begin="1.8s" repeatCount="indefinite"/>
-    <animate attributeName="height" values="204;196;204" dur="3.4s" begin="1.8s" repeatCount="indefinite"/>
+  <!-- DB 43% → h=103, y=227 -->
+  <rect x="228" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="227" height="103">
+    <animate attributeName="y"      values="330;227" dur="1.2s" begin="0.6s" fill="freeze"/>
+    <animate attributeName="height" values="0;103"   dur="1.2s" begin="0.6s" fill="freeze"/>
+    <animate attributeName="y"      values="227;235;227" dur="3.4s" begin="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="103;95;103" dur="3.4s" begin="1.8s" repeatCount="indefinite"/>
   </rect>
-  <!-- OPS 80% → h=192, y=138 -->
-  <rect x="272" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="138" height="192">
-    <animate attributeName="y"      values="330;138" dur="1.2s" begin="0.75s" fill="freeze"/>
-    <animate attributeName="height" values="0;192"   dur="1.2s" begin="0.75s" fill="freeze"/>
-    <animate attributeName="y"      values="138;148;138" dur="2.4s" begin="1.9s" repeatCount="indefinite"/>
-    <animate attributeName="height" values="192;182;192" dur="2.4s" begin="1.9s" repeatCount="indefinite"/>
+  <!-- OPS 60% → h=144, y=186 -->
+  <rect x="272" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="186" height="144">
+    <animate attributeName="y"      values="330;186" dur="1.2s" begin="0.75s" fill="freeze"/>
+    <animate attributeName="height" values="0;144"   dur="1.2s" begin="0.75s" fill="freeze"/>
+    <animate attributeName="y"      values="186;196;186" dur="2.4s" begin="1.9s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="144;134;144" dur="2.4s" begin="1.9s" repeatCount="indefinite"/>
   </rect>
-  <!-- UI 84% → h=201.6, y=128 -->
-  <rect x="316" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="128" height="202">
-    <animate attributeName="y"      values="330;128" dur="1.2s" begin="0.9s" fill="freeze"/>
-    <animate attributeName="height" values="0;202"   dur="1.2s" begin="0.9s" fill="freeze"/>
-    <animate attributeName="y"      values="128;138;128" dur="3.1s" begin="2s" repeatCount="indefinite"/>
-    <animate attributeName="height" values="202;192;202" dur="3.1s" begin="2s" repeatCount="indefinite"/>
+  <!-- UI 67% → h=161, y=169 -->
+  <rect x="316" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="169" height="161">
+    <animate attributeName="y"      values="330;169" dur="1.2s" begin="0.9s" fill="freeze"/>
+    <animate attributeName="height" values="0;161"   dur="1.2s" begin="0.9s" fill="freeze"/>
+    <animate attributeName="y"      values="169;179;169" dur="3.1s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="161;151;161" dur="3.1s" begin="2s" repeatCount="indefinite"/>
   </rect>
-  <!-- SEC 72% → h=172.8, y=157 -->
-  <rect x="360" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="157" height="173">
-    <animate attributeName="y"      values="330;157" dur="1.2s" begin="1.05s" fill="freeze"/>
-    <animate attributeName="height" values="0;173"   dur="1.2s" begin="1.05s" fill="freeze"/>
-    <animate attributeName="y"      values="157;167;157" dur="2.7s" begin="2.1s" repeatCount="indefinite"/>
-    <animate attributeName="height" values="173;163;173" dur="2.7s" begin="2.1s" repeatCount="indefinite"/>
+  <!-- SEC 43% → h=103, y=227 -->
+  <rect x="360" width="30" rx="4" fill="url(#barGrad)" filter="url(#bGlow)" y="227" height="103">
+    <animate attributeName="y"      values="330;227" dur="1.2s" begin="1.05s" fill="freeze"/>
+    <animate attributeName="height" values="0;103"   dur="1.2s" begin="1.05s" fill="freeze"/>
+    <animate attributeName="y"      values="227;237;227" dur="2.7s" begin="2.1s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="103;93;103" dur="2.7s" begin="2.1s" repeatCount="indefinite"/>
   </rect>
 
   <!-- peak-hold caps -->
@@ -108,14 +108,14 @@
     <text x="375" y="350">SEC</text>
   </g>
   <g font-family="'Courier New', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">
-    <text x="67"  y="366">95</text>
-    <text x="111" y="366">90</text>
-    <text x="155" y="366">92</text>
-    <text x="199" y="366">88</text>
-    <text x="243" y="366">85</text>
-    <text x="287" y="366">80</text>
-    <text x="331" y="366">84</text>
-    <text x="375" y="366">72</text>
+    <text x="67"  y="366">33</text>
+    <text x="111" y="366">37</text>
+    <text x="155" y="366">57</text>
+    <text x="199" y="366">70</text>
+    <text x="243" y="366">43</text>
+    <text x="287" y="366">60</text>
+    <text x="331" y="366">67</text>
+    <text x="375" y="366">43</text>
   </g>
-  <text x="220" y="398" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#484F58">gold caps mark all-time peaks · mix mastered in the void</text>
+  <text x="220" y="398" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#484F58">coverage = repositories containing the category</text>
 </svg>
