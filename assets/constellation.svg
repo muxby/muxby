@@ -1,138 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-label="Tech constellation map — each star is a technology">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-label="Animated monochrome technology constellation map">
+  <title>The Muxby System — Technology Constellation</title>
+  <desc>A restrained editorial systems map with animated connection paths, pulsing nodes, and a central signal core.</desc>
   <defs>
-    <linearGradient id="conGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F5FF"/>
-      <stop offset="50%" stop-color="#9D4EDD"/>
-      <stop offset="100%" stop-color="#FF00E5"/>
-    </linearGradient>
-    <filter id="starGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#9D4EDD" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#9D4EDD" stop-opacity="0"/>
+    <pattern id="paperGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#25292e" stroke-width="0.6" opacity="0.34"/>
+    </pattern>
+    <radialGradient id="coreWash" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#f1f0ea" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#aeb5ba" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#aeb5ba" stop-opacity="0"/>
     </radialGradient>
+    <filter id="softCore" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="nodeShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
   </defs>
 
-  <rect width="900" height="420" rx="16" fill="#0D1117" stroke="#30363D"/>
+  <rect width="900" height="420" rx="12" fill="#0e1012" stroke="#3a3d40" stroke-width="1"/>
+  <rect width="900" height="420" rx="12" fill="url(#paperGrid)"/>
+  <path d="M26 70H874M26 350H874" stroke="#d8d7d0" stroke-opacity="0.1"/>
 
-  <!-- background dust -->
-  <g fill="#484F58">
-    <circle cx="60" cy="50" r="1"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="4s" repeatCount="indefinite"/></circle>
-    <circle cx="840" cy="60" r="1"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="120" cy="370" r="1"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="5s" repeatCount="indefinite"/></circle>
-    <circle cx="800" cy="380" r="1"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.6s" repeatCount="indefinite"/></circle>
-    <circle cx="440" cy="30" r="1"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="470" cy="395" r="1"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="4.2s" repeatCount="indefinite"/></circle>
+  <g fill="#d5d4cd" font-family="Georgia, 'Times New Roman', serif">
+    <text x="450" y="34" text-anchor="middle" font-size="13" letter-spacing="6">THE MUXBY SYSTEM — TECH CONSTELLATION</text>
+    <text x="42" y="396" font-family="'Courier New', monospace" font-size="9" letter-spacing="3" opacity="0.58">LANGUAGES / FRAMEWORKS / INFRASTRUCTURE / AI</text>
+    <text x="858" y="396" text-anchor="end" font-family="'Courier New', monospace" font-size="9" letter-spacing="2" opacity="0.42">EST. IN THE VOID</text>
   </g>
 
-  <!-- title -->
-  <text x="450" y="38" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" letter-spacing="8" fill="#8B949E">✦ THE MUXBY SYSTEM — TECH CONSTELLATION ✦</text>
-
-  <!-- constellation edges -->
-  <g stroke="#3D2E6B" stroke-width="1" stroke-dasharray="4 4" opacity="0.8">
-    <line x1="450" y1="210" x2="180" y2="120"/>
-    <line x1="450" y1="210" x2="310" y2="300"/>
-    <line x1="450" y1="210" x2="620" y2="110"/>
-    <line x1="450" y1="210" x2="700" y2="280"/>
-    <line x1="180" y1="120" x2="130" y2="250"/>
-    <line x1="180" y1="120" x2="330" y2="90"/>
-    <line x1="330" y1="90"  x2="620" y2="110"/>
-    <line x1="620" y1="110" x2="770" y2="140"/>
-    <line x1="770" y1="140" x2="700" y2="280"/>
-    <line x1="700" y1="280" x2="560" y2="340"/>
-    <line x1="560" y1="340" x2="310" y2="300"/>
-    <line x1="310" y1="300" x2="130" y2="250"/>
-    <line x1="450" y1="210" x2="560" y2="340"/>
+  <g fill="none" stroke="#aeb5ba" stroke-width="1" stroke-opacity="0.55" stroke-dasharray="4 7" stroke-linecap="round">
+    <path d="M148 132C236 92 330 84 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="1;0;1" dur="8s" repeatCount="indefinite"/></path>
+    <path d="M328 92C380 118 420 160 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="0;1;0" dur="7s" repeatCount="indefinite"/></path>
+    <path d="M615 112C560 130 505 169 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="1;0;1" dur="9s" repeatCount="indefinite"/></path>
+    <path d="M772 142C688 118 652 113 615 112" pathLength="1"><animate attributeName="stroke-dashoffset" values="0;1;0" dur="6.5s" repeatCount="indefinite"/></path>
+    <path d="M752 284C670 270 590 238 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="1;0;1" dur="8.5s" repeatCount="indefinite"/></path>
+    <path d="M610 332C570 290 520 245 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="0;1;0" dur="7.5s" repeatCount="indefinite"/></path>
+    <path d="M300 306C342 270 390 235 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="1;0;1" dur="9.5s" repeatCount="indefinite"/></path>
+    <path d="M118 268C210 250 320 232 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="0;1;0" dur="7.2s" repeatCount="indefinite"/></path>
+    <path d="M148 132C205 193 180 245 118 268M300 306C396 348 520 352 610 332M615 112C676 174 713 229 752 284" stroke-opacity="0.24"/>
   </g>
 
-  <!-- central core: the sigil star -->
-  <circle cx="450" cy="210" r="60" fill="url(#coreGlow)"/>
-  <polygon points="450,190 467,200 467,220 450,230 433,220 433,200"
-           fill="#0D1117" stroke="url(#conGrad)" stroke-width="2" filter="url(#starGlow)"/>
-  <path d="M 442 224 L 442 198 L 450 210 L 458 198 L 458 224" fill="none" stroke="#00F5FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="450" cy="210" r="24" fill="none" stroke="url(#conGrad)" stroke-width="1" stroke-dasharray="3 6">
-    <animateTransform attributeName="transform" type="rotate" from="0 450 210" to="360 450 210" dur="20s" repeatCount="indefinite"/>
-  </circle>
-  <text x="450" y="252" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#8B949E">CORE</text>
-
-  <!-- technology stars (cyan = languages, magenta = frameworks, purple = infra, gold = AI) -->
-  <g font-family="'Courier New', monospace" font-size="12" text-anchor="middle">
-    <g>
-      <circle cx="180" cy="120" r="5" fill="#00F5FF" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/>
-      </circle>
-      <text x="180" y="104" fill="#00F5FF">Python</text>
-    </g>
-    <g>
-      <circle cx="330" cy="90" r="5" fill="#00F5FF" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite"/>
-      </circle>
-      <text x="330" y="74" fill="#00F5FF">TypeScript</text>
-    </g>
-    <g>
-      <circle cx="620" cy="110" r="5" fill="#FF00E5" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="1;0.4;1" dur="3.4s" repeatCount="indefinite"/>
-      </circle>
-      <text x="620" y="94" fill="#FF00E5">React</text>
-    </g>
-    <g>
-      <circle cx="770" cy="140" r="5" fill="#FF00E5" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/>
-      </circle>
-      <text x="770" y="124" fill="#FF00E5">Node.js</text>
-    </g>
-    <g>
-      <circle cx="700" cy="280" r="5" fill="#9D4EDD" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="1;0.4;1" dur="3.2s" repeatCount="indefinite"/>
-      </circle>
-      <text x="700" y="302" fill="#9D4EDD">Docker</text>
-    </g>
-    <g>
-      <circle cx="560" cy="340" r="5" fill="#9D4EDD" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/>
-      </circle>
-      <text x="560" y="362" fill="#9D4EDD">Kubernetes</text>
-    </g>
-    <g>
-      <circle cx="310" cy="300" r="6" fill="#FFD700" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
-      </circle>
-      <text x="310" y="322" fill="#FFD700">PyTorch</text>
-    </g>
-    <g>
-      <circle cx="130" cy="250" r="6" fill="#FFD700" filter="url(#starGlow)">
-        <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite"/>
-      </circle>
-      <text x="130" y="272" fill="#FFD700">LLMs</text>
-    </g>
+  <g fill="#aeb5ba" opacity="0.42">
+    <circle cx="78" cy="96" r="1.4"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="84" r="1.1"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="70" cy="332" r="1.2"><animate attributeName="opacity" values="0.2;0.75;0.2" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="834" cy="328" r="1.5"><animate attributeName="opacity" values="0.75;0.2;0.75" dur="4.3s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- signal pulses along key edges -->
-  <circle r="2" fill="#00F5FF">
-    <animateMotion path="M 450 210 L 180 120" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2" fill="#FFD700">
-    <animateMotion path="M 450 210 L 310 300" dur="3.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0" dur="3.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2" fill="#FF00E5">
-    <animateMotion path="M 450 210 L 620 110" dur="2.8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0" dur="2.8s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2" fill="#9D4EDD">
-    <animateMotion path="M 450 210 L 700 280" dur="3.2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0" dur="3.2s" repeatCount="indefinite"/>
+  <circle cx="450" cy="205" r="78" fill="url(#coreWash)" filter="url(#softCore)">
+    <animate attributeName="r" values="68;86;68" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.44;0.78;0.44" dur="5.5s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- legend -->
-  <g font-family="'Courier New', monospace" font-size="11" fill="#8B949E">
-    <circle cx="70" cy="398" r="3" fill="#00F5FF"/><text x="80" y="402">Languages</text>
-    <circle cx="200" cy="398" r="3" fill="#FF00E5"/><text x="210" y="402">Frameworks</text>
-    <circle cx="340" cy="398" r="3" fill="#9D4EDD"/><text x="350" y="402">Infrastructure</text>
-    <circle cx="510" cy="398" r="3" fill="#FFD700"/><text x="520" y="402">AI / ML</text>
-    <text x="830" y="402" text-anchor="end" fill="#484F58">est. in the void</text>
+  <g fill="#d9d8d1" stroke="#777d82" stroke-width="1" filter="url(#nodeShadow)">
+    <rect x="116" y="106" width="64" height="36" rx="2"/>
+    <rect x="296" y="74" width="72" height="36" rx="2"/>
+    <rect x="579" y="94" width="72" height="36" rx="2"/>
+    <rect x="736" y="124" width="72" height="36" rx="2"/>
+    <rect x="716" y="266" width="72" height="36" rx="2"/>
+    <rect x="574" y="314" width="72" height="36" rx="2"/>
+    <rect x="264" y="288" width="72" height="36" rx="2"/>
+    <rect x="82" y="250" width="72" height="36" rx="2"/>
+  </g>
+
+  <g fill="#191c1f" font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+    <text x="148" y="128">PYTHON</text>
+    <text x="332" y="96">TYPESCRIPT</text>
+    <text x="615" y="116">REACT</text>
+    <text x="772" y="146">NODE.JS</text>
+    <text x="752" y="288">DOCKER</text>
+    <text x="610" y="336">KUBERNETES</text>
+    <text x="300" y="310">PYTORCH</text>
+    <text x="118" y="272">LLMs</text>
+  </g>
+
+  <g fill="#f1f0ea" stroke="#8e9498" stroke-width="1">
+    <circle cx="148" cy="132" r="5"><animate attributeName="r" values="4;7;4" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="332" cy="92" r="5"><animate attributeName="r" values="5;8;5" dur="4.4s" repeatCount="indefinite"/></circle>
+    <circle cx="615" cy="112" r="5"><animate attributeName="r" values="4;7;4" dur="4.9s" repeatCount="indefinite"/></circle>
+    <circle cx="772" cy="142" r="5"><animate attributeName="r" values="5;8;5" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="752" cy="284" r="5"><animate attributeName="r" values="4;7;4" dur="4.1s" repeatCount="indefinite"/></circle>
+    <circle cx="610" cy="332" r="5"><animate attributeName="r" values="5;8;5" dur="5.1s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="306" r="5"><animate attributeName="r" values="4;7;4" dur="4.6s" repeatCount="indefinite"/></circle>
+    <circle cx="118" cy="268" r="5"><animate attributeName="r" values="5;8;5" dur="3.9s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g fill="#101214" stroke="#d9d8d1" stroke-width="1.4">
+    <circle cx="450" cy="205" r="30"><animate attributeName="r" values="28;31;28" dur="4.8s" repeatCount="indefinite"/></circle>
+    <circle cx="450" cy="205" r="20" fill="none" stroke="#aeb5ba" stroke-dasharray="2 5"><animateTransform attributeName="transform" type="rotate" from="0 450 205" to="360 450 205" dur="14s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="450" y="211" text-anchor="middle" fill="#f1f0ea" font-family="Georgia, serif" font-size="22" letter-spacing="3">M</text>
+  <text x="450" y="252" text-anchor="middle" fill="#aeb5ba" font-family="'Courier New', monospace" font-size="9" letter-spacing="3">CORE / SYSTEMS</text>
+
+  <g fill="#f1f0ea">
+    <circle r="3"><animateMotion dur="5s" repeatCount="indefinite" path="M148 132C236 92 330 84 450 205"/></circle>
+    <circle r="3"><animateMotion dur="6.5s" repeatCount="indefinite" path="M752 284C670 270 590 238 450 205"/></circle>
+    <circle r="3"><animateMotion dur="5.8s" repeatCount="indefinite" path="M118 268C210 250 320 232 450 205"/></circle>
   </g>
 </svg>
