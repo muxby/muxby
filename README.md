@@ -130,7 +130,7 @@
 
 <table>
 <tr>
-<td align="center" width="50%"><img src="assets/graph-gauges.svg" width="92%" alt="Focus and reliability indicators"/></td>
+
 <td align="center" width="50%"><img src="assets/graph-donut.svg" width="100%" alt="Technology distribution"/></td>
 </tr>
 <tr>
