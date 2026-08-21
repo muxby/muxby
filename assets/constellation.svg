@@ -3,32 +3,32 @@
   <desc>A restrained editorial systems map with animated connection paths, pulsing nodes, and a central signal core.</desc>
   <defs>
     <pattern id="paperGrid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" fill="none" stroke="#25292e" stroke-width="0.6" opacity="0.34"/>
+      <path d="M36 0H0V36" fill="none" stroke="#30363D" stroke-width="0.6" opacity="0.34"/>
     </pattern>
     <radialGradient id="coreWash" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#f1f0ea" stop-opacity="0.22"/>
-      <stop offset="0.5" stop-color="#aeb5ba" stop-opacity="0.07"/>
-      <stop offset="1" stop-color="#aeb5ba" stop-opacity="0"/>
+      <stop offset="0" stop-color="#E6EDF3" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#8B949E" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#8B949E" stop-opacity="0"/>
     </radialGradient>
     <filter id="softCore" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="5"/>
     </filter>
     <filter id="nodeShadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.28"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0D1117" flood-opacity="0.28"/>
     </filter>
   </defs>
 
-  <rect width="900" height="420" rx="12" fill="#0e1012" stroke="#1F6FEB" stroke-width="1"/>
+  <rect width="900" height="420" rx="12" fill="#0D1117" stroke="#1F6FEB" stroke-width="1"/>
   <rect width="900" height="420" rx="12" fill="url(#paperGrid)"/>
-  <path d="M26 70H874M26 350H874" stroke="#d8d7d0" stroke-opacity="0.1"/>
+  <path d="M26 70H874M26 350H874" stroke="#D0D7DE" stroke-opacity="0.1"/>
 
-  <g fill="#d5d4cd" font-family="Georgia, 'Times New Roman', serif">
+  <g fill="#D0D7DE" font-family="Georgia, 'Times New Roman', serif">
     <text x="450" y="34" text-anchor="middle" font-size="13" letter-spacing="6">THE MUXBY SYSTEM — TECH CONSTELLATION</text>
     <text x="42" y="396" font-family="'Courier New', monospace" font-size="9" letter-spacing="3" opacity="0.58">LANGUAGES / FRAMEWORKS / INFRASTRUCTURE / AI</text>
     <text x="858" y="396" text-anchor="end" font-family="'Courier New', monospace" font-size="9" letter-spacing="2" opacity="0.42">EST. IN THE VOID</text>
   </g>
 
-  <g fill="none" stroke="#aeb5ba" stroke-width="1" stroke-opacity="0.55" stroke-dasharray="4 7" stroke-linecap="round">
+  <g fill="none" stroke="#8B949E" stroke-width="1" stroke-opacity="0.55" stroke-dasharray="4 7" stroke-linecap="round">
     <path d="M148 132C236 92 330 84 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="1;0;1" dur="8s" repeatCount="indefinite"/></path>
     <path d="M328 92C380 118 420 160 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="0;1;0" dur="7s" repeatCount="indefinite"/></path>
     <path d="M615 112C560 130 505 169 450 205" pathLength="1"><animate attributeName="stroke-dashoffset" values="1;0;1" dur="9s" repeatCount="indefinite"/></path>
@@ -40,7 +40,7 @@
     <path d="M148 132C205 193 180 245 118 268M300 306C396 348 520 352 610 332M615 112C676 174 713 229 752 284" stroke-opacity="0.24"/>
   </g>
 
-  <g fill="#aeb5ba" opacity="0.42">
+  <g fill="#8B949E" opacity="0.42">
     <circle cx="78" cy="96" r="1.4"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/></circle>
     <circle cx="820" cy="84" r="1.1"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.2s" repeatCount="indefinite"/></circle>
     <circle cx="70" cy="332" r="1.2"><animate attributeName="opacity" values="0.2;0.75;0.2" dur="5s" repeatCount="indefinite"/></circle>
@@ -52,7 +52,7 @@
     <animate attributeName="opacity" values="0.44;0.78;0.44" dur="5.5s" repeatCount="indefinite"/>
   </circle>
 
-  <g fill="#d9d8d1" stroke="#777d82" stroke-width="1" filter="url(#nodeShadow)">
+  <g fill="#D0D7DE" stroke="#6E7681" stroke-width="1" filter="url(#nodeShadow)">
     <rect x="116" y="106" width="64" height="36" rx="2"/>
     <rect x="296" y="74" width="72" height="36" rx="2"/>
     <rect x="579" y="94" width="72" height="36" rx="2"/>
@@ -63,7 +63,7 @@
     <rect x="82" y="250" width="72" height="36" rx="2"/>
   </g>
 
-  <g fill="#191c1f" font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+  <g fill="#21262D" font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
     <text x="148" y="128">PYTHON</text>
     <text x="332" y="96">TYPESCRIPT</text>
     <text x="615" y="116">REACT</text>
@@ -74,7 +74,7 @@
     <text x="118" y="272">LLMs</text>
   </g>
 
-  <g fill="#f1f0ea" stroke="#8e9498" stroke-width="1">
+  <g fill="#E6EDF3" stroke="#8B949E" stroke-width="1">
     <circle cx="148" cy="132" r="5"><animate attributeName="r" values="4;7;4" dur="3.8s" repeatCount="indefinite"/></circle>
     <circle cx="332" cy="92" r="5"><animate attributeName="r" values="5;8;5" dur="4.4s" repeatCount="indefinite"/></circle>
     <circle cx="615" cy="112" r="5"><animate attributeName="r" values="4;7;4" dur="4.9s" repeatCount="indefinite"/></circle>
@@ -85,14 +85,14 @@
     <circle cx="118" cy="268" r="5"><animate attributeName="r" values="5;8;5" dur="3.9s" repeatCount="indefinite"/></circle>
   </g>
 
-  <g fill="#101214" stroke="#d9d8d1" stroke-width="1.4">
+  <g fill="#161B22" stroke="#D0D7DE" stroke-width="1.4">
     <circle cx="450" cy="205" r="30"><animate attributeName="r" values="28;31;28" dur="4.8s" repeatCount="indefinite"/></circle>
-    <circle cx="450" cy="205" r="20" fill="none" stroke="#aeb5ba" stroke-dasharray="2 5"><animateTransform attributeName="transform" type="rotate" from="0 450 205" to="360 450 205" dur="14s" repeatCount="indefinite"/></circle>
+    <circle cx="450" cy="205" r="20" fill="none" stroke="#8B949E" stroke-dasharray="2 5"><animateTransform attributeName="transform" type="rotate" from="0 450 205" to="360 450 205" dur="14s" repeatCount="indefinite"/></circle>
   </g>
-  <text x="450" y="211" text-anchor="middle" fill="#f1f0ea" font-family="Georgia, serif" font-size="22" letter-spacing="3">M</text>
-  <text x="450" y="252" text-anchor="middle" fill="#aeb5ba" font-family="'Courier New', monospace" font-size="9" letter-spacing="3">CORE / SYSTEMS</text>
+  <text x="450" y="211" text-anchor="middle" fill="#E6EDF3" font-family="Georgia, serif" font-size="22" letter-spacing="3">M</text>
+  <text x="450" y="252" text-anchor="middle" fill="#8B949E" font-family="'Courier New', monospace" font-size="9" letter-spacing="3">CORE / SYSTEMS</text>
 
-  <g fill="#f1f0ea">
+  <g fill="#E6EDF3">
     <circle r="3"><animateMotion dur="5s" repeatCount="indefinite" path="M148 132C236 92 330 84 450 205"/></circle>
     <circle r="3"><animateMotion dur="6.5s" repeatCount="indefinite" path="M752 284C670 270 590 238 450 205"/></circle>
     <circle r="3"><animateMotion dur="5.8s" repeatCount="indefinite" path="M118 268C210 250 320 232 450 205"/></circle>
