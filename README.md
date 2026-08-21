@@ -13,7 +13,6 @@
 
 </div>
 
----
 
 ## 02 — Professional Profile
 
@@ -44,7 +43,6 @@
 </tr>
 </table>
 
----
 
 ## 03 — Background & Direction
 
@@ -73,7 +71,6 @@
 
 > **Working principle:** complexity is a cost. The goal is not to make software look sophisticated; it is to make it dependable, legible, and useful.
 
----
 
 ## 04 — Technical Strengths
 
@@ -162,7 +159,6 @@
 </tr>
 </table>
 
----
 
 ## 05 — Working Toolkit
 
@@ -202,7 +198,6 @@
 </tr>
 </table>
 
----
 
 ## 06 — GitHub Activity
 
@@ -246,7 +241,6 @@
   <img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution activity"/>
 </picture>
 
----
 
 ## 06.5 — Engineering Signals
 
@@ -271,7 +265,6 @@ These handcrafted SVGs are retained as a visual record of the engineering intere
 </tr>
 </table>
 
----
 
 ## 07 — Visual Systems
 
@@ -298,7 +291,6 @@ I care about the relationship between visual hierarchy and technical clarity. Go
   <img src="https://raw.githubusercontent.com/muxby/muxby/output-3d/profile-night-rainbow.svg" width="92%" alt="Contribution history visualization"/>
 </p>
 
----
 
 ## 08 — Selected Work
 
@@ -397,7 +389,6 @@ A product concept for turning operational information into clear decisions throu
 </tr>
 </table>
 
----
 
 ## 09 — Applied AI & Research
 
@@ -412,7 +403,6 @@ I am currently interested in multi-agent systems that can critique code, evaluat
 <img src="https://img.shields.io/badge/Anthropic-26313D?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic"/>
 </p>
 
----
 
 ## 10 — Engineering Principles
 
@@ -430,7 +420,6 @@ I am currently interested in multi-agent systems that can critique code, evaluat
 </td></tr>
 </table>
 
----
 
 ## 11 — Foundations
 
@@ -455,7 +444,6 @@ I am currently interested in multi-agent systems that can critique code, evaluat
 </tr>
 </table>
 
----
 
 ## 12 — Learning Path
 
@@ -465,7 +453,6 @@ I am currently interested in multi-agent systems that can critique code, evaluat
 
 The roadmap remains a record of the technologies I am exploring and the areas where I want to deepen my judgement. It is a direction of travel, not a checklist.
 
----
 
 ## 13 — Working Notes
 
@@ -500,7 +487,6 @@ Focused work, no fixed playlist required
 </tr>
 </table>
 
----
 
 ## 14 — Open Source
 
@@ -523,7 +509,6 @@ Open source is a long conversation between people who may never meet. I value co
 </tr>
 </table>
 
----
 
 ## 15 — Connect
 
@@ -566,7 +551,6 @@ The contact structure is kept intentionally simple. Scan the relevant QR code to
 
 </div>
 
----
 
 ## 16 — Closing Note
 
@@ -591,13 +575,11 @@ The contact structure is kept intentionally simple. Scan the relevant QR code to
 -->
 
 
----
 
 <div align="center">
   <img src="assets/fox/fox-transparent-fast.gif" width="160" alt="Animated pixel fox" />
 </div>
 
----
 
 <div align="center">
   <sub>Thanks for stopping by.</sub>
