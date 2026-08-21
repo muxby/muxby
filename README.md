@@ -117,16 +117,6 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=muxby&bg_color=0D1117&color=C9A36A&line=7D91A8&point=E6EDF3&area=true&area_color=17202B&hide_border=true" width="100%" alt="GitHub activity graph"/>
 </p>
 
-<table>
-<tr>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=muxby&theme=github_dark" width="100%" alt="Repositories per language"/></td>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=muxby&theme=github_dark" width="100%" alt="Most committed language"/></td>
-</tr>
-<tr>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=muxby&theme=github_dark" width="100%" alt="GitHub statistics summary"/></td>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=muxby&theme=github_dark&utcOffset=3" width="100%" alt="Productive time"/></td>
-</tr>
-</table>
 
 <table>
 <tr>
