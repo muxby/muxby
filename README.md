@@ -169,24 +169,6 @@
 </tr>
 </table>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=muxby&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=6" width="100%" alt="GitHub achievements"/>
-</p>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake.svg"/>
-  <img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution activity"/>
-</picture>
-
-
-
-<p align="center">
-  <img src="assets/aurora-header.svg" width="100%" alt="Engineering signals" />
-</p>
-
-These handcrafted SVGs are retained as a visual record of the engineering interests behind the profile: reliability, technology breadth, sustained learning, and a deliberate approach to craft.
-
 <table>
 <tr>
 <td align="center" width="50%"><img src="assets/graph-gauges.svg" width="92%" alt="Focus and reliability indicators"/></td>
