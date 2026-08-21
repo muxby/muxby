@@ -16,7 +16,7 @@
   <text x="450" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#8B949E">💓 DEV VITALS MONITOR — ALL SIGNS STABLE(ISH)</text>
 
   <!-- scope screen -->
-  <rect x="40" y="46" width="820" height="150" rx="8" fill="#0A0E14" stroke="#21262D"/>
+  <rect x="40" y="46" width="820" height="150" rx="8" fill="#0D1117" stroke="#21262D"/>
 
   <!-- graticule -->
   <g stroke="#161B22" stroke-width="1">
@@ -39,14 +39,14 @@
              L 390 100 L 400 92 L 410 100 L 430 100 L 440 120 L 450 62 L 460 128 L 470 100 L 520 100 L 530 94 L 540 100
              L 690 100 L 700 92 L 710 100 L 730 100 L 740 120 L 750 62 L 760 128 L 770 100 L 820 100 L 830 94 L 840 100
              L 990 100 L 1000 92 L 1010 100 L 1030 100 L 1040 120 L 1050 62 L 1060 128 L 1070 100 L 1120 100 L 1130 94 L 1140 100 L 1160 100"
-          fill="none" stroke="#00F5FF" stroke-width="2" stroke-linecap="round" filter="url(#osGlow)">
+          fill="none" stroke="#58A6FF" stroke-width="2" stroke-linecap="round" filter="url(#osGlow)">
       <animateTransform attributeName="transform" type="translate" values="0 0; -300 0" dur="4s" repeatCount="indefinite"/>
     </path>
   </g>
 
   <!-- CH2: flow-state wave (smooth sine) — repeats every 240px -->
   <path d="M 40 170 Q 70 150 100 170 T 160 170 T 220 170 T 280 170 T 340 170 T 400 170 T 460 170 T 520 170 T 580 170 T 640 170 T 700 170 T 760 170 T 820 170 T 880 170 T 940 170 T 1000 170 T 1060 170 T 1120 170"
-        fill="none" stroke="#FF00E5" stroke-width="1.8" opacity="0.8">
+        fill="none" stroke="#79C0FF" stroke-width="1.8" opacity="0.8">
     <animateTransform attributeName="transform" type="translate" values="0 0; -240 0" dur="6s" repeatCount="indefinite"/>
   </path>
 
@@ -54,20 +54,20 @@
   <rect x="40" y="46" width="820" height="150" rx="8" fill="url(#osFade)"/>
 
   <!-- trigger dot at CH1 head -->
-  <circle cx="840" cy="100" r="4" fill="#00F5FF" filter="url(#osGlow)">
+  <circle cx="840" cy="100" r="4" fill="#58A6FF" filter="url(#osGlow)">
     <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
   </circle>
 
   <!-- readouts -->
   <g font-family="'Courier New', monospace" font-size="11">
-    <text x="52" y="216" fill="#00F5FF">CH1 · COMMIT PULSE</text>
+    <text x="52" y="216" fill="#58A6FF">CH1 · COMMIT PULSE</text>
     <text x="52" y="232" fill="#8B949E">BPM 140 — synced to the playlist</text>
-    <text x="460" y="216" fill="#FF00E5">CH2 · FLOW STATE</text>
+    <text x="460" y="216" fill="#79C0FF">CH2 · FLOW STATE</text>
     <text x="460" y="232" fill="#8B949E">amplitude rises after midnight</text>
-    <text x="848" y="216" fill="#3FB950" text-anchor="end">● REC</text>
+    <text x="848" y="216" fill="#8B949E" text-anchor="end">● REC</text>
     <text x="848" y="232" fill="#484F58" text-anchor="end">uptime: heroic</text>
   </g>
-  <circle cx="782" cy="212" r="3.5" fill="#3FB950">
+  <circle cx="782" cy="212" r="3.5" fill="#8B949E">
     <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
   </circle>
 </svg>

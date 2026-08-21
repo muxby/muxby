@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="420" viewBox="0 0 440 420" role="img" aria-label="Skill equalizer bar chart">
   <defs>
     <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#9D4EDD"/>
-      <stop offset="60%" stop-color="#00F5FF"/>
-      <stop offset="100%" stop-color="#FF00E5"/>
+      <stop offset="0%" stop-color="#6E7681"/>
+      <stop offset="60%" stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#79C0FF"/>
     </linearGradient>
     <filter id="bGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="b"/>
@@ -88,7 +88,7 @@
   </rect>
 
   <!-- peak-hold caps -->
-  <g fill="#FFD700">
+  <g fill="#D0D7DE">
     <rect x="52"  y="96"  width="30" height="3" rx="1.5"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.2s" fill="freeze"/></rect>
     <rect x="140" y="103" width="30" height="3" rx="1.5"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/></rect>
   </g>
@@ -107,7 +107,7 @@
     <text x="331" y="350">UI</text>
     <text x="375" y="350">SEC</text>
   </g>
-  <g font-family="'Courier New', monospace" font-size="10" fill="#00F5FF" text-anchor="middle">
+  <g font-family="'Courier New', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">
     <text x="67"  y="366">95</text>
     <text x="111" y="366">90</text>
     <text x="155" y="366">92</text>

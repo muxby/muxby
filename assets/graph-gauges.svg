@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250" role="img" aria-label="Cockpit gauge cluster — velocity, focus, uptime">
   <defs>
     <linearGradient id="gArcCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F5FF"/><stop offset="100%" stop-color="#9D4EDD"/>
+      <stop offset="0%" stop-color="#58A6FF"/><stop offset="100%" stop-color="#6E7681"/>
     </linearGradient>
     <linearGradient id="gArcMagenta" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#9D4EDD"/><stop offset="100%" stop-color="#FF00E5"/>
+      <stop offset="0%" stop-color="#6E7681"/><stop offset="100%" stop-color="#79C0FF"/>
     </linearGradient>
     <linearGradient id="gArcGold" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF00E5"/><stop offset="100%" stop-color="#FFD700"/>
+      <stop offset="0%" stop-color="#79C0FF"/><stop offset="100%" stop-color="#D0D7DE"/>
     </linearGradient>
     <filter id="ggGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2.5" result="b"/>
@@ -39,8 +39,8 @@
           values="-211 160 150; 8 160 150; -6 160 150; 0 160 150" keyTimes="0;0.6;0.8;1" dur="2s" fill="freeze"/>
       </line>
     </g>
-    <circle cx="160" cy="150" r="7" fill="#0D1117" stroke="#00F5FF" stroke-width="2.5" filter="url(#ggGlow)"/>
-    <text x="160" y="205" text-anchor="middle" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#00F5FF">88%</text>
+    <circle cx="160" cy="150" r="7" fill="#0D1117" stroke="#58A6FF" stroke-width="2.5" filter="url(#ggGlow)"/>
+    <text x="160" y="205" text-anchor="middle" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#58A6FF">88%</text>
     <text x="160" y="226" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" letter-spacing="3" fill="#8B949E">SHIP VELOCITY</text>
   </g>
 
@@ -62,8 +62,8 @@
           values="-225 450 150; 10 450 150; -5 450 150; 0 450 150" keyTimes="0;0.6;0.8;1" dur="2.2s" fill="freeze"/>
       </line>
     </g>
-    <circle cx="450" cy="150" r="7" fill="#0D1117" stroke="#FF00E5" stroke-width="2.5" filter="url(#ggGlow)"/>
-    <text x="450" y="205" text-anchor="middle" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#FF00E5">94%</text>
+    <circle cx="450" cy="150" r="7" fill="#0D1117" stroke="#79C0FF" stroke-width="2.5" filter="url(#ggGlow)"/>
+    <text x="450" y="205" text-anchor="middle" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#79C0FF">94%</text>
     <text x="450" y="226" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" letter-spacing="3" fill="#8B949E">FOCUS REACTOR</text>
   </g>
 
@@ -85,12 +85,12 @@
           values="-239 740 150; 6 740 150; -3 740 150; 0 740 150" keyTimes="0;0.6;0.8;1" dur="2.4s" fill="freeze"/>
       </line>
     </g>
-    <circle cx="740" cy="150" r="7" fill="#0D1117" stroke="#FFD700" stroke-width="2.5" filter="url(#ggGlow)"/>
-    <text x="740" y="205" text-anchor="middle" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#FFD700">99.99%</text>
+    <circle cx="740" cy="150" r="7" fill="#0D1117" stroke="#D0D7DE" stroke-width="2.5" filter="url(#ggGlow)"/>
+    <text x="740" y="205" text-anchor="middle" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#D0D7DE">99.99%</text>
     <text x="740" y="226" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" letter-spacing="3" fill="#8B949E">HULL UPTIME</text>
   </g>
 
   <!-- blinking status LEDs -->
-  <circle cx="30" cy="30" r="4" fill="#3FB950"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
-  <circle cx="870" cy="30" r="4" fill="#00F5FF"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/></circle>
+  <circle cx="30" cy="30" r="4" fill="#8B949E"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <circle cx="870" cy="30" r="4" fill="#58A6FF"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/></circle>
 </svg>
