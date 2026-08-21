@@ -1,4 +1,4 @@
-# 🛠️ SETUP GUIDE — MUXBY-OS "NEON VOID" PROFILE
+# SETUP GUIDE — MUXBY-OS "NEON VOID" PROFILE
 
 Everything in this repo is wired for the GitHub username **`muxby`** (this repo is
 `muxby/muxby`, the special profile repository). If you fork or adapt it, this is the

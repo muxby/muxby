@@ -1,5 +1,5 @@
 # ══════════════════════════════════════════════════════════════
-#  🐍 CONTRIBUTION SNAKE — feeds on the contribution graph
+#  CONTRIBUTION SNAKE — feeds on the contribution graph
 #  Generates the snake SVGs and publishes them to the `output`
 #  branch, which the README embeds.
 # ══════════════════════════════════════════════════════════════
