@@ -345,19 +345,7 @@ Focused work, no fixed playlist required
 </p>
 
 
-<div align="center">
 
-<img src="assets/signature.svg" width="260" alt="Muxby signature" />
-
-<br/>
-
-> Build something this week that your future self—and the people who work with you—will be glad exists.
-
-<img src="assets/sigil.svg" width="62" alt="Muxby monogram" />
-
-<sub>Designed and maintained by muxby · © 2026</sub>
-
-</div>
 
 <!--
   The original sixteen-section structure and custom asset roles are retained.
