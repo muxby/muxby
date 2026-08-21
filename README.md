@@ -80,23 +80,7 @@
 </tr>
 </table>
 
-<table>
-<tr>
-<td width="50%" align="center"><img src="assets/radar-chart.svg" width="405" alt="Technical strengths overview"/></td>
-<td width="50%">
 
-
-| Technology | How I use it |
-|---|---|
-| **Python** | From small utilities to production AI and backend workflows. |
-| **TypeScript + React** | Product interfaces with strong interaction and maintainability. |
-| **PyTorch** | Prototyping and building intelligent system components. |
-| **PostgreSQL** | Durable data models and pragmatic querying. |
-| **Kubernetes** | Making dependable services survive real operational conditions. |
-
-</td>
-</tr>
-</table>
 
 
 
