@@ -5,9 +5,6 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=DM+Mono&weight=500&size=20&duration=3500&pause=1200&color=C9A36A&center=true&vCenter=true&width=650&height=45&lines=I+build+thoughtful+software+and+intelligent+systems;From+clear+ideas+to+reliable+products;Designing+for+people%2C+maintaining+for+teams" alt="Professional introduction" />
 
-[![Profile views](https://komarev.com/ghpvc/?username=muxby&style=flat-square&color=7D91A8&label=PROFILE+VIEWS)](https://github.com/muxby)
-[![GitHub followers](https://img.shields.io/github/followers/muxby?style=flat-square&logo=github&color=7D91A8&label=FOLLOWERS)](https://github.com/muxby)
-[![GitHub stars](https://img.shields.io/github/stars/muxby?style=flat-square&logo=github&color=C9A36A&label=STARS)](https://github.com/muxby)
 
 </div>
 
