@@ -12,7 +12,7 @@
   </defs>
 
   <rect width="440" height="420" rx="16" fill="#0D1117" stroke="#30363D"/>
-  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E">🎚 REPOSITORY COVERAGE — 30 REPOS</text>
+  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E"> REPOSITORY COVERAGE — 30 REPOS</text>
 
   <!-- grid lines: baseline y=330, 100% at y=90 (240px range) -->
   <g stroke="#21262D" stroke-width="1">

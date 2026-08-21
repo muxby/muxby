@@ -16,7 +16,7 @@
   </defs>
 
   <rect width="1000" height="320" rx="16" fill="#0D1117" stroke="#30363D"/>
-  <text x="500" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#8B949E">📈 REPOSITORY PORTFOLIO — 30 PROJECTS</text>
+  <text x="500" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#8B949E"> REPOSITORY PORTFOLIO — 30 PROJECTS</text>
 
   <!-- grid -->
   <g stroke="#21262D" stroke-width="1">

@@ -7,7 +7,7 @@
   </defs>
 
   <rect width="440" height="420" rx="16" fill="#0D1117" stroke="#30363D"/>
-  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E">🧬 CODE DNA — SEQUENCED</text>
+  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E"> CODE DNA — SEQUENCED</text>
 
   <!-- donut: center (220,190), r=95, pathLength=100 per ring; segments drawn as dash slices -->
   <!-- track -->

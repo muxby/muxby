@@ -16,7 +16,7 @@
   </defs>
 
   <rect width="900" height="250" rx="16" fill="#0D1117" stroke="#30363D"/>
-  <text x="450" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#8B949E">⌁ COCKPIT INSTRUMENT CLUSTER ⌁</text>
+  <text x="450" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#8B949E"> COCKPIT INSTRUMENT CLUSTER </text>
 
   <!-- ══ GAUGE 1 · UI COVERAGE 67% ══ -->
   <g>

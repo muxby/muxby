@@ -7,7 +7,7 @@
   </defs>
 
   <rect width="680" height="320" rx="16" fill="#0D1117" stroke="#30363D"/>
-  <text x="340" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E">⚡ ENERGY GRID — COMMIT INTENSITY</text>
+  <text x="340" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E"> ENERGY GRID — COMMIT INTENSITY</text>
 
   <!-- day labels -->
   <g font-family="'Courier New', monospace" font-size="10" fill="#484F58" text-anchor="end">
@@ -21,7 +21,7 @@
   </g>
 
   <!-- 16 weeks × 7 days · cell 26px, gap 6 · intensity palette:
-       0:#161B22  1:#16324F  2:#1F6FEB  3:#388BFD  4:#58A6FF  ✸:#79C0FF (supernova) -->
+       0:#161B22  1:#16324F  2:#1F6FEB  3:#388BFD  4:#58A6FF  :#79C0FF (supernova) -->
   <g>
     <!-- row MON y=66 -->
     <rect x="66" y="66" width="26" height="26" rx="5" fill="#16324F"/><rect x="98" y="66" width="26" height="26" rx="5" fill="#1F6FEB"/><rect x="130" y="66" width="26" height="26" rx="5" fill="#161B22"/><rect x="162" y="66" width="26" height="26" rx="5" fill="#388BFD"/><rect x="194" y="66" width="26" height="26" rx="5" fill="#1F6FEB"/><rect x="226" y="66" width="26" height="26" rx="5" fill="#58A6FF" filter="url(#hmGlow)"><animate attributeName="opacity" values="1;0.55;1" dur="2.8s" repeatCount="indefinite"/></rect><rect x="258" y="66" width="26" height="26" rx="5" fill="#16324F"/><rect x="290" y="66" width="26" height="26" rx="5" fill="#1F6FEB"/><rect x="322" y="66" width="26" height="26" rx="5" fill="#388BFD"/><rect x="354" y="66" width="26" height="26" rx="5" fill="#161B22"/><rect x="386" y="66" width="26" height="26" rx="5" fill="#1F6FEB"/><rect x="418" y="66" width="26" height="26" rx="5" fill="#388BFD"/><rect x="450" y="66" width="26" height="26" rx="5" fill="#16324F"/><rect x="482" y="66" width="26" height="26" rx="5" fill="#58A6FF" filter="url(#hmGlow)"><animate attributeName="opacity" values="0.55;1;0.55" dur="3.2s" repeatCount="indefinite"/></rect><rect x="514" y="66" width="26" height="26" rx="5" fill="#1F6FEB"/><rect x="546" y="66" width="26" height="26" rx="5" fill="#388BFD"/>

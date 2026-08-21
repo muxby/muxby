@@ -13,7 +13,7 @@
   </defs>
 
   <rect width="900" height="250" rx="16" fill="#0D1117" stroke="#30363D"/>
-  <text x="450" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#8B949E">💓 DEV VITALS MONITOR — ALL SIGNS STABLE(ISH)</text>
+  <text x="450" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#8B949E"> DEV VITALS MONITOR — ALL SIGNS STABLE(ISH)</text>
 
   <!-- scope screen -->
   <rect x="40" y="46" width="820" height="150" rx="8" fill="#0D1117" stroke="#21262D"/>
