@@ -608,10 +608,8 @@ The contact structure is kept intentionally simple. Scan the relevant QR code to
 
 ---
 
-## 17 — Pixel Fox
-
 <div align="center">
-  <img src="assets/fox/fox-transparent.gif" width="220" alt="Animated pixel fox" />
+  <img src="assets/fox/fox-transparent-fast.gif" width="160" alt="Animated pixel fox" />
 </div>
 
 ---
