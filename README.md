@@ -127,32 +127,7 @@
   <img src="assets/technology-logos/rust.svg" height="56" alt="Rust" align="absmiddle" />
 </p>
 
-<table>
-<tr>
-<td align="center" width="20%"><b>Python</b><br/><sub>General-purpose development, automation, data, and AI workflows.</sub></td>
-<td align="center" width="20%"><b>PyTorch</b><br/><sub>Experimentation and model-backed product capabilities.</sub></td>
-<td align="center" width="20%"><b>TypeScript</b><br/><sub>Reliable product surfaces and service integrations.</sub></td>
-<td align="center" width="20%"><b>React</b><br/><sub>Interfaces that communicate clearly and respond gracefully.</sub></td>
-<td align="center" width="20%"><b>Kubernetes</b><br/><sub>Operational foundations for services that need to last.</sub></td>
-</tr>
-</table>
 
-
-
-<table>
-<tr>
-<td align="center" width="50%">
-<img src="https://github-readme-stats.vercel.app/api?username=muxby&show_icons=true&hide_border=true&bg_color=0D1117&title_color=C9A36A&icon_color=7D91A8&text_color=E6EDF3&ring_color=C9A36A&include_all_commits=true&count_private=true" width="100%" alt="GitHub statistics"/>
-</td>
-<td align="center" width="50%">
-<img src="https://streak-stats.demolab.com?user=muxby&hide_border=true&background=0D1117&ring=C9A36A&fire=C9A36A&currStreakLabel=7D91A8&sideLabels=7D91A8&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B949E" width="100%" alt="GitHub contribution streak"/>
-</td>
-</tr>
-<tr>
-<td align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=muxby&layout=compact&hide_border=true&bg_color=0D1117&title_color=C9A36A&text_color=E6EDF3&langs_count=10" width="100%" alt="Top languages"/></td>
-<td align="center"><sub><b>Time tracking</b><br/>Optional WakaTime data can be added here when available.</sub></td>
-</tr>
-</table>
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=muxby&bg_color=0D1117&color=C9A36A&line=7D91A8&point=E6EDF3&area=true&area_color=17202B&hide_border=true" width="100%" alt="GitHub activity graph"/>
