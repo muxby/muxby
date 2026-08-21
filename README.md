@@ -13,59 +13,10 @@
 
 
 
-<table>
-<tr>
-<td width="25%" align="center">
-<b>Creative engineering</b><br/>
-<sub>Turning an idea into an experience people want to use.</sub>
-</td>
-<td width="25%" align="center">
-<b>AI development</b><br/>
-<sub>Building intelligent systems with grounded, practical outcomes.</sub>
-</td>
-<td width="25%" align="center">
-<b>Full-stack delivery</b><br/>
-<sub>Working comfortably from interface details to service boundaries.</sub>
-</td>
-<td width="25%" align="center">
-<b>Systems design</b><br/>
-<sub>Designing foundations that stay understandable as products grow.</sub>
-</td>
-</tr>
-<tr>
-<td align="center"><b>Backend reliability</b><br/><sub>Healthy services, clear contracts, and operational discipline.</sub></td>
-<td align="center"><b>Problem solving</b><br/><sub>Reducing ambiguous problems into useful next decisions.</sub></td>
-<td align="center"><b>Open source</b><br/><sub>Learning in public and leaving codebases better than found.</sub></td>
-<td align="center"><b>Continuous learning</b><br/><sub>Following the technologies that change how software is made.</sub></td>
-</tr>
-</table>
 
 
 
-<table>
-<tr>
-<td width="14%" align="center"><b>01</b></td>
-<td><b>Early curiosity</b><br/><sub>A borrowed laptop, a blinking cursor, and the discovery that a carefully written instruction can make a machine do something useful.</sub></td>
-</tr>
-<tr>
-<td align="center"><b>02</b></td>
-<td><b>Learning through building</b><br/><sub>Early projects taught the durable lessons: make the first version small, learn from its failures, and return with sharper questions.</sub></td>
-</tr>
-<tr>
-<td align="center"><b>03</b></td>
-<td><b>From hobby to craft</b><br/><sub>The first products used by other people made the work more serious—and far more rewarding.</sub></td>
-</tr>
-<tr>
-<td align="center"><b>04</b></td>
-<td><b>Applied intelligence</b><br/><sub>Machine learning and agentic systems became a natural extension of product engineering: software that can understand context, help people decide, and improve workflows.</sub></td>
-</tr>
-<tr>
-<td align="center"><b>Now</b></td>
-<td><b>Current direction</b><br/><sub>Exploring autonomous and agent-assisted systems that plan, act, recover, and remain accountable to the people who use them.</sub></td>
-</tr>
-</table>
 
-> **Working principle:** complexity is a cost. The goal is not to make software look sophisticated; it is to make it dependable, legible, and useful.
 
 
 
