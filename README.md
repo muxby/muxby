@@ -140,7 +140,7 @@
 <td width="45%">
 
 
-I care about the relationship between visual hierarchy and technical clarity. Good product work brings together the interface, the service contract, the data model, and the operational story—each should reinforce the others.
+I care about the relationship between visual hierarchy and technical clarity. Good product work brings together the interface, the service contract, the data model, and the operational story; each should reinforce the others.
 
 - **Interface:** designed for attention, context, and accessibility.
 - **Logic:** structured for clarity, testing, and predictable change.
@@ -194,10 +194,7 @@ The roadmap remains a record of the technologies I am exploring and the areas wh
 <div align="center">
   <img src="assets/signature.svg" width="260" alt="Muxby signature" />
   <br/>
-  <blockquote>Build something this week that your future self—and the people who work with you—will be glad exists.</blockquote>
-  <img src="assets/sigil.svg" width="62" alt="Muxby monogram" />
-  <br/>
-  <sub>Designed and maintained by muxby · © 2026</sub>
+  <blockquote>Build something this week that your future self and the people who work with you will be glad exists.</blockquote>
 </div>
 <!--
   The original sixteen-section structure and custom asset roles are retained.
