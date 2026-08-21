@@ -1,9 +1,7 @@
 
 <div align="center">
 
-<p align="center"><strong>Mubeen</strong></p>
 
-<p align="center"><strong>Creative Software Engineer · AI Developer</strong></p>
 
 <img src="https://readme-typing-svg.demolab.com?font=DM+Mono&weight=500&size=20&duration=3500&pause=1200&color=C9A36A&center=true&vCenter=true&width=650&height=45&lines=I+build+thoughtful+software+and+intelligent+systems;From+clear+ideas+to+reliable+products;Designing+for+people%2C+maintaining+for+teams" alt="Professional introduction" />
 
@@ -14,7 +12,6 @@
 </div>
 
 
-<p><strong>02 — Professional Profile</strong></p>
 
 <table>
 <tr>
@@ -44,7 +41,6 @@
 </table>
 
 
-<p><strong>03 — Background & Direction</strong></p>
 
 <table>
 <tr>
@@ -72,13 +68,11 @@
 > **Working principle:** complexity is a cost. The goal is not to make software look sophisticated; it is to make it dependable, legible, and useful.
 
 
-<p><strong>04 — Technical Strengths</strong></p>
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-<p><strong>Languages</strong></p>
 <p align="center">
 <img src="https://img.shields.io/badge/Python-26313D?style=flat-square&logo=python&logoColor=white" alt="Python"/>
 <img src="https://img.shields.io/badge/TypeScript-26313D?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
@@ -88,7 +82,6 @@
 <img src="https://img.shields.io/badge/Bash-26313D?style=flat-square&logo=gnubash&logoColor=white" alt="Bash"/>
 </p>
 
-<p><strong>Frontend</strong></p>
 <p align="center">
 <img src="https://img.shields.io/badge/React-526D82?style=flat-square&logo=react&logoColor=white" alt="React"/>
 <img src="https://img.shields.io/badge/Next.js-526D82?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
@@ -97,7 +90,6 @@
 <img src="https://img.shields.io/badge/Framer_Motion-526D82?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion"/>
 </p>
 
-<p><strong>Backend & APIs</strong></p>
 <p align="center">
 <img src="https://img.shields.io/badge/Node.js-455A64?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
 <img src="https://img.shields.io/badge/FastAPI-455A64?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
@@ -109,7 +101,6 @@
 </td>
 <td width="50%" valign="top">
 
-<p><strong>Data & Storage</strong></p>
 <p align="center">
 <img src="https://img.shields.io/badge/PostgreSQL-5C6F7B?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 <img src="https://img.shields.io/badge/Redis-5C6F7B?style=flat-square&logo=redis&logoColor=white" alt="Redis"/>
@@ -118,7 +109,6 @@
 <img src="https://img.shields.io/badge/pgvector-5C6F7B?style=flat-square&logo=postgresql&logoColor=white" alt="pgvector"/>
 </p>
 
-<p><strong>Infrastructure</strong></p>
 <p align="center">
 <img src="https://img.shields.io/badge/AWS-526D82?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS"/>
 <img src="https://img.shields.io/badge/Docker-526D82?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
@@ -127,7 +117,6 @@
 <img src="https://img.shields.io/badge/Cloudflare-526D82?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare"/>
 </p>
 
-<p><strong>AI, ML & Evaluation</strong></p>
 <p align="center">
 <img src="https://img.shields.io/badge/OpenAI-6B5E4B?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/>
 <img src="https://img.shields.io/badge/Anthropic-6B5E4B?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic"/>
@@ -145,7 +134,6 @@
 <td width="50%" align="center"><img src="assets/radar-chart.svg" width="405" alt="Technical strengths overview"/></td>
 <td width="50%">
 
-<p><strong>Core stack</strong></p>
 
 | Technology | How I use it |
 |---|---|
@@ -160,7 +148,6 @@
 </table>
 
 
-<p><strong>05 — Working Toolkit</strong></p>
 
 <p align="center">
   <img src="assets/constellation.svg" width="92%" alt="Technology map" />
@@ -199,7 +186,6 @@
 </table>
 
 
-<p><strong>06 — GitHub Activity</strong></p>
 
 <table>
 <tr>
@@ -242,7 +228,6 @@
 </picture>
 
 
-<p><strong>06.5 — Engineering Signals</strong></p>
 
 <p align="center">
   <img src="assets/aurora-header.svg" width="100%" alt="Engineering signals" />
@@ -266,7 +251,6 @@ These handcrafted SVGs are retained as a visual record of the engineering intere
 </table>
 
 
-<p><strong>07 — Visual Systems</strong></p>
 
 <table>
 <tr>
@@ -275,7 +259,6 @@ These handcrafted SVGs are retained as a visual record of the engineering intere
 </td>
 <td width="45%">
 
-<p><strong>Design through implementation</strong></p>
 
 I care about the relationship between visual hierarchy and technical clarity. Good product work brings together the interface, the service contract, the data model, and the operational story—each should reinforce the others.
 
@@ -292,13 +275,11 @@ I care about the relationship between visual hierarchy and technical clarity. Go
 </p>
 
 
-<p><strong>08 — Selected Work</strong></p>
 
 <table>
 <tr>
 <td width="55%">
 
-<p><strong>Nebula Engine</strong></p>
 
 A concept for an AI-powered creative engine that turns natural-language briefs into production-ready design systems.
 
@@ -328,7 +309,6 @@ A concept for an AI-powered creative engine that turns natural-language briefs i
 </td>
 <td width="55%">
 
-<p><strong>Sentinel 7</strong></p>
 
 A self-healing observability concept for distributed systems, combining anomaly signals, explainable root-cause hints, and safe remediation practices.
 
@@ -344,7 +324,6 @@ A self-healing observability concept for distributed systems, combining anomaly 
 <tr>
 <td width="55%">
 
-<p><strong>Oracle RAG</strong></p>
 
 A retrieval-augmented knowledge engine designed to make dispersed organisational knowledge easier to find, verify, and use.
 
@@ -374,7 +353,6 @@ A retrieval-augmented knowledge engine designed to make dispersed organisational
 </td>
 <td width="55%">
 
-<p><strong>Atlas</strong></p>
 
 A product concept for turning operational information into clear decisions through shared context, lightweight workflow design, and purposeful analytics.
 
@@ -390,7 +368,6 @@ A product concept for turning operational information into clear decisions throu
 </table>
 
 
-<p><strong>09 — Applied AI & Research</strong></p>
 
 I am currently interested in multi-agent systems that can critique code, evaluate plans, and provide useful review before work reaches a human teammate. The aim is not novelty for its own sake; it is a more thoughtful and dependable development process.
 
@@ -404,7 +381,6 @@ I am currently interested in multi-agent systems that can critique code, evaluat
 </p>
 
 
-<p><strong>10 — Engineering Principles</strong></p>
 
 <table>
 <tr><td align="center">
@@ -421,7 +397,6 @@ I am currently interested in multi-agent systems that can critique code, evaluat
 </table>
 
 
-<p><strong>11 — Foundations</strong></p>
 
 <table>
 <tr>
@@ -445,7 +420,6 @@ I am currently interested in multi-agent systems that can critique code, evaluat
 </table>
 
 
-<p><strong>12 — Learning Path</strong></p>
 
 <p align="center">
   <img src="assets/odyssey.svg" width="96%" alt="Learning roadmap" />
@@ -454,7 +428,6 @@ I am currently interested in multi-agent systems that can critique code, evaluat
 The roadmap remains a record of the technologies I am exploring and the areas where I want to deepen my judgement. It is a direction of travel, not a checklist.
 
 
-<p><strong>13 — Working Notes</strong></p>
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github_dark" width="70%" alt="Developer quote" />
@@ -488,7 +461,6 @@ Focused work, no fixed playlist required
 </table>
 
 
-<p><strong>14 — Open Source</strong></p>
 
 <table>
 <tr>
@@ -499,7 +471,6 @@ Focused work, no fixed playlist required
 </td>
 <td width="50%">
 
-<p><strong>Contribution philosophy</strong></p>
 
 Open source is a long conversation between people who may never meet. I value contributions that make software easier to understand, easier to operate, and easier for the next person to improve.
 
@@ -510,7 +481,6 @@ Open source is a long conversation between people who may never meet. I value co
 </table>
 
 
-<p><strong>15 — Connect</strong></p>
 
 <div align="center">
 
@@ -520,7 +490,6 @@ The contact structure is kept intentionally simple. Scan the relevant QR code to
 <tr>
 <td align="center" width="50%">
 
-<p><strong>LinkedIn</strong></p>
 
 <img src="assets/linkedin-qr.png" width="190" alt="QR code for Mubeen's LinkedIn profile" />
 
@@ -530,7 +499,6 @@ The contact structure is kept intentionally simple. Scan the relevant QR code to
 </td>
 <td align="center" width="50%">
 
-<p><strong>GitHub</strong></p>
 
 <a href="https://github.com/muxby">
 <img src="assets/github-qr.png" width="190" alt="QR code for Mubeen's GitHub profile" />
@@ -552,7 +520,6 @@ The contact structure is kept intentionally simple. Scan the relevant QR code to
 </div>
 
 
-<p><strong>16 — Closing Note</strong></p>
 
 <div align="center">
 
