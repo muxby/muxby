@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="assets/hero-editorial.svg" width="100%" alt="Abstract architectural banner in graphite, navy, and bronze" />
-</p>
 
 <div align="center">
 
