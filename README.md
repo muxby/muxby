@@ -604,3 +604,22 @@ The contact structure is kept intentionally simple. Scan the relevant QR code to
   The visual system has been converted from Neon Void / cyberpunk language into
   a restrained editorial portfolio treatment: graphite, navy, steel blue, and bronze.
 -->
+
+
+---
+
+## 17 — Pixel Fox
+
+<div align="center">
+  <img src="assets/fox/fox-transparent.gif" width="360" alt="Animated pixel fox with its background removed" />
+  <br/>
+  <sub>Background removed from the original high-quality portrait animation and converted for GitHub-compatible playback.</sub>
+</div>
+
+<!-- The transparent GIF is used because GitHub reliably animates GIF images in profile READMEs. -->
+
+---
+
+<div align="center">
+  <sub>Thanks for stopping by.</sub>
+</div>
