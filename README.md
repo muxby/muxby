@@ -138,7 +138,7 @@
 <td align="center"><img src="assets/graph-growth.svg" width="96%" alt="Learning progression"/></td>
 </tr>
 <tr>
-<td align="center"><img src="assets/graph-heatmap.svg" width="100%" alt="Activity rhythm"/></td>
+
 <td align="center"><img src="assets/graph-polar-clock.svg" width="100%" alt="Working rhythm"/></td>
 </tr>
 </table>
@@ -164,7 +164,7 @@ I care about the relationship between visual hierarchy and technical clarity. Go
 </table>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/muxby/muxby/output-3d/profile-night-rainbow.svg" width="92%" alt="Contribution history visualization"/>
+
 </p>
 
 
