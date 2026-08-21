@@ -275,42 +275,7 @@ I am currently interested in multi-agent systems that can critique code, evaluat
 
 
 
-<table>
-<tr><td align="center">
 
-1. **Build for the next maintainer.** Clear code is a practical form of respect.
-2. **Prefer a small honest system to a large fragile one.**
-3. **Treat performance, accessibility, and documentation as product work.**
-4. **Design for change.** Good boundaries make growth less expensive.
-5. **Make ideas testable.** A useful system should explain why it behaves as it does.
-6. **Listen for the best idea, not the loudest author.**
-7. **Ship consistently.** Great work is the accumulated effect of responsible iterations.
-
-</td></tr>
-</table>
-
-
-
-<table>
-<tr>
-<td align="center" width="25%"><b>SOLID</b><br/><sub>Responsibilities and dependencies that stay understandable.</sub></td>
-<td align="center" width="25%"><b>KISS</b><br/><sub>Clarity is an engineering advantage, not an aesthetic preference.</sub></td>
-<td align="center" width="25%"><b>DRY</b><br/><sub>Share stable knowledge; do not duplicate uncertainty.</sub></td>
-<td align="center" width="25%"><b>YAGNI</b><br/><sub>Build the capability the product needs, when it needs it.</sub></td>
-</tr>
-<tr>
-<td align="center"><b>Clean architecture</b><br/><sub>Keep the important decisions independent from volatile details.</sub></td>
-<td align="center"><b>Microservices</b><br/><sub>Use boundaries deliberately; distributed systems earn their complexity.</sub></td>
-<td align="center"><b>Design patterns</b><br/><sub>Use familiar solutions when they make the trade-off clearer.</sub></td>
-<td align="center"><b>Test-driven practice</b><br/><sub>Make desired behavior explicit before implementation drifts.</sub></td>
-</tr>
-<tr>
-<td align="center"><b>Security</b><br/><sub>Thoughtful defaults and verification make trust practical.</sub></td>
-<td align="center"><b>Accessibility</b><br/><sub>If people cannot use it, the work is incomplete.</sub></td>
-<td align="center"><b>Performance budgets</b><br/><sub>Every byte and millisecond should justify itself.</sub></td>
-<td align="center"><b>Documentation</b><br/><sub>Good explanations turn local knowledge into team capability.</sub></td>
-</tr>
-</table>
 
 
 
