@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 82" role="img" aria-label="Ember circuit divider">
   <defs>
     <linearGradient id="line" x1="0" x2="1">
-      <stop offset="0" stop-color="#050505" stop-opacity="0"/>
-      <stop offset=".18" stop-color="#0D0D0D"/>
-      <stop offset=".5" stop-color="#313131"/>
-      <stop offset=".82" stop-color="#0D0D0D"/>
-      <stop offset="1" stop-color="#050505" stop-opacity="0"/>
+      <stop offset="0" stop-color="#6b1111" stop-opacity="0"/>
+      <stop offset=".18" stop-color="#9f1d1d"/>
+      <stop offset=".5" stop-color="#ff5a1f"/>
+      <stop offset=".82" stop-color="#9f1d1d"/>
+      <stop offset="1" stop-color="#6b1111" stop-opacity="0"/>
     </linearGradient>
     <filter id="glow" x="-15%" width="130%" y="-180%" height="460%">
       <feGaussianBlur stdDeviation="3" result="b"/>
@@ -13,10 +13,10 @@
     </filter>
   </defs>
   <path d="M0 41H394l18-18 18 18h340l18 18 18-18h394" fill="none" stroke="url(#line)" stroke-width="2" filter="url(#glow)"/>
-  <g fill="#313131" filter="url(#glow)">
+  <g fill="#ff6a22" filter="url(#glow)">
     <circle cx="412" cy="23" r="3"/><circle cx="788" cy="59" r="3"/>
   </g>
-  <g fill="#1B1B1B">
+  <g fill="#d93621">
     <circle cx="544" cy="41" r="2"/><circle cx="656" cy="41" r="2"/>
   </g>
 </svg>

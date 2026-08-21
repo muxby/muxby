@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Muxby sigil — hexagonal monogram">
   <defs>
     <linearGradient id="sigilGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4E4E4E">
-        <animate attributeName="stop-color" values="#4E4E4E;#0D0D0D;#1B1B1B;#4E4E4E" dur="8s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#00F5FF">
+        <animate attributeName="stop-color" values="#00F5FF;#FF00E5;#9D4EDD;#00F5FF" dur="8s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#0D0D0D">
-        <animate attributeName="stop-color" values="#0D0D0D;#1B1B1B;#4E4E4E;#0D0D0D" dur="8s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#FF00E5">
+        <animate attributeName="stop-color" values="#FF00E5;#9D4EDD;#00F5FF;#FF00E5" dur="8s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
     <filter id="sigilGlow" x="-50%" y="-50%" width="200%" height="200%">
@@ -22,16 +22,16 @@
     <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="24s" repeatCount="indefinite"/>
   </circle>
   <!-- counter-rotating tick ring -->
-  <circle cx="60" cy="60" r="47" fill="none" stroke="#1B1B1B" stroke-width="1" stroke-dasharray="1 10" opacity="0.6">
+  <circle cx="60" cy="60" r="47" fill="none" stroke="#9D4EDD" stroke-width="1" stroke-dasharray="1 10" opacity="0.6">
     <animateTransform attributeName="transform" type="rotate" from="360 60 60" to="0 60 60" dur="18s" repeatCount="indefinite"/>
   </circle>
 
   <!-- hexagon frame -->
   <polygon points="60,20 94,40 94,80 60,100 26,80 26,40"
-           fill="#050505" stroke="url(#sigilGrad)" stroke-width="2.5" filter="url(#sigilGlow)"/>
+           fill="#0D1117" stroke="url(#sigilGrad)" stroke-width="2.5" filter="url(#sigilGlow)"/>
 
   <!-- circuit ticks on hexagon corners -->
-  <g stroke="#4E4E4E" stroke-width="1.5" opacity="0.8">
+  <g stroke="#00F5FF" stroke-width="1.5" opacity="0.8">
     <line x1="60" y1="14" x2="60" y2="20"/>
     <line x1="99" y1="37" x2="94" y2="40"/>
     <line x1="99" y1="83" x2="94" y2="80"/>
@@ -49,7 +49,7 @@
   </path>
 
   <!-- pulse core -->
-  <circle cx="60" cy="60" r="2" fill="#7E7E7E" opacity="0">
+  <circle cx="60" cy="60" r="2" fill="#FFD700" opacity="0">
     <animate attributeName="opacity" values="0;0.9;0" dur="3s" begin="2.5s" repeatCount="indefinite"/>
     <animate attributeName="r" values="2;30;2" dur="3s" begin="2.5s" repeatCount="indefinite"/>
   </circle>

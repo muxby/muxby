@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="420" viewBox="0 0 440 420" role="img" aria-label="Skill radar — top six domains">
   <defs>
     <linearGradient id="radarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4E4E4E" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="0.55"/>
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FF00E5" stop-opacity="0.55"/>
     </linearGradient>
     <linearGradient id="radarStroke" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4E4E4E"/>
-      <stop offset="100%" stop-color="#0D0D0D"/>
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#FF00E5"/>
     </linearGradient>
     <filter id="rGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2.5" result="b"/>
@@ -14,20 +14,20 @@
     </filter>
   </defs>
 
-  <rect width="440" height="420" rx="16" fill="#050505" stroke="#0D0D0D"/>
-  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#313131">◈ DOMAIN RADAR ◈</text>
+  <rect width="440" height="420" rx="16" fill="#0D1117" stroke="#30363D"/>
+  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E">◈ DOMAIN RADAR ◈</text>
 
   <!-- hexagonal grid rings, center (220,220), max radius 150 -->
   <!-- axes at angles 90,30,-30,-90,-150,150 deg: unit points
        (0,-1) (0.866,-0.5) (0.866,0.5) (0,1) (-0.866,0.5) (-0.866,-0.5) -->
-  <g fill="none" stroke="#0D0D0D" stroke-width="1">
+  <g fill="none" stroke="#30363D" stroke-width="1">
     <polygon points="220,70 350,145 350,295 220,370 90,295 90,145"/>
     <polygon points="220,107.5 315.5,163.75 315.5,276.25 220,332.5 124.5,276.25 124.5,163.75" stroke-dasharray="4 4"/>
     <polygon points="220,145 285,182.5 285,257.5 220,295 155,257.5 155,182.5" stroke-dasharray="4 4"/>
     <polygon points="220,182.5 252.5,201.25 252.5,238.75 220,257.5 187.5,238.75 187.5,201.25" stroke-dasharray="2 4"/>
   </g>
   <!-- axis spokes -->
-  <g stroke="#050505" stroke-width="1">
+  <g stroke="#21262D" stroke-width="1">
     <line x1="220" y1="220" x2="220" y2="70"/>
     <line x1="220" y1="220" x2="350" y2="145"/>
     <line x1="220" y1="220" x2="350" y2="295"/>
@@ -50,22 +50,22 @@
   </polygon>
 
   <!-- pulsing vertices -->
-  <g fill="#E5E5E5">
-    <circle cx="220" cy="77.5" r="4" fill="#4E4E4E" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="336.9" cy="152.5" r="4" fill="#7E7E7E" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="0.4s" repeatCount="indefinite"/></circle>
-    <circle cx="330.4" cy="283.75" r="4" fill="#0D0D0D" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="0.8s" repeatCount="indefinite"/></circle>
-    <circle cx="220" cy="340" r="4" fill="#1B1B1B" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="1.2s" repeatCount="indefinite"/></circle>
-    <circle cx="122.6" cy="276.25" r="4" fill="#4E4E4E" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="1.6s" repeatCount="indefinite"/></circle>
-    <circle cx="129.1" cy="167.5" r="4" fill="#0D0D0D" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="2s" repeatCount="indefinite"/></circle>
+  <g fill="#E6EDF3">
+    <circle cx="220" cy="77.5" r="4" fill="#00F5FF" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="336.9" cy="152.5" r="4" fill="#FFD700" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="330.4" cy="283.75" r="4" fill="#FF00E5" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="220" cy="340" r="4" fill="#9D4EDD" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="122.6" cy="276.25" r="4" fill="#00F5FF" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="129.1" cy="167.5" r="4" fill="#FF00E5" filter="url(#rGlow)"><animate attributeName="r" values="4;6;4" dur="2.5s" begin="2s" repeatCount="indefinite"/></circle>
   </g>
 
   <!-- radar sweep -->
-  <line x1="220" y1="220" x2="220" y2="70" stroke="#4E4E4E" stroke-width="1.5" opacity="0.5">
+  <line x1="220" y1="220" x2="220" y2="70" stroke="#00F5FF" stroke-width="1.5" opacity="0.5">
     <animateTransform attributeName="transform" type="rotate" from="0 220 220" to="360 220 220" dur="8s" repeatCount="indefinite"/>
   </line>
 
   <!-- axis labels -->
-  <g font-family="'Courier New', monospace" font-size="12" fill="#313131" text-anchor="middle">
+  <g font-family="'Courier New', monospace" font-size="12" fill="#8B949E" text-anchor="middle">
     <text x="220" y="60">BACKEND · 95</text>
     <text x="372" y="136">AI/ML · 90</text>
     <text x="371" y="312">FRONTEND · 85</text>

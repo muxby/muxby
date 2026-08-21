@@ -3,11 +3,11 @@
 
 
 
-<img src="https://readme-typing-svg.demolab.com?font=DM+Mono&weight=500&size=20&duration=3500&pause=1200&color=F2F2F2&center=true&vCenter=true&width=650&height=45&lines=I+build+thoughtful+software+and+intelligent+systems;From+clear+ideas+to+reliable+products;Designing+for+people%2C+maintaining+for+teams" alt="Professional introduction" />
+<img src="https://readme-typing-svg.demolab.com?font=DM+Mono&weight=500&size=20&duration=3500&pause=1200&color=C9A36A&center=true&vCenter=true&width=650&height=45&lines=I+build+thoughtful+software+and+intelligent+systems;From+clear+ideas+to+reliable+products;Designing+for+people%2C+maintaining+for+teams" alt="Professional introduction" />
 
-[![Profile views](https://komarev.com/ghpvc/?username=muxby&style=flat-square&color=A6A6A6&label=PROFILE+VIEWS)](https://github.com/muxby)
-[![GitHub followers](https://img.shields.io/github/followers/muxby?style=flat-square&logo=github&color=A6A6A6&label=FOLLOWERS)](https://github.com/muxby)
-[![GitHub stars](https://img.shields.io/github/stars/muxby?style=flat-square&logo=github&color=F2F2F2&label=STARS)](https://github.com/muxby)
+[![Profile views](https://komarev.com/ghpvc/?username=muxby&style=flat-square&color=7D91A8&label=PROFILE+VIEWS)](https://github.com/muxby)
+[![GitHub followers](https://img.shields.io/github/followers/muxby?style=flat-square&logo=github&color=7D91A8&label=FOLLOWERS)](https://github.com/muxby)
+[![GitHub stars](https://img.shields.io/github/stars/muxby?style=flat-square&logo=github&color=C9A36A&label=STARS)](https://github.com/muxby)
 
 </div>
 
@@ -25,55 +25,55 @@
 <td width="50%" valign="top">
 
 <p align="center">
-<img src="https://img.shields.io/badge/Python-1F1F1F?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/TypeScript-1F1F1F?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/JavaScript-1F1F1F?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/Go-1F1F1F?style=flat-square&logo=go&logoColor=white" alt="Go"/>
-<img src="https://img.shields.io/badge/SQL-1F1F1F?style=flat-square&logo=postgresql&logoColor=white" alt="SQL"/>
-<img src="https://img.shields.io/badge/Bash-1F1F1F?style=flat-square&logo=gnubash&logoColor=white" alt="Bash"/>
+<img src="https://img.shields.io/badge/Python-26313D?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/TypeScript-26313D?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/JavaScript-26313D?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript"/>
+<img src="https://img.shields.io/badge/Go-26313D?style=flat-square&logo=go&logoColor=white" alt="Go"/>
+<img src="https://img.shields.io/badge/SQL-26313D?style=flat-square&logo=postgresql&logoColor=white" alt="SQL"/>
+<img src="https://img.shields.io/badge/Bash-26313D?style=flat-square&logo=gnubash&logoColor=white" alt="Bash"/>
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/React-3F3F3F?style=flat-square&logo=react&logoColor=white" alt="React"/>
-<img src="https://img.shields.io/badge/Next.js-3F3F3F?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
-<img src="https://img.shields.io/badge/Tailwind-3F3F3F?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
-<img src="https://img.shields.io/badge/SVG-3F3F3F?style=flat-square&logo=svg&logoColor=white" alt="SVG"/>
-<img src="https://img.shields.io/badge/Framer_Motion-3F3F3F?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion"/>
+<img src="https://img.shields.io/badge/React-526D82?style=flat-square&logo=react&logoColor=white" alt="React"/>
+<img src="https://img.shields.io/badge/Next.js-526D82?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+<img src="https://img.shields.io/badge/Tailwind-526D82?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
+<img src="https://img.shields.io/badge/SVG-526D82?style=flat-square&logo=svg&logoColor=white" alt="SVG"/>
+<img src="https://img.shields.io/badge/Framer_Motion-526D82?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion"/>
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Node.js-353535?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-<img src="https://img.shields.io/badge/FastAPI-353535?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
-<img src="https://img.shields.io/badge/Django-353535?style=flat-square&logo=django&logoColor=white" alt="Django"/>
-<img src="https://img.shields.io/badge/GraphQL-353535?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL"/>
-<img src="https://img.shields.io/badge/gRPC-353535?style=flat-square&logo=google&logoColor=white" alt="gRPC"/>
+<img src="https://img.shields.io/badge/Node.js-455A64?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+<img src="https://img.shields.io/badge/FastAPI-455A64?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+<img src="https://img.shields.io/badge/Django-455A64?style=flat-square&logo=django&logoColor=white" alt="Django"/>
+<img src="https://img.shields.io/badge/GraphQL-455A64?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL"/>
+<img src="https://img.shields.io/badge/gRPC-455A64?style=flat-square&logo=google&logoColor=white" alt="gRPC"/>
 </p>
 
 </td>
 <td width="50%" valign="top">
 
 <p align="center">
-<img src="https://img.shields.io/badge/PostgreSQL-4F4F4F?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-<img src="https://img.shields.io/badge/Redis-4F4F4F?style=flat-square&logo=redis&logoColor=white" alt="Redis"/>
-<img src="https://img.shields.io/badge/MongoDB-4F4F4F?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
-<img src="https://img.shields.io/badge/SQLite-4F4F4F?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/>
-<img src="https://img.shields.io/badge/pgvector-4F4F4F?style=flat-square&logo=postgresql&logoColor=white" alt="pgvector"/>
+<img src="https://img.shields.io/badge/PostgreSQL-5C6F7B?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/Redis-5C6F7B?style=flat-square&logo=redis&logoColor=white" alt="Redis"/>
+<img src="https://img.shields.io/badge/MongoDB-5C6F7B?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
+<img src="https://img.shields.io/badge/SQLite-5C6F7B?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/>
+<img src="https://img.shields.io/badge/pgvector-5C6F7B?style=flat-square&logo=postgresql&logoColor=white" alt="pgvector"/>
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/AWS-3F3F3F?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS"/>
-<img src="https://img.shields.io/badge/Docker-3F3F3F?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-<img src="https://img.shields.io/badge/Kubernetes-3F3F3F?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
-<img src="https://img.shields.io/badge/Terraform-3F3F3F?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"/>
-<img src="https://img.shields.io/badge/Cloudflare-3F3F3F?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare"/>
+<img src="https://img.shields.io/badge/AWS-526D82?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS"/>
+<img src="https://img.shields.io/badge/Docker-526D82?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
+<img src="https://img.shields.io/badge/Kubernetes-526D82?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
+<img src="https://img.shields.io/badge/Terraform-526D82?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"/>
+<img src="https://img.shields.io/badge/Cloudflare-526D82?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare"/>
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/OpenAI-666666?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/>
-<img src="https://img.shields.io/badge/Anthropic-666666?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic"/>
-<img src="https://img.shields.io/badge/LangChain-666666?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"/>
-<img src="https://img.shields.io/badge/Hugging_Face-666666?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face"/>
-<img src="https://img.shields.io/badge/MCP-666666?style=flat-square&logo=modelcontextprotocol&logoColor=white" alt="MCP"/>
+<img src="https://img.shields.io/badge/OpenAI-6B5E4B?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/>
+<img src="https://img.shields.io/badge/Anthropic-6B5E4B?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic"/>
+<img src="https://img.shields.io/badge/LangChain-6B5E4B?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"/>
+<img src="https://img.shields.io/badge/Hugging_Face-6B5E4B?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face"/>
+<img src="https://img.shields.io/badge/MCP-6B5E4B?style=flat-square&logo=modelcontextprotocol&logoColor=white" alt="MCP"/>
 </p>
 
 </td>
@@ -142,20 +142,20 @@
 <table>
 <tr>
 <td align="center" width="50%">
-<img src="https://github-readme-stats.vercel.app/api?username=muxby&show_icons=true&hide_border=true&bg_color=0B0B0B&title_color=F2F2F2&icon_color=A6A6A6&text_color=F0F0F0&ring_color=F2F2F2&include_all_commits=true&count_private=true" width="100%" alt="GitHub statistics"/>
+<img src="https://github-readme-stats.vercel.app/api?username=muxby&show_icons=true&hide_border=true&bg_color=0D1117&title_color=C9A36A&icon_color=7D91A8&text_color=E6EDF3&ring_color=C9A36A&include_all_commits=true&count_private=true" width="100%" alt="GitHub statistics"/>
 </td>
 <td align="center" width="50%">
-<img src="https://streak-stats.demolab.com?user=muxby&hide_border=true&background=0B0B0B&ring=F2F2F2&fire=F2F2F2&currStreakLabel=A6A6A6&sideLabels=A6A6A6&currStreakNum=F0F0F0&sideNums=F0F0F0&dates=B7B7B7" width="100%" alt="GitHub contribution streak"/>
+<img src="https://streak-stats.demolab.com?user=muxby&hide_border=true&background=0D1117&ring=C9A36A&fire=C9A36A&currStreakLabel=7D91A8&sideLabels=7D91A8&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B949E" width="100%" alt="GitHub contribution streak"/>
 </td>
 </tr>
 <tr>
-<td align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=muxby&layout=compact&hide_border=true&bg_color=0B0B0B&title_color=F2F2F2&text_color=F0F0F0&langs_count=10" width="100%" alt="Top languages"/></td>
+<td align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=muxby&layout=compact&hide_border=true&bg_color=0D1117&title_color=C9A36A&text_color=E6EDF3&langs_count=10" width="100%" alt="Top languages"/></td>
 <td align="center"><sub><b>Time tracking</b><br/>Optional WakaTime data can be added here when available.</sub></td>
 </tr>
 </table>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=muxby&bg_color=0B0B0B&color=F2F2F2&line=A6A6A6&point=F0F0F0&area=true&area_color=161616&hide_border=true" width="100%" alt="GitHub activity graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=muxby&bg_color=0D1117&color=C9A36A&line=7D91A8&point=E6EDF3&area=true&area_color=17202B&hide_border=true" width="100%" alt="GitHub activity graph"/>
 </p>
 
 <table>
@@ -244,20 +244,20 @@ A concept for an AI-powered creative engine that turns natural-language briefs i
 
 </td>
 <td width="45%" align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:1F1F1F,100:3F3F3F&height=120&text=NEBULA%20ENGINE&fontSize=24&fontColor=F0F0F0" width="100%" alt="Nebula Engine"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:26313D,100:526D82&height=120&text=NEBULA%20ENGINE&fontSize=24&fontColor=E6EDF3" width="100%" alt="Nebula Engine"/>
 <br/>
-<img src="https://img.shields.io/badge/Python-1F1F1F?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/FastAPI-1F1F1F?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
-<img src="https://img.shields.io/badge/React-1F1F1F?style=flat-square&logo=react&logoColor=white" alt="React"/>
+<img src="https://img.shields.io/badge/Python-26313D?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/FastAPI-26313D?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+<img src="https://img.shields.io/badge/React-26313D?style=flat-square&logo=react&logoColor=white" alt="React"/>
 </td>
 </tr>
 <tr>
 <td width="45%" align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:353535,100:666666&height=120&text=SENTINEL%207&fontSize=24&fontColor=F0F0F0" width="100%" alt="Sentinel 7"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:455A64,100:6B5E4B&height=120&text=SENTINEL%207&fontSize=24&fontColor=E6EDF3" width="100%" alt="Sentinel 7"/>
 <br/>
-<img src="https://img.shields.io/badge/Go-353535?style=flat-square&logo=go&logoColor=white" alt="Go"/>
-<img src="https://img.shields.io/badge/gRPC-353535?style=flat-square&logo=google&logoColor=white" alt="gRPC"/>
-<img src="https://img.shields.io/badge/Prometheus-353535?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus"/>
+<img src="https://img.shields.io/badge/Go-455A64?style=flat-square&logo=go&logoColor=white" alt="Go"/>
+<img src="https://img.shields.io/badge/gRPC-455A64?style=flat-square&logo=google&logoColor=white" alt="gRPC"/>
+<img src="https://img.shields.io/badge/Prometheus-455A64?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus"/>
 </td>
 <td width="55%">
 
@@ -288,20 +288,20 @@ A retrieval-augmented knowledge engine designed to make dispersed organisational
 
 </td>
 <td width="45%" align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:666666,100:1F1F1F&height=120&text=ORACLE%20RAG&fontSize=24&fontColor=F0F0F0" width="100%" alt="Oracle RAG"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:6B5E4B,100:26313D&height=120&text=ORACLE%20RAG&fontSize=24&fontColor=E6EDF3" width="100%" alt="Oracle RAG"/>
 <br/>
-<img src="https://img.shields.io/badge/Python-666666?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/PostgreSQL-666666?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-<img src="https://img.shields.io/badge/LLM_Evaluation-666666?style=flat-square" alt="LLM evaluation"/>
+<img src="https://img.shields.io/badge/Python-6B5E4B?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/PostgreSQL-6B5E4B?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/LLM_Evaluation-6B5E4B?style=flat-square" alt="LLM evaluation"/>
 </td>
 </tr>
 <tr>
 <td width="45%" align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:3F3F3F,100:1F1F1F&height=120&text=ATLAS&fontSize=24&fontColor=F0F0F0" width="100%" alt="Atlas"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:526D82,100:26313D&height=120&text=ATLAS&fontSize=24&fontColor=E6EDF3" width="100%" alt="Atlas"/>
 <br/>
-<img src="https://img.shields.io/badge/TypeScript-3F3F3F?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/Next.js-3F3F3F?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
-<img src="https://img.shields.io/badge/PostgreSQL-3F3F3F?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/TypeScript-526D82?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Next.js-526D82?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+<img src="https://img.shields.io/badge/PostgreSQL-526D82?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 </td>
 <td width="55%">
 
@@ -324,12 +324,12 @@ A product concept for turning operational information into clear decisions throu
 I am currently interested in multi-agent systems that can critique code, evaluate plans, and provide useful review before work reaches a human teammate. The aim is not novelty for its own sake; it is a more thoughtful and dependable development process.
 
 <p align="center">
-<img src="https://img.shields.io/badge/PyTorch-1F1F1F?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
-<img src="https://img.shields.io/badge/TensorFlow-1F1F1F?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
-<img src="https://img.shields.io/badge/Hugging_Face-1F1F1F?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face"/>
-<img src="https://img.shields.io/badge/LangChain-1F1F1F?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"/>
-<img src="https://img.shields.io/badge/OpenAI-1F1F1F?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/>
-<img src="https://img.shields.io/badge/Anthropic-1F1F1F?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic"/>
+<img src="https://img.shields.io/badge/PyTorch-26313D?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+<img src="https://img.shields.io/badge/TensorFlow-26313D?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+<img src="https://img.shields.io/badge/Hugging_Face-26313D?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face"/>
+<img src="https://img.shields.io/badge/LangChain-26313D?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"/>
+<img src="https://img.shields.io/badge/OpenAI-26313D?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/>
+<img src="https://img.shields.io/badge/Anthropic-26313D?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic"/>
 </p>
 
 
@@ -418,7 +418,7 @@ Focused work, no fixed playlist required
 <tr>
 <td align="center" width="50%">
 <a href="https://github.com/muxby/muxby">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=muxby&repo=muxby&bg_color=0B0B0B&title_color=F2F2F2&text_color=F0F0F0&icon_color=A6A6A6&hide_border=true" alt="muxby profile repository"/>
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=muxby&repo=muxby&bg_color=0D1117&title_color=C9A36A&text_color=E6EDF3&icon_color=7D91A8&hide_border=true" alt="muxby profile repository"/>
 </a>
 </td>
 <td width="50%">
@@ -465,9 +465,9 @@ The contact structure is kept intentionally simple. Scan the relevant QR code to
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-1F1F1F?style=flat-square&logo=linkedin&logoColor=white)](#)
-[![GitHub](https://img.shields.io/badge/GitHub-1F1F1F?style=flat-square&logo=github&logoColor=white)](https://github.com/muxby)
-[![Email](https://img.shields.io/badge/Email-1F1F1F?style=flat-square&logo=gmail&logoColor=white)](mailto:hello@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-26313D?style=flat-square&logo=linkedin&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-26313D?style=flat-square&logo=github&logoColor=white)](https://github.com/muxby)
+[![Email](https://img.shields.io/badge/Email-26313D?style=flat-square&logo=gmail&logoColor=white)](mailto:hello@example.com)
 
 </div>
 

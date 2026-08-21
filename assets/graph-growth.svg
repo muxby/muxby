@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-label="XP timeline — ten years of leveling up">
   <defs>
     <linearGradient id="xpLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4E4E4E"/>
-      <stop offset="55%" stop-color="#1B1B1B"/>
-      <stop offset="100%" stop-color="#4E4E4E"/>
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="55%" stop-color="#6E7681"/>
+      <stop offset="100%" stop-color="#79C0FF"/>
     </linearGradient>
     <linearGradient id="xpArea" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1B1B1B" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#1B1B1B" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#6E7681" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#6E7681" stop-opacity="0"/>
     </linearGradient>
     <filter id="xpGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2.5" result="b"/>
@@ -15,18 +15,18 @@
     </filter>
   </defs>
 
-  <rect width="1000" height="320" rx="16" fill="#050505" stroke="#0D0D0D"/>
-  <text x="500" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#313131">📈 XP TIMELINE — TEN YEARS OF LEVELING UP</text>
+  <rect width="1000" height="320" rx="16" fill="#0D1117" stroke="#30363D"/>
+  <text x="500" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="6" fill="#8B949E">📈 XP TIMELINE — TEN YEARS OF LEVELING UP</text>
 
   <!-- grid -->
-  <g stroke="#050505" stroke-width="1">
+  <g stroke="#21262D" stroke-width="1">
     <line x1="60" y1="70"  x2="950" y2="70"/>
     <line x1="60" y1="120" x2="950" y2="120"/>
     <line x1="60" y1="170" x2="950" y2="170"/>
     <line x1="60" y1="220" x2="950" y2="220"/>
     <line x1="60" y1="260" x2="950" y2="260"/>
   </g>
-  <g font-family="'Courier New', monospace" font-size="9" fill="#0D0D0D" text-anchor="end">
+  <g font-family="'Courier New', monospace" font-size="9" fill="#484F58" text-anchor="end">
     <text x="54" y="74">LV.99</text>
     <text x="54" y="124">LV.70</text>
     <text x="54" y="174">LV.40</text>
@@ -49,46 +49,46 @@
 
   <!-- milestone markers -->
   <g font-family="'Courier New', monospace" font-size="10">
-    <line x1="170" y1="252" x2="170" y2="120" stroke="#0D0D0D" stroke-dasharray="3 4"/>
-    <circle cx="170" cy="252" r="5" fill="#050505" stroke="#4E4E4E" stroke-width="2.5" filter="url(#xpGlow)">
+    <line x1="170" y1="252" x2="170" y2="120" stroke="#30363D" stroke-dasharray="3 4"/>
+    <circle cx="170" cy="252" r="5" fill="#0D1117" stroke="#58A6FF" stroke-width="2.5" filter="url(#xpGlow)">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.5s" fill="freeze"/>
     </circle>
-    <text x="170" y="110" text-anchor="middle" fill="#4E4E4E">🌱 first commit</text>
+    <text x="170" y="110" text-anchor="middle" fill="#58A6FF">🌱 first commit</text>
 
-    <line x1="460" y1="210" x2="460" y2="88" stroke="#0D0D0D" stroke-dasharray="3 4"/>
-    <circle cx="460" cy="210" r="5" fill="#050505" stroke="#1B1B1B" stroke-width="2.5" filter="url(#xpGlow)">
+    <line x1="460" y1="210" x2="460" y2="88" stroke="#30363D" stroke-dasharray="3 4"/>
+    <circle cx="460" cy="210" r="5" fill="#0D1117" stroke="#6E7681" stroke-width="2.5" filter="url(#xpGlow)">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.3s" fill="freeze"/>
     </circle>
-    <text x="460" y="78" text-anchor="middle" fill="#1B1B1B">🚀 first prod deploy</text>
+    <text x="460" y="78" text-anchor="middle" fill="#6E7681">🚀 first prod deploy</text>
 
-    <line x1="760" y1="120" x2="760" y2="200" stroke="#0D0D0D" stroke-dasharray="3 4"/>
-    <circle cx="760" cy="120" r="5" fill="#050505" stroke="#4E4E4E" stroke-width="2.5" filter="url(#xpGlow)">
+    <line x1="760" y1="120" x2="760" y2="200" stroke="#30363D" stroke-dasharray="3 4"/>
+    <circle cx="760" cy="120" r="5" fill="#0D1117" stroke="#79C0FF" stroke-width="2.5" filter="url(#xpGlow)">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.3s" fill="freeze"/>
     </circle>
-    <text x="760" y="216" text-anchor="middle" fill="#4E4E4E">🧠 the AI awakening</text>
+    <text x="760" y="216" text-anchor="middle" fill="#79C0FF">🧠 the AI awakening</text>
 
-    <circle cx="950" cy="78" r="6" fill="#7E7E7E" filter="url(#xpGlow)">
+    <circle cx="950" cy="78" r="6" fill="#D0D7DE" filter="url(#xpGlow)">
       <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3s" fill="freeze"/>
       <animate attributeName="r" values="6;9;6" dur="2s" begin="3s" repeatCount="indefinite"/>
     </circle>
-    <text x="920" y="60" text-anchor="middle" fill="#7E7E7E">⚡ NOW</text>
+    <text x="920" y="60" text-anchor="middle" fill="#D0D7DE">⚡ NOW</text>
   </g>
 
   <!-- sparkle riding the line after draw completes -->
-  <circle r="3" fill="#E5E5E5" filter="url(#xpGlow)" opacity="0">
+  <circle r="3" fill="#E6EDF3" filter="url(#xpGlow)" opacity="0">
     <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.05;0.95;1" dur="6s" begin="3.2s" repeatCount="indefinite"/>
     <animateMotion path="M 60 258 L 170 252 L 280 240 L 390 236 L 460 210 L 560 178 L 650 168 L 760 120 L 870 92 L 950 78"
                    dur="6s" begin="3.2s" repeatCount="indefinite"/>
   </circle>
 
   <!-- x axis -->
-  <line x1="60" y1="260" x2="950" y2="260" stroke="#0D0D0D" stroke-width="2"/>
-  <g font-family="'Courier New', monospace" font-size="10" fill="#313131" text-anchor="middle">
+  <line x1="60" y1="260" x2="950" y2="260" stroke="#30363D" stroke-width="2"/>
+  <g font-family="'Courier New', monospace" font-size="10" fill="#8B949E" text-anchor="middle">
     <text x="60"  y="282">2016</text>
     <text x="280" y="282">2018</text>
     <text x="505" y="282">2021</text>
     <text x="760" y="282">2024</text>
     <text x="950" y="282">2026</text>
   </g>
-  <text x="500" y="306" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#0D0D0D">chart goes up and to the right — the only acceptable direction</text>
+  <text x="500" y="306" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#484F58">chart goes up and to the right — the only acceptable direction</text>
 </svg>
