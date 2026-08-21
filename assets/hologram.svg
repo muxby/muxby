@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-label="Hologram projector displaying featured project">
   <defs>
     <linearGradient id="holoBeam" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#4E4E4E" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#4E4E4E" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="holoCard" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#9D4EDD" stop-opacity="0.16"/>
+      <stop offset="0%" stop-color="#4E4E4E" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#1B1B1B" stop-opacity="0.16"/>
     </linearGradient>
     <linearGradient id="holoStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F5FF"/>
-      <stop offset="100%" stop-color="#FF00E5"/>
+      <stop offset="0%" stop-color="#4E4E4E"/>
+      <stop offset="100%" stop-color="#0D0D0D"/>
     </linearGradient>
     <filter id="hGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="b"/>
@@ -18,7 +18,7 @@
     </filter>
   </defs>
 
-  <rect width="520" height="360" rx="16" fill="#0D1117" stroke="#30363D"/>
+  <rect width="520" height="360" rx="16" fill="#050505" stroke="#0D0D0D"/>
 
   <!-- projection beam -->
   <polygon points="230,318 290,318 350,80 170,80" fill="url(#holoBeam)">
@@ -30,49 +30,49 @@
     <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4s" repeatCount="indefinite"/>
     <rect x="150" y="60" width="220" height="130" rx="10" fill="url(#holoCard)" stroke="url(#holoStroke)" stroke-width="1.5" filter="url(#hGlow)"/>
     <!-- wireframe content -->
-    <g stroke="#00F5FF" stroke-width="1.5" opacity="0.85">
+    <g stroke="#4E4E4E" stroke-width="1.5" opacity="0.85">
       <line x1="170" y1="88" x2="290" y2="88"/>
       <line x1="170" y1="110" x2="350" y2="110" opacity="0.4"/>
       <line x1="170" y1="126" x2="330" y2="126" opacity="0.4"/>
       <line x1="170" y1="142" x2="345" y2="142" opacity="0.4"/>
     </g>
-    <rect x="170" y="158" width="58" height="16" rx="8" fill="none" stroke="#FF00E5" stroke-width="1.2"/>
-    <rect x="236" y="158" width="58" height="16" rx="8" fill="none" stroke="#9D4EDD" stroke-width="1.2"/>
-    <text x="182" y="93" font-family="'Courier New', monospace" font-size="11" fill="#0D1117"> </text>
+    <rect x="170" y="158" width="58" height="16" rx="8" fill="none" stroke="#0D0D0D" stroke-width="1.2"/>
+    <rect x="236" y="158" width="58" height="16" rx="8" fill="none" stroke="#1B1B1B" stroke-width="1.2"/>
+    <text x="182" y="93" font-family="'Courier New', monospace" font-size="11" fill="#050505"> </text>
     <!-- scanline sweeping the hologram -->
-    <rect x="150" y="60" width="220" height="3" fill="#00F5FF" opacity="0.55">
+    <rect x="150" y="60" width="220" height="3" fill="#4E4E4E" opacity="0.55">
       <animate attributeName="y" values="60;187;60" dur="3.6s" repeatCount="indefinite"/>
     </rect>
   </g>
 
   <!-- hologram flicker -->
-  <rect x="150" y="60" width="220" height="130" rx="10" fill="#00F5FF" opacity="0">
+  <rect x="150" y="60" width="220" height="130" rx="10" fill="#4E4E4E" opacity="0">
     <animate attributeName="opacity" values="0;0;0.12;0;0;0.08;0" dur="5s" repeatCount="indefinite"/>
   </rect>
 
   <!-- projector base -->
   <g filter="url(#hGlow)">
-    <ellipse cx="260" cy="322" rx="90" ry="14" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
-    <ellipse cx="260" cy="316" rx="60" ry="9" fill="#0D1117" stroke="url(#holoStroke)" stroke-width="1.5"/>
-    <ellipse cx="260" cy="316" rx="24" ry="4" fill="#00F5FF" opacity="0.8">
+    <ellipse cx="260" cy="322" rx="90" ry="14" fill="#050505" stroke="#0D0D0D" stroke-width="1.5"/>
+    <ellipse cx="260" cy="316" rx="60" ry="9" fill="#050505" stroke="url(#holoStroke)" stroke-width="1.5"/>
+    <ellipse cx="260" cy="316" rx="24" ry="4" fill="#4E4E4E" opacity="0.8">
       <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
     </ellipse>
   </g>
 
   <!-- base status lights -->
-  <circle cx="180" cy="322" r="2.5" fill="#3FB950"><animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
-  <circle cx="196" cy="325" r="2.5" fill="#FFD700"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/></circle>
-  <circle cx="340" cy="322" r="2.5" fill="#FF00E5"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <circle cx="180" cy="322" r="2.5" fill="#313131"><animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+  <circle cx="196" cy="325" r="2.5" fill="#7E7E7E"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="340" cy="322" r="2.5" fill="#0D0D0D"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
 
   <!-- caption -->
-  <text x="260" y="222" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" letter-spacing="3" fill="#00F5FF" opacity="0.9">
+  <text x="260" y="222" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" letter-spacing="3" fill="#4E4E4E" opacity="0.9">
     PROJECT: NEBULA-ENGINE
     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" repeatCount="indefinite"/>
   </text>
-  <text x="260" y="246" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" letter-spacing="2" fill="#8B949E">HOLOGRAPHIC RENDER · FIDELITY 98.4%</text>
+  <text x="260" y="246" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" letter-spacing="2" fill="#313131">HOLOGRAPHIC RENDER · FIDELITY 98.4%</text>
 
   <!-- ambient particles rising in beam -->
-  <circle r="1.5" fill="#00F5FF"><animateMotion path="M 240 310 L 220 90" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="5s" repeatCount="indefinite"/></circle>
-  <circle r="1.5" fill="#FF00E5"><animateMotion path="M 275 310 L 300 95" dur="6s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="6s" begin="1.5s" repeatCount="indefinite"/></circle>
-  <circle r="1.2" fill="#9D4EDD"><animateMotion path="M 260 310 L 258 85" dur="4.4s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="4.4s" begin="0.8s" repeatCount="indefinite"/></circle>
+  <circle r="1.5" fill="#4E4E4E"><animateMotion path="M 240 310 L 220 90" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="5s" repeatCount="indefinite"/></circle>
+  <circle r="1.5" fill="#0D0D0D"><animateMotion path="M 275 310 L 300 95" dur="6s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="6s" begin="1.5s" repeatCount="indefinite"/></circle>
+  <circle r="1.2" fill="#1B1B1B"><animateMotion path="M 260 310 L 258 85" dur="4.4s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="4.4s" begin="0.8s" repeatCount="indefinite"/></circle>
 </svg>

@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="420" viewBox="0 0 440 420" role="img" aria-label="Skill equalizer bar chart">
   <defs>
     <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#6E7681"/>
-      <stop offset="60%" stop-color="#58A6FF"/>
-      <stop offset="100%" stop-color="#79C0FF"/>
+      <stop offset="0%" stop-color="#1B1B1B"/>
+      <stop offset="60%" stop-color="#4E4E4E"/>
+      <stop offset="100%" stop-color="#4E4E4E"/>
     </linearGradient>
     <filter id="bGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="b"/>
@@ -11,18 +11,18 @@
     </filter>
   </defs>
 
-  <rect width="440" height="420" rx="16" fill="#0D1117" stroke="#30363D"/>
-  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#8B949E">🎚 SKILL EQUALIZER — LIVE MIX</text>
+  <rect width="440" height="420" rx="16" fill="#050505" stroke="#0D0D0D"/>
+  <text x="220" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="5" fill="#313131">🎚 SKILL EQUALIZER — LIVE MIX</text>
 
   <!-- grid lines: baseline y=330, 100% at y=90 (240px range) -->
-  <g stroke="#21262D" stroke-width="1">
+  <g stroke="#050505" stroke-width="1">
     <line x1="40" y1="90"  x2="400" y2="90"/>
     <line x1="40" y1="150" x2="400" y2="150"/>
     <line x1="40" y1="210" x2="400" y2="210"/>
     <line x1="40" y1="270" x2="400" y2="270"/>
     <line x1="40" y1="330" x2="400" y2="330"/>
   </g>
-  <g font-family="'Courier New', monospace" font-size="9" fill="#484F58">
+  <g font-family="'Courier New', monospace" font-size="9" fill="#0D0D0D">
     <text x="36" y="94"  text-anchor="end">100</text>
     <text x="36" y="154" text-anchor="end">75</text>
     <text x="36" y="214" text-anchor="end">50</text>
@@ -88,16 +88,16 @@
   </rect>
 
   <!-- peak-hold caps -->
-  <g fill="#D0D7DE">
+  <g fill="#7E7E7E">
     <rect x="52"  y="96"  width="30" height="3" rx="1.5"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.2s" fill="freeze"/></rect>
     <rect x="140" y="103" width="30" height="3" rx="1.5"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/></rect>
   </g>
 
   <!-- baseline -->
-  <line x1="40" y1="330" x2="400" y2="330" stroke="#30363D" stroke-width="2"/>
+  <line x1="40" y1="330" x2="400" y2="330" stroke="#0D0D0D" stroke-width="2"/>
 
   <!-- labels -->
-  <g font-family="'Courier New', monospace" font-size="11" fill="#8B949E" text-anchor="middle">
+  <g font-family="'Courier New', monospace" font-size="11" fill="#313131" text-anchor="middle">
     <text x="67"  y="350">PY</text>
     <text x="111" y="350">TS</text>
     <text x="155" y="350">AI</text>
@@ -107,7 +107,7 @@
     <text x="331" y="350">UI</text>
     <text x="375" y="350">SEC</text>
   </g>
-  <g font-family="'Courier New', monospace" font-size="10" fill="#58A6FF" text-anchor="middle">
+  <g font-family="'Courier New', monospace" font-size="10" fill="#4E4E4E" text-anchor="middle">
     <text x="67"  y="366">95</text>
     <text x="111" y="366">90</text>
     <text x="155" y="366">92</text>
@@ -117,5 +117,5 @@
     <text x="331" y="366">84</text>
     <text x="375" y="366">72</text>
   </g>
-  <text x="220" y="398" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#484F58">gold caps mark all-time peaks · mix mastered in the void</text>
+  <text x="220" y="398" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#0D0D0D">gold caps mark all-time peaks · mix mastered in the void</text>
 </svg>

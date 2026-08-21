@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" role="img" aria-label="Gradient beam divider">
   <defs>
     <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"  stop-color="#00F5FF" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#00F5FF"/>
-      <stop offset="50%" stop-color="#9D4EDD"/>
-      <stop offset="75%" stop-color="#FF00E5"/>
-      <stop offset="100%" stop-color="#FF00E5" stop-opacity="0"/>
+      <stop offset="0%"  stop-color="#4E4E4E" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#4E4E4E"/>
+      <stop offset="50%" stop-color="#1B1B1B"/>
+      <stop offset="75%" stop-color="#0D0D0D"/>
+      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
@@ -28,10 +28,10 @@
   </rect>
 
   <!-- end caps -->
-  <circle cx="40" cy="11.5" r="3" fill="#00F5FF" filter="url(#beamGlow)">
+  <circle cx="40" cy="11.5" r="3" fill="#4E4E4E" filter="url(#beamGlow)">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="1160" cy="11.5" r="3" fill="#FF00E5" filter="url(#beamGlow)">
+  <circle cx="1160" cy="11.5" r="3" fill="#0D0D0D" filter="url(#beamGlow)">
     <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
   </circle>
 </svg>
