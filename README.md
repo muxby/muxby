@@ -326,19 +326,7 @@ The roadmap remains a record of the technologies I am exploring and the areas wh
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github_dark" width="70%" alt="Developer quote" />
 </p>
 
-```text
-whoami
-creative software engineer, systems thinker, persistent debugger
 
-working style
-plan clearly → build deliberately → test honestly → document the useful parts
-
-current reading
-Designing Data-Intensive Applications — a reliable return point for product and systems thinking
-
-current soundtrack
-Focused work, no fixed playlist required
-```
 
 <p align="center">
   <img src="assets/graph-oscilloscope.svg" width="92%" alt="Working rhythm visualization" />
