@@ -384,7 +384,7 @@ Focused work, no fixed playlist required
 
 
 <div align="center">
-  <img src="assets/fox/fox-transparent-fast.gif" width="160" alt="Animated pixel fox" />
+  <img src="assets/fox/fox-transparent-fast.gif" width="96" alt="Animated pixel fox" />
 </div>
 
 
