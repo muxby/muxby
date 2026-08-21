@@ -611,12 +611,8 @@ The contact structure is kept intentionally simple. Scan the relevant QR code to
 ## 17 — Pixel Fox
 
 <div align="center">
-  <img src="assets/fox/fox-transparent.gif" width="360" alt="Animated pixel fox with its background removed" />
-  <br/>
-  <sub>Background removed from the original high-quality portrait animation and converted for GitHub-compatible playback.</sub>
+  <img src="assets/fox/fox-transparent.gif" width="220" alt="Animated pixel fox" />
 </div>
-
-<!-- The transparent GIF is used because GitHub reliably animates GIF images in profile READMEs. -->
 
 ---
 
