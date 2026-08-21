@@ -153,27 +153,28 @@
   <img src="assets/constellation.svg" width="92%" alt="Technology map" />
 </p>
 
-<div align="center">
-  <img src="assets/technology-logos/visual-studio-code.png" height="64" alt="Visual Studio Code" />
-  <img src="assets/technology-logos/tensorflow.png" height="64" alt="TensorFlow" />
-  <img src="assets/technology-logos/python.png" height="64" alt="Python" />
-  <img src="assets/technology-logos/cpp.png" height="64" alt="C++" />
-  <img src="assets/technology-logos/c.png" height="64" alt="C" />
-  <img src="assets/technology-logos/html5.png" height="64" alt="HTML5" />
-  <img src="assets/technology-logos/android.png" height="64" alt="Android" />
-  <br/>
-  <img src="assets/technology-logos/javascript.png" height="64" alt="JavaScript" />
-  <img src="assets/technology-logos/react.png" height="64" alt="React" />
-  <img src="assets/technology-logos/php.png" height="64" alt="PHP" />
-  <img src="assets/technology-logos/jupyter.png" height="64" alt="Jupyter" />
-  <img src="assets/technology-logos/typescript.png" height="64" alt="TypeScript" />
-  <img src="assets/technology-logos/npm.png" height="64" alt="npm" />
-  <br/>
-  <img src="assets/technology-logos/java.png" height="64" alt="Java" />
-  <img src="assets/technology-logos/sql.png" height="64" alt="SQL" />
-  <img src="assets/technology-logos/docker.png" height="64" alt="Docker" />
-  <img src="assets/technology-logos/rust.png" height="64" alt="Rust" />
-</div>
+<p align="center">
+  <img src="assets/technology-logos/visual-studio-code.svg" height="56" alt="Visual Studio Code" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/tensorflow.svg" height="56" alt="TensorFlow" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/python.svg" height="56" alt="Python" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/cpp.svg" height="56" alt="C++" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/c.svg" height="56" alt="C" align="absmiddle" />
+  <br />
+  <img src="assets/technology-logos/html5.svg" height="56" alt="HTML5" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/android.svg" height="56" alt="Android" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/javascript.svg" height="56" alt="JavaScript" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/react.svg" height="56" alt="React" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/php.svg" height="56" alt="PHP" align="absmiddle" />
+  <br />
+  <img src="assets/technology-logos/jupyter.svg" height="56" alt="Jupyter" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/typescript.svg" height="56" alt="TypeScript" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/npm.svg" height="56" alt="npm" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/java.svg" height="56" alt="Java" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/sql.svg" height="56" alt="SQL" align="absmiddle" />
+  <br />
+  <img src="assets/technology-logos/docker.svg" height="56" alt="Docker" align="absmiddle" />&nbsp;
+  <img src="assets/technology-logos/rust.svg" height="56" alt="Rust" align="absmiddle" />
+</p>
 
 <table>
 <tr>
