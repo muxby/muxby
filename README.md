@@ -15,41 +15,6 @@
 
 ---
 
-## 01 — Profile
-
-<table>
-<tr>
-<td width="22%" align="center">
-  <img src="assets/sigil.svg" width="104" alt="Muxby monogram" />
-</td>
-<td width="78%">
-
-I am a creative software engineer focused on **AI-enabled products, full-stack systems, and practical developer experience**. I value products that are clear to use, resilient in production, and considerate of the people who will maintain them.
-
-| Focus | Approach |
-|---|---|
-| **Product engineering** | Interfaces and systems that feel coherent from first interaction to long-term operation. |
-| **Applied AI** | Intelligent workflows with measurable value, strong evaluation, and human oversight. |
-| **Platform thinking** | Reliable foundations: APIs, data models, deployment, observability, and documentation. |
-| **Collaboration** | Clear communication, useful reviews, and solutions that make teams faster. |
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-  <img src="assets/technology-logos/python.png" height="64" alt="Python" />
-  <img src="assets/technology-logos/tensorflow.png" height="64" alt="TensorFlow" />
-  <img src="assets/technology-logos/javascript.png" height="64" alt="JavaScript" />
-  <img src="assets/technology-logos/react.png" height="64" alt="React" />
-  <img src="assets/technology-logos/typescript.png" height="64" alt="TypeScript" />
-  <img src="assets/technology-logos/docker.png" height="64" alt="Docker" />
-  <img src="assets/technology-logos/sql.png" height="64" alt="SQL" />
-  <img src="assets/technology-logos/rust.png" height="64" alt="Rust" />
-</div>
-
----
-
 ## 02 — Professional Profile
 
 <table>
