@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="140" viewBox="0 0 360 140" role="img" aria-label="Muxby signature">
   <defs>
     <linearGradient id="sigGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F5FF"/>
-      <stop offset="50%" stop-color="#9D4EDD"/>
-      <stop offset="100%" stop-color="#FF00E5"/>
+      <stop offset="0%" stop-color="#4A90E2"/>
+      <stop offset="50%" stop-color="#79C0FF"/>
+      <stop offset="100%" stop-color="#B9D8F5"/>
     </linearGradient>
     <filter id="sGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2.5" result="b"/>
@@ -41,7 +41,7 @@
   </text>
 
   <!-- gold spark at pen-lift -->
-  <circle cx="258" cy="80" r="0" fill="#FFD700" filter="url(#sGlow)">
+  <circle cx="258" cy="80" r="0" fill="#79C0FF" filter="url(#sGlow)">
     <animate attributeName="r" values="0;5;0" dur="1.2s" begin="3.4s" repeatCount="indefinite"/>
   </circle>
 </svg>

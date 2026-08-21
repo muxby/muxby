@@ -188,15 +188,17 @@ The roadmap remains a record of the technologies I am exploring and the areas wh
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github_dark" width="70%" alt="Developer quote" />
 </p>
 
-
-
 <p align="center">
   <img src="assets/graph-oscilloscope.svg" width="92%" alt="Working rhythm visualization" />
 </p>
-
-
-
-
+<div align="center">
+  <img src="assets/signature.svg" width="260" alt="Muxby signature" />
+  <br/>
+  <blockquote>Build something this week that your future self—and the people who work with you—will be glad exists.</blockquote>
+  <img src="assets/sigil.svg" width="62" alt="Muxby monogram" />
+  <br/>
+  <sub>Designed and maintained by muxby · © 2026</sub>
+</div>
 <!--
   The original sixteen-section structure and custom asset roles are retained.
   The visual system has been converted from Neon Void / cyberpunk language into
