@@ -41,7 +41,14 @@ I am a creative software engineer focused on **AI-enabled products, full-stack s
 </table>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,ts,react,nodejs,docker,kubernetes,pytorch,linux&theme=dark" alt="Primary technologies" />
+  <img src="assets/technology-logos/python.png" height="64" alt="Python" />
+  <img src="assets/technology-logos/tensorflow.png" height="64" alt="TensorFlow" />
+  <img src="assets/technology-logos/javascript.png" height="64" alt="JavaScript" />
+  <img src="assets/technology-logos/react.png" height="64" alt="React" />
+  <img src="assets/technology-logos/typescript.png" height="64" alt="TypeScript" />
+  <img src="assets/technology-logos/docker.png" height="64" alt="Docker" />
+  <img src="assets/technology-logos/sql.png" height="64" alt="SQL" />
+  <img src="assets/technology-logos/rust.png" height="64" alt="Rust" />
 </div>
 
 ---
@@ -202,9 +209,25 @@ I am a creative software engineer focused on **AI-enabled products, full-stack s
 </p>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,ts,js,go,react,nextjs,tailwind,nodejs,fastapi,django,graphql&theme=dark" alt="Application technologies" />
+  <img src="assets/technology-logos/visual-studio-code.png" height="64" alt="Visual Studio Code" />
+  <img src="assets/technology-logos/tensorflow.png" height="64" alt="TensorFlow" />
+  <img src="assets/technology-logos/python.png" height="64" alt="Python" />
+  <img src="assets/technology-logos/cpp.png" height="64" alt="C++" />
+  <img src="assets/technology-logos/c.png" height="64" alt="C" />
+  <img src="assets/technology-logos/html5.png" height="64" alt="HTML5" />
+  <img src="assets/technology-logos/android.png" height="64" alt="Android" />
   <br/>
-  <img src="https://skillicons.dev/icons?i=postgres,redis,mongodb,aws,docker,kubernetes,terraform,pytorch,tensorflow,linux,neovim&theme=dark" alt="Infrastructure and machine learning technologies" />
+  <img src="assets/technology-logos/javascript.png" height="64" alt="JavaScript" />
+  <img src="assets/technology-logos/react.png" height="64" alt="React" />
+  <img src="assets/technology-logos/php.png" height="64" alt="PHP" />
+  <img src="assets/technology-logos/jupyter.png" height="64" alt="Jupyter" />
+  <img src="assets/technology-logos/typescript.png" height="64" alt="TypeScript" />
+  <img src="assets/technology-logos/npm.png" height="64" alt="npm" />
+  <br/>
+  <img src="assets/technology-logos/java.png" height="64" alt="Java" />
+  <img src="assets/technology-logos/sql.png" height="64" alt="SQL" />
+  <img src="assets/technology-logos/docker.png" height="64" alt="Docker" />
+  <img src="assets/technology-logos/rust.png" height="64" alt="Rust" />
 </div>
 
 <table>
