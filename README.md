@@ -121,11 +121,6 @@
 
 
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=muxby&bg_color=0D1117&color=C9A36A&line=7D91A8&point=E6EDF3&area=true&area_color=17202B&hide_border=true" width="100%" alt="GitHub activity graph"/>
-</p>
-
-
 <table>
 <tr>
 <td align="center"><img src="assets/graph-bars.svg" width="100%" alt="Technical practice overview"/></td>
