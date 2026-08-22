@@ -28,6 +28,9 @@
 <img src="https://img.shields.io/badge/Go-26313D?style=flat-square&logo=go&logoColor=white" alt="Go"/>
 <img src="https://img.shields.io/badge/SQL-26313D?style=flat-square&logo=postgresql&logoColor=white" alt="SQL"/>
 <img src="https://img.shields.io/badge/C%2B%2B-26313D?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
+<img src="https://img.shields.io/badge/C-26313D?style=flat-square&logo=c&logoColor=white" alt="C"/>
+<img src="https://img.shields.io/badge/PHP-26313D?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
+<img src="https://img.shields.io/badge/Shell-26313D?style=flat-square&logo=gnubash&logoColor=white" alt="Shell"/>
 </p>
 
 <p align="center">
@@ -36,6 +39,7 @@
 <img src="https://img.shields.io/badge/Tailwind-526D82?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
 <img src="https://img.shields.io/badge/Vite-526D82?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
 <img src="https://img.shields.io/badge/Three.js-526D82?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js"/>
+<img src="https://img.shields.io/badge/HTML%2FCSS-526D82?style=flat-square&logo=html5&logoColor=white" alt="HTML and CSS"/>
 </p>
 
 <p align="center">
@@ -44,6 +48,8 @@
 <img src="https://img.shields.io/badge/Django-455A64?style=flat-square&logo=django&logoColor=white" alt="Django"/>
 <img src="https://img.shields.io/badge/GraphQL-455A64?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL"/>
 <img src="https://img.shields.io/badge/gRPC-455A64?style=flat-square&logo=google&logoColor=white" alt="gRPC"/>
+<img src="https://img.shields.io/badge/SFML-455A64?style=flat-square&logo=cplusplus&logoColor=white" alt="SFML"/>
+<img src="https://img.shields.io/badge/Rust%2FTauri-455A64?style=flat-square&logo=tauri&logoColor=white" alt="Rust and Tauri"/>
 </p>
 
 </td>
@@ -63,6 +69,7 @@
 <img src="https://img.shields.io/badge/Kubernetes-526D82?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
 <img src="https://img.shields.io/badge/Terraform-526D82?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"/>
 <img src="https://img.shields.io/badge/Cloudflare-526D82?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare"/>
+<img src="https://img.shields.io/badge/Bash-526D82?style=flat-square&logo=gnubash&logoColor=white" alt="Bash"/>
 </p>
 
 <p align="center">
@@ -71,6 +78,10 @@
 <img src="https://img.shields.io/badge/LangChain-6B5E4B?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"/>
 <img src="https://img.shields.io/badge/Hugging_Face-6B5E4B?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face"/>
 <img src="https://img.shields.io/badge/MCP-6B5E4B?style=flat-square&logo=modelcontextprotocol&logoColor=white" alt="MCP"/>
+<img src="https://img.shields.io/badge/TensorFlow-6B5E4B?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+<img src="https://img.shields.io/badge/PyTorch-6B5E4B?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+<img src="https://img.shields.io/badge/Federated_Learning-6B5E4B?style=flat-square&logo=googlecloud&logoColor=white" alt="Federated learning"/>
+<img src="https://img.shields.io/badge/LLM_Evaluation-6B5E4B?style=flat-square&logo=weightsandbiases&logoColor=white" alt="LLM evaluation"/>
 </p>
 
 </td>
