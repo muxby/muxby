@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-label="Animated monochrome technology constellation map">
   <title>The Muxby System — Technology Constellation</title>
-  <desc>A restrained editorial systems map with animated connection paths, pulsing nodes, and a central signal core.</desc>
+  <desc>A restrained editorial systems map with animated connection paths, pulsing nodes, and a central signal core with a dedicated relay of moving particles beneath it.</desc>
   <defs>
     <pattern id="paperGrid" width="36" height="36" patternUnits="userSpaceOnUse">
       <path d="M36 0H0V36" fill="none" stroke="#30363D" stroke-width="0.6" opacity="0.34"/>
@@ -89,12 +89,14 @@
     <circle cx="450" cy="205" r="30"><animate attributeName="r" values="28;31;28" dur="4.8s" repeatCount="indefinite"/></circle>
     <circle cx="450" cy="205" r="20" fill="none" stroke="#8B949E" stroke-dasharray="2 5"><animateTransform attributeName="transform" type="rotate" from="0 450 205" to="360 450 205" dur="14s" repeatCount="indefinite"/></circle>
   </g>
-  <text x="450" y="211" text-anchor="middle" fill="#E6EDF3" font-family="Georgia, serif" font-size="22" letter-spacing="3">M</text>
   <text x="450" y="252" text-anchor="middle" fill="#8B949E" font-family="'Courier New', monospace" font-size="9" letter-spacing="3">CORE / SYSTEMS</text>
 
+  <!-- dedicated relay rail beneath the Core; kept clear of the label and neighboring nodes -->
+  <path d="M420 282 C435 268 465 268 480 282 C465 296 435 296 420 282"
+        fill="none" stroke="#8B949E" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="2 5"/>
   <g fill="#E6EDF3">
-    <circle r="3"><animateMotion dur="5s" repeatCount="indefinite" path="M148 132C236 92 330 84 450 205"/></circle>
-    <circle r="3"><animateMotion dur="6.5s" repeatCount="indefinite" path="M752 284C670 270 590 238 450 205"/></circle>
-    <circle r="3"><animateMotion dur="5.8s" repeatCount="indefinite" path="M118 268C210 250 320 232 450 205"/></circle>
+    <circle r="3"><animateMotion dur="4.8s" repeatCount="indefinite" path="M420 282 C435 268 465 268 480 282 C465 296 435 296 420 282"/></circle>
+    <circle r="3"><animateMotion dur="4.8s" begin="1.6s" repeatCount="indefinite" path="M420 282 C435 268 465 268 480 282 C465 296 435 296 420 282"/></circle>
+    <circle r="3"><animateMotion dur="4.8s" begin="3.2s" repeatCount="indefinite" path="M420 282 C435 268 465 268 480 282 C465 296 435 296 420 282"/></circle>
   </g>
 </svg>
