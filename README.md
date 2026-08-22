@@ -117,16 +117,8 @@
 
 <table>
 <tr>
-
-<td align="center" width="50%"><img src="assets/graph-donut.svg" width="100%" alt="Technology distribution"/></td>
-</tr>
-<tr>
 <td align="center"><img src="assets/graph-bars.svg" width="100%" alt="Technical practice overview"/></td>
 <td align="center"><img src="assets/graph-growth.svg" width="96%" alt="Learning progression"/></td>
-</tr>
-<tr>
-
-<td align="center"><img src="assets/graph-polar-clock.svg" width="100%" alt="Working rhythm"/></td>
 </tr>
 </table>
 
