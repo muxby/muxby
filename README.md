@@ -93,7 +93,7 @@
 
 
 <p align="center">
-  <img src="assets/constellation.svg" width="92%" alt="Technology map" />
+  <img src="assets/constellation.svg" width="92%" alt="Minimal premium technology constellation and selected stack map" />
 </p>
 
 <p align="center">

@@ -1,35 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Animated technology constellation with expanded stack map">
-  <title>The Muxby System — Tech Constellation</title>
-  <desc>A restrained editorial systems map with a centered signal core, widely spaced technology nodes, and an expanded stack map grouped by language, application, data, infrastructure, and AI.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Minimal premium technology constellation and selected stack map">
+  <title>The Muxby System — Technology Constellation</title>
+  <desc>A minimal editorial technology constellation with a centered Core, widely spaced system nodes, and a curated stack grouped into languages, web, data, infrastructure, and AI.</desc>
   <defs>
     <pattern id="paperGrid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" fill="none" stroke="#30363D" stroke-width="0.6" opacity="0.34"/>
+      <path d="M36 0H0V36" fill="none" stroke="#24313A" stroke-width="0.55" opacity="0.28"/>
     </pattern>
     <radialGradient id="coreWash" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#E6EDF3" stop-opacity="0.22"/>
-      <stop offset="0.5" stop-color="#8B949E" stop-opacity="0.07"/>
+      <stop offset="0" stop-color="#E6EDF3" stop-opacity="0.16"/>
+      <stop offset="0.52" stop-color="#8B949E" stop-opacity="0.05"/>
       <stop offset="1" stop-color="#8B949E" stop-opacity="0"/>
     </radialGradient>
     <filter id="softCore" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="5"/>
+      <feGaussianBlur stdDeviation="6"/>
     </filter>
     <filter id="nodeShadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0D1117" flood-opacity="0.28"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.22"/>
     </filter>
+    <style>
+      .title { fill:#E6EDF3; font-family:Georgia, 'Times New Roman', serif; font-size:14px; letter-spacing:7px; }
+      .meta { fill:#72808A; font-family:'Courier New', monospace; font-size:8px; letter-spacing:2.5px; }
+      .node-label { fill:#111820; font-family:'Courier New', monospace; font-size:10px; letter-spacing:1.2px; }
+      .core-label { fill:#B4C0C8; font-family:'Courier New', monospace; font-size:10px; letter-spacing:5px; }
+      .panel-title { fill:#D8E0E5; font-family:'Courier New', monospace; font-size:10px; letter-spacing:3px; }
+      .panel-index { fill:#63717B; font-family:'Courier New', monospace; font-size:8px; letter-spacing:2px; }
+      .stack-line { fill:#9BA8B0; font-family:'Courier New', monospace; font-size:8.5px; letter-spacing:1px; }
+    </style>
   </defs>
 
-  <rect width="1200" height="760" rx="12" fill="#0D1117"/>
+  <rect width="1200" height="760" rx="12" fill="#0A0F14"/>
   <rect width="1200" height="760" rx="12" fill="url(#paperGrid)"/>
-  <path d="M30 62H1170M30 492H1170" stroke="#D0D7DE" stroke-opacity="0.12"/>
+  <path d="M30 62H1170M30 492H1170" stroke="#AAB8C2" stroke-opacity="0.12"/>
 
-  <g fill="#D0D7DE" font-family="Georgia, 'Times New Roman', serif">
-    <text x="600" y="38" text-anchor="middle" font-size="14" letter-spacing="7">THE MUXBY SYSTEM — TECH CONSTELLATION</text>
-    <text x="42" y="736" font-family="'Courier New', monospace" font-size="9" letter-spacing="3" opacity="0.58">LANGUAGES / FRAMEWORKS / INFRASTRUCTURE / AI</text>
-    <text x="1158" y="736" text-anchor="end" font-family="'Courier New', monospace" font-size="9" letter-spacing="2" opacity="0.42">EST. IN THE VOID</text>
-  </g>
+  <text x="600" y="38" text-anchor="middle" class="title">THE MUXBY SYSTEM — CONSTELLATION</text>
+  <text x="42" y="736" class="meta">SELECTED STACK / SYSTEM MAP</text>
+  <text x="1158" y="736" text-anchor="end" class="meta">EST. IN THE VOID</text>
 
-  <!-- Main constellation connections. Each path stays behind its card and the Core. -->
-  <g fill="none" stroke="#8B949E" stroke-width="1" stroke-opacity="0.55" stroke-dasharray="4 7" stroke-linecap="round">
+  <!-- Main constellation: low-contrast paths keep the hierarchy on the nodes. -->
+  <g fill="none" stroke="#788791" stroke-width="1" stroke-opacity="0.42" stroke-dasharray="4 8" stroke-linecap="round">
     <path d="M138 146C260 110 420 150 600 248" pathLength="1"><animate attributeName="stroke-dashoffset" values="1;0;1" dur="8s" repeatCount="indefinite"/></path>
     <path d="M365 128C460 160 520 200 600 248" pathLength="1"><animate attributeName="stroke-dashoffset" values="0;1;0" dur="7s" repeatCount="indefinite"/></path>
     <path d="M914 142C820 150 710 200 600 248" pathLength="1"><animate attributeName="stroke-dashoffset" values="1;0;1" dur="9s" repeatCount="indefinite"/></path>
@@ -38,10 +45,10 @@
     <path d="M350 414C430 370 500 300 600 248" pathLength="1"><animate attributeName="stroke-dashoffset" values="0;1;0" dur="7.5s" repeatCount="indefinite"/></path>
     <path d="M840 414C770 360 700 300 600 248" pathLength="1"><animate attributeName="stroke-dashoffset" values="1;0;1" dur="9.5s" repeatCount="indefinite"/></path>
     <path d="M1068 376C900 340 780 280 600 248" pathLength="1"><animate attributeName="stroke-dashoffset" values="0;1;0" dur="7.2s" repeatCount="indefinite"/></path>
-    <path d="M138 146C205 218 182 310 147 376M1069 170C1010 240 1030 320 1068 376" stroke-opacity="0.24"/>
+    <path d="M138 146C205 218 182 310 147 376M1069 170C1010 240 1030 320 1068 376" stroke-opacity="0.18"/>
   </g>
 
-  <g fill="#8B949E" opacity="0.42">
+  <g fill="#8997A0" opacity="0.32">
     <circle cx="62" cy="88" r="1.4"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/></circle>
     <circle cx="1138" cy="92" r="1.1"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.2s" repeatCount="indefinite"/></circle>
     <circle cx="54" cy="464" r="1.2"><animate attributeName="opacity" values="0.2;0.75;0.2" dur="5s" repeatCount="indefinite"/></circle>
@@ -50,11 +57,11 @@
 
   <circle cx="600" cy="248" r="78" fill="url(#coreWash)" filter="url(#softCore)">
     <animate attributeName="r" values="68;86;68" dur="5.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.44;0.78;0.44" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.35;0.68;0.35" dur="5.5s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Main constellation cards, distributed with clear breathing room. -->
-  <g fill="#D0D7DE" stroke="#6E7681" stroke-width="1" filter="url(#nodeShadow)">
+  <!-- Main nodes -->
+  <g fill="#D8E0E5" stroke="#87949D" stroke-width="1" filter="url(#nodeShadow)">
     <rect x="84" y="106" width="108" height="40" rx="2"/>
     <rect x="300" y="88" width="130" height="40" rx="2"/>
     <rect x="860" y="102" width="108" height="40" rx="2"/>
@@ -64,15 +71,14 @@
     <rect x="770" y="394" width="140" height="40" rx="2"/>
     <rect x="1018" y="356" width="100" height="40" rx="2"/>
   </g>
-
-  <g fill="#21262D" font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+  <g text-anchor="middle" class="node-label">
     <text x="138" y="131">PYTHON</text>
-    <text x="365" y="113" font-size="10" textLength="116" lengthAdjust="spacingAndGlyphs">TYPESCRIPT</text>
+    <text x="365" y="113" font-size="9" textLength="116" lengthAdjust="spacingAndGlyphs">TYPESCRIPT</text>
     <text x="914" y="127">REACT</text>
     <text x="1069" y="155">GO</text>
-    <text x="147" y="381" font-size="9" textLength="146" lengthAdjust="spacingAndGlyphs">FEDERATED ML</text>
+    <text x="147" y="381" font-size="8.5" textLength="146" lengthAdjust="spacingAndGlyphs">FEDERATED ML</text>
     <text x="350" y="419">OPENAI</text>
-    <text x="840" y="419" font-size="9" textLength="128" lengthAdjust="spacingAndGlyphs">KUBERNETES</text>
+    <text x="840" y="419" font-size="8.5" textLength="128" lengthAdjust="spacingAndGlyphs">KUBERNETES</text>
     <text x="1068" y="381">DOCKER</text>
   </g>
 
@@ -87,33 +93,33 @@
     <circle cx="1068" cy="410" r="5"><animate attributeName="r" values="5;8;5" dur="3.9s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Empty Core circle and the dedicated moving-dot relay beneath it. -->
-  <g fill="#161B22" stroke="#D0D7DE" stroke-width="1.4">
+  <!-- Empty Core and dedicated relay beneath it. -->
+  <g fill="#111820" stroke="#D5DEE4" stroke-width="1.4">
     <circle cx="600" cy="248" r="30"><animate attributeName="r" values="28;31;28" dur="4.8s" repeatCount="indefinite"/></circle>
-    <circle cx="600" cy="248" r="20" fill="none" stroke="#8B949E" stroke-dasharray="2 5"><animateTransform attributeName="transform" type="rotate" from="0 600 248" to="360 600 248" dur="14s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="248" r="20" fill="none" stroke="#7E8C96" stroke-dasharray="2 5"><animateTransform attributeName="transform" type="rotate" from="0 600 248" to="360 600 248" dur="14s" repeatCount="indefinite"/></circle>
   </g>
-  <text x="600" y="296" text-anchor="middle" fill="#8B949E" font-family="'Courier New', monospace" font-size="9" letter-spacing="3">CORE / SYSTEMS</text>
-  <path d="M570 328 C580 316 620 316 630 328 C620 340 580 340 570 328" fill="none" stroke="#8B949E" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="2 5"/>
+  <text x="600" y="296" text-anchor="middle" class="core-label">CORE</text>
+  <path d="M570 328 C580 316 620 316 630 328 C620 340 580 340 570 328" fill="none" stroke="#8B949E" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="2 5"/>
   <g fill="#E6EDF3">
     <circle r="3"><animateMotion dur="4.8s" repeatCount="indefinite" path="M570 328 C580 316 620 316 630 328 C620 340 580 340 570 328"/></circle>
     <circle r="3"><animateMotion dur="4.8s" begin="1.6s" repeatCount="indefinite" path="M570 328 C580 316 620 316 630 328 C620 340 580 340 570 328"/></circle>
     <circle r="3"><animateMotion dur="4.8s" begin="3.2s" repeatCount="indefinite" path="M570 328 C580 316 620 316 630 328 C620 340 580 340 570 328"/></circle>
   </g>
 
-  <!-- Category branches begin below the relay, leaving a clear gap around the Core. -->
-  <g fill="none" stroke="#8B949E" stroke-width="1" stroke-opacity="0.28" stroke-dasharray="3 6">
+  <!-- Category branches remain separated from the Core relay and lower panels. -->
+  <g fill="none" stroke="#788791" stroke-width="1" stroke-opacity="0.24" stroke-dasharray="3 7">
     <path d="M600 384V478H132V500"/>
     <path d="M600 384V478H366V500"/>
     <path d="M600 384V500"/>
     <path d="M600 384V478H834V500"/>
     <path d="M600 384V478H1068V500"/>
   </g>
-  <g fill="#E6EDF3">
-    <circle cx="132" cy="500" r="3"/><circle cx="366" cy="500" r="3"/><circle cx="600" cy="500" r="3"/><circle cx="834" cy="500" r="3"/><circle cx="1068" cy="500" r="3"/>
+  <g fill="#D4DEE4">
+    <circle cx="132" cy="500" r="2.5"/><circle cx="366" cy="500" r="2.5"/><circle cx="600" cy="500" r="2.5"/><circle cx="834" cy="500" r="2.5"/><circle cx="1068" cy="500" r="2.5"/>
   </g>
 
-  <!-- Expanded stack map. The five panels are separated by consistent gutters. -->
-  <g fill="#10161D" stroke="#30363D" stroke-width="1">
+  <!-- Minimal stack map: text-first panels replace the dense chip treatment. -->
+  <g fill="#0D141A" stroke="#2A3740" stroke-width="1">
     <rect x="24" y="516" width="216" height="202" rx="5"/>
     <rect x="258" y="516" width="216" height="202" rx="5"/>
     <rect x="492" y="516" width="216" height="202" rx="5"/>
@@ -122,91 +128,64 @@
   </g>
 
   <!-- Languages -->
-  <g font-family="'Courier New', monospace" text-anchor="middle">
-    <rect x="72" y="521" width="120" height="24" rx="12" fill="#D0D7DE"/>
-    <text x="132" y="537" fill="#21262D" font-size="10" letter-spacing="2">LANGUAGES</text>
-    <g fill="#405565" stroke="#526B7A" stroke-width="0.6">
-      <rect x="34" y="556" width="84" height="23" rx="3"/><rect x="124" y="556" width="92" height="23" rx="3"/>
-      <rect x="34" y="586" width="78" height="23" rx="3"/><rect x="118" y="586" width="50" height="23" rx="3"/><rect x="174" y="586" width="42" height="23" rx="3"/>
-      <rect x="34" y="616" width="58" height="23" rx="3"/><rect x="98" y="616" width="74" height="23" rx="3"/><rect x="178" y="616" width="38" height="23" rx="3"/>
-      <rect x="34" y="646" width="68" height="23" rx="3"/><rect x="108" y="646" width="108" height="23" rx="3"/>
-      <rect x="66" y="676" width="132" height="23" rx="3"/>
-    </g>
-    <g fill="#E6EDF3" font-size="8.5">
-      <text x="76" y="571">PYTHON</text><text x="170" y="571">TYPESCRIPT</text>
-      <text x="73" y="601">JAVASCRIPT</text><text x="143" y="601">SQL</text><text x="195" y="601">C++</text>
-      <text x="63" y="631">C</text><text x="135" y="631">PHP</text><text x="197" y="631">SHELL</text>
-      <text x="68" y="661">BASH</text><text x="162" y="661">SFML</text>
-      <text x="132" y="691">RUST/TAURI</text>
+  <g>
+    <text x="42" y="548" class="panel-title">LANGUAGES</text><text x="222" y="548" text-anchor="end" class="panel-index">01</text>
+    <path d="M42 558H222" stroke="#54636D" stroke-opacity="0.45"/>
+    <g class="stack-line">
+      <text x="42" y="580">PYTHON · TYPESCRIPT</text>
+      <text x="42" y="603">JAVASCRIPT · GO · SQL</text>
+      <text x="42" y="626">C++ · C · PHP</text>
+      <text x="42" y="649">SHELL · BASH · SFML</text>
+      <text x="42" y="672">RUST / TAURI</text>
     </g>
   </g>
 
-  <!-- Web and application tools -->
-  <g font-family="'Courier New', monospace" text-anchor="middle">
-    <rect x="303" y="521" width="126" height="24" rx="12" fill="#D0D7DE"/>
-    <text x="366" y="537" fill="#21262D" font-size="10" letter-spacing="1.5">WEB / APP</text>
-    <g fill="#405565" stroke="#526B7A" stroke-width="0.6">
-      <rect x="270" y="556" width="58" height="23" rx="3"/><rect x="334" y="556" width="72" height="23" rx="3"/><rect x="412" y="556" width="50" height="23" rx="3"/>
-      <rect x="270" y="586" width="78" height="23" rx="3"/><rect x="354" y="586" width="52" height="23" rx="3"/><rect x="412" y="586" width="50" height="23" rx="3"/>
-      <rect x="270" y="616" width="70" height="23" rx="3"/><rect x="346" y="616" width="70" height="23" rx="3"/><rect x="422" y="616" width="40" height="23" rx="3"/>
-      <rect x="270" y="646" width="76" height="23" rx="3"/><rect x="352" y="646" width="64" height="23" rx="3"/>
-    </g>
-    <g fill="#E6EDF3" font-size="8.5">
-      <text x="299" y="571">REACT</text><text x="370" y="571">NEXT.JS</text><text x="437" y="571">VITE</text>
-      <text x="309" y="601">TAILWIND</text><text x="380" y="601">THREE.JS</text><text x="437" y="601">HTML/CSS</text>
-      <text x="305" y="631">NODE.JS</text><text x="381" y="631">FASTAPI</text><text x="442" y="631">DJANGO</text>
-      <text x="308" y="661">GRAPHQL</text><text x="384" y="661">GRPC</text>
+  <!-- Web and application -->
+  <g>
+    <text x="276" y="548" class="panel-title">WEB / APP</text><text x="456" y="548" text-anchor="end" class="panel-index">02</text>
+    <path d="M276 558H456" stroke="#54636D" stroke-opacity="0.45"/>
+    <g class="stack-line">
+      <text x="276" y="580">REACT · NEXT.JS</text>
+      <text x="276" y="603">TAILWIND · VITE · THREE.JS</text>
+      <text x="276" y="626">HTML / CSS · NODE.JS</text>
+      <text x="276" y="649">FASTAPI · DJANGO</text>
+      <text x="276" y="672">GRAPHQL · GRPC</text>
     </g>
   </g>
 
   <!-- Data -->
-  <g font-family="'Courier New', monospace" text-anchor="middle">
-    <rect x="540" y="521" width="120" height="24" rx="12" fill="#D0D7DE"/>
-    <text x="600" y="537" fill="#21262D" font-size="10" letter-spacing="2">DATA</text>
-    <g fill="#59604C" stroke="#777E62" stroke-width="0.6">
-      <rect x="512" y="556" width="104" height="23" rx="3"/><rect x="622" y="556" width="74" height="23" rx="3"/>
-      <rect x="512" y="586" width="82" height="23" rx="3"/><rect x="600" y="586" width="72" height="23" rx="3"/><rect x="678" y="586" width="20" height="23" rx="3"/>
-      <rect x="512" y="616" width="186" height="23" rx="3"/>
-    </g>
-    <g fill="#F0F3F0" font-size="9">
-      <text x="564" y="571">POSTGRESQL</text><text x="659" y="571">REDIS</text>
-      <text x="553" y="601">MONGODB</text><text x="636" y="601">SQLITE</text><text x="688" y="601">PG</text>
-      <text x="605" y="631">PGVECTOR</text>
+  <g>
+    <text x="510" y="548" class="panel-title">DATA</text><text x="690" y="548" text-anchor="end" class="panel-index">03</text>
+    <path d="M510 558H690" stroke="#54636D" stroke-opacity="0.45"/>
+    <g class="stack-line">
+      <text x="510" y="580">POSTGRESQL · REDIS</text>
+      <text x="510" y="603">MONGODB · SQLITE</text>
+      <text x="510" y="626">PGVECTOR</text>
     </g>
   </g>
 
   <!-- Infrastructure -->
-  <g font-family="'Courier New', monospace" text-anchor="middle">
-    <rect x="775" y="521" width="118" height="24" rx="12" fill="#D0D7DE"/>
-    <text x="834" y="537" fill="#21262D" font-size="10" letter-spacing="1.5">INFRA</text>
-    <g fill="#4F4966" stroke="#6D638A" stroke-width="0.6">
-      <rect x="742" y="556" width="50" height="23" rx="3"/><rect x="798" y="556" width="68" height="23" rx="3"/><rect x="872" y="556" width="60" height="23" rx="3"/>
-      <rect x="742" y="586" width="84" height="23" rx="3"/><rect x="832" y="586" width="100" height="23" rx="3"/>
-      <rect x="742" y="616" width="58" height="23" rx="3"/>
-    </g>
-    <g fill="#ECE9F7" font-size="8.5">
-      <text x="767" y="571">AWS</text><text x="832" y="571">DOCKER</text><text x="902" y="571">BASH</text>
-      <text x="784" y="601">KUBERNETES</text><text x="882" y="601">TERRAFORM</text>
-      <text x="771" y="631">CLOUDFLARE</text>
+  <g>
+    <text x="744" y="548" class="panel-title">INFRA</text><text x="924" y="548" text-anchor="end" class="panel-index">04</text>
+    <path d="M744 558H924" stroke="#54636D" stroke-opacity="0.45"/>
+    <g class="stack-line">
+      <text x="744" y="580">AWS · DOCKER</text>
+      <text x="744" y="603">KUBERNETES · BASH</text>
+      <text x="744" y="626">TERRAFORM · CLOUDFLARE</text>
     </g>
   </g>
 
-  <!-- AI and evaluation -->
-  <g font-family="'Courier New', monospace" text-anchor="middle">
-    <rect x="1004" y="521" width="128" height="24" rx="12" fill="#D0D7DE"/>
-    <text x="1068" y="537" fill="#21262D" font-size="10" letter-spacing="1.5">AI SYSTEMS</text>
-    <g fill="#6A514A" stroke="#8B6A5D" stroke-width="0.6">
-      <rect x="976" y="556" width="60" height="23" rx="3"/><rect x="1042" y="556" width="92" height="23" rx="3"/>
-      <rect x="976" y="586" width="82" height="23" rx="3"/><rect x="1064" y="586" width="70" height="23" rx="3"/>
-      <rect x="976" y="616" width="92" height="23" rx="3"/><rect x="1074" y="616" width="62" height="23" rx="3"/>
-      <rect x="976" y="646" width="70" height="23" rx="3"/><rect x="1052" y="646" width="84" height="23" rx="3"/>
-    </g>
-    <g fill="#FFF0EA" font-size="8.2">
-      <text x="1006" y="571">OPENAI</text><text x="1088" y="571">ANTHROPIC</text>
-      <text x="1017" y="601">LANGCHAIN</text><text x="1099" y="601">MCP</text>
-      <text x="1022" y="631">HUGGING FACE</text><text x="1105" y="631">TENSORFLOW</text>
-      <text x="1011" y="661">PYTORCH</text><text x="1094" y="661">FEDERATED LEARNING</text>
+  <!-- AI systems -->
+  <g>
+    <text x="978" y="548" class="panel-title">AI SYSTEMS</text><text x="1158" y="548" text-anchor="end" class="panel-index">05</text>
+    <path d="M978 558H1158" stroke="#54636D" stroke-opacity="0.45"/>
+    <g class="stack-line">
+      <text x="978" y="580">OPENAI · ANTHROPIC</text>
+      <text x="978" y="603">LANGCHAIN · MCP</text>
+      <text x="978" y="626">HUGGING FACE</text>
+      <text x="978" y="649">TENSORFLOW · PYTORCH</text>
+      <text x="978" y="672">FEDERATED LEARNING</text>
+      <text x="978" y="695">LLM EVALUATION</text>
     </g>
   </g>
-  <text x="1068" y="692" text-anchor="middle" fill="#B1C0CB" font-family="'Courier New', monospace" font-size="8" letter-spacing="1.2">LLM EVALUATION</text>
 </svg>
