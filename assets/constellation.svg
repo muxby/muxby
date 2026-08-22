@@ -17,13 +17,13 @@
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.22"/>
     </filter>
     <style>
-      .title { fill:#F4F7F9; font-family:Georgia, 'Times New Roman', serif; font-size:18px; letter-spacing:6px; }
-      .meta { fill:#B7C4CC; font-family:'Courier New', monospace; font-size:11px; letter-spacing:2px; }
-      .node-label { fill:#0A1016; font-family:'Courier New', monospace; font-size:13px; letter-spacing:0.8px; }
-      .core-label { fill:#F0F5F7; font-family:'Courier New', monospace; font-size:12px; letter-spacing:4px; }
-      .panel-title { fill:#F0F5F7; font-family:'Courier New', monospace; font-size:13px; letter-spacing:2.2px; }
-      .panel-index { fill:#AEBBC4; font-family:'Courier New', monospace; font-size:10px; letter-spacing:1.5px; }
-      .stack-line { fill:#D7E1E7; font-family:'Courier New', monospace; font-size:11px; letter-spacing:0.35px; }
+      .title { fill:#F4F7F9; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:700; letter-spacing:3px; }
+      .meta { fill:#B7C4CC; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:600; letter-spacing:1.2px; }
+      .node-label { fill:#0A1016; font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:700; letter-spacing:0.2px; }
+      .core-label { fill:#F0F5F7; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:700; letter-spacing:2.5px; }
+      .panel-title { fill:#F0F5F7; font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:700; letter-spacing:1.2px; }
+      .panel-index { fill:#AEBBC4; font-family:Arial, Helvetica, sans-serif; font-size:10px; font-weight:600; letter-spacing:0.8px; }
+      .stack-line { fill:#D7E1E7; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:600; letter-spacing:0.15px; }
     </style>
   </defs>
 
@@ -31,9 +31,9 @@
   <rect width="1200" height="760" rx="12" fill="url(#paperGrid)"/>
   <path d="M30 62H1170M30 492H1170" stroke="#AAB8C2" stroke-opacity="0.12"/>
 
-  <text x="600" y="38" text-anchor="middle" fill="#F4F7F9" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="6px">THE MUXBY SYSTEM — CONSTELLATION</text>
-  <text x="42" y="736" fill="#C8D4DB" font-family="'Courier New', monospace" font-size="11" letter-spacing="2px">SELECTED STACK / SYSTEM MAP</text>
-  <text x="1158" y="736" text-anchor="end" fill="#C8D4DB" font-family="'Courier New', monospace" font-size="11" letter-spacing="2px">EST. IN THE VOID</text>
+  <text x="600" y="38" text-anchor="middle" fill="#F4F7F9" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="3px">THE MUXBY SYSTEM — CONSTELLATION</text>
+  <text x="42" y="736" fill="#C8D4DB" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2px">SELECTED STACK / SYSTEM MAP</text>
+  <text x="1158" y="736" text-anchor="end" fill="#C8D4DB" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2px">EST. IN THE VOID</text>
 
   <!-- Main constellation: low-contrast paths keep the hierarchy on the nodes. -->
   <g fill="none" stroke="#788791" stroke-width="1" stroke-opacity="0.42" stroke-dasharray="4 8" stroke-linecap="round">
@@ -71,7 +71,7 @@
     <rect x="770" y="394" width="140" height="40" rx="2"/>
     <rect x="1018" y="356" width="100" height="40" rx="2"/>
   </g>
-  <g text-anchor="middle" fill="#0A1016" font-family="'Courier New', monospace" font-size="13px" letter-spacing="0.8px">
+  <g text-anchor="middle" fill="#0A1016" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="700" letter-spacing="0.2px">
     <text x="138" y="131">PYTHON</text>
     <text x="685" y="113" font-size="12" textLength="116" lengthAdjust="spacingAndGlyphs">TYPESCRIPT</text>
     <text x="914" y="127">REACT</text>
@@ -98,7 +98,7 @@
     <circle cx="600" cy="248" r="30"><animate attributeName="r" values="28;31;28" dur="4.8s" repeatCount="indefinite"/></circle>
     <circle cx="600" cy="248" r="20" fill="none" stroke="#7E8C96" stroke-dasharray="2 5"><animateTransform attributeName="transform" type="rotate" from="0 600 248" to="360 600 248" dur="14s" repeatCount="indefinite"/></circle>
   </g>
-  <text x="600" y="296" text-anchor="middle" fill="#F0F5F7" font-family="'Courier New', monospace" font-size="12px" font-weight="600" letter-spacing="4px">CORE</text>
+  <text x="600" y="296" text-anchor="middle" fill="#F0F5F7" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="700" letter-spacing="2.5px">CORE</text>
   <path d="M570 328 C580 316 620 316 630 328 C620 340 580 340 570 328" fill="none" stroke="#8B949E" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="2 5"/>
   <g fill="#E6EDF3">
     <circle r="3"><animateMotion dur="4.8s" repeatCount="indefinite" path="M570 328 C580 316 620 316 630 328 C620 340 580 340 570 328"/></circle>
@@ -129,9 +129,9 @@
 
   <!-- Languages -->
   <g>
-    <text x="42" y="548" fill="#F0F5F7" font-family="'Courier New', monospace" font-size="13px" font-weight="600" letter-spacing="2.2px">LANGUAGES</text><text x="222" y="548" text-anchor="end" fill="#AEBBC4" font-family="'Courier New', monospace" font-size="10px" letter-spacing="1.5px">01</text>
+    <text x="42" y="548" fill="#F0F5F7" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="700" letter-spacing="1.2px">LANGUAGES</text><text x="222" y="548" text-anchor="end" fill="#AEBBC4" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" letter-spacing="0.8px">01</text>
     <path d="M42 558H222" stroke="#54636D" stroke-opacity="0.45"/>
-    <g fill="#D7E1E7" font-family="'Courier New', monospace" font-size="11px" letter-spacing="0.35px">
+    <g fill="#D7E1E7" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" letter-spacing="0.15px">
       <text x="42" y="580">PYTHON · TYPESCRIPT</text>
       <text x="42" y="603">JAVASCRIPT · GO · SQL</text>
       <text x="42" y="626">C++ · C · PHP</text>
@@ -142,9 +142,9 @@
 
   <!-- Web and application -->
   <g>
-    <text x="276" y="548" fill="#F0F5F7" font-family="'Courier New', monospace" font-size="13px" font-weight="600" letter-spacing="2.2px">WEB / APP</text><text x="456" y="548" text-anchor="end" fill="#AEBBC4" font-family="'Courier New', monospace" font-size="10px" letter-spacing="1.5px">02</text>
+    <text x="276" y="548" fill="#F0F5F7" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="700" letter-spacing="1.2px">WEB / APP</text><text x="456" y="548" text-anchor="end" fill="#AEBBC4" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" letter-spacing="0.8px">02</text>
     <path d="M276 558H456" stroke="#54636D" stroke-opacity="0.45"/>
-    <g fill="#D7E1E7" font-family="'Courier New', monospace" font-size="11px" letter-spacing="0.35px">
+    <g fill="#D7E1E7" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" letter-spacing="0.15px">
       <text x="276" y="580">REACT · NEXT.JS</text>
       <text x="276" y="603">TAILWIND · VITE · THREE.JS</text>
       <text x="276" y="626">HTML / CSS · NODE.JS</text>
@@ -155,9 +155,9 @@
 
   <!-- Data -->
   <g>
-    <text x="510" y="548" fill="#F0F5F7" font-family="'Courier New', monospace" font-size="13px" font-weight="600" letter-spacing="2.2px">DATA</text><text x="690" y="548" text-anchor="end" fill="#AEBBC4" font-family="'Courier New', monospace" font-size="10px" letter-spacing="1.5px">03</text>
+    <text x="510" y="548" fill="#F0F5F7" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="700" letter-spacing="1.2px">DATA</text><text x="690" y="548" text-anchor="end" fill="#AEBBC4" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" letter-spacing="0.8px">03</text>
     <path d="M510 558H690" stroke="#54636D" stroke-opacity="0.45"/>
-    <g fill="#D7E1E7" font-family="'Courier New', monospace" font-size="11px" letter-spacing="0.35px">
+    <g fill="#D7E1E7" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" letter-spacing="0.15px">
       <text x="510" y="580">POSTGRESQL · REDIS</text>
       <text x="510" y="603">MONGODB · SQLITE</text>
       <text x="510" y="626">PGVECTOR</text>
@@ -166,9 +166,9 @@
 
   <!-- Infrastructure -->
   <g>
-    <text x="744" y="548" fill="#F0F5F7" font-family="'Courier New', monospace" font-size="13px" font-weight="600" letter-spacing="2.2px">INFRA</text><text x="924" y="548" text-anchor="end" fill="#AEBBC4" font-family="'Courier New', monospace" font-size="10px" letter-spacing="1.5px">04</text>
+    <text x="744" y="548" fill="#F0F5F7" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="700" letter-spacing="1.2px">INFRA</text><text x="924" y="548" text-anchor="end" fill="#AEBBC4" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" letter-spacing="0.8px">04</text>
     <path d="M744 558H924" stroke="#54636D" stroke-opacity="0.45"/>
-    <g fill="#D7E1E7" font-family="'Courier New', monospace" font-size="11px" letter-spacing="0.35px">
+    <g fill="#D7E1E7" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" letter-spacing="0.15px">
       <text x="744" y="580">AWS · DOCKER</text>
       <text x="744" y="603">KUBERNETES · BASH</text>
       <text x="744" y="626">TERRAFORM · CLOUDFLARE</text>
@@ -177,9 +177,9 @@
 
   <!-- AI systems -->
   <g>
-    <text x="978" y="548" fill="#F0F5F7" font-family="'Courier New', monospace" font-size="13px" font-weight="600" letter-spacing="2.2px">AI SYSTEMS</text><text x="1158" y="548" text-anchor="end" fill="#AEBBC4" font-family="'Courier New', monospace" font-size="10px" letter-spacing="1.5px">05</text>
+    <text x="978" y="548" fill="#F0F5F7" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="700" letter-spacing="1.2px">AI SYSTEMS</text><text x="1158" y="548" text-anchor="end" fill="#AEBBC4" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" letter-spacing="0.8px">05</text>
     <path d="M978 558H1158" stroke="#54636D" stroke-opacity="0.45"/>
-    <g fill="#D7E1E7" font-family="'Courier New', monospace" font-size="11px" letter-spacing="0.35px">
+    <g fill="#D7E1E7" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" letter-spacing="0.15px">
       <text x="978" y="580">OPENAI · ANTHROPIC</text>
       <text x="978" y="603">LANGCHAIN · MCP</text>
       <text x="978" y="626">HUGGING FACE</text>
