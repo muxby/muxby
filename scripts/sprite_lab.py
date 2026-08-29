@@ -69,25 +69,31 @@ if __name__ == "__main__":
     for name in ("DRAGON_BODY", "DRAGON_WING", "DRAGON_TAIL", "DRAGON_SIT", "DRAGON_IDLE", "FOX_SIT"):
         check(name, getattr(A, name))
         render(getattr(A, name), f"lab_{name.lower().removeprefix('dragon_')}")
+        # again on a pale ground: the outline is nearly scene-coloured, so a
+        # thickened or ragged border is invisible against the dark background.
+        render(getattr(A, name), f"lab_{name.lower().removeprefix('dragon_')}_lit", bg=(0x9A, 0x9A, 0x9A))
 
     for i, frame in enumerate(A.FIRE_FRAMES):
         render(frame, f"lab_fire{i}", scale=16)
 
-    mouth = max(A.find_pixels(A.DRAGON_BODY, "M"))
-    mx = A.BODY_AT[0] + mouth[0] + 1
-    my = A.BODY_AT[1] + mouth[1]
-    print(f"mouth cell in assembled dragon: {(mx, my)}")
+    mouth = A.find_pixels(A.DRAGON_BODY, "M")
+    mx = max(x for x, _ in mouth)
+    lips = [y for x, y in mouth if x == mx]
+    lip_x = A.BODY_AT[0] + mx + 1
+    lip_y = A.BODY_AT[1] + round(sum(lips) / len(lips))
+    print(f"breath leaves the mouth at cell {(lip_x, lip_y)}")
 
     biggest = A.FIRE_FRAMES[-1]
-    compose(
-        [
-            (A.DRAGON_TAIL, *A.TAIL_AT),
-            (A.DRAGON_BODY, *A.BODY_AT),
-            (A.DRAGON_WING, *A.WING_AT),
-            (biggest, mx, my - len(biggest) // 2),
-        ],
-        "lab_breathing",
-        w=A.DRAGON_W + 24,
-        h=A.DRAGON_H,
-        scale=11,
-    )
+    for i in range(len(A.DRAGON_WING_POSES)):
+        compose(
+            [
+                (A.DRAGON_TAIL_POSES[i], *A.TAIL_AT),
+                (A.DRAGON_BODY, *A.BODY_AT),
+                (A.DRAGON_WING_POSES[i], *A.WING_AT),
+                (biggest, lip_x, lip_y - len(biggest) // 2),
+            ],
+            f"lab_pose{i}",
+            w=A.DRAGON_W + 24,
+            h=A.DRAGON_H,
+            scale=11,
+        )

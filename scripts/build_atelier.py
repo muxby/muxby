@@ -30,7 +30,7 @@ PALETTE = {
     "h": "#9C9484",  # horn shadow
     "e": "#F7F5F0",  # eye white
     "p": "#111214",  # pupil
-    "s": "#A8391B",  # cheek shading
+    "s": "#EC8A62",  # blush
     "n": "#6E2311",  # nose
     "M": "#2A0E08",  # mouth
     "T": "#C0431F",
@@ -188,124 +188,267 @@ def stack(layers: list[tuple[list[str], int, int]], w: int, h: int) -> list[str]
 
 
 # The side-on dragon is three layers so the wing and tail can really move.
-# Head and snout face right; the mouth (M) is where the breath leaves.
+# Head and snout face right, with the horns swept back over the skull, one big
+# eye (p pupil, e catchlight), a blush (s), and a mouth split into an upper
+# muzzle and a lower jaw so it reads as open. The M run is where breath leaves.
 DRAGON_BODY = pad(
     [
-        "................kHk.kHk...........",
-        ".................kHhkkHhk.........",
-        "...............kkkkkkkkkk.........",
-        ".............kkbbbbbbbbbbkk.......",
-        "............kbbbbbbbbbbbbbk.......",
-        "...........kbbbbbbbbbbbbbbbk......",
-        "...........kbbbbbbbbbppebbbk......",
-        "..........kbbbbbbbbbbpppbbbkkkkk..",
-        "..........kbbbbbbbbbbpppbbbbbnbbk.",
-        "..........kbbbbbbbbbbbbbbbkFFMMMk.",
-        "..........kbbbbbbbbssbbbbbCFMMMk..",
-        "..........kbbbbbbbbbbbbbbbCCkkkk..",
-        "...........kbbbbbbbbbbbbbCCk......",
-        "............kbbbbbbbbbbbCCk.......",
-        ".............kkkkkkkkkkkkk........",
-        "...............kbbbCCCCk..........",
-        "..............kbbbbCCCCCk.........",
-        ".............kbbbbbCCCCCCk........",
-        "............kbbbbbbCCCCCCk........",
-        "...........kbbbbbbbbCCCCCCk.......",
-        "..........kbbbbbbbbbCCCCCCk.......",
-        ".........kbbbbbbbbbbCCCCCCk.......",
-        "........kbbbbbbbbbbbCCCCCCk.......",
-        ".......kbbbbbbbbbbbbCCCCCCk.......",
-        ".......kbbbbbbbbbbbCCCCCCCk.......",
-        ".......kbbbbbbbbbbCCCCCCCCk.......",
-        "........kbbbbbbbbCCCCCCCCk........",
-        ".........kddddddCCCCCCCCk.........",
-        ".........kbbbbkkkkbbbbk...........",
-        ".........kbbbbkkkkbbbbk...........",
-        "........kHHHHHHHkkHHHHHHHk........",
-        "........kkkkkkkkkkkkkkkkkk........",
+        ".................kkk..........",
+        ".................kHkk.........",
+        "..........kkkk...kHHk.........",
+        "..........kHHkk..kHHkk........",
+        "..........kHHHkk.kHHHk........",
+        "..........kkHHHkkkhHHk........",
+        "...........kHhHHBBHHHkk.......",
+        "...........kkHHHbbbHbBkk......",
+        "..........kkBbHbbbbbbbBkk.....",
+        "..........kBbbbbbbeppbbBk.....",
+        "..........kbbbbbbbpppbbbkkkkk.",
+        ".........kkbbbbbbbpphbbbBBBBkk",
+        ".........kBbbbbbbbbbbbbbbbbnnk",
+        ".........kkbbbbbbbbbbbbbbbbbdk",
+        "..........kbbbbbbbbbbbbbbbbdMk",
+        "..........kHbbbsssbbbMMMMMMMMk",
+        ".......kkkkbbbbbsbbbbbbbbbbkMk",
+        "....kkkkBBHbbbbbbbbbbbbbbbbBkk",
+        "...kkBBBbbbbbbbbbbbbdddddddkk.",
+        "..kkBbbbbbbbbcccbbddkkkkkkkk..",
+        ".kkBbbbbbbbCCCCCCCkkk.........",
+        ".kBbbbbbbbCCCCCCCCCk..........",
+        ".kbbbbbbbCCCCCCCCCCk..........",
+        "kkbbbbbbbcccccccccckk.........",
+        "kBbbbbbbCCCCCCCCCCCCk.........",
+        "kkbbbbbbCCCCCCCCCCCkk.........",
+        ".kbbbbbbCCCCCCCCCCCk..........",
+        ".kbbbbbbbcccccccccck..........",
+        ".kbbbbbbbkkkCCCCCCCk..........",
+        ".kbbbbbbbk.kbbbbbbbk..........",
+        "kkbbbbbbbk.kbbbbbbbkk.........",
+        "kBbkbkbbdk.kdbkbkbbBk.........",
+        "kHdkHkdHkk.kHdkHkdHkk.........",
+        "kkkkkkkkk..kkkkkkkkk..........",
     ]
 )
 
-# Small folded wing. The membrane is lighter than the body so it reads as a wing
-# and not a hole; the dark diagonal is the finger strut. The shoulder is the
-# top-right corner, which is also the flap pivot.
-DRAGON_WING = pad(
-    [
-        "......kkkk",
-        "....kkLLwk",
-        "..kkLLLLwk",
-        ".kLLLLwLwk",
-        "kLLLLwLLwk",
-        "kkLLwLLLwk",
-        ".kkwLLLLwk",
-        "..kkkkkkkk",
-    ]
-)
+# Wing and tail get three poses each, cycled by opacity. Rotating pixel art with
+# animateTransform resamples it into mush, so each pose is redrawn on the grid
+# and swapped in instead. All poses of a layer share one offset.
+#
+# The wing rides above the back rather than folded over the flank, so it
+# silhouettes against the sky instead of reading as a hole in the body.
+DRAGON_WING_POSES = [
+    pad(
+        [
+            "............kkk...",
+            ".........kkkkHk...",
+            "......kkkkwLLkk...",
+            "....kkkLLLLLLk....",
+            "...kkLLwwLLLLkk...",
+            "...kwwwwLwLwwLk...",
+            "...kwwwLwwLwwLk...",
+            "...kwwLwwwLwwLk...",
+            "..kkLLwwwLwwwLk...",
+            ".kkLwwwwLwwwwLkk..",
+            ".kLkwwwwLwwwwwLk..",
+            ".kkwwwwwLwwwwwLk..",
+            "..kwwwwLwwwwwwLk..",
+            "..kkwwLwwwwwwwLk..",
+            "...kkwLwwwwwwwLkk.",
+            "....kwLwwwwwwwLwk.",
+            "....kLkkwwwwwwwLk.",
+            "....kkkkkkkkwwwLk.",
+            "...........kkkkLk.",
+            "..............kkk.",
+        ]
+    ),
+    pad(
+        [
+            "..................",
+            "........kkk.......",
+            ".......kkHk.......",
+            ".....kkkLkk.......",
+            "...kkkLLLLk.......",
+            ".kkkwLwLLLkk......",
+            ".kwLLwLwLwLk......",
+            ".kLwwLwLwwLkk.....",
+            "kkwwLwwLwwLwk.....",
+            "kwwwLwwLwwwLkk....",
+            "kkwLwwwLwwwLwk....",
+            "kkLwwwLwwwwwLk....",
+            "kLkwwwLwwwwwLkk...",
+            "kLwwwwLwwwwwwLk...",
+            "kkwwwwLwwwwwwLkk..",
+            ".kwwwwLwwwwwwwLk..",
+            ".kkkwLwwwwwwwwLkk.",
+            "...kkLwwwwwwwwwLk.",
+            "....kLkkkkkkkkkLk.",
+            "....kkk.......kkk.",
+        ]
+    ),
+    pad(
+        [
+            "...............kkk",
+            ".......kkkkkkkkkHk",
+            "......kkwLLLLLLLkk",
+            ".....kkwLwwwLLLLk.",
+            ".....kwwwwwLwLwLk.",
+            ".....kwwwLLwLwwLk.",
+            "....kkwLLwwwLwwLk.",
+            "...kkLLwwwwLwwwLk.",
+            "...kLkwwwwLwwwwLk.",
+            "...kwwwwwwLwwwwLk.",
+            "...kwwwwwLwwwwwLk.",
+            "...kkwwwLwwwwwwLk.",
+            "....kkwLwwwwwwwLk.",
+            ".....kwLwwwwwwwLk.",
+            ".....kLwwwwwwwwLk.",
+            ".....kkkwwwwwwwLk.",
+            ".......kkkkwwwwLk.",
+            "..........kkkkwLk.",
+            ".............kkLk.",
+            "..............kkk.",
+        ]
+    ),
+]
+DRAGON_WING = DRAGON_WING_POSES[0]
 
-# Tail: fat where it meets the hip on the right, spade fin at the raised tip.
-DRAGON_TAIL = pad(
-    [
-        "..kBk.............",
-        ".kBBBk............",
-        "kBBBBBk...........",
-        "kBBBBBk...........",
-        ".kBBBk............",
-        "..kbbk............",
-        "..kbbk............",
-        "..kbbdk...........",
-        "..kbbbdk..........",
-        "...kbbbdk.........",
-        "...kbbbbdk........",
-        "...kbbbbdkkkkkkk..",
-        "...kbbbbbbbbbbbbb.",
-        "...kbbbbbbbbbbbbb.",
-        "....kbbbbbbbbbbbbb",
-        ".....kkkkkkkkkkkkk",
-    ]
-)
+# Thick at the hip, pinched below a spade fin so the tip reads as a blade.
+DRAGON_TAIL_POSES = [
+    pad(
+        [
+            "........................",
+            "........................",
+            "..kkk...................",
+            ".kkbkk..................",
+            ".kbbbk..................",
+            "kkbBbkk.................",
+            "kbBBBbkk................",
+            "bBBBBBbk................",
+            "bbBBBbbk................",
+            "kbBBBbkk................",
+            "kkbbbkk.................",
+            ".kkbkk...........kkkkk..",
+            ".kkBkk..........kkBBBkk.",
+            ".kBbBkk........kkBbbbBkk",
+            ".kkbbBkk......kkBbbbbbBk",
+            "..kbbbBkk...kkkBbbbbbbbk",
+            "..kdbbbBkkkkkBBbbbbbbbdk",
+            "..kkdbbbBBBBBbbbbbbbbdkk",
+            "...kkdbbbbbbbbbbbbbddkk.",
+            "....kkdbbbbbbbbbbddkkk..",
+            ".....kkdddbbbbdddkkk....",
+            "......kkkkddddkkkk......",
+            ".........kkkkkk.........",
+            "........................",
+        ]
+    ),
+    pad(
+        [
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "kkkk....................",
+            "kbbkk...................",
+            "kbbbkk..................",
+            "kbBbbk..................",
+            "bBBBbkk.................",
+            "bBBBBbk.................",
+            "bBBBBbk.................",
+            "bbBBbkk..........kkkkk..",
+            "kbbbbk..........kkBBBkk.",
+            "kkbbkk.........kkBbbbBkk",
+            ".kkBkk........kkBbbbbbBk",
+            ".kBbBkk......kkBbbbbbbbk",
+            ".kkbbBkkk...kkBbbbbbbbdk",
+            "..kdbbBBkkkkkBbbbbbbbdkk",
+            "..kkdbbbBBBBBbbbbbbbdkk.",
+            "...kkdbbbbbbbbbbbbddkk..",
+            "....kkdbbbbbbbbbbdkkk...",
+            ".....kkddddbbddddkk.....",
+            "......kkkkkddkkkkk......",
+            "..........kkkk..........",
+        ]
+    ),
+    pad(
+        [
+            "...kkk..................",
+            "...kbkk.................",
+            "..kkbbk.................",
+            ".kkbBbkk................",
+            "kkbBBBbk................",
+            "kbBBBBbkk...............",
+            "kbBBBBBbk...............",
+            "kkbBBBbkk...............",
+            ".kbbbbkk................",
+            ".kkbbkk.................",
+            "..kkkk..................",
+            "..kBBk...........kkkkk..",
+            "..kbbkk.........kkBBBkk.",
+            "..kbbBkk......kkkBbbbBkk",
+            "..kdbbBkk....kkBBbbbbbBk",
+            "..kkbbbBkkkkkkBbbbbbbbbk",
+            "...kdbbbBBBBBBbbbbbbbbdk",
+            "...kkdbbbbbbbbbbbbbbbdkk",
+            "....kkddbbbbbbbbbbbddkk.",
+            ".....kkkddbbbbbbdddkkk..",
+            ".......kkkddddddkkkk....",
+            ".........kkkkkkkk.......",
+            "........................",
+            "........................",
+        ]
+    ),
+]
+DRAGON_TAIL = DRAGON_TAIL_POSES[0]
 
-# Where each layer sits inside the assembled dragon, in sprite cells.
-DRAGON_W, DRAGON_H = 42, 32
-BODY_AT = (8, 0)
-WING_AT = (17, 17)
+DRAGON_W, DRAGON_H = 40, 36
+BODY_AT = (10, 0)
+WING_AT = (2, 3)
 TAIL_AT = (0, 12)
-WING_PIVOT = (26, 17)  # shoulder
-TAIL_PIVOT = (15, 25)  # where the tail disappears behind the hip
 
+# One flat table for the cameos that fly past and do not need to flap.
 DRAGON_IDLE = stack(
     [(DRAGON_TAIL, *TAIL_AT), (DRAGON_BODY, *BODY_AT), (DRAGON_WING, *WING_AT)],
     DRAGON_W,
     DRAGON_H,
 )
 
-# Front-on hatchling: swept horns, two shiny eyes, brass belly plate, small
-# raised wings, and a spade tail curling out to one side.
+# Front-on hatchling: swept horns, two shiny eyes, a snout with nostrils and an
+# open mouth, brass belly plates, and wings held out either side.
 DRAGON_SIT = pad(
     [
-        ".......H..........H.......",
-        "......HH..........HH......",
-        ".....hHHkkkkkkkkkkHHh.....",
-        "......kkbbbbbbbbbbkk......",
-        ".....kbbbbbbbbbbbbbbk.....",
-        ".....kbppebbbbbbppebk.....",
-        ".....kbpppbbbbbbpppbk.....",
-        ".....kbpppbbbbbbpppbk.....",
-        ".....kssbbbbbbbbbssbk.....",
-        ".....kbbbbbBBBBbbbbbk.....",
-        ".....kbbbbbnBBnbbbbbk.....",
-        "......kbbbbbMMbbbbbk......",
-        ".......kkkkkkkkkkkk.......",
-        "........kbCCCCCCbk........",
-        "....kLLLbCCCCCCCCbLLLk....",
-        "..kLLLLLbccccccccbLLLLLk..",
-        ".kLwLLLLbCCCCCCCCbLLLLwLk.",
-        ".kkLLLLLbccccccccbLLLLLkk.",
-        "...kkLLLbCCCCCCCCbLLLkk...",
-        ".......kbccccccccbkkBk....",
-        ".......kbCCCCCCCCbkkBBk...",
-        ".......kbbbkkkkbbbkkkk....",
-        "......kCCCCCkkCCCCCk......",
-        "......kkkkkkkkkkkkkk......",
+        "......kkk...........kkk.......",
+        "......kHkk.........kkHk.......",
+        "......kHHk.........kHHk.......",
+        "......kHHkkkkkkkkkkkHHk.......",
+        "......kHHHkBBBBBBBkHHHk.......",
+        "......kkhHHbbbbbbbHHhkk.......",
+        "......kkHHHbbbbbbbHHHkk.......",
+        "......kBbbbbbbbbbbbbbBk.......",
+        ".....kkbbbbbbbbbbbbbbbkk......",
+        ".....kBbbeppbbbbbeppbbBk......",
+        ".....kbbbpppbbbbbpppbbbk......",
+        ".kkk.kbbbpphbbbbbpphbbbk.kkk..",
+        "kkwkkkbbbbbbbbbbbbbbbbbkkkwkk.",
+        "kwLLkkdssbbbbbbbbbbbssdkkLLwk.",
+        "kwLLkkkbbbbbbnbnbbbbbbkkkLLwk.",
+        "kwLwLkkdbbbbbbbbbbbbbdkkLwLwkk",
+        "wwLwLwkkbbbbMMMMMbbbbkkwLwLwwk",
+        "wwLwLwkBbbbbbMbMbbbbbBkwLwLwwk",
+        "kwLwLwwbbbbbcccccbbbbbwwLwLwkk",
+        "kwLwLwwbbbbCCCCCCCbbbbwwLwLwk.",
+        "kwLwwLwbbbCCCCCCCCCbbbwLwwLwk.",
+        "kkLwwLbbbCCCCCCCCCCCbbbLwwLkk.",
+        ".kkkbbbbbcccccccccccbbbbbkkk..",
+        "...kbbbbbCCCCCCCCCCCbbbbbk....",
+        "...kdbbbbCCCCCCCCCCCbbbbdk....",
+        "...kkddbbCCCCCCCCCCCbbddkk....",
+        "....kkkbbbcccccccccbbbkkk.....",
+        ".....kBbbbbCCCCCCCbbbbBk......",
+        ".....kbbbbbbCCCCCbbbbbbk......",
+        ".....kdHbHbHdddddHbHbHdk......",
+        ".....kkdddddkkkkkdddddkk......",
+        "......kkkkkkk...kkkkkkk.......",
     ]
 )
 
@@ -628,16 +771,24 @@ def dragon_group(ox: float, oy: float, size: float, fire: bool = True, bob: bool
     def place(sprite: list[str], cell: tuple[float, float]) -> str:
         return rle_rects(sprite, ox + cell[0] * size, oy + cell[1] * size, size)
 
-    def spin(cell: tuple[int, int], angles: list[float], dur: float) -> str:
-        px, py = ox + cell[0] * size, oy + cell[1] * size
-        frames = ";".join(f"{a} {px} {py}" for a in angles)
-        return (
-            f'  <animateTransform attributeName="transform" type="rotate" values="{frames}" '
-            f'dur="{dur}s" repeatCount="indefinite"/>'
-        )
+    def cycle(poses: list[list[str]], cell: tuple[int, int], order: list[int], dur: float) -> str:
+        """Flip between redrawn poses. Discrete keyTimes keep every frame crisp;
+        rotating the pixels instead would resample them into mush."""
+        steps = len(order)
+        keys = ";".join(f"{i / steps:.4f}" for i in range(steps + 1))
+        parts = []
+        for index, pose in enumerate(poses):
+            on = [1 if slot == index else 0 for slot in order]
+            values = ";".join(str(v) for v in on + [on[0]])
+            parts.append(
+                f'<g opacity="{on[0]}">\n{place(pose, cell)}\n'
+                f'  <animate attributeName="opacity" values="{values}" keyTimes="{keys}" '
+                f'calcMode="discrete" dur="{dur}s" repeatCount="indefinite"/>\n</g>'
+            )
+        return "\n".join(parts)
 
-    tail_layer = f'<g>\n{spin(TAIL_PIVOT, [0, 6, 0, -4, 0], 3.6)}\n{place(DRAGON_TAIL, TAIL_AT)}\n</g>'
-    wing_layer = f'<g>\n{spin(WING_PIVOT, [0, -11, 1, 0], 2.4)}\n{place(DRAGON_WING, WING_AT)}\n</g>'
+    tail_layer = cycle(DRAGON_TAIL_POSES, TAIL_AT, [0, 1, 0, 2], 3.6)
+    wing_layer = cycle(DRAGON_WING_POSES, WING_AT, [0, 1, 0, 2], 2.4)
 
     # Blink: drop a lid the exact size of the eye over it.
     eye = find_pixels(DRAGON_BODY, "pe")
@@ -647,9 +798,12 @@ def dragon_group(ox: float, oy: float, size: float, fire: bool = True, bob: bool
     lid = ["b" * span, "k" * span, "b" * span][: max(ey1 - ey0 + 1, 2)]
     blink = place(lid, (BODY_AT[0] + ex0, BODY_AT[1] + ey0))
 
-    mx, my = max(find_pixels(DRAGON_BODY, "M"))
+    # Breath leaves from the front of the mouth, centred on the lip opening.
+    mouth = find_pixels(DRAGON_BODY, "M")
+    mx = max(x for x, _ in mouth)
+    lips = [y for x, y in mouth if x == mx]
     lip_x = BODY_AT[0] + mx + 1
-    lip_y = BODY_AT[1] + my
+    lip_y = BODY_AT[1] + round(sum(lips) / len(lips))
 
     layers: list[str] = []
     if fire:
@@ -702,19 +856,37 @@ def dragon_group(ox: float, oy: float, size: float, fire: bool = True, bob: bool
 </g>'''
 
 
+def shut_eyes(ox: float, oy: float, size: float) -> str:
+    """Cover each open eye with a lid, so the napping dragon is actually asleep."""
+    eyes = find_pixels(DRAGON_SIT, "pe")
+    split = (min(x for x, _ in eyes) + max(x for x, _ in eyes)) / 2
+    lids = []
+    for half in (lambda x: x < split, lambda x: x > split):
+        cells = [(x, y) for x, y in eyes if half(x)]
+        x0, x1 = min(x for x, _ in cells), max(x for x, _ in cells)
+        y0, y1 = min(y for _, y in cells), max(y for _, y in cells)
+        rows = ["b" * (x1 - x0 + 1) for _ in range(y1 - y0 + 1)]
+        rows[len(rows) // 2] = "k" * (x1 - x0 + 1)
+        lids.append(rle_rects(rows, ox + x0 * size, oy + y0 * size, size))
+    return "\n".join(lids)
+
+
 def sitting_dragon(ox: float, oy: float, size: float, napping: bool = False) -> str:
+    # Row 0 of DRAGON_SIT is the horn tips, so anything floating above the head
+    # is offset from oy in whole cells and stays inside a tight banner.
     body = rle_rects(DRAGON_SIT, ox, oy, size)
-    extras = ""
+    span = len(DRAGON_SIT[0])
     if napping:
+        body += "\n" + shut_eyes(ox, oy, size)
         extras = (
-            f'<g>\n{zzz_pixels(ox + 14 * size, oy - 4 * size, size)}\n'
+            f'<g>\n{zzz_pixels(ox + (span - 10) * size, oy - 3 * size, size)}\n'
             f'{animate_opacity("0;1;0", "2.8s")}\n</g>'
-            f'<g>\n{zzz_pixels(ox + 18 * size, oy - 8 * size, max(size - 1, 3))}\n'
+            f'<g>\n{zzz_pixels(ox + (span - 6) * size, oy - 6 * size, max(size - 1, 2))}\n'
             f'{animate_opacity("0;0;1;0", "2.8s", "0.6s")}\n</g>'
         )
     else:
         extras = (
-            f'<g opacity="0">\n{rle_rects(HEART, ox + 16 * size, oy - 2 * size, max(size - 2, 3))}\n'
+            f'<g opacity="0">\n{rle_rects(HEART, ox + (span - 6) * size, oy - 4 * size, max(size - 1, 3))}\n'
             f'{animate_opacity("0;1;0", "3.2s")}\n</g>'
         )
     return f'''<g>
@@ -769,7 +941,7 @@ def write(path: Path, content: str) -> None:
 def build_dragon_camp() -> None:
     w, h = 920, 420
     size = 8
-    dragon = dragon_group(210, 158, size, fire=True)
+    dragon = dragon_group(210, 118, size, fire=True)
     fox = fox_group(80, 268, 5)
     plants = "\n".join(
         [
@@ -799,7 +971,7 @@ def build_dragon_camp() -> None:
   <text x="460" y="94" text-anchor="middle" fill="#C6C2B8" font-size="11" letter-spacing="2">FIRE IS THE LAST STAGE OF REVIEW</text>
 </g>'''
     rawr = f'''<g opacity="0">
-{pixel_text("RAWR", 470, 188, 4, "9")}
+{pixel_text("RAWR", 560, 126, 4, "9")}
 {animate_opacity("0;0;1;1;0;0", "5.5s", "0s", "0;0.48;0.52;0.62;0.68;1")}
 </g>'''
     body = f'''{meadow_background(w, h)}
@@ -829,8 +1001,8 @@ def build_tiny_dragon() -> None:
     w, h = 280, 220
     body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
   <rect x="6" y="6" width="{w-12}" height="{h-12}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
-{sitting_dragon(68, 30, 6, napping=False)}
-{pixel_text("MUXBY", 102, 184, 4, "X")}
+{sitting_dragon(65, 28, 5, napping=False)}
+{pixel_text("MUXBY", 112, 194, 3, "X")}
 '''
     write(
         OUT / "dragon" / "pixel-dragon-tiny.svg",
@@ -843,7 +1015,7 @@ def build_napping() -> None:
     body = f'''  <rect width="{w}" height="{h}" fill="#1E2026"/>
   <rect x="0" y="0" width="{w}" height="3" fill="#C9A227"/>
   <rect x="0" y="{h-3}" width="{w}" height="3" fill="#8A6E1F"/>
-{sitting_dragon(28, 18, 4, napping=True)}
+{sitting_dragon(26, 20, 3, napping=True)}
 {fox_group(140, 48, 3)}
   <g font-family="Georgia, 'Times New Roman', serif">
     <text x="248" y="56" font-size="16" fill="#E9E6DF" letter-spacing="3">THE FORGE IS OPEN. THE DRAGON IS ON BREAK.</text>
@@ -888,7 +1060,7 @@ def build_hero() -> None:
   <rect x="632" y="312" width="64" height="8" fill="#E9E6DF"/>
   <rect x="632" y="326" width="78" height="6" fill="#C6C2B8"/>
   <rect x="632" y="338" width="48" height="4" fill="#C9A227"/>
-{dragon_group(800, 188, 5, fire=True, bob=True)}
+{dragon_group(800, 175, 5, fire=True, bob=True)}
 {fox_group(96, 286, 4)}
 {rle_rects(TEACUP, 632, 280, 4)}
 {rle_rects(STAR, 140, 70, 4)}
@@ -951,7 +1123,7 @@ def build_tool_rack() -> None:
   {"".join(tags)}
   <rect x="20" y="356" width="{w-40}" height="66" fill="#2A2D35"/>
   <rect x="20" y="356" width="{w-40}" height="2" fill="#8A6E1F"/>
-{sitting_dragon(48, 284, 3)}
+{sitting_dragon(48, 280, 3)}
 {rle_rects(ANVIL, 816, 316, 5)}
   <text x="460" y="398" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#C9A227" letter-spacing="4">SAME SIZE TAGS. NO SCORES.</text>
 '''
@@ -1028,7 +1200,7 @@ def build_mail() -> None:
   <text x="260" y="38" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#E9E6DF" letter-spacing="6">DRAGON POST</text>
   <g>
     <animateTransform attributeName="transform" type="translate" values="0 18; 330 0; 0 18" dur="8s" repeatCount="indefinite"/>
-{rle_rects(DRAGON_IDLE, 0, 58, 4)}
+{rle_rects(DRAGON_IDLE, 12, 42, 4)}
 {rle_rects(ENVELOPE, 176, 118, 4)}
   </g>
   <text x="260" y="208" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#9AA0AC" letter-spacing="3">THE POST GOES OUT AT DUSK</text>
@@ -1140,7 +1312,7 @@ def build_postcard() -> None:
     <tspan x="44" dy="24">creature allowed to scorch the drafts.</tspan>
     <tspan x="44" dy="30">Pakistan. Still shipping.</tspan>
   </text>
-{sitting_dragon(76, 244, 4)}
+{sitting_dragon(64, 240, 3)}
 {rle_rects(WAX_STAMP, 400, 52, 8)}
   <text x="428" y="84" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F7F5F0">M</text>
   <rect x="380" y="160" width="210" height="5" fill="#3A3E48"/>
@@ -1180,7 +1352,7 @@ def build_fire_closeup() -> None:
   <rect x="14" y="14" width="{w-28}" height="{h-28}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
   <text x="320" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#E9E6DF" letter-spacing="7">EMBER, ON PURPOSE</text>
   <path d="M240 62 H400" stroke="#C9A227" stroke-width="1" opacity=".6"/>
-{dragon_group(44, 88, size, fire=True)}
+{dragon_group(44, 74, size, fire=True)}
 {pixel_text("FIRE PLEASE", 424, 316, 4, "X")}
 '''
     write(
