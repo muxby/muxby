@@ -1,5 +1,5 @@
 # ══════════════════════════════════════════════════════════════
-#  CONTRIBUTION SNAKE — feeds on the contribution graph
+#  CONTRIBUTION SNAKE — the other creature in the garden
 #  Generates the snake SVGs and publishes them to the `output`
 #  branch, which the README embeds.
 # ══════════════════════════════════════════════════════════════
@@ -7,7 +7,6 @@ name: Generate Contribution Snake
 
 on:
   schedule:
-    # every 12 hours — keep the snake well fed
     - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
@@ -27,9 +26,9 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=#00F5FF&color_dots=#161B22,#0e4429,#006d32,#26a641,#39d353
+            dist/github-contribution-grid-snake.svg?color_snake=#C45C32&color_dots=#F4EBD8,#E8C49A,#C4897A,#C45C32,#6F8F5E
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#E07A3D&color_dots=#1C1510,#3D2B1F,#4F6B45,#C45C32,#E07A3D
+            dist/ocean.gif?color_snake=#C45C32&color_dots=#F4EBD8,#E8C49A,#C4897A,#C45C32,#6F8F5E
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4

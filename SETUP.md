@@ -1,8 +1,9 @@
-# SETUP GUIDE — MUXBY-OS "NEON VOID" PROFILE
+# SETUP GUIDE — MUXBY ATELIER
 
 Everything in this repo is wired for the GitHub username **`muxby`** (this repo is
-`muxby/muxby`, the special profile repository). If you fork or adapt it, this is the
-complete find-and-replace map and activation checklist.
+`muxby/muxby`, the special profile repository). The visual system is **Ember Atelier**:
+warm paper, terracotta, sage, and walnut ink. It is deliberately not neon, not a
+cockpit, and not a constellation in the void.
 
 ---
 
@@ -10,84 +11,85 @@ complete find-and-replace map and activation checklist.
 
 | File | Purpose |
 |---|---|
-| `README.md` | The profile itself — 16 sections, fully commented with `<!-- ══════ SECTION XX ══════ -->` markers |
-| `assets/hero-banner.svg` | Animated nebula hero banner (SMIL) |
-| `assets/sigil.svg` | The recurring hexagonal "M" monogram |
-| `assets/divider-circuit.svg` | Circuit-board divider with traveling data pulses |
-| `assets/divider-starfield.svg` | Constellation divider with comet |
-| `assets/divider-wave.svg` | Triple sine-ribbon wave divider |
-| `assets/divider-beam.svg` | Gradient beam divider with light sweep |
-| `assets/constellation.svg` | Tech constellation map (Section 05) |
-| `assets/radar-chart.svg` | Six-domain skill radar (Section 04) |
-| `assets/odyssey.svg` | Metro-map learning roadmap (Section 12) |
-| `assets/hologram.svg` | Hologram projector (Section 07) |
-| `assets/glitch-restricted.svg` | Glitch "restricted area" banner (Section 09) |
-| `assets/signature.svg` | Self-drawing signature (Section 16) |
-| `assets/aurora-header.svg` | Aurora borealis header for The Observatory (Section 06½) |
-| `assets/graph-gauges.svg` | Cockpit gauge cluster — animated needles & arcs (Section 06½) |
-| `assets/graph-donut.svg` | "Code DNA" donut chart with staggered segment draw-in (Section 06½) |
-| `assets/graph-bars.svg` | Skill equalizer — bars rise once, then breathe like an EQ (Section 06½) |
-| `assets/graph-growth.svg` | Self-drawing XP line chart with milestone markers (Section 06½) |
-| `assets/graph-heatmap.svg` | Commit-intensity heatmap with pulsing "supernova" cells (Section 06½) |
-| `assets/graph-polar-clock.svg` | 24-hour circadian commit clock with rotating sweep (Section 06½) |
-| `assets/graph-oscilloscope.svg` | Dev-vitals oscilloscope — scrolling EKG + flow wave (Section 13) |
-| `.github/workflows/snake.yml` | Contribution snake generator → `output` branch |
-| `.github/workflows/profile-3d.yml` | 3D contribution graph → `output-3d` branch |
+| `README.md` | The profile itself |
+| `assets/atelier/hero.svg` | Dusk window with the dragon on the sill |
+| `assets/atelier/postcard.svg` | Hello postcard and wax-seal story |
+| `assets/atelier/wax-seal.svg` | Terracotta M seal |
+| `assets/atelier/corkboard.svg` | Pinned notes for the stack (readable ink on cream) |
+| `assets/atelier/garden.svg` | Skill garden — plants, not charts |
+| `assets/atelier/trail.svg` | Storybook learning trail |
+| `assets/atelier/kettle.svg` | Copper kettle, now brewing |
+| `assets/atelier/lantern.svg` | Paper lantern and moths |
+| `assets/atelier/koi.svg` | Slow koi pond |
+| `assets/atelier/mail.svg` | Dragon post |
+| `assets/atelier/desk.svg` | Polaroid on a walnut desk |
+| `assets/atelier/stickers.svg` | Enamel pin sheet |
+| `assets/atelier/napping-banner.svg` | Workshop / tea-break sign |
+| `assets/atelier/quote.svg` | Pressed-leaf quote card |
+| `assets/atelier/signature.svg` | Walnut-ink signature |
+| `assets/atelier/divider-vine.svg` | Self-drawing sage vine |
+| `assets/atelier/divider-fireflies.svg` | Fireflies |
+| `assets/atelier/divider-paws.svg` | Pawprints |
+| `assets/dragon/pixel-dragon.svg` | Hill scene, fire-breathing pixel dragon |
+| `assets/dragon/pixel-dragon-fire.svg` | Close-up looping fire breath |
+| `assets/dragon/pixel-dragon-tiny.svg` | Sitting mascot |
+| `scripts/build_atelier.py` | Regenerates the pixel scenes from sprites |
+| `.github/workflows/snake.yml` | Contribution snake → `output` branch |
 
-## 2. Find-and-replace values
+Older filenames (`hero-banner.svg`, `constellation.svg`, `hologram.svg`, `graph-*.svg`,
+and the circuit/glitch/odyssey files) now point at atelier artwork so leftover links
+do not resurrect the neon palette.
 
-| Placeholder in files | Replace with |
-|---|---|
-| `muxby` (in all widget URLs & raw.githubusercontent links) | your GitHub username |
-| `hello@example.com` | your real email (Sections 15) |
-| `href="#"` in Section 15 | your real social profile URLs |
-| `41.0082° N · 28.9784° E` | your (approximate!) coordinates |
-| `since+2016` in the typing SVG | your actual start year |
-| Project cards in Section 08 | your real repos, taglines, and links |
-| `repo=muxby` pin card in Section 14 | your best repository |
-
-Text inside the custom SVGs (name "MUXBY", radar values, roadmap stations) is plain
-`<text>`/`<path>` markup — edit the SVG files directly.
-
-## 3. Activation checklist
-
-1. **Merge to the default branch** of `<username>/<username>` — GitHub only renders the
-   profile README from the default branch.
-2. **Enable Actions** (Actions tab → enable workflows) and check
-   *Settings → Actions → General → Workflow permissions → Read and write permissions*.
-3. **Run the snake**: Actions → *Generate Contribution Snake* → *Run workflow*.
-   It publishes SVGs to the `output` branch that Section 06 embeds.
-4. **Run the mountains**: Actions → *Generate 3D Contribution Graph* → *Run workflow*.
-   It publishes to the `output-3d` branch that Section 07 embeds.
-   (Until first run, those two images will 404 — everything else renders immediately.)
-5. **Optional — WakaTime**: create a wakatime.com account, then uncomment the WakaTime
-   card in Section 06.
-6. **Optional — Spotify**: generate a widget at `spotify-github-profile.kittinanx.com`
-   and drop it into the "NOW PLAYING" slot in Section 13.
-
-## 4. External services used
-
-`shields.io` · `readme-typing-svg.demolab.com` · `github-readme-stats.vercel.app` ·
-`streak-stats.demolab.com` · `github-profile-trophy.vercel.app` ·
-`github-readme-activity-graph.vercel.app` · `github-profile-summary-cards.vercel.app` ·
-`komarev.com` · `capsule-render.vercel.app` · `skillicons.dev` ·
-`quotes-github-readme.vercel.app` · `Platane/snk` · `yoshi389111/github-profile-3d-contrib`
-
-All are free, no-auth image services; if one is temporarily down, only that card
-degrades — the layout holds.
-
-## 5. Color system ("Neon Void")
+## 2. Color system ("Ember Atelier")
 
 | Token | Hex | Reserved for |
 |---|---|---|
-| Void black | `#0D1117` | backgrounds (GitHub-dark native) |
-| Electric cyan | `#00F5FF` | languages, primary accents |
-| Neon magenta | `#FF00E5` | frameworks, alerts, glitch |
-| Plasma purple | `#9D4EDD` | infrastructure, headings |
-| Accent gold | `#FFD700` | **achievements & AI only** — keep it rare |
-| Soft white | `#E6EDF3` | body text on dark |
+| Walnut | `#1C1510` | window frames, never body text on dark HUD |
+| Leather | `#2A211A` | frames |
+| Paper | `#F4EBD8` / `#F6EFE4` | cards, readable surfaces |
+| Ink | `#3A2418` | all body text on paper |
+| Terracotta | `#C45C32` | dragon, pins, languages |
+| Ember | `#E07A3D` | fire, kettle |
+| Sage | `#6F8F5E` | vines, hills, web/infra |
+| Brass | `#B08D62` | quiet metal, not trophy gold |
+| Blush | `#C4897A` | fox, koi, intelligence pins |
+
+Do not reintroduce `#00F5FF`, `#FF00E5`, `#9D4EDD`, or `#0D1117` as a "premium" dark.
+Those were the previous theme's problem. Text goes on cream. Fire is the only thing
+that is allowed to be loud.
+
+## 3. Regenerating pixel scenes
+
+```bash
+python3 scripts/build_atelier.py
+```
+
+Sprites live at the top of that file (`DRAGON_IDLE`, `DRAGON_SIT`, `FOX_SIT`, fire frames).
+Editorial pieces (corkboard, trail, wax seal, signature, desk) are hand-drawn SVGs
+under `assets/atelier/`.
+
+## 4. Find-and-replace values
+
+| Placeholder | Replace with |
+|---|---|
+| `muxby` in widget URLs | your GitHub username |
+| Project table in the README | your real repositories |
+| QR images in `assets/` | your own codes |
+
+## 5. Activation checklist
+
+1. Merge to the default branch of `<username>/<username>`.
+2. Enable Actions with read and write permissions.
+3. Run **Generate Contribution Snake**. It publishes to the `output` branch.
+4. Optional: WakaTime or Spotify widgets can sit beside the kettle, in the same
+   paper palette. Do not drop a dark-mode HUD into the atelier.
+
+## 6. External services
+
+`shields.io` · `readme-typing-svg.demolab.com` · `komarev.com` · `Platane/snk`
+
+All are free image services. If one is down, only that piece degrades.
 
 ---
 
-<sub>Signed in the void. If a section breaks, check the HTML comment markers — every
-section is independent and can be removed without collapsing its neighbors.</sub>
+<sub>Signed in walnut ink. If a section breaks, remove it; neighbors do not collapse.</sub>
