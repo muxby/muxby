@@ -9,6 +9,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import typeset as ts
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets"
 
@@ -66,56 +68,6 @@ PALETTE = {
     "9": "#FFE3A3",  # spark
 }
 
-# 3x5 pixel caps for wooden signs. Kept tiny on purpose.
-FONT_3X5 = {
-    "A": [" # ", "# #", "###", "# #", "# #"],
-    "B": ["## ", "# #", "## ", "# #", "## "],
-    "C": [" ##", "#  ", "#  ", "#  ", " ##"],
-    "D": ["## ", "# #", "# #", "# #", "## "],
-    "E": ["###", "#  ", "## ", "#  ", "###"],
-    "F": ["###", "#  ", "## ", "#  ", "#  "],
-    "G": [" ##", "#  ", "# #", "# #", " ##"],
-    "H": ["# #", "# #", "###", "# #", "# #"],
-    "I": ["###", " # ", " # ", " # ", "###"],
-    "J": ["###", "  #", "  #", "# #", " # "],
-    "K": ["# #", "# #", "## ", "# #", "# #"],
-    "L": ["#  ", "#  ", "#  ", "#  ", "###"],
-    "M": ["# #", "###", "# #", "# #", "# #"],
-    "N": ["# #", "## ", "# #", "# #", "# #"],
-    "O": [" # ", "# #", "# #", "# #", " # "],
-    "P": ["## ", "# #", "## ", "#  ", "#  "],
-    "Q": [" # ", "# #", "# #", " ##", "  #"],
-    "R": ["## ", "# #", "## ", "# #", "# #"],
-    "S": [" ##", "#  ", " # ", "  #", "## "],
-    "T": ["###", " # ", " # ", " # ", " # "],
-    "U": ["# #", "# #", "# #", "# #", "###"],
-    "V": ["# #", "# #", "# #", "# #", " # "],
-    "W": ["# #", "# #", "# #", "###", "# #"],
-    "X": ["# #", "# #", " # ", "# #", "# #"],
-    "Y": ["# #", "# #", " # ", " # ", " # "],
-    "Z": ["###", "  #", " # ", "#  ", "###"],
-    "0": [" # ", "# #", "# #", "# #", " # "],
-    "1": [" # ", "## ", " # ", " # ", "###"],
-    "2": ["## ", "  #", " # ", "#  ", "###"],
-    "3": ["## ", "  #", " # ", "  #", "## "],
-    "4": ["# #", "# #", "###", "  #", "  #"],
-    "5": ["###", "#  ", "## ", "  #", "## "],
-    "6": [" ##", "#  ", "## ", "# #", " # "],
-    "7": ["###", "  #", " # ", " # ", " # "],
-    "8": [" # ", "# #", " # ", "# #", " # "],
-    "9": [" # ", "# #", " ##", "  #", "## "],
-    " ": ["   ", "   ", "   ", "   ", "   "],
-    ".": ["   ", "   ", "   ", "   ", " # "],
-    "!": [" # ", " # ", " # ", "   ", " # "],
-    "'": ["#  ", "#  ", "   ", "   ", "   "],
-    "-": ["   ", "   ", "###", "   ", "   "],
-    "+": ["   ", " # ", "###", " # ", "   "],
-    "/": ["  #", "  #", " # ", "#  ", "#  "],
-    ":": ["   ", " # ", "   ", " # ", "   "],
-    "?": ["## ", "  #", " # ", "   ", " # "],
-}
-
-
 def pad(rows: list[str]) -> list[str]:
     width = max(len(r) for r in rows)
     return [r.ljust(width, ".") for r in rows]
@@ -142,24 +94,13 @@ def rle_rects(rows: list[str], ox: float, oy: float, size: float, extra: str = "
     return "\n".join(parts)
 
 
-def text_rows(message: str) -> list[str]:
-    glyphs = [FONT_3X5.get(ch, FONT_3X5["?"]) for ch in message.upper()]
-    rows = []
-    for i in range(5):
-        row = ""
-        for gi, g in enumerate(glyphs):
-            row += g[i].replace(" ", ".")
-            if gi != len(glyphs) - 1:
-                row += "."
-        rows.append(row)
-    return rows
+def sprite_text(message: str, role: str, x: float, y: float, color_key: str, **kw) -> str:
+    """Outlined lettering in a sprite color, for labels inside the pixel scenes.
 
-
-def pixel_text(message: str, ox: float, oy: float, size: float, color_key: str = "p") -> str:
-    rows = []
-    for raw in text_rows(message):
-        rows.append("".join(color_key if ch == "#" else "." for ch in raw))
-    return rle_rects(rows, ox, oy, size)
+    Lettering is typeset, never drawn on the pixel grid: see scripts/typeset.py.
+    Taking the color from PALETTE keeps label ink and sprite ink the same thing.
+    """
+    return ts.outline(message, role, x, y, PALETTE[color_key], **kw)
 
 
 # ---------------------------------------------------------------------------
@@ -653,22 +594,9 @@ WAX_STAMP = pad(
     ]
 )
 
-SLEEP_Z = pad(
-    [
-        "###",
-        "  #",
-        " # ",
-        "#  ",
-        "###",
-    ]
-)
-
-
-def zzz_pixels(ox: float, oy: float, size: float) -> str:
-    rows = []
-    for raw in SLEEP_Z:
-        rows.append("".join("P" if ch == "#" else "." for ch in raw.replace(" ", ".")))
-    return rle_rects(rows, ox, oy, size)
+def sleep_mark(ox: float, oy: float, size: float) -> str:
+    """One drifting Z, set in the display serif rather than drawn as blocks."""
+    return sprite_text("Z", "wordmark", ox, oy + size * 5, "P", size=size * 7, tracking=0)
 
 
 def animate_opacity(values: str, dur: str, begin: str = "0s", key_times: str | None = None) -> str:
@@ -879,9 +807,9 @@ def sitting_dragon(ox: float, oy: float, size: float, napping: bool = False) -> 
     if napping:
         body += "\n" + shut_eyes(ox, oy, size)
         extras = (
-            f'<g>\n{zzz_pixels(ox + (span - 10) * size, oy - 3 * size, size)}\n'
+            f'<g>\n{sleep_mark(ox + (span - 10) * size, oy - 3 * size, size)}\n'
             f'{animate_opacity("0;1;0", "2.8s")}\n</g>'
-            f'<g>\n{zzz_pixels(ox + (span - 6) * size, oy - 6 * size, max(size - 1, 2))}\n'
+            f'<g>\n{sleep_mark(ox + (span - 6) * size, oy - 6 * size, max(size - 1, 2))}\n'
             f'{animate_opacity("0;0;1;0", "2.8s", "0.6s")}\n</g>'
         )
     else:
@@ -965,13 +893,13 @@ def build_dragon_camp() -> None:
   <animate attributeName="opacity" values=".45;.9;.45" dur="1.4s" repeatCount="indefinite"/>
 </ellipse>'''
     frame = f'''<rect x="16" y="16" width="{w-32}" height="{h-32}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".5"/>'''
-    caption = f'''<g font-family="Georgia, 'Times New Roman', serif">
-  <text x="460" y="50" text-anchor="middle" fill="#E9E6DF" font-size="19" letter-spacing="7">A SMALL DRAGON LIVES HERE</text>
+    caption = f'''<g>
+  {ts.outline("A small dragon lives here", "plate", 460, 50, "#E9E6DF", "middle", max_width=760)}
   <rect x="330" y="66" width="260" height="1" fill="#C9A227" opacity=".8"/>
-  <text x="460" y="94" text-anchor="middle" fill="#C6C2B8" font-size="11" letter-spacing="2">FIRE IS THE LAST STAGE OF REVIEW</text>
+  {ts.outline("Fire is the last stage of review", "eyebrow", 460, 94, "#C6C2B8", "middle")}
 </g>'''
     rawr = f'''<g opacity="0">
-{pixel_text("RAWR", 560, 126, 4, "9")}
+{sprite_text("Rawr", "label", 560, 146, "9", size=18, tracking=0.14)}
 {animate_opacity("0;0;1;1;0;0", "5.5s", "0s", "0;0.48;0.52;0.62;0.68;1")}
 </g>'''
     body = f'''{meadow_background(w, h)}
@@ -1002,7 +930,7 @@ def build_tiny_dragon() -> None:
     body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
   <rect x="6" y="6" width="{w-12}" height="{h-12}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
 {sitting_dragon(65, 28, 5, napping=False)}
-{pixel_text("MUXBY", 112, 194, 3, "X")}
+{sprite_text("Muxby", "wordmark", 140, 202, "X", anchor="middle", size=17, max_width=190)}
 '''
     write(
         OUT / "dragon" / "pixel-dragon-tiny.svg",
@@ -1017,10 +945,10 @@ def build_napping() -> None:
   <rect x="0" y="{h-3}" width="{w}" height="3" fill="#8A6E1F"/>
 {sitting_dragon(26, 20, 3, napping=True)}
 {fox_group(140, 48, 3)}
-  <g font-family="Georgia, 'Times New Roman', serif">
-    <text x="248" y="56" font-size="16" fill="#E9E6DF" letter-spacing="3">THE FORGE IS OPEN. THE DRAGON IS ON BREAK.</text>
+  <g>
+    {ts.outline("The forge is open. The dragon is on break.", "plate", 248, 56, "#E9E6DF", size=15, max_width=560)}
     <rect x="248" y="68" width="400" height="1" fill="#C9A227" opacity=".7"/>
-    <text x="248" y="88" font-size="11" fill="#C6C2B8" letter-spacing="2">FIRE-BREATHING RESUMES SHORTLY</text>
+    {ts.outline("Fire-breathing resumes shortly", "eyebrow", 248, 88, "#C6C2B8")}
   </g>
 '''
     write(
@@ -1068,14 +996,12 @@ def build_hero() -> None:
 {rle_rects(STAR, 700, 64, 4)}
 {rle_rects(STAR, 860, 108, 3)}
 {fireflies([(220, 90, "3.5s"), (340, 60, "4.2s"), (760, 80, "3.8s"), (1040, 100, "4.6s")])}
-  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
-    <text x="328" y="92" fill="#E9E6DF" font-size="44" letter-spacing="10">MUBEEN</text>
+  <g>
+    {ts.outline("Mubeen", "hero", 328, 92, "#E9E6DF", "middle")}
     <rect x="196" y="110" width="264" height="1" fill="#C9A227"/>
-    <text x="328" y="136" fill="#C6C2B8" font-size="11" letter-spacing="1">SOFTWARE, SYSTEMS, AND A SMALL FIRE-BREATHING DRAGON</text>
+    {ts.outline("Software, systems, and a small fire-breathing dragon", "eyebrow", 328, 136, "#C6C2B8", "middle", size=10, tracking=0.14)}
   </g>
-  <g font-family="Georgia, 'Times New Roman', serif" fill="#C9A227">
-    <text x="1128" y="76" font-size="11" letter-spacing="4" text-anchor="end">THE FORGE WINDOW</text>
-  </g>
+  {ts.outline("The forge window", "label", 1128, 76, "#C9A227", "end")}
 '''
     write(
         OUT / "atelier" / "hero.svg",
@@ -1099,7 +1025,6 @@ def build_tool_rack() -> None:
     for i, label in enumerate(labels):
         x = first_x + i * step
         cx = x + tag_w / 2
-        text_w = (4 * len(label) - 1) * 3
         tags.append(
             f'''<g>
   <animateTransform attributeName="transform" type="rotate" values="0 {cx} 150; 1.1 {cx} 150; -1.1 {cx} 150; 0 {cx} 150" dur="{6 + i * 0.4}s" repeatCount="indefinite"/>
@@ -1107,16 +1032,16 @@ def build_tool_rack() -> None:
   <rect x="{x}" y="186" width="{tag_w}" height="{tag_h}" fill="#E9E6DF"/>
   <rect x="{x}" y="186" width="{tag_w}" height="4" fill="#C9A227"/>
   <circle cx="{cx}" cy="200" r="3" fill="#2A2D35"/>
-  {pixel_text(label, cx - text_w / 2, 226, 3, "p")}
+  {sprite_text(label, "tag", cx, 240, "p", anchor="middle", max_width=tag_w - 26)}
   <path d="M{x + 18} 258 H{x + tag_w - 18}" stroke="#4E535D" stroke-width="1"/>
 </g>'''
         )
     body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
   <rect x="20" y="18" width="{w-40}" height="{h-36}" fill="#1E2026"/>
   <rect x="20" y="18" width="{w-40}" height="{h-36}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
-  <text x="460" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#E9E6DF" letter-spacing="8">THE TOOL RACK</text>
+  {ts.outline("The tool rack", "plate", 460, 62, "#E9E6DF", "middle")}
   <path d="M340 78 H580" stroke="#C9A227" stroke-width="1" opacity=".7"/>
-  <text x="460" y="102" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#9AA0AC" letter-spacing="3">HUNG WHERE I CAN REACH THEM</text>
+  {ts.outline("Hung where I can reach them", "eyebrow", 460, 102, "#9AA0AC", "middle")}
   <rect x="48" y="146" width="824" height="5" fill="url(#brass)"/>
   <rect x="44" y="140" width="10" height="17" fill="#8A6E1F"/>
   <rect x="866" y="140" width="10" height="17" fill="#8A6E1F"/>
@@ -1125,7 +1050,7 @@ def build_tool_rack() -> None:
   <rect x="20" y="356" width="{w-40}" height="2" fill="#8A6E1F"/>
 {sitting_dragon(48, 280, 3)}
 {rle_rects(ANVIL, 816, 316, 5)}
-  <text x="460" y="398" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#C9A227" letter-spacing="4">SAME SIZE TAGS. NO SCORES.</text>
+  {ts.outline("Same size tags. No scores.", "label", 460, 398, "#C9A227", "middle")}
 '''
     write(
         OUT / "atelier" / "garden.svg",
@@ -1152,7 +1077,7 @@ def build_kettle() -> None:
         )
     body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
   <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
-  <text x="210" y="40" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#E9E6DF" letter-spacing="6">ON THE HOB</text>
+  {ts.outline("On the hob", "plate", 210, 40, "#E9E6DF", "middle", size=15)}
   <ellipse cx="210" cy="212" rx="78" ry="20" fill="url(#hearth)">
     <animate attributeName="opacity" values=".5;.95;.5" dur="2.6s" repeatCount="indefinite"/>
   </ellipse>
@@ -1166,7 +1091,7 @@ def build_kettle() -> None:
     <animateTransform attributeName="transform" type="rotate" values="0 210 114; -8 210 114; 6 210 114; 0 210 114" dur="1.2s" repeatCount="indefinite"/>
   </rect>
   {"".join(steam)}
-  <text x="210" y="252" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#9AA0AC" letter-spacing="3">AGENTIC SYSTEMS, POURED SLOWLY</text>
+  {ts.outline("Agentic systems, poured slowly", "eyebrow", 210, 252, "#9AA0AC", "middle", size=9.5, tracking=0.16)}
 {rle_rects(TEACUP, 324, 198, 5)}
 '''
     write(
@@ -1185,7 +1110,7 @@ def build_lantern() -> None:
   <path d="M140 44 V62" stroke="#8A6E1F" stroke-width="3"/>
 {rle_rects(LANTERN_CORE, 92, 70, 8)}
 {fireflies([(84, 108, "3.4s"), (198, 92, "4.1s"), (172, 158, "3.7s"), (96, 176, "4.5s")])}
-  <text x="140" y="266" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#C9A227" letter-spacing="5">KEEP A LIGHT ON</text>
+  {ts.outline("Keep a light on", "plate", 140, 266, "#C9A227", "middle", size=14)}
 '''
     write(
         OUT / "atelier" / "lantern.svg",
@@ -1197,13 +1122,13 @@ def build_mail() -> None:
     w, h = 520, 220
     body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
   <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
-  <text x="260" y="38" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#E9E6DF" letter-spacing="6">DRAGON POST</text>
+  {ts.outline("Dragon post", "plate", 260, 38, "#E9E6DF", "middle", size=15)}
   <g>
     <animateTransform attributeName="transform" type="translate" values="0 18; 330 0; 0 18" dur="8s" repeatCount="indefinite"/>
 {rle_rects(DRAGON_IDLE, 12, 42, 4)}
 {rle_rects(ENVELOPE, 176, 118, 4)}
   </g>
-  <text x="260" y="208" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#9AA0AC" letter-spacing="3">THE POST GOES OUT AT DUSK</text>
+  {ts.outline("The post goes out at dusk", "eyebrow", 260, 208, "#9AA0AC", "middle")}
 '''
     write(
         OUT / "atelier" / "mail.svg",
@@ -1231,7 +1156,7 @@ def build_ember_dish() -> None:
         )
     body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
   <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
-  <text x="260" y="38" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#E9E6DF" letter-spacing="6">BANKED COALS</text>
+  {ts.outline("Banked coals", "plate", 260, 38, "#E9E6DF", "middle", size=15)}
   <ellipse cx="260" cy="118" rx="150" ry="58" fill="url(#hearth)">
     <animate attributeName="opacity" values=".5;.9;.5" dur="3.2s" repeatCount="indefinite"/>
   </ellipse>
@@ -1240,7 +1165,7 @@ def build_ember_dish() -> None:
   <path d="M142 140 A118 34 0 0 0 378 140" fill="none" stroke="#8A6E1F" stroke-width="2" opacity=".7"/>
   {"".join(coals)}
 {fireflies([(214, 96, "3.1s"), (262, 84, "3.8s"), (312, 98, "3.4s")])}
-  <text x="260" y="198" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#9AA0AC" letter-spacing="3">NEVER FULLY OUT</text>
+  {ts.outline("Never fully out", "eyebrow", 260, 198, "#9AA0AC", "middle")}
 '''
     art = svg_wrap(
         w,
@@ -1305,21 +1230,21 @@ def build_postcard() -> None:
   <rect x="16" y="16" width="608" height="328" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
   <rect x="16" y="16" width="608" height="4" fill="#C9A227"/>
   <path d="M330 40 V320" stroke="#3A3E48" stroke-width="1" stroke-dasharray="3 7"/>
-  <text x="174" y="70" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#E9E6DF" letter-spacing="6">FROM THE FORGE</text>
+  {ts.outline("From the forge", "plate", 174, 70, "#E9E6DF", "middle", size=17)}
   <path d="M64 86 H284" stroke="#C9A227" stroke-width="1" opacity=".7"/>
-  <text x="44" y="122" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#C6C2B8">
+  <text x="44" y="122" {ts.text_attrs("body")} fill="#C6C2B8">
     <tspan x="44" dy="0">Sharp tools, one warm light, and one</tspan>
     <tspan x="44" dy="24">creature allowed to scorch the drafts.</tspan>
     <tspan x="44" dy="30">Pakistan. Still shipping.</tspan>
   </text>
 {sitting_dragon(64, 240, 3)}
 {rle_rects(WAX_STAMP, 400, 52, 8)}
-  <text x="428" y="84" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F7F5F0">M</text>
+  {ts.outline("M", "wordmark", 428, 84, "#F7F5F0", "middle", size=22, tracking=0)}
   <rect x="380" y="160" width="210" height="5" fill="#3A3E48"/>
   <rect x="380" y="184" width="210" height="5" fill="#3A3E48"/>
   <rect x="380" y="208" width="160" height="5" fill="#3A3E48"/>
-  <text x="486" y="252" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#C9A227" letter-spacing="4">MUXBY / THE FORGE</text>
-  <text x="486" y="308" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#E4572E" letter-spacing="2">STAMP OF A FINISHED THOUGHT</text>
+  {ts.outline("Muxby / The forge", "label", 486, 252, "#C9A227", "middle")}
+  {ts.outline("Stamp of a finished thought", "label", 486, 308, "#E4572E", "middle", size=10, tracking=0.14)}
 '''
     write(
         OUT / "atelier" / "postcard.svg",
@@ -1333,9 +1258,9 @@ def build_quote() -> None:
   <rect x="16" y="14" width="{w-32}" height="{h-28}" fill="#1E2026"/>
   <rect x="16" y="14" width="{w-32}" height="{h-28}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
   <rect x="16" y="14" width="5" height="{h-28}" fill="#E4572E"/>
-  <text x="52" y="86" font-family="Georgia, 'Times New Roman', serif" font-size="56" fill="#C9A227" opacity=".55">"</text>
-  <text x="376" y="76" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#E9E6DF">Build something this week that a future teammate</text>
-  <text x="376" y="104" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#E9E6DF">will be glad still exists.</text>
+  {ts.outline('"', "heading", 46, 104, "#C9A227", size=92, opacity=".5")}
+  {ts.outline("Build something this week that a future teammate", "heading", 376, 76, "#E9E6DF", "middle", max_width=540)}
+  {ts.outline("will be glad still exists.", "heading", 376, 104, "#E9E6DF", "middle", max_width=540)}
   <path d="M300 122 H452" stroke="#C9A227" stroke-width="1" opacity=".6"/>
 '''
     write(
@@ -1350,10 +1275,10 @@ def build_fire_closeup() -> None:
     body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
   <rect x="14" y="14" width="{w-28}" height="{h-28}" fill="#17181C"/>
   <rect x="14" y="14" width="{w-28}" height="{h-28}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
-  <text x="320" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#E9E6DF" letter-spacing="7">EMBER, ON PURPOSE</text>
+  {ts.outline("Ember, on purpose", "plate", 320, 48, "#E9E6DF", "middle", size=16)}
   <path d="M240 62 H400" stroke="#C9A227" stroke-width="1" opacity=".6"/>
 {dragon_group(44, 74, size, fire=True)}
-{pixel_text("FIRE PLEASE", 424, 316, 4, "X")}
+{sprite_text("Fire please", "label", 508, 332, "X", anchor="middle", size=14, max_width=200)}
 '''
     write(
         OUT / "dragon" / "pixel-dragon-fire.svg",
@@ -1378,21 +1303,19 @@ def build_stickers() -> None:
         col, row = i % 6, i // 6
         cx = 96 + col * 146
         cy = 140 + row * 88
-        cell = 3 if len(label) <= 4 else 2
-        text_w = (4 * len(label) - 1) * cell
         badges.append(
             f'''<g>
   <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="{3.4 + i*0.13}s" repeatCount="indefinite"/>
   <circle cx="{cx}" cy="{cy}" r="34" fill="{rings[i % len(rings)]}"/>
   <circle cx="{cx}" cy="{cy}" r="29" fill="#1E2026"/>
   <circle cx="{cx}" cy="{cy}" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
-  {pixel_text(label, cx - text_w / 2, cy - cell * 2.5, cell, "P")}
+  {sprite_text(label, "tag", cx, cy + ts.cap_height("tag") / 2, "P", anchor="middle", max_width=46)}
 </g>'''
         )
     body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
   <rect x="18" y="14" width="{w-36}" height="{h-28}" fill="#17181C"/>
   <rect x="18" y="14" width="{w-36}" height="{h-28}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
-  <text x="460" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#E9E6DF" letter-spacing="8">STRUCK AT THE BENCH</text>
+  {ts.outline("Struck at the bench", "plate", 460, 62, "#E9E6DF", "middle", size=17)}
   <path d="M340 78 H580" stroke="#C9A227" stroke-width="1" opacity=".7"/>
   {"".join(badges)}
 '''
