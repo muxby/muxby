@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" role="img" aria-label="Wax seal monogram">
   <defs>
-    <radialGradient id="wax" cx="50%" cy="40%" r="60%">
-      <stop offset="0" stop-color="#D4683C"/>
-      <stop offset="1" stop-color="#8B3A22"/>
+    <radialGradient id="wax" cx="50%" cy="38%" r="62%">
+      <stop offset="0" stop-color="#E2703A"/>
+      <stop offset="1" stop-color="#8E3320"/>
     </radialGradient>
   </defs>
   <circle cx="70" cy="70" r="58" fill="url(#wax)"/>
-  <circle cx="70" cy="70" r="48" fill="none" stroke="#F3D2B0" stroke-width="3" stroke-dasharray="4 6">
+  <circle cx="70" cy="70" r="48" fill="none" stroke="#EDCB94" stroke-width="3" stroke-dasharray="4 6">
     <animateTransform attributeName="transform" type="rotate" from="0 70 70" to="360 70 70" dur="28s" repeatCount="indefinite"/>
   </circle>
-  <path d="M48 96 L48 50 L70 78 L92 50 L92 96" fill="none" stroke="#F6EFE4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="70" cy="70" r="3" fill="#F6EFE4" opacity=".0">
-    <animate attributeName="opacity" values="0;.6;0" dur="3.4s" repeatCount="indefinite"/>
+  <path d="M48 96 L48 50 L70 78 L92 50 L92 96" fill="none" stroke="#FBF6E9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="70" cy="70" r="3" fill="#FBF6E9" opacity="0">
+    <animate attributeName="opacity" values="0;.55;0" dur="3.4s" repeatCount="indefinite"/>
   </circle>
 </svg>
