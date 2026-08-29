@@ -118,7 +118,6 @@ editorial feel; running copy is the grotesque at its natural spacing.
 | `body` | Inter | 13 | 0 | sentence |
 | `caption` | Inter | 11.5 | 0 | sentence |
 | `tag` | JetBrains Mono Bold | 12 | 0.08 | caps |
-| `micro` | JetBrains Mono Bold | 9.5 | 0.12 | caps |
 | `wordmark` | Noto Serif Display Bold | 20 | 0.22 | caps |
 
 Call sites override `size` where a card is smaller, and pass `max_width` to have a label

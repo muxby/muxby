@@ -90,7 +90,6 @@ SCALE = {
     "body": Style("sans", 13, 0.0),                     # running copy
     "caption": Style("sans", 11.5, 0.0),                # smallest live text
     "tag": Style("mono-bold", 12, 0.08, caps=True),     # tags and medallions
-    "micro": Style("mono-bold", 9.5, 0.12, caps=True),  # tightest technical label
     "wordmark": Style("serif-bold", 20, 0.22, caps=True),
 }
 
