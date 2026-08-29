@@ -2,7 +2,7 @@
 
 <img src="assets/atelier/hero.svg" width="100%" alt="Iron studio window at night with a pixel dragon on the sill" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Libre+Baskerville&weight=500&size=18&duration=3600&pause=1400&color=C9A227&center=true&vCenter=true&width=720&height=40&lines=Software%2C+systems%2C+and+a+small+fire-breathing+dragon;Built+to+be+used%2C+not+just+demoed" alt="Software, systems, and a small fire-breathing dragon" />
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=19&letterSpacing=1.5px&duration=3600&pause=1400&color=C9A227&center=true&vCenter=true&width=720&height=40&lines=Software%2C+systems%2C+and+a+small+fire-breathing+dragon;Built+to+be+used%2C+not+just+demoed" alt="Software, systems, and a small fire-breathing dragon" />
 
 <img src="https://komarev.com/ghpvc/?username=muxby&style=flat-square&color=C9A227&label=VISITORS" alt="Profile views" />
 <img src="https://img.shields.io/github/followers/muxby?style=flat-square&logo=github&color=3F6B62&label=FOLLOWERS" alt="Followers" />

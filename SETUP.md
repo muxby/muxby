@@ -34,6 +34,7 @@ deliberately not neon, not a cockpit, not a dashboard, and not a nursery.
 | `assets/dragon/pixel-dragon-fire.svg` | Close-up fire breath |
 | `assets/dragon/pixel-dragon-tiny.svg` | Sitting mascot |
 | `scripts/build_atelier.py` | Regenerates the pixel scenes from sprite tables |
+| `scripts/typeset.py` | The type system: faces, the scale, and glyph outlining |
 | `scripts/sprite_lab.py` | Rasterizes a sprite table to a big PNG in `/tmp` |
 | `.github/workflows/snake.yml` | Contribution snake to the `output` branch |
 
@@ -75,7 +76,64 @@ peach sky, no blush pink, no soft sage. Fire and the lantern are the only loud t
 Shape rule: hard edges. Corner radius stays at 0 to 3, drop shadows stay tight and near
 black, and props stay tools rather than toys.
 
-## 3. Regenerating pixel scenes
+## 3. Type system
+
+Three faces, all under the SIL Open Font License, defined once in `scripts/typeset.py`:
+
+| Role | Face | Used for |
+|---|---|---|
+| Display | Noto Serif Display | titles, wordmarks, the one name |
+| Text | Inter | standfirsts, card copy, captions |
+| Mono | JetBrains Mono | tags, medallions, technical labels |
+
+### Why the artwork embeds glyph outlines
+
+GitHub renders README images in an isolated context where **external web fonts never
+load**. `@font-face`, `@import`, and a `<link>` to Google Fonts all fail silently and fall
+back to whatever the reader happens to have installed, so naming a family is not enough.
+
+Display type and the small uppercase labels are therefore shaped with HarfBuzz and emitted
+as glyph `<path>` outlines, which render identically for everyone. Running copy stays as
+live `<text>` in a stack led by the same families: outlined lowercase costs about 450 bytes
+a glyph, so pushing paragraphs through it would add close to a megabyte, and live text
+stays selectable, translatable, and searchable.
+
+The one place a real web font does work is `readme-typing-svg.demolab.com`, which renders
+server-side and inlines the font as a data URI. That line uses Playfair Display.
+
+### The scale
+
+Sizes are for artwork at its natural `viewBox` size; the README scales the images down.
+Tracking is in em. Display type is caps with wide tracking, which is what carries the
+editorial feel; running copy is the grotesque at its natural spacing.
+
+| Role | Face | Size | Tracking | Case |
+|---|---|---|---|---|
+| `hero` | serif | 44 | 0.22 | caps |
+| `plate` | serif | 20 | 0.30 | caps |
+| `heading` | serif | 18 | 0 | sentence |
+| `eyebrow` | Inter SemiBold | 11 | 0.22 | caps |
+| `label` | Inter SemiBold | 11 | 0.16 | caps |
+| `lede` | Inter | 15 | 0 | sentence |
+| `body` | Inter | 13 | 0 | sentence |
+| `caption` | Inter | 11.5 | 0 | sentence |
+| `tag` | JetBrains Mono Bold | 12 | 0.08 | caps |
+| `micro` | JetBrains Mono Bold | 9.5 | 0.12 | caps |
+| `wordmark` | Noto Serif Display Bold | 20 | 0.22 | caps |
+
+Call sites override `size` where a card is smaller, and pass `max_width` to have a label
+shrink to fit its tag or medallion rather than overflow it.
+
+Two details worth keeping. `outline()` resolves its own anchoring from the shaped width, so
+tracked centred type is optically centred instead of sitting half a letter-space left;
+`optical_x()` applies the same correction to live `<text>`. And outlined glyphs carry
+`shape-rendering="geometricPrecision"`, because the pixel scenes set `crispEdges` on the
+root and curves have to opt back out or the letterforms come out jagged.
+
+Rules: no lettering is ever drawn on the pixel grid, small caps get tracking rather than
+just a smaller size, and all SVG content stays ASCII.
+
+## 4. Regenerating pixel scenes
 
 ```bash
 python3 scripts/build_atelier.py
@@ -90,9 +148,12 @@ inside each `build_*()` function, so recolor per scene rather than by global rep
 checked by eye.
 
 Hand-drawn pieces (roadmap, trail, corkboard, desk, wax seal, signature) are plain SVG
-files under `assets/atelier/` and are edited directly.
+files under `assets/atelier/` and are edited directly. Their text face and glyph
+positioning hang off each root `<svg>` as presentation attributes, so an element only names
+a family when it needs the serif or the mono. Presentation attributes rather than a
+`<style>` block on purpose: a stripped stylesheet would silently drop the whole scale.
 
-## 4. Find-and-replace values
+## 5. Find-and-replace values
 
 | Placeholder | Replace with |
 |---|---|
@@ -101,20 +162,20 @@ files under `assets/atelier/` and are edited directly.
 | Station labels in `roadmap.svg` | your actual roadmap |
 | QR images in `assets/` | your own codes |
 
-## 5. Centering
+## 6. Centering
 
 GitHub strips `style="text-align:center"`. Use `align="center"` attributes instead:
 `<div align="center">` for sections, `<h3 align="center">` for headings, and
 `<table align="center">` for tables. HTML tables are used for the work list and the
 Now strip so the table box itself centers, not only the cell text.
 
-## 6. Activation checklist
+## 7. Activation checklist
 
 1. Merge to the default branch of `<username>/<username>`.
 2. Enable Actions with read and write permissions.
 3. Run **Generate Contribution Snake**; it publishes to the `output` branch.
 
-## 7. External services
+## 8. External services
 
 `shields.io` / `readme-typing-svg.demolab.com` / `komarev.com` / `Platane/snk`
 
