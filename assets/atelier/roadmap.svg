@@ -1,143 +1,250 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" text-rendering="geometricPrecision">
   <title id="title">Roadmap</title>
-  <desc id="desc">A lantern-lit roadmap across a twilight sky. Brass marks the ground already covered, amber marks where the work is now, and faint sage marks what comes next.</desc>
+  <desc id="desc">A forge-lit roadmap on graphite, switching back across three rows. Fifteen stations from first programs to distributed systems: brass marks ground already covered, gold marks the work in hand, and patina marks what comes next.</desc>
   <defs>
-    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#141D2B"/>
-      <stop offset=".55" stop-color="#1B2738"/>
-      <stop offset="1" stop-color="#16202E"/>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F1013"/>
+      <stop offset=".55" stop-color="#1B1D23"/>
+      <stop offset="1" stop-color="#121317"/>
     </linearGradient>
-    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8C7442"/>
-      <stop offset=".5" stop-color="#C8A868"/>
-      <stop offset="1" stop-color="#C8A868"/>
+    <linearGradient id="rail" gradientUnits="userSpaceOnUse" x1="70" y1="0" x2="1130" y2="0">
+      <stop offset="0" stop-color="#8A6E1F"/>
+      <stop offset=".55" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#E0B94A"/>
     </linearGradient>
     <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#EDAE49" stop-opacity=".55"/>
-      <stop offset=".5" stop-color="#E2703A" stop-opacity=".16"/>
-      <stop offset="1" stop-color="#E2703A" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F2C14E" stop-opacity=".42"/>
+      <stop offset=".5" stop-color="#E4572E" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
-    <filter id="plaque" x="-8%" y="-20%" width="116%" height="150%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0B121C" flood-opacity=".55"/>
+    <filter id="plaque" x="-8%" y="-24%" width="116%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity=".55"/>
     </filter>
   </defs>
 
-  <rect width="1200" height="520" fill="url(#night)"/>
+  <rect width="1200" height="900" fill="url(#deck)"/>
 
-  <!-- distant hills keep it a garden, not a grid -->
-  <path d="M0 366 C 180 330, 360 352, 560 344 C 760 336, 940 318, 1200 340 L1200 520 L0 520 Z" fill="#1F2E36" opacity=".85"/>
-  <path d="M0 410 C 220 384, 420 404, 640 396 C 860 388, 1020 400, 1200 386 L1200 520 L0 520 Z" fill="#25353A"/>
+  <!-- low ridges: cool secondary, kept almost monochrome -->
+  <path d="M0 796 C 180 762, 360 784, 560 776 C 760 768, 940 752, 1200 774 L1200 900 L0 900 Z" fill="#1E262A"/>
+  <path d="M0 842 C 220 818, 420 836, 640 828 C 860 820, 1020 832, 1200 818 L1200 900 L0 900 Z" fill="#243230"/>
 
-  <g fill="#F0EADC">
-    <circle cx="120" cy="72" r="1.6" opacity=".5"><animate attributeName="opacity" values=".25;.8;.25" dur="4.2s" repeatCount="indefinite"/></circle>
-    <circle cx="330" cy="52" r="1.2" opacity=".4"><animate attributeName="opacity" values=".6;.2;.6" dur="5.4s" repeatCount="indefinite"/></circle>
-    <circle cx="620" cy="66" r="1.4" opacity=".45"><animate attributeName="opacity" values=".2;.75;.2" dur="4.8s" repeatCount="indefinite"/></circle>
-    <circle cx="880" cy="48" r="1.2" opacity=".4"><animate attributeName="opacity" values=".7;.25;.7" dur="6s" repeatCount="indefinite"/></circle>
-    <circle cx="1080" cy="80" r="1.6" opacity=".5"><animate attributeName="opacity" values=".3;.85;.3" dur="5s" repeatCount="indefinite"/></circle>
+  <g fill="#E9E6DF">
+    <circle cx="120" cy="72" r="1.4" opacity=".4"><animate attributeName="opacity" values=".18;.7;.18" dur="4.2s" repeatCount="indefinite"/></circle>
+    <circle cx="330" cy="52" r="1.1" opacity=".32"><animate attributeName="opacity" values=".5;.15;.5" dur="5.4s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="66" r="1.3" opacity=".36"><animate attributeName="opacity" values=".15;.62;.15" dur="4.8s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="48" r="1.1" opacity=".32"><animate attributeName="opacity" values=".58;.18;.58" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="80" r="1.4" opacity=".4"><animate attributeName="opacity" values=".22;.72;.22" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="36" cy="304" r="1.1" opacity=".3"><animate attributeName="opacity" values=".12;.55;.12" dur="5.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1160" cy="560" r="1.2" opacity=".32"><animate attributeName="opacity" values=".5;.14;.5" dur="6.4s" repeatCount="indefinite"/></circle>
   </g>
-  <circle cx="1096" cy="96" r="26" fill="#FBF6E9" opacity=".14"/>
-  <circle cx="1096" cy="96" r="18" fill="#FBF6E9" opacity=".22"/>
 
-  <text x="600" y="52" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#F0EADC" letter-spacing="6">ROADMAP</text>
-  <text x="600" y="78" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#C8A868">a direction of travel, kept honest</text>
+  <!-- brass hairline frame -->
+  <rect x="18" y="18" width="1164" height="864" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".55"/>
 
-  <!-- rail -->
-  <path d="M70 300 H730" stroke="url(#rail)" stroke-width="5" stroke-linecap="round" fill="none"/>
-  <path d="M730 300 H890" stroke="#EDAE49" stroke-width="5" stroke-linecap="round" fill="none" stroke-dasharray="12 10">
+  <text x="603.6" y="56" text-anchor="middle" font-family="'Noto Serif Display','Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,'Times New Roman',serif" font-size="24" letter-spacing="7.2" fill="#E9E6DF">ROADMAP</text>
+  <path d="M498 70 H702" stroke="#C9A227" stroke-width="1" opacity=".7"/>
+  <text x="601.21" y="92" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2.42" fill="#9AA0AC">A DIRECTION OF TRAVEL, KEPT HONEST</text>
+
+  <!-- rail: three rows, right-angle switchbacks, walked ground first -->
+  <g fill="url(#rail)">
+    <rect x="70" y="228" width="1060" height="4"/>
+    <rect x="1126" y="228" width="4" height="234"/>
+    <rect x="70" y="458" width="1060" height="4"/>
+    <rect x="70" y="458" width="4" height="234"/>
+    <rect x="70" y="688" width="280" height="4"/>
+  </g>
+
+  <!-- direction of travel -->
+  <g fill="#C9A227">
+    <rect x="68" y="222" width="4" height="16"/>
+    <polygon points="673,222 673,238 687,230"/>
+    <polygon points="1120,341 1136,341 1128,357"/>
+    <polygon points="467,452 467,468 453,460"/>
+    <polygon points="64,571 80,571 72,587"/>
+  </g>
+  <text x="70" y="212" font-family="'JetBrains Mono','SF Mono',ui-monospace,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="9.5" font-weight="700" letter-spacing="1.14" fill="#C9A227">START</text>
+
+  <!-- the segment being walked now, then the ground that is only planned -->
+  <path d="M350 690 H570" stroke="#F2C14E" stroke-width="4" fill="none" stroke-dasharray="14 8">
     <animate attributeName="stroke-dashoffset" values="0;-44" dur="1.8s" repeatCount="indefinite"/>
   </path>
-  <path d="M890 300 H1130" stroke="#7E9A72" stroke-width="4" stroke-linecap="round" fill="none" stroke-dasharray="3 11" opacity=".7"/>
+  <path d="M570 690 H1122" stroke="#6E9C90" stroke-width="3" fill="none" stroke-dasharray="2 10" opacity=".8"/>
+  <path d="M1130 690 H1160" stroke="#3F6B62" stroke-width="3"/>
+  <text x="1161.14" y="716" text-anchor="end" font-family="'JetBrains Mono','SF Mono',ui-monospace,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="9.5" font-weight="700" letter-spacing="1.14" fill="#6E9C90">THE LONG RUN</text>
 
-  <!-- lantern glow at the current station -->
-  <ellipse cx="730" cy="300" rx="120" ry="86" fill="url(#glow)">
-    <animate attributeName="opacity" values=".55;1;.55" dur="3.2s" repeatCount="indefinite"/>
+  <ellipse cx="570" cy="690" rx="126" ry="90" fill="url(#glow)">
+    <animate attributeName="opacity" values=".55;1;.55" dur="3.4s" repeatCount="indefinite"/>
   </ellipse>
 
   <!-- connector stems -->
-  <g stroke="#C8A868" stroke-width="1.5" opacity=".55">
-    <path d="M90 300 V254"/>
-    <path d="M250 300 V346"/>
-    <path d="M410 300 V254"/>
-    <path d="M570 300 V346"/>
-    <path d="M730 300 V240"/>
-    <path d="M890 300 V346"/>
-    <path d="M1050 300 V254"/>
+  <g stroke="#8A6E1F" stroke-width="1" opacity=".8">
+    <path d="M130 230 V186"/>
+    <path d="M350 230 V274"/>
+    <path d="M570 230 V186"/>
+    <path d="M790 230 V274"/>
+    <path d="M1010 230 V186"/>
+    <path d="M1010 460 V504"/>
+    <path d="M790 460 V416"/>
+    <path d="M570 460 V504"/>
+    <path d="M350 460 V416"/>
+    <path d="M130 460 V416"/>
+    <path d="M130 690 V734"/>
+    <path d="M350 690 V646"/>
+    <path d="M570 690 V650"/>
+  </g>
+  <g stroke="#3F6B62" stroke-width="1" opacity=".8">
+    <path d="M790 690 V734"/>
+    <path d="M1010 690 V646"/>
   </g>
 
-  <!-- plaques -->
-  <g font-family="Georgia, 'Times New Roman', serif" filter="url(#plaque)">
+  <!-- plaques: ink on bone, hard edges -->
+  <g filter="url(#plaque)">
     <g>
-      <rect x="20" y="200" width="140" height="54" rx="4" fill="#F0EADC"/>
-      <text x="90" y="224" text-anchor="middle" font-size="14" fill="#22303F">Fundamentals</text>
-      <text x="90" y="243" text-anchor="middle" font-size="11" fill="#5C6B78">C, C++, the basics</text>
+      <rect x="46" y="130" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="46" y="130" width="4" height="56" fill="#C9A227"/>
+      <text x="132" y="154" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">First programs</text>
+      <text x="132" y="173" text-anchor="middle" font-size="11.5" fill="#4E535D">CS50, print and loop</text>
     </g>
     <g>
-      <rect x="180" y="346" width="140" height="54" rx="4" fill="#F0EADC"/>
-      <text x="250" y="370" text-anchor="middle" font-size="14" fill="#22303F">Web platform</text>
-      <text x="250" y="389" text-anchor="middle" font-size="11" fill="#5C6B78">React, Next.js, PHP</text>
+      <rect x="266" y="274" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="266" y="274" width="4" height="56" fill="#C9A227"/>
+      <text x="352" y="298" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">C and memory</text>
+      <text x="352" y="317" text-anchor="middle" font-size="11.5" fill="#4E535D">pointers, arrays</text>
     </g>
     <g>
-      <rect x="340" y="200" width="140" height="54" rx="4" fill="#F0EADC"/>
-      <text x="410" y="224" text-anchor="middle" font-size="14" fill="#22303F">Backends</text>
-      <text x="410" y="243" text-anchor="middle" font-size="11" fill="#5C6B78">APIs, Postgres, queues</text>
+      <rect x="486" y="130" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="486" y="130" width="4" height="56" fill="#C9A227"/>
+      <text x="572" y="154" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">C++ and OOP</text>
+      <text x="572" y="173" text-anchor="middle" font-size="11.5" fill="#4E535D">classes, game systems</text>
     </g>
     <g>
-      <rect x="500" y="346" width="140" height="54" rx="4" fill="#F0EADC"/>
-      <text x="570" y="370" text-anchor="middle" font-size="14" fill="#22303F">Cloud</text>
-      <text x="570" y="389" text-anchor="middle" font-size="11" fill="#5C6B78">Docker, AWS, CI</text>
+      <rect x="706" y="274" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="706" y="274" width="4" height="56" fill="#C9A227"/>
+      <text x="792" y="298" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">Systems in C++</text>
+      <text x="792" y="317" text-anchor="middle" font-size="11.5" fill="#4E535D">processes, scheduling</text>
     </g>
     <g>
-      <rect x="646" y="176" width="168" height="64" rx="4" fill="#FBF6E9" stroke="#EDAE49" stroke-width="2"/>
-      <text x="730" y="200" text-anchor="middle" font-size="15" fill="#22303F">Agentic systems</text>
-      <text x="730" y="220" text-anchor="middle" font-size="11" fill="#5C6B78">review loops, tools, evals</text>
-      <text x="730" y="234" text-anchor="middle" font-size="10" fill="#B4472A" letter-spacing="1">YOU ARE HERE</text>
+      <rect x="926" y="130" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="926" y="130" width="4" height="56" fill="#C9A227"/>
+      <text x="1012" y="154" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">PHP dashboards</text>
+      <text x="1012" y="173" text-anchor="middle" font-size="11.5" fill="#4E535D">the first real app</text>
     </g>
     <g>
-      <rect x="820" y="346" width="140" height="54" rx="4" fill="#DFD5C1"/>
-      <text x="890" y="370" text-anchor="middle" font-size="14" fill="#22303F">Rust</text>
-      <text x="890" y="389" text-anchor="middle" font-size="11" fill="#5C6B78">next: ship one CLI</text>
+      <rect x="926" y="504" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="926" y="504" width="4" height="56" fill="#C9A227"/>
+      <text x="1012" y="528" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">Databases</text>
+      <text x="1012" y="547" text-anchor="middle" font-size="11.5" fill="#4E535D">schemas, SQL, joins</text>
     </g>
     <g>
-      <rect x="980" y="200" width="140" height="54" rx="4" fill="#DFD5C1" opacity=".9"/>
-      <text x="1050" y="224" text-anchor="middle" font-size="14" fill="#22303F">Distributed</text>
-      <text x="1050" y="243" text-anchor="middle" font-size="11" fill="#5C6B78">later: read the papers</text>
+      <rect x="706" y="360" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="706" y="360" width="4" height="56" fill="#C9A227"/>
+      <text x="792" y="384" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">TypeScript, React</text>
+      <text x="792" y="403" text-anchor="middle" font-size="11.5" fill="#4E535D">Haazir, asset tracker</text>
     </g>
+    <g>
+      <rect x="486" y="504" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="486" y="504" width="4" height="56" fill="#C9A227"/>
+      <text x="572" y="528" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">Python for data</text>
+      <text x="572" y="547" text-anchor="middle" font-size="11.5" fill="#4E535D">pandas, notebooks</text>
+    </g>
+    <g>
+      <rect x="266" y="360" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="266" y="360" width="4" height="56" fill="#C9A227"/>
+      <text x="352" y="384" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">Data analysis</text>
+      <text x="352" y="403" text-anchor="middle" font-size="11.5" fill="#4E535D">networks, prices</text>
+    </g>
+    <g>
+      <rect x="46" y="360" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="46" y="360" width="4" height="56" fill="#C9A227"/>
+      <text x="132" y="384" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">Machine learning</text>
+      <text x="132" y="403" text-anchor="middle" font-size="11.5" fill="#4E535D">features and error</text>
+    </g>
+    <g>
+      <rect x="46" y="734" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="46" y="734" width="4" height="56" fill="#C9A227"/>
+      <text x="132" y="758" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">Applied AI</text>
+      <text x="132" y="777" text-anchor="middle" font-size="11.5" fill="#4E535D">CITY-MIND, smart city</text>
+    </g>
+    <g>
+      <rect x="266" y="590" width="168" height="56" fill="#E9E6DF"/>
+      <rect x="266" y="590" width="4" height="56" fill="#C9A227"/>
+      <text x="352" y="614" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">Cloud and CI</text>
+      <text x="352" y="633" text-anchor="middle" font-size="11.5" fill="#4E535D">Docker, AWS, pipelines</text>
+    </g>
+    <g>
+      <rect x="480" y="578" width="180" height="72" fill="#F7F5F0"/>
+      <rect x="480" y="578" width="180" height="72" fill="none" stroke="#F2C14E" stroke-width="2"/>
+      <text x="570" y="602" text-anchor="middle" font-size="15" fill="#1B1D22">Agentic systems</text>
+      <text x="570" y="621" text-anchor="middle" font-size="11.5" fill="#4E535D">review loops, tools, evals</text>
+      <text x="570.8" y="640" text-anchor="middle" font-size="10" font-weight="600" letter-spacing="1.6" fill="#A33418">YOU ARE HERE</text>
+    </g>
+    <g>
+      <rect x="706" y="734" width="168" height="56" fill="#C6C2B8"/>
+      <rect x="706" y="734" width="4" height="56" fill="#6E9C90"/>
+      <text x="792" y="758" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">Rust</text>
+      <text x="792" y="777" text-anchor="middle" font-size="11.5" fill="#4E535D">next: ship one CLI</text>
+    </g>
+    <g>
+      <rect x="926" y="590" width="168" height="56" fill="#C6C2B8"/>
+      <rect x="926" y="590" width="4" height="56" fill="#3F6B62"/>
+      <text x="1012" y="614" text-anchor="middle" font-size="14" font-weight="500" fill="#1B1D22">Distributed systems</text>
+      <text x="1012" y="633" text-anchor="middle" font-size="11.5" fill="#4E535D">later: read the papers</text>
+    </g>
+  </g>
+
+  <!-- station numbers, so the switchback reads in order -->
+  <g font-family="'JetBrains Mono','SF Mono',ui-monospace,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="9.5" font-weight="700" letter-spacing="1.14" text-anchor="end" fill="#C9A227">
+    <text x="37.1" y="150">01</text>
+    <text x="257.1" y="294">02</text>
+    <text x="477.1" y="150">03</text>
+    <text x="697.1" y="294">04</text>
+    <text x="917.1" y="150">05</text>
+    <text x="917.1" y="524">06</text>
+    <text x="697.1" y="380">07</text>
+    <text x="477.1" y="524">08</text>
+    <text x="257.1" y="380">09</text>
+    <text x="37.1" y="380">10</text>
+    <text x="37.1" y="754">11</text>
+    <text x="257.1" y="610">12</text>
+    <text x="471.1" y="598" fill="#F2C14E">13</text>
+    <text x="697.1" y="754" fill="#6E9C90">14</text>
+    <text x="917.1" y="610" fill="#6E9C90">15</text>
   </g>
 
   <!-- stations -->
   <g>
-    <circle cx="90" cy="300" r="9" fill="#C8A868" stroke="#141D2B" stroke-width="3"/>
-    <circle cx="250" cy="300" r="9" fill="#C8A868" stroke="#141D2B" stroke-width="3"/>
-    <circle cx="410" cy="300" r="9" fill="#C8A868" stroke="#141D2B" stroke-width="3"/>
-    <circle cx="570" cy="300" r="9" fill="#C8A868" stroke="#141D2B" stroke-width="3"/>
-    <circle cx="730" cy="300" r="12" fill="#EDAE49" stroke="#141D2B" stroke-width="3">
+    <circle cx="130" cy="230" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="350" cy="230" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="570" cy="230" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="790" cy="230" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="1010" cy="230" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="1010" cy="460" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="790" cy="460" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="570" cy="460" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="350" cy="460" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="130" cy="460" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="130" cy="690" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="350" cy="690" r="8" fill="#C9A227" stroke="#0F1013" stroke-width="3"/>
+    <circle cx="570" cy="690" r="12" fill="#F2C14E" stroke="#0F1013" stroke-width="3">
       <animate attributeName="r" values="11;14;11" dur="2.2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="730" cy="300" r="12" fill="none" stroke="#EDAE49" stroke-width="1.5">
-      <animate attributeName="r" values="12;30" dur="2.2s" repeatCount="indefinite"/>
+    <circle cx="570" cy="690" r="12" fill="none" stroke="#F2C14E" stroke-width="1.5">
+      <animate attributeName="r" values="12;32" dur="2.2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values=".8;0" dur="2.2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="890" cy="300" r="9" fill="#1B2738" stroke="#7E9A72" stroke-width="3"/>
-    <circle cx="1050" cy="300" r="9" fill="#1B2738" stroke="#4C6650" stroke-width="3"/>
-  </g>
-
-  <!-- horizon marker -->
-  <g font-family="Georgia, 'Times New Roman', serif">
-    <path d="M1130 300 L1160 300" stroke="#4C6650" stroke-width="3" stroke-linecap="round"/>
-    <text x="1166" y="292" font-size="11" fill="#7E9A72">the</text>
-    <text x="1166" y="306" font-size="11" fill="#7E9A72">long</text>
-    <text x="1166" y="320" font-size="11" fill="#7E9A72">run</text>
+    <circle cx="790" cy="690" r="8" fill="#17181C" stroke="#6E9C90" stroke-width="3"/>
+    <circle cx="1010" cy="690" r="8" fill="#17181C" stroke="#3F6B62" stroke-width="3"/>
   </g>
 
   <!-- legend -->
-  <g font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#DFD5C1">
-    <circle cx="300" cy="462" r="7" fill="#C8A868"/>
-    <text x="316" y="466">walked</text>
-    <circle cx="440" cy="462" r="7" fill="#EDAE49"/>
-    <text x="456" y="466">working on it</text>
-    <circle cx="620" cy="462" r="7" fill="#1B2738" stroke="#7E9A72" stroke-width="2.5"/>
-    <text x="636" y="466">next</text>
-    <circle cx="740" cy="462" r="7" fill="#1B2738" stroke="#4C6650" stroke-width="2.5"/>
-    <text x="756" y="466">later</text>
+  <g font-size="12.5" fill="#C6C2B8">
+    <rect x="420" y="826" width="12" height="12" fill="#C9A227"/>
+    <text x="442" y="836">walked</text>
+    <rect x="518" y="826" width="12" height="12" fill="#F2C14E"/>
+    <text x="540" y="836">working on it</text>
+    <rect x="650" y="826" width="12" height="12" fill="#17181C" stroke="#6E9C90" stroke-width="2"/>
+    <text x="672" y="836">next</text>
+    <rect x="732" y="826" width="12" height="12" fill="#17181C" stroke="#3F6B62" stroke-width="2"/>
+    <text x="754" y="836">later</text>
   </g>
 </svg>
