@@ -1,0 +1,17 @@
+{
+  "name": "muxby profile README preview",
+  "install": "pip install --user --break-system-packages --upgrade grip",
+  "terminals": [
+    {
+      "name": "readme-preview",
+      "command": "\"$HOME/.local/bin/grip\" README.md 0.0.0.0:6419",
+      "description": "GitHub-faithful live preview of README.md (renders via GitHub's markdown API and serves the local assets/ directory). Open http://localhost:6419 to see the profile exactly as GitHub renders it. Set GRIP_GITHUB_API_TOKEN or pass --user to grip for higher render rate limits."
+    }
+  ],
+  "ports": [
+    {
+      "name": "readme-preview",
+      "port": 6419
+    }
+  ]
+}
