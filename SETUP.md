@@ -136,8 +136,15 @@ just a smaller size, and all SVG content stays ASCII.
 ## 4. Regenerating pixel scenes
 
 ```bash
+pip install fonttools uharfbuzz
 python3 scripts/build_atelier.py
 ```
+
+The two packages are what shapes and outlines the display type. The build also needs the
+three TrueType files on disk (Noto Serif Display, Inter, JetBrains Mono); `scripts/typeset.py`
+lists the paths it expects and fails with the missing one named rather than quietly
+substituting a different face. Regenerating is only needed after editing a sprite, a color,
+or a piece of copy - the committed SVGs are the artifact.
 
 Sprites live at the top of that file (`DRAGON_*`, `FOX_SIT`, fire frames) and colors come
 from the `PALETTE` dict, so a theme change is a palette edit, not a sprite rewrite. Note
