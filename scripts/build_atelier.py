@@ -1258,7 +1258,7 @@ def build_quote() -> None:
   <rect x="16" y="14" width="{w-32}" height="{h-28}" fill="#1E2026"/>
   <rect x="16" y="14" width="{w-32}" height="{h-28}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
   <rect x="16" y="14" width="5" height="{h-28}" fill="#E4572E"/>
-  {ts.outline('"', "heading", 46, 104, "#C9A227", size=92, opacity=".5")}
+  {ts.outline('"', "heading", 46, 126, "#C9A227", size=88, opacity=".5")}
   {ts.outline("Build something this week that a future teammate", "heading", 376, 76, "#E9E6DF", "middle", max_width=540)}
   {ts.outline("will be glad still exists.", "heading", 376, 104, "#E9E6DF", "middle", max_width=540)}
   <path d="M300 122 H452" stroke="#C9A227" stroke-width="1" opacity=".6"/>

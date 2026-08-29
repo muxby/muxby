@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc" font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" text-rendering="geometricPrecision">
   <title id="title">The workbench</title>
   <desc id="desc">A graphite workbench board with six aligned bone index cards: languages, web, data, infrastructure, intelligence, and current work. Ink on bone, brass rules.</desc>
   <defs>
@@ -16,15 +16,15 @@
   <rect x="24" y="24" width="1152" height="652" fill="none" stroke="#8A6E1F" stroke-width="2"/>
   <rect x="24" y="24" width="1152" height="4" fill="#C9A227"/>
 
-  <text x="600" y="86" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#E9E6DF" letter-spacing="10">THE WORKBENCH</text>
+  <text x="603.9" y="86" text-anchor="middle" font-family="'Noto Serif Display','Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,'Times New Roman',serif" font-size="26" letter-spacing="7.8" fill="#E9E6DF">THE WORKBENCH</text>
   <path d="M470 102 H730" stroke="#C9A227" stroke-width="1" opacity=".7"/>
-  <text x="600" y="126" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#9AA0AC" letter-spacing="3">WHAT IS ACTUALLY ON THE BENCH</text>
+  <text x="601.21" y="126" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2.42" fill="#9AA0AC">WHAT IS ACTUALLY ON THE BENCH</text>
 
-  <g font-family="Georgia, 'Times New Roman', serif" filter="url(#card)">
+  <g filter="url(#card)">
     <g>
       <rect x="60" y="170" width="340" height="190" fill="#E9E6DF"/>
       <rect x="60" y="170" width="340" height="5" fill="#C9A227"/>
-      <text x="230" y="208" text-anchor="middle" font-size="12" fill="#8A6E1F" letter-spacing="4">LANGUAGES</text>
+      <text x="231.21" y="208" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2.42" fill="#8A6E1F">LANGUAGES</text>
       <text x="230" y="250" text-anchor="middle" font-size="15" fill="#1B1D22">Python / TypeScript</text>
       <text x="230" y="282" text-anchor="middle" font-size="15" fill="#1B1D22">JavaScript / Go / SQL</text>
       <text x="230" y="314" text-anchor="middle" font-size="15" fill="#1B1D22">C++ / C / PHP / Shell</text>
@@ -32,7 +32,7 @@
     <g>
       <rect x="430" y="170" width="340" height="190" fill="#E9E6DF"/>
       <rect x="430" y="170" width="340" height="5" fill="#C9A227"/>
-      <text x="600" y="208" text-anchor="middle" font-size="12" fill="#8A6E1F" letter-spacing="4">WEB AND APP</text>
+      <text x="601.21" y="208" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2.42" fill="#8A6E1F">WEB AND APP</text>
       <text x="600" y="250" text-anchor="middle" font-size="15" fill="#1B1D22">React / Next.js / Vite</text>
       <text x="600" y="282" text-anchor="middle" font-size="15" fill="#1B1D22">Tailwind / Three.js</text>
       <text x="600" y="314" text-anchor="middle" font-size="15" fill="#1B1D22">Node / FastAPI / Django</text>
@@ -40,7 +40,7 @@
     <g>
       <rect x="800" y="170" width="340" height="190" fill="#E9E6DF"/>
       <rect x="800" y="170" width="340" height="5" fill="#6E9C90"/>
-      <text x="970" y="208" text-anchor="middle" font-size="12" fill="#2F5A52" letter-spacing="4">DATA</text>
+      <text x="971.21" y="208" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2.42" fill="#2F5A52">DATA</text>
       <text x="970" y="250" text-anchor="middle" font-size="15" fill="#1B1D22">PostgreSQL / Redis</text>
       <text x="970" y="282" text-anchor="middle" font-size="15" fill="#1B1D22">MongoDB / SQLite</text>
       <text x="970" y="314" text-anchor="middle" font-size="15" fill="#1B1D22">pgvector</text>
@@ -48,7 +48,7 @@
     <g>
       <rect x="60" y="392" width="340" height="190" fill="#C6C2B8"/>
       <rect x="60" y="392" width="340" height="5" fill="#6E9C90"/>
-      <text x="230" y="430" text-anchor="middle" font-size="12" fill="#2F5A52" letter-spacing="4">INFRASTRUCTURE</text>
+      <text x="231.21" y="430" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2.42" fill="#2F5A52">INFRASTRUCTURE</text>
       <text x="230" y="472" text-anchor="middle" font-size="15" fill="#1B1D22">AWS / Docker</text>
       <text x="230" y="504" text-anchor="middle" font-size="15" fill="#1B1D22">Kubernetes / Bash</text>
       <text x="230" y="536" text-anchor="middle" font-size="15" fill="#1B1D22">Terraform / Cloudflare</text>
@@ -56,7 +56,7 @@
     <g>
       <rect x="430" y="392" width="340" height="190" fill="#C6C2B8"/>
       <rect x="430" y="392" width="340" height="5" fill="#E4572E"/>
-      <text x="600" y="430" text-anchor="middle" font-size="12" fill="#A33418" letter-spacing="4">INTELLIGENCE</text>
+      <text x="601.21" y="430" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2.42" fill="#A33418">INTELLIGENCE</text>
       <text x="600" y="472" text-anchor="middle" font-size="15" fill="#1B1D22">OpenAI / Anthropic</text>
       <text x="600" y="504" text-anchor="middle" font-size="15" fill="#1B1D22">LangChain / MCP</text>
       <text x="600" y="536" text-anchor="middle" font-size="15" fill="#1B1D22">Hugging Face / PyTorch</text>
@@ -67,7 +67,7 @@
       <circle cx="1126" cy="418" r="5" fill="#E4572E">
         <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/>
       </circle>
-      <text x="970" y="430" text-anchor="middle" font-size="12" fill="#8A6E1F" letter-spacing="4">ON THE ANVIL</text>
+      <text x="971.21" y="430" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2.42" fill="#8A6E1F">ON THE ANVIL</text>
       <text x="970" y="472" text-anchor="middle" font-size="15" fill="#1B1D22">agentic review loops</text>
       <text x="970" y="504" text-anchor="middle" font-size="15" fill="#1B1D22">local tools with manners</text>
       <text x="970" y="536" text-anchor="middle" font-size="15" fill="#1B1D22">systems people can keep</text>
@@ -75,6 +75,6 @@
   </g>
 
   <path d="M60 620 H1140" stroke="#8A6E1F" stroke-width="1" opacity=".5"/>
-  <text x="60" y="650" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#8A6E1F" letter-spacing="2">STEEL, BRASS, EMBER</text>
-  <text x="1140" y="650" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#8A6E1F" letter-spacing="2">MUXBY</text>
+  <text x="60" y="650" font-size="11" font-weight="600" letter-spacing="2.42" fill="#8A6E1F">STEEL, BRASS, EMBER</text>
+  <text x="1142.42" y="650" text-anchor="end" font-size="11" font-weight="600" letter-spacing="2.42" fill="#8A6E1F">MUXBY</text>
 </svg>

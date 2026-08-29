@@ -88,7 +88,7 @@ SCALE = {
     "label": Style("sans-semibold", 11, 0.16, caps=True),     # small caps callouts
     "lede": Style("sans", 15, 0.0),                     # card body, one step up
     "body": Style("sans", 13, 0.0),                     # running copy
-    "caption": Style("sans", 11.5, 0.005),              # smallest live text
+    "caption": Style("sans", 11.5, 0.0),                # smallest live text
     "tag": Style("mono-bold", 12, 0.08, caps=True),     # tags and medallions
     "micro": Style("mono-bold", 9.5, 0.12, caps=True),  # tightest technical label
     "wordmark": Style("serif-bold", 20, 0.22, caps=True),
@@ -256,16 +256,32 @@ def outline(
 # Live <text>
 # ---------------------------------------------------------------------------
 
-def text_attrs(role: str, anchor: str = "start", **over) -> str:
+# Put these on the root <svg> of a hand-drawn asset so every element inside it
+# inherits the text face and good glyph positioning, and only the exceptions have
+# to say so. Presentation attributes rather than a <style> block on purpose: a
+# stripped stylesheet would silently drop the whole scale, an attribute cannot be.
+ROOT_ATTRS = f'font-family="{STACKS["sans"]}" text-rendering="geometricPrecision"'
+
+
+def text_attrs(role: str, anchor: str = "start", inherit: str | None = None, **over) -> str:
     """Presentation attributes for a <text> element in the given role.
+
+    Pass `inherit` with the family group already set on an ancestor ("sans" when
+    the root carries ROOT_ATTRS) and the stack is left off, which keeps the
+    hand-drawn files readable instead of repeating a font stack on every line.
 
     SVG letter-spacing is a length in user units, not em, so tracking is resolved
     against the size here.
     """
     st = style(role, **over)
-    family = STACKS[st.face.split("-")[0]]
+    group = st.face.split("-")[0]
     variant = st.face.partition("-")[2]
-    bits = [f'font-family="{family}"', f'font-size="{st.size:g}"']
+    bits = []
+    if anchor != "start":
+        bits.append(f'text-anchor="{anchor}"')
+    if group != inherit:
+        bits.append(f'font-family="{STACKS[group]}"')
+    bits.append(f'font-size="{st.size:g}"')
     weight = WEIGHTS.get(variant, 400)
     if weight != 400:
         bits.append(f'font-weight="{weight}"')
@@ -273,9 +289,8 @@ def text_attrs(role: str, anchor: str = "start", **over) -> str:
         bits.append('font-style="italic"')
     if st.tracking:
         bits.append(f'letter-spacing="{st.tracking * st.size:g}"')
-    if anchor != "start":
-        bits.append(f'text-anchor="{anchor}"')
-    bits.append('text-rendering="geometricPrecision"')
+    if inherit is None:
+        bits.append('text-rendering="geometricPrecision"')
     return " ".join(bits)
 
 

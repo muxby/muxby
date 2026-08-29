@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="320" viewBox="0 0 520 320" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="320" viewBox="0 0 520 320" role="img" aria-labelledby="title desc" font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" text-rendering="geometricPrecision">
   <title id="title">Desk with a polaroid</title>
   <desc id="desc">An iron desk at night: a brass lamp, a closed notebook, and a bone polaroid of a tiny dragon.</desc>
   <defs>
@@ -30,7 +30,7 @@
   <rect x="130" y="162" width="26" height="26" fill="#E0B457"/>
   <rect x="126" y="190" width="10" height="8" fill="#DCD6C8"/>
   <rect x="148" y="190" width="10" height="8" fill="#DCD6C8"/>
-  <text x="150" y="240" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#1B1D22" letter-spacing="2">FIRST USEFUL SPARK</text>
+  <text x="150.88" y="240" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="1.76" fill="#1B1D22">FIRST USEFUL SPARK</text>
   <rect x="300" y="88" width="14" height="122" fill="#8A6E1F"/>
   <path d="M290 88 Q307 62 324 88" fill="#C9A227"/>
   <ellipse cx="307" cy="76" rx="24" ry="16" fill="#F2C14E" opacity=".6">
@@ -40,5 +40,5 @@
   <rect x="340" y="168" width="150" height="4" fill="#C9A227"/>
   <rect x="352" y="184" width="90" height="4" fill="#4E535D"/>
   <rect x="352" y="196" width="110" height="4" fill="#4E535D"/>
-  <text x="390" y="308" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#C9A227" letter-spacing="2">THE DESK, NOT THE COCKPIT</text>
+  <text x="390.88" y="308" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="1.76" fill="#C9A227">THE DESK, NOT THE COCKPIT</text>
 </svg>
