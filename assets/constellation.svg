@@ -1,90 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
-  <title id="title">Workbench board</title>
-  <desc id="desc">A dark walnut board of pinned ivory notes for languages, web, data, infrastructure, and intelligence. Brass frame, sage twine, amber pins.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">The workbench</title>
+  <desc id="desc">A graphite workbench board with six aligned bone index cards: languages, web, data, infrastructure, intelligence, and current work. Ink on bone, brass rules.</desc>
   <defs>
-    <pattern id="board" width="18" height="18" patternUnits="userSpaceOnUse">
-      <rect width="18" height="18" fill="#2B2620"/>
-      <circle cx="3" cy="5" r="0.8" fill="#3E362C" opacity=".8"/>
-      <circle cx="12" cy="11" r="0.7" fill="#453B2F" opacity=".7"/>
-      <circle cx="9" cy="2" r="0.6" fill="#241F1A" opacity=".8"/>
-    </pattern>
-    <filter id="paper" x="-5%" y="-5%" width="110%" height="120%">
-      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0B121C" flood-opacity=".6"/>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#191B20"/>
+      <stop offset="1" stop-color="#121317"/>
+    </linearGradient>
+    <filter id="card" x="-6%" y="-8%" width="112%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity=".5"/>
     </filter>
   </defs>
 
-  <rect width="1200" height="760" fill="#141D2B"/>
-  <rect x="28" y="28" width="1144" height="704" fill="url(#board)"/>
-  <rect x="28" y="28" width="1144" height="704" fill="none" stroke="#8C7442" stroke-width="10"/>
-  <rect x="40" y="40" width="1120" height="12" fill="#C8A868" opacity=".5"/>
+  <rect width="1200" height="700" fill="#0F1013"/>
+  <rect x="24" y="24" width="1152" height="652" fill="url(#board)"/>
+  <rect x="24" y="24" width="1152" height="652" fill="none" stroke="#8A6E1F" stroke-width="2"/>
+  <rect x="24" y="24" width="1152" height="4" fill="#C9A227"/>
 
-  <text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#F0EADC">the workbench</text>
-  <text x="600" y="106" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#C8A868">pinned notes, not a telemetry deck</text>
+  <text x="600" y="86" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#E9E6DF" letter-spacing="10">THE WORKBENCH</text>
+  <path d="M470 102 H730" stroke="#C9A227" stroke-width="1" opacity=".7"/>
+  <text x="600" y="126" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#9AA0AC" letter-spacing="3">WHAT IS ACTUALLY ON THE BENCH</text>
 
-  <path d="M180 210 C 320 160, 480 250, 600 200 C 740 140, 900 230, 1040 180" fill="none" stroke="#4C6650" stroke-width="2" stroke-dasharray="6 10"/>
-  <path d="M160 430 C 340 390, 520 470, 700 420 C 860 380, 980 450, 1080 410" fill="none" stroke="#4C6650" stroke-width="2" stroke-dasharray="6 10"/>
-
-  <g font-family="Georgia, 'Times New Roman', serif" filter="url(#paper)">
+  <g font-family="Georgia, 'Times New Roman', serif" filter="url(#card)">
     <g>
-      <rect x="90" y="150" width="200" height="150" fill="#F0EADC"/>
-      <circle cx="190" cy="158" r="7" fill="#E2703A"/>
-      <text x="190" y="198" text-anchor="middle" font-size="13" fill="#B4472A">languages</text>
-      <text x="190" y="226" text-anchor="middle" font-size="14" fill="#22303F">Python / TypeScript</text>
-      <text x="190" y="248" text-anchor="middle" font-size="14" fill="#22303F">JavaScript / Go / SQL</text>
-      <text x="190" y="270" text-anchor="middle" font-size="14" fill="#22303F">C++ / C / PHP / Shell</text>
+      <rect x="60" y="170" width="340" height="190" fill="#E9E6DF"/>
+      <rect x="60" y="170" width="340" height="5" fill="#C9A227"/>
+      <text x="230" y="208" text-anchor="middle" font-size="12" fill="#8A6E1F" letter-spacing="4">LANGUAGES</text>
+      <text x="230" y="250" text-anchor="middle" font-size="15" fill="#1B1D22">Python / TypeScript</text>
+      <text x="230" y="282" text-anchor="middle" font-size="15" fill="#1B1D22">JavaScript / Go / SQL</text>
+      <text x="230" y="314" text-anchor="middle" font-size="15" fill="#1B1D22">C++ / C / PHP / Shell</text>
     </g>
     <g>
-      <rect x="340" y="178" width="200" height="150" fill="#DFD5C1" transform="rotate(-2 440 253)"/>
-      <circle cx="440" cy="186" r="7" fill="#EDAE49"/>
-      <text x="440" y="226" text-anchor="middle" font-size="13" fill="#8C6A22">web / app</text>
-      <text x="440" y="254" text-anchor="middle" font-size="14" fill="#22303F">React / Next.js / Vite</text>
-      <text x="440" y="276" text-anchor="middle" font-size="14" fill="#22303F">Tailwind / Three.js</text>
-      <text x="440" y="298" text-anchor="middle" font-size="14" fill="#22303F">Node / FastAPI / Django</text>
+      <rect x="430" y="170" width="340" height="190" fill="#E9E6DF"/>
+      <rect x="430" y="170" width="340" height="5" fill="#C9A227"/>
+      <text x="600" y="208" text-anchor="middle" font-size="12" fill="#8A6E1F" letter-spacing="4">WEB AND APP</text>
+      <text x="600" y="250" text-anchor="middle" font-size="15" fill="#1B1D22">React / Next.js / Vite</text>
+      <text x="600" y="282" text-anchor="middle" font-size="15" fill="#1B1D22">Tailwind / Three.js</text>
+      <text x="600" y="314" text-anchor="middle" font-size="15" fill="#1B1D22">Node / FastAPI / Django</text>
     </g>
     <g>
-      <rect x="590" y="150" width="200" height="150" fill="#F0EADC" transform="rotate(1.5 690 225)"/>
-      <circle cx="690" cy="158" r="7" fill="#7E9A72"/>
-      <text x="690" y="198" text-anchor="middle" font-size="13" fill="#3F5A44">data</text>
-      <text x="690" y="226" text-anchor="middle" font-size="14" fill="#22303F">PostgreSQL / Redis</text>
-      <text x="690" y="248" text-anchor="middle" font-size="14" fill="#22303F">MongoDB / SQLite</text>
-      <text x="690" y="270" text-anchor="middle" font-size="14" fill="#22303F">pgvector</text>
+      <rect x="800" y="170" width="340" height="190" fill="#E9E6DF"/>
+      <rect x="800" y="170" width="340" height="5" fill="#6E9C90"/>
+      <text x="970" y="208" text-anchor="middle" font-size="12" fill="#2F5A52" letter-spacing="4">DATA</text>
+      <text x="970" y="250" text-anchor="middle" font-size="15" fill="#1B1D22">PostgreSQL / Redis</text>
+      <text x="970" y="282" text-anchor="middle" font-size="15" fill="#1B1D22">MongoDB / SQLite</text>
+      <text x="970" y="314" text-anchor="middle" font-size="15" fill="#1B1D22">pgvector</text>
     </g>
     <g>
-      <rect x="840" y="170" width="200" height="150" fill="#DFD5C1" transform="rotate(2 940 245)"/>
-      <circle cx="940" cy="178" r="7" fill="#C8A868"/>
-      <text x="940" y="218" text-anchor="middle" font-size="13" fill="#8C6A22">infra</text>
-      <text x="940" y="246" text-anchor="middle" font-size="14" fill="#22303F">AWS / Docker</text>
-      <text x="940" y="268" text-anchor="middle" font-size="14" fill="#22303F">Kubernetes / Bash</text>
-      <text x="940" y="290" text-anchor="middle" font-size="14" fill="#22303F">Terraform / Cloudflare</text>
+      <rect x="60" y="392" width="340" height="190" fill="#C6C2B8"/>
+      <rect x="60" y="392" width="340" height="5" fill="#6E9C90"/>
+      <text x="230" y="430" text-anchor="middle" font-size="12" fill="#2F5A52" letter-spacing="4">INFRASTRUCTURE</text>
+      <text x="230" y="472" text-anchor="middle" font-size="15" fill="#1B1D22">AWS / Docker</text>
+      <text x="230" y="504" text-anchor="middle" font-size="15" fill="#1B1D22">Kubernetes / Bash</text>
+      <text x="230" y="536" text-anchor="middle" font-size="15" fill="#1B1D22">Terraform / Cloudflare</text>
     </g>
     <g>
-      <rect x="160" y="390" width="230" height="170" fill="#F0EADC"/>
-      <circle cx="275" cy="398" r="7" fill="#C08E86"/>
-      <text x="275" y="448" text-anchor="middle" font-size="13" fill="#B4472A">intelligence</text>
-      <text x="275" y="476" text-anchor="middle" font-size="14" fill="#22303F">OpenAI / Anthropic</text>
-      <text x="275" y="498" text-anchor="middle" font-size="14" fill="#22303F">LangChain / MCP</text>
-      <text x="275" y="520" text-anchor="middle" font-size="14" fill="#22303F">Hugging Face / PyTorch</text>
+      <rect x="430" y="392" width="340" height="190" fill="#C6C2B8"/>
+      <rect x="430" y="392" width="340" height="5" fill="#E4572E"/>
+      <text x="600" y="430" text-anchor="middle" font-size="12" fill="#A33418" letter-spacing="4">INTELLIGENCE</text>
+      <text x="600" y="472" text-anchor="middle" font-size="15" fill="#1B1D22">OpenAI / Anthropic</text>
+      <text x="600" y="504" text-anchor="middle" font-size="15" fill="#1B1D22">LangChain / MCP</text>
+      <text x="600" y="536" text-anchor="middle" font-size="15" fill="#1B1D22">Hugging Face / PyTorch</text>
     </g>
     <g>
-      <rect x="460" y="410" width="250" height="170" fill="#DFD5C1" transform="rotate(-1.5 585 495)"/>
-      <circle cx="585" cy="418" r="7" fill="#7E9A72"/>
-      <text x="585" y="468" text-anchor="middle" font-size="13" fill="#3F5A44">how it is used</text>
-      <text x="585" y="496" text-anchor="middle" font-size="14" fill="#22303F">Python for systems and AI</text>
-      <text x="585" y="518" text-anchor="middle" font-size="14" fill="#22303F">TypeScript for product</text>
-      <text x="585" y="540" text-anchor="middle" font-size="14" fill="#22303F">C++ when the machine is close</text>
-    </g>
-    <g>
-      <rect x="800" y="400" width="230" height="170" fill="#F0EADC" transform="rotate(1 915 485)"/>
-      <circle cx="915" cy="408" r="7" fill="#EDAE49">
-        <animate attributeName="r" values="7;8.5;7" dur="2.8s" repeatCount="indefinite"/>
+      <rect x="800" y="392" width="340" height="190" fill="#F7F5F0"/>
+      <rect x="800" y="392" width="340" height="5" fill="#F2C14E"/>
+      <circle cx="1126" cy="418" r="5" fill="#E4572E">
+        <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/>
       </circle>
-      <text x="915" y="456" text-anchor="middle" font-size="13" fill="#8C6A22">currently pinning</text>
-      <text x="915" y="488" text-anchor="middle" font-size="14" fill="#22303F">agentic review loops</text>
-      <text x="915" y="510" text-anchor="middle" font-size="14" fill="#22303F">local tools with manners</text>
-      <text x="915" y="532" text-anchor="middle" font-size="14" fill="#22303F">systems people can keep</text>
+      <text x="970" y="430" text-anchor="middle" font-size="12" fill="#8A6E1F" letter-spacing="4">ON THE ANVIL</text>
+      <text x="970" y="472" text-anchor="middle" font-size="15" fill="#1B1D22">agentic review loops</text>
+      <text x="970" y="504" text-anchor="middle" font-size="15" fill="#1B1D22">local tools with manners</text>
+      <text x="970" y="536" text-anchor="middle" font-size="15" fill="#1B1D22">systems people can keep</text>
     </g>
   </g>
 
-  <text x="80" y="720" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#C8A868">paper, pins, twine</text>
-  <text x="1120" y="720" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#C8A868">muxby</text>
+  <path d="M60 620 H1140" stroke="#8A6E1F" stroke-width="1" opacity=".5"/>
+  <text x="60" y="650" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#8A6E1F" letter-spacing="2">STEEL, BRASS, EMBER</text>
+  <text x="1140" y="650" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#8A6E1F" letter-spacing="2">MUXBY</text>
 </svg>

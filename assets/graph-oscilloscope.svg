@@ -1,86 +1,80 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="280" height="300" viewBox="0 0 280 300" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
-  <title id="title">Paper lantern</title>
-  <desc id="desc">A flickering paper lantern with moths on warm paper.</desc>
+  <title id="title">Brass lantern</title>
+  <desc id="desc">A brass lantern burning on graphite with embers drifting around it.</desc>
   <defs>
     <linearGradient id="duskSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E7C4A2"/>
-      <stop offset=".42" stop-color="#F0D3B0"/>
-      <stop offset="1" stop-color="#C9B48A"/>
+      <stop offset="0" stop-color="#0F1013"/>
+      <stop offset=".42" stop-color="#1A1C22"/>
+      <stop offset="1" stop-color="#20272A"/>
     </linearGradient>
     <linearGradient id="paperSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F6EFE4"/>
-      <stop offset="1" stop-color="#E4D3B4"/>
+      <stop offset="0" stop-color="#1E2026"/>
+      <stop offset="1" stop-color="#141519"/>
     </linearGradient>
     <linearGradient id="hillA" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8AA078"/>
-      <stop offset="1" stop-color="#5F734C"/>
+      <stop offset="0" stop-color="#232B2E"/>
+      <stop offset="1" stop-color="#191F22"/>
     </linearGradient>
     <linearGradient id="hillB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6F8F5E"/>
-      <stop offset="1" stop-color="#4F6B45"/>
+      <stop offset="0" stop-color="#26332F"/>
+      <stop offset="1" stop-color="#1A2421"/>
     </linearGradient>
     <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6B4A32"/>
-      <stop offset="1" stop-color="#4A3224"/>
+      <stop offset="0" stop-color="#2A2D35"/>
+      <stop offset="1" stop-color="#1A1C22"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A6E1F"/>
+      <stop offset=".55" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#E0B94A"/>
     </linearGradient>
     <radialGradient id="lamp" cx="50%" cy="40%" r="50%">
-      <stop offset="0" stop-color="#FFF3A0" stop-opacity=".9"/>
-      <stop offset=".45" stop-color="#E8A070" stop-opacity=".28"/>
-      <stop offset="1" stop-color="#E07A3D" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F2C14E" stop-opacity=".85"/>
+      <stop offset=".45" stop-color="#E4572E" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="hearth" cx="50%" cy="60%" r="50%">
-      <stop offset="0" stop-color="#FFF3A0" stop-opacity=".7"/>
-      <stop offset="1" stop-color="#C45C32" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FFE3A3" stop-opacity=".6"/>
+      <stop offset=".5" stop-color="#E4572E" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
-    <filter id="softPaper" x="-2%" y="-2%" width="104%" height="108%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#3A2418" flood-opacity=".18"/>
+    <filter id="softPaper" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity=".5"/>
     </filter>
     
   </defs>
-  <rect width="280" height="300" fill="#F4EBD8"/>
-  <ellipse cx="140" cy="150" rx="70" ry="80" fill="url(#lamp)">
+  <rect width="280" height="300" fill="#17181C"/>
+  <rect x="8" y="8" width="264" height="284" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
+  <ellipse cx="140" cy="150" rx="72" ry="84" fill="url(#lamp)">
     <animate attributeName="opacity" values=".45;1;.45" dur="2.8s" repeatCount="indefinite"/>
   </ellipse>
-<rect x="116" y="70" width="24" height="8" fill="#8B6E58"/>
-<rect x="108" y="78" width="8" height="8" fill="#8B6E58"/>
-<rect x="116" y="78" width="24" height="8" fill="#F4EBD8"/>
-<rect x="140" y="78" width="8" height="8" fill="#8B6E58"/>
-<rect x="100" y="86" width="8" height="8" fill="#8B6E58"/>
-<rect x="108" y="86" width="40" height="8" fill="#F4EBD8"/>
-<rect x="148" y="86" width="8" height="8" fill="#8B6E58"/>
-<rect x="100" y="94" width="8" height="8" fill="#8B6E58"/>
-<rect x="108" y="94" width="8" height="8" fill="#F4EBD8"/>
-<rect x="116" y="94" width="8" height="8" fill="#FFF3A0"/>
-<rect x="124" y="94" width="8" height="8" fill="#FFF8C8"/>
-<rect x="132" y="94" width="8" height="8" fill="#FFF3A0"/>
-<rect x="140" y="94" width="8" height="8" fill="#F4EBD8"/>
-<rect x="148" y="94" width="8" height="8" fill="#8B6E58"/>
-<rect x="100" y="102" width="8" height="8" fill="#8B6E58"/>
-<rect x="108" y="102" width="40" height="8" fill="#F4EBD8"/>
-<rect x="148" y="102" width="8" height="8" fill="#8B6E58"/>
-<rect x="108" y="110" width="8" height="8" fill="#8B6E58"/>
-<rect x="116" y="110" width="24" height="8" fill="#F4EBD8"/>
-<rect x="140" y="110" width="8" height="8" fill="#8B6E58"/>
-<rect x="116" y="118" width="8" height="8" fill="#8B6E58"/>
-<rect x="124" y="118" width="8" height="8" fill="#3A2418"/>
-<rect x="132" y="118" width="8" height="8" fill="#8B6E58"/>
-<rect x="124" y="126" width="8" height="8" fill="#3A2418"/>
-  <g fill="#E8C49A">
-  <ellipse cx="70" cy="90" rx="6" ry="3">
-    <animate attributeName="cx" values="70;86;60;70" dur="3.2s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="90;78;98;90" dur="3.2s" repeatCount="indefinite"/>
-  </ellipse>
-</g><g fill="#E8C49A">
-  <ellipse cx="200" cy="70" rx="6" ry="3">
-    <animate attributeName="cx" values="200;216;190;200" dur="4.2s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="70;58;78;70" dur="4.2s" repeatCount="indefinite"/>
-  </ellipse>
-</g><g fill="#E8C49A">
-  <ellipse cx="160" cy="130" rx="6" ry="3">
-    <animate attributeName="cx" values="160;176;150;160" dur="5.2s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="130;118;138;130" dur="5.2s" repeatCount="indefinite"/>
-  </ellipse>
-</g>
-  <text x="140" y="270" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#3A2418">keep a light on</text>
+  <path d="M140 44 V62" stroke="#8A6E1F" stroke-width="3"/>
+<rect x="116" y="70" width="24" height="8" fill="#C9A227"/>
+<rect x="108" y="78" width="8" height="8" fill="#C9A227"/>
+<rect x="116" y="78" width="24" height="8" fill="#F7F5F0"/>
+<rect x="140" y="78" width="8" height="8" fill="#C9A227"/>
+<rect x="100" y="86" width="8" height="8" fill="#C9A227"/>
+<rect x="108" y="86" width="40" height="8" fill="#F7F5F0"/>
+<rect x="148" y="86" width="8" height="8" fill="#C9A227"/>
+<rect x="100" y="94" width="8" height="8" fill="#C9A227"/>
+<rect x="108" y="94" width="8" height="8" fill="#F7F5F0"/>
+<rect x="116" y="94" width="8" height="8" fill="#FFE3A3"/>
+<rect x="124" y="94" width="8" height="8" fill="#FFE3A3"/>
+<rect x="132" y="94" width="8" height="8" fill="#FFE3A3"/>
+<rect x="140" y="94" width="8" height="8" fill="#F7F5F0"/>
+<rect x="148" y="94" width="8" height="8" fill="#C9A227"/>
+<rect x="100" y="102" width="8" height="8" fill="#C9A227"/>
+<rect x="108" y="102" width="40" height="8" fill="#F7F5F0"/>
+<rect x="148" y="102" width="8" height="8" fill="#C9A227"/>
+<rect x="108" y="110" width="8" height="8" fill="#C9A227"/>
+<rect x="116" y="110" width="24" height="8" fill="#F7F5F0"/>
+<rect x="140" y="110" width="8" height="8" fill="#C9A227"/>
+<rect x="116" y="118" width="24" height="8" fill="#C9A227"/>
+<rect x="124" y="126" width="8" height="8" fill="#C9A227"/>
+<circle cx="84" cy="108" r="1.8" fill="#F2C14E" opacity=".2"><animate attributeName="opacity" values=".15;.95;.15" dur="3.4s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="cy" values="108;98;108" dur="4.9s" repeatCount="indefinite"/></circle>
+<circle cx="198" cy="92" r="1.8" fill="#F2C14E" opacity=".2"><animate attributeName="opacity" values=".15;.95;.15" dur="4.1s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="cy" values="92;82;92" dur="5.6s" repeatCount="indefinite"/></circle>
+<circle cx="172" cy="158" r="1.8" fill="#F2C14E" opacity=".2"><animate attributeName="opacity" values=".15;.95;.15" dur="3.7s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="cy" values="158;148;158" dur="5.2s" repeatCount="indefinite"/></circle>
+<circle cx="96" cy="176" r="1.8" fill="#F2C14E" opacity=".2"><animate attributeName="opacity" values=".15;.95;.15" dur="4.5s" begin="1.2000000000000002s" repeatCount="indefinite"/><animate attributeName="cy" values="176;166;176" dur="6.0s" repeatCount="indefinite"/></circle>
+  <text x="140" y="266" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#C9A227" letter-spacing="5">KEEP A LIGHT ON</text>
 
 </svg>

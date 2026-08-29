@@ -1,326 +1,326 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
-  <title id="title">Enamel sticker sheet</title>
-  <desc id="desc">A kraft sheet of enamel-style technology pins on warm paper.</desc>
+  <title id="title">Struck medallion sheet</title>
+  <desc id="desc">A graphite sheet of struck technology medallions ringed in brass, patina, and ember.</desc>
   <defs>
     <linearGradient id="duskSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E7C4A2"/>
-      <stop offset=".42" stop-color="#F0D3B0"/>
-      <stop offset="1" stop-color="#C9B48A"/>
+      <stop offset="0" stop-color="#0F1013"/>
+      <stop offset=".42" stop-color="#1A1C22"/>
+      <stop offset="1" stop-color="#20272A"/>
     </linearGradient>
     <linearGradient id="paperSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F6EFE4"/>
-      <stop offset="1" stop-color="#E4D3B4"/>
+      <stop offset="0" stop-color="#1E2026"/>
+      <stop offset="1" stop-color="#141519"/>
     </linearGradient>
     <linearGradient id="hillA" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8AA078"/>
-      <stop offset="1" stop-color="#5F734C"/>
+      <stop offset="0" stop-color="#232B2E"/>
+      <stop offset="1" stop-color="#191F22"/>
     </linearGradient>
     <linearGradient id="hillB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6F8F5E"/>
-      <stop offset="1" stop-color="#4F6B45"/>
+      <stop offset="0" stop-color="#26332F"/>
+      <stop offset="1" stop-color="#1A2421"/>
     </linearGradient>
     <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6B4A32"/>
-      <stop offset="1" stop-color="#4A3224"/>
+      <stop offset="0" stop-color="#2A2D35"/>
+      <stop offset="1" stop-color="#1A1C22"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A6E1F"/>
+      <stop offset=".55" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#E0B94A"/>
     </linearGradient>
     <radialGradient id="lamp" cx="50%" cy="40%" r="50%">
-      <stop offset="0" stop-color="#FFF3A0" stop-opacity=".9"/>
-      <stop offset=".45" stop-color="#E8A070" stop-opacity=".28"/>
-      <stop offset="1" stop-color="#E07A3D" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F2C14E" stop-opacity=".85"/>
+      <stop offset=".45" stop-color="#E4572E" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="hearth" cx="50%" cy="60%" r="50%">
-      <stop offset="0" stop-color="#FFF3A0" stop-opacity=".7"/>
-      <stop offset="1" stop-color="#C45C32" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FFE3A3" stop-opacity=".6"/>
+      <stop offset=".5" stop-color="#E4572E" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
-    <filter id="softPaper" x="-2%" y="-2%" width="104%" height="108%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#3A2418" flood-opacity=".18"/>
+    <filter id="softPaper" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity=".5"/>
     </filter>
     
   </defs>
-  <rect width="920" height="300" fill="#E8C49A"/>
-  <rect x="20" y="16" width="880" height="268" fill="#EDE3D0" filter="url(#softPaper)"/>
-  <text x="460" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#3A2418">enamel pins from the workbench</text>
+  <rect width="920" height="300" fill="#0F1013"/>
+  <rect x="18" y="14" width="884" height="272" fill="#17181C"/>
+  <rect x="18" y="14" width="884" height="272" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
+  <text x="460" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#E9E6DF" letter-spacing="8">STRUCK AT THE BENCH</text>
+  <path d="M340 78 H580" stroke="#C9A227" stroke-width="1" opacity=".7"/>
   <g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="3.2s" repeatCount="indefinite"/>
-  <circle cx="110" cy="108" r="38" fill="#C45C32"/>
-  <circle cx="110" cy="108" r="32" fill="#F6EFE4"/>
-  <circle cx="110" cy="108" r="28" fill="#C45C32" opacity=".16"/>
-  <rect x="94" y="100" width="8" height="4" fill="#2A1810"/>
-<rect x="110" y="100" width="4" height="4" fill="#2A1810"/>
-<rect x="118" y="100" width="4" height="4" fill="#2A1810"/>
-<rect x="94" y="104" width="4" height="4" fill="#2A1810"/>
-<rect x="102" y="104" width="4" height="4" fill="#2A1810"/>
-<rect x="110" y="104" width="4" height="4" fill="#2A1810"/>
-<rect x="118" y="104" width="4" height="4" fill="#2A1810"/>
-<rect x="94" y="108" width="8" height="4" fill="#2A1810"/>
-<rect x="114" y="108" width="4" height="4" fill="#2A1810"/>
-<rect x="94" y="112" width="4" height="4" fill="#2A1810"/>
-<rect x="114" y="112" width="4" height="4" fill="#2A1810"/>
-<rect x="94" y="116" width="4" height="4" fill="#2A1810"/>
-<rect x="114" y="116" width="4" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="3.4s" repeatCount="indefinite"/>
+  <circle cx="96" cy="140" r="34" fill="#C9A227"/>
+  <circle cx="96" cy="140" r="29" fill="#1E2026"/>
+  <circle cx="96" cy="140" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="85.5" y="132.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="97.5" y="132.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="103.5" y="132.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="85.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="91.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="97.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="103.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="85.5" y="138.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="100.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="85.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="100.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="85.5" y="144.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="100.5" y="144.5" width="3" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="3.31s" repeatCount="indefinite"/>
-  <circle cx="240" cy="98" r="38" fill="#6F8F5E"/>
-  <circle cx="240" cy="98" r="32" fill="#F6EFE4"/>
-  <circle cx="240" cy="98" r="28" fill="#6F8F5E" opacity=".16"/>
-  <rect x="224" y="90" width="12" height="4" fill="#2A1810"/>
-<rect x="244" y="90" width="8" height="4" fill="#2A1810"/>
-<rect x="228" y="94" width="4" height="4" fill="#2A1810"/>
-<rect x="240" y="94" width="4" height="4" fill="#2A1810"/>
-<rect x="228" y="98" width="4" height="4" fill="#2A1810"/>
-<rect x="244" y="98" width="4" height="4" fill="#2A1810"/>
-<rect x="228" y="102" width="4" height="4" fill="#2A1810"/>
-<rect x="248" y="102" width="4" height="4" fill="#2A1810"/>
-<rect x="228" y="106" width="4" height="4" fill="#2A1810"/>
-<rect x="240" y="106" width="8" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="3.53s" repeatCount="indefinite"/>
+  <circle cx="242" cy="140" r="34" fill="#3F6B62"/>
+  <circle cx="242" cy="140" r="29" fill="#1E2026"/>
+  <circle cx="242" cy="140" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="231.5" y="132.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="246.5" y="132.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="234.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="243.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="234.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="246.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="234.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="249.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="234.5" y="144.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="243.5" y="144.5" width="6" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="3.4200000000000004s" repeatCount="indefinite"/>
-  <circle cx="370" cy="114" r="38" fill="#8B3A22"/>
-  <circle cx="370" cy="114" r="32" fill="#F6EFE4"/>
-  <circle cx="370" cy="114" r="28" fill="#8B3A22" opacity=".16"/>
-  <rect x="350" y="106" width="8" height="4" fill="#2A1810"/>
-<rect x="362" y="106" width="8" height="4" fill="#2A1810"/>
-<rect x="378" y="106" width="8" height="4" fill="#2A1810"/>
-<rect x="346" y="110" width="4" height="4" fill="#2A1810"/>
-<rect x="370" y="110" width="4" height="4" fill="#2A1810"/>
-<rect x="386" y="110" width="4" height="4" fill="#2A1810"/>
-<rect x="346" y="114" width="4" height="4" fill="#2A1810"/>
-<rect x="366" y="114" width="4" height="4" fill="#2A1810"/>
-<rect x="382" y="114" width="4" height="4" fill="#2A1810"/>
-<rect x="346" y="118" width="4" height="4" fill="#2A1810"/>
-<rect x="350" y="122" width="8" height="4" fill="#2A1810"/>
-<rect x="366" y="122" width="4" height="4" fill="#2A1810"/>
-<rect x="382" y="122" width="4" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="3.66s" repeatCount="indefinite"/>
+  <circle cx="388" cy="140" r="34" fill="#A33418"/>
+  <circle cx="388" cy="140" r="29" fill="#1E2026"/>
+  <circle cx="388" cy="140" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="377.5" y="132.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="392.5" y="132.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="383.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="389.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="383.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="392.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="377.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="383.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="395.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="380.5" y="144.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="389.5" y="144.5" width="6" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="3.5300000000000002s" repeatCount="indefinite"/>
-  <circle cx="500" cy="96" r="38" fill="#6B4A32"/>
-  <circle cx="500" cy="96" r="32" fill="#F6EFE4"/>
-  <circle cx="500" cy="96" r="28" fill="#6B4A32" opacity=".16"/>
-  <rect x="488" y="88" width="8" height="4" fill="#2A1810"/>
-<rect x="504" y="88" width="4" height="4" fill="#2A1810"/>
-<rect x="484" y="92" width="4" height="4" fill="#2A1810"/>
-<rect x="500" y="92" width="4" height="4" fill="#2A1810"/>
-<rect x="508" y="92" width="4" height="4" fill="#2A1810"/>
-<rect x="484" y="96" width="4" height="4" fill="#2A1810"/>
-<rect x="492" y="96" width="4" height="4" fill="#2A1810"/>
-<rect x="500" y="96" width="4" height="4" fill="#2A1810"/>
-<rect x="508" y="96" width="4" height="4" fill="#2A1810"/>
-<rect x="484" y="100" width="4" height="4" fill="#2A1810"/>
-<rect x="492" y="100" width="4" height="4" fill="#2A1810"/>
-<rect x="500" y="100" width="4" height="4" fill="#2A1810"/>
-<rect x="508" y="100" width="4" height="4" fill="#2A1810"/>
-<rect x="488" y="104" width="8" height="4" fill="#2A1810"/>
-<rect x="504" y="104" width="4" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="3.79s" repeatCount="indefinite"/>
+  <circle cx="534" cy="140" r="34" fill="#3A3E48"/>
+  <circle cx="534" cy="140" r="29" fill="#1E2026"/>
+  <circle cx="534" cy="140" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="520.5" y="132.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="517.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="532.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="544.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="517.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="529.5" y="138.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="541.5" y="138.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="517.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="532.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="544.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="520.5" y="144.5" width="6" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="3.64s" repeatCount="indefinite"/>
-  <circle cx="630" cy="108" r="38" fill="#C45C32"/>
-  <circle cx="630" cy="108" r="32" fill="#F6EFE4"/>
-  <circle cx="630" cy="108" r="28" fill="#C45C32" opacity=".16"/>
-  <rect x="610" y="100" width="8" height="4" fill="#2A1810"/>
-<rect x="626" y="100" width="4" height="4" fill="#2A1810"/>
-<rect x="638" y="100" width="4" height="4" fill="#2A1810"/>
-<rect x="606" y="104" width="4" height="4" fill="#2A1810"/>
-<rect x="622" y="104" width="4" height="4" fill="#2A1810"/>
-<rect x="630" y="104" width="4" height="4" fill="#2A1810"/>
-<rect x="638" y="104" width="4" height="4" fill="#2A1810"/>
-<rect x="610" y="108" width="4" height="4" fill="#2A1810"/>
-<rect x="622" y="108" width="4" height="4" fill="#2A1810"/>
-<rect x="630" y="108" width="4" height="4" fill="#2A1810"/>
-<rect x="638" y="108" width="4" height="4" fill="#2A1810"/>
-<rect x="614" y="112" width="4" height="4" fill="#2A1810"/>
-<rect x="626" y="112" width="8" height="4" fill="#2A1810"/>
-<rect x="638" y="112" width="4" height="4" fill="#2A1810"/>
-<rect x="606" y="116" width="8" height="4" fill="#2A1810"/>
-<rect x="630" y="116" width="4" height="4" fill="#2A1810"/>
-<rect x="638" y="116" width="12" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="3.92s" repeatCount="indefinite"/>
+  <circle cx="680" cy="140" r="34" fill="#C9A227"/>
+  <circle cx="680" cy="140" r="29" fill="#1E2026"/>
+  <circle cx="680" cy="140" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="672.5" y="132.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="684.5" y="132.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="669.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="681.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="687.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="669.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="675.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="681.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="687.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="669.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="675.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="681.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="687.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="672.5" y="144.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="684.5" y="144.5" width="3" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="3.75s" repeatCount="indefinite"/>
-  <circle cx="760" cy="102" r="38" fill="#6F8F5E"/>
-  <circle cx="760" cy="102" r="32" fill="#F6EFE4"/>
-  <circle cx="760" cy="102" r="28" fill="#6F8F5E" opacity=".16"/>
-  <rect x="720" y="94" width="8" height="4" fill="#2A1810"/>
-<rect x="736" y="94" width="12" height="4" fill="#2A1810"/>
-<rect x="756" y="94" width="4" height="4" fill="#2A1810"/>
-<rect x="772" y="94" width="8" height="4" fill="#2A1810"/>
-<rect x="784" y="94" width="12" height="4" fill="#2A1810"/>
-<rect x="720" y="98" width="4" height="4" fill="#2A1810"/>
-<rect x="728" y="98" width="4" height="4" fill="#2A1810"/>
-<rect x="736" y="98" width="4" height="4" fill="#2A1810"/>
-<rect x="752" y="98" width="4" height="4" fill="#2A1810"/>
-<rect x="760" y="98" width="4" height="4" fill="#2A1810"/>
-<rect x="768" y="98" width="4" height="4" fill="#2A1810"/>
-<rect x="788" y="98" width="4" height="4" fill="#2A1810"/>
-<rect x="720" y="102" width="8" height="4" fill="#2A1810"/>
-<rect x="736" y="102" width="8" height="4" fill="#2A1810"/>
-<rect x="752" y="102" width="12" height="4" fill="#2A1810"/>
-<rect x="768" y="102" width="4" height="4" fill="#2A1810"/>
-<rect x="788" y="102" width="4" height="4" fill="#2A1810"/>
-<rect x="720" y="106" width="4" height="4" fill="#2A1810"/>
-<rect x="728" y="106" width="4" height="4" fill="#2A1810"/>
-<rect x="736" y="106" width="4" height="4" fill="#2A1810"/>
-<rect x="752" y="106" width="4" height="4" fill="#2A1810"/>
-<rect x="760" y="106" width="4" height="4" fill="#2A1810"/>
-<rect x="768" y="106" width="4" height="4" fill="#2A1810"/>
-<rect x="788" y="106" width="4" height="4" fill="#2A1810"/>
-<rect x="720" y="110" width="4" height="4" fill="#2A1810"/>
-<rect x="728" y="110" width="4" height="4" fill="#2A1810"/>
-<rect x="736" y="110" width="12" height="4" fill="#2A1810"/>
-<rect x="752" y="110" width="4" height="4" fill="#2A1810"/>
-<rect x="760" y="110" width="4" height="4" fill="#2A1810"/>
-<rect x="772" y="110" width="8" height="4" fill="#2A1810"/>
-<rect x="788" y="110" width="4" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="4.05s" repeatCount="indefinite"/>
+  <circle cx="826" cy="140" r="34" fill="#3F6B62"/>
+  <circle cx="826" cy="140" r="29" fill="#1E2026"/>
+  <circle cx="826" cy="140" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="812.5" y="132.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="824.5" y="132.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="132.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="809.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="821.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="827.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="135.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="812.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="821.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="827.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="138.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="815.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="824.5" y="141.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="141.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="809.5" y="144.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="827.5" y="144.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="144.5" width="9" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="3.8600000000000003s" repeatCount="indefinite"/>
-  <circle cx="160" cy="198" r="38" fill="#8B6E58"/>
-  <circle cx="160" cy="198" r="32" fill="#F6EFE4"/>
-  <circle cx="160" cy="198" r="28" fill="#8B6E58" opacity=".16"/>
-  <rect x="128" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="136" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="148" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="160" y="190" width="8" height="4" fill="#2A1810"/>
-<rect x="176" y="190" width="12" height="4" fill="#2A1810"/>
-<rect x="128" y="194" width="8" height="4" fill="#2A1810"/>
-<rect x="144" y="194" width="4" height="4" fill="#2A1810"/>
-<rect x="152" y="194" width="4" height="4" fill="#2A1810"/>
-<rect x="160" y="194" width="4" height="4" fill="#2A1810"/>
-<rect x="168" y="194" width="4" height="4" fill="#2A1810"/>
-<rect x="176" y="194" width="4" height="4" fill="#2A1810"/>
-<rect x="128" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="136" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="144" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="152" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="160" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="168" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="176" y="198" width="8" height="4" fill="#2A1810"/>
-<rect x="128" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="136" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="144" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="152" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="160" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="168" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="176" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="128" y="206" width="4" height="4" fill="#2A1810"/>
-<rect x="136" y="206" width="4" height="4" fill="#2A1810"/>
-<rect x="148" y="206" width="4" height="4" fill="#2A1810"/>
-<rect x="160" y="206" width="8" height="4" fill="#2A1810"/>
-<rect x="176" y="206" width="12" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="4.18s" repeatCount="indefinite"/>
+  <circle cx="96" cy="228" r="34" fill="#A33418"/>
+  <circle cx="96" cy="228" r="29" fill="#1E2026"/>
+  <circle cx="96" cy="228" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="77.0" y="223.0" width="4" height="2" fill="#E9E6DF"/>
+<rect x="85.0" y="223.0" width="6" height="2" fill="#E9E6DF"/>
+<rect x="95.0" y="223.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="103.0" y="223.0" width="4" height="2" fill="#E9E6DF"/>
+<rect x="109.0" y="223.0" width="6" height="2" fill="#E9E6DF"/>
+<rect x="77.0" y="225.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="81.0" y="225.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="85.0" y="225.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="93.0" y="225.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="97.0" y="225.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="101.0" y="225.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="111.0" y="225.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="77.0" y="227.0" width="4" height="2" fill="#E9E6DF"/>
+<rect x="85.0" y="227.0" width="4" height="2" fill="#E9E6DF"/>
+<rect x="93.0" y="227.0" width="6" height="2" fill="#E9E6DF"/>
+<rect x="101.0" y="227.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="111.0" y="227.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="77.0" y="229.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="81.0" y="229.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="85.0" y="229.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="93.0" y="229.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="97.0" y="229.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="101.0" y="229.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="111.0" y="229.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="77.0" y="231.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="81.0" y="231.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="85.0" y="231.0" width="6" height="2" fill="#E9E6DF"/>
+<rect x="93.0" y="231.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="97.0" y="231.0" width="2" height="2" fill="#E9E6DF"/>
+<rect x="103.0" y="231.0" width="4" height="2" fill="#E9E6DF"/>
+<rect x="111.0" y="231.0" width="2" height="2" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="3.97s" repeatCount="indefinite"/>
-  <circle cx="300" cy="208" r="38" fill="#4F6B45"/>
-  <circle cx="300" cy="208" r="32" fill="#F6EFE4"/>
-  <circle cx="300" cy="208" r="28" fill="#4F6B45" opacity=".16"/>
-  <rect x="284" y="200" width="8" height="4" fill="#2A1810"/>
-<rect x="304" y="200" width="8" height="4" fill="#2A1810"/>
-<rect x="284" y="204" width="4" height="4" fill="#2A1810"/>
-<rect x="292" y="204" width="4" height="4" fill="#2A1810"/>
-<rect x="300" y="204" width="4" height="4" fill="#2A1810"/>
-<rect x="284" y="208" width="8" height="4" fill="#2A1810"/>
-<rect x="300" y="208" width="4" height="4" fill="#2A1810"/>
-<rect x="308" y="208" width="4" height="4" fill="#2A1810"/>
-<rect x="284" y="212" width="4" height="4" fill="#2A1810"/>
-<rect x="300" y="212" width="4" height="4" fill="#2A1810"/>
-<rect x="308" y="212" width="4" height="4" fill="#2A1810"/>
-<rect x="284" y="216" width="4" height="4" fill="#2A1810"/>
-<rect x="304" y="216" width="8" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="4.31s" repeatCount="indefinite"/>
+  <circle cx="242" cy="228" r="34" fill="#3A3E48"/>
+  <circle cx="242" cy="228" r="29" fill="#1E2026"/>
+  <circle cx="242" cy="228" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="219.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="225.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="234.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="243.5" y="220.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="255.5" y="220.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="219.5" y="223.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="231.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="237.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="243.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="249.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="255.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="219.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="225.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="231.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="237.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="243.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="249.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="255.5" y="226.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="219.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="225.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="231.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="237.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="243.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="249.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="255.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="219.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="225.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="234.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="243.5" y="232.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="255.5" y="232.5" width="9" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="4.08s" repeatCount="indefinite"/>
-  <circle cx="440" cy="194" r="38" fill="#C45C32"/>
-  <circle cx="440" cy="194" r="32" fill="#F6EFE4"/>
-  <circle cx="440" cy="194" r="28" fill="#C45C32" opacity=".16"/>
-  <rect x="416" y="186" width="4" height="4" fill="#2A1810"/>
-<rect x="424" y="186" width="4" height="4" fill="#2A1810"/>
-<rect x="436" y="186" width="4" height="4" fill="#2A1810"/>
-<rect x="452" y="186" width="8" height="4" fill="#2A1810"/>
-<rect x="416" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="424" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="432" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="440" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="448" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="416" y="194" width="8" height="4" fill="#2A1810"/>
-<rect x="436" y="194" width="4" height="4" fill="#2A1810"/>
-<rect x="452" y="194" width="4" height="4" fill="#2A1810"/>
-<rect x="416" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="424" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="432" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="440" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="456" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="416" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="424" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="436" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="448" y="202" width="8" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="4.4399999999999995s" repeatCount="indefinite"/>
+  <circle cx="388" cy="228" r="34" fill="#C9A227"/>
+  <circle cx="388" cy="228" r="29" fill="#1E2026"/>
+  <circle cx="388" cy="228" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="377.5" y="220.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="392.5" y="220.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="377.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="383.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="389.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="377.5" y="226.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="389.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="395.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="377.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="389.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="395.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="377.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="392.5" y="232.5" width="6" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="4.19s" repeatCount="indefinite"/>
-  <circle cx="580" cy="204" r="38" fill="#6B4A32"/>
-  <circle cx="580" cy="204" r="32" fill="#F6EFE4"/>
-  <circle cx="580" cy="204" r="28" fill="#6B4A32" opacity=".16"/>
-  <rect x="560" y="196" width="4" height="4" fill="#2A1810"/>
-<rect x="572" y="196" width="4" height="4" fill="#2A1810"/>
-<rect x="580" y="196" width="4" height="4" fill="#2A1810"/>
-<rect x="592" y="196" width="8" height="4" fill="#2A1810"/>
-<rect x="556" y="200" width="4" height="4" fill="#2A1810"/>
-<rect x="564" y="200" width="4" height="4" fill="#2A1810"/>
-<rect x="572" y="200" width="4" height="4" fill="#2A1810"/>
-<rect x="580" y="200" width="4" height="4" fill="#2A1810"/>
-<rect x="588" y="200" width="4" height="4" fill="#2A1810"/>
-<rect x="556" y="204" width="12" height="4" fill="#2A1810"/>
-<rect x="572" y="204" width="4" height="4" fill="#2A1810"/>
-<rect x="580" y="204" width="4" height="4" fill="#2A1810"/>
-<rect x="592" y="204" width="4" height="4" fill="#2A1810"/>
-<rect x="556" y="208" width="4" height="4" fill="#2A1810"/>
-<rect x="564" y="208" width="4" height="4" fill="#2A1810"/>
-<rect x="572" y="208" width="12" height="4" fill="#2A1810"/>
-<rect x="596" y="208" width="4" height="4" fill="#2A1810"/>
-<rect x="556" y="212" width="4" height="4" fill="#2A1810"/>
-<rect x="564" y="212" width="4" height="4" fill="#2A1810"/>
-<rect x="572" y="212" width="4" height="4" fill="#2A1810"/>
-<rect x="580" y="212" width="4" height="4" fill="#2A1810"/>
-<rect x="588" y="212" width="8" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="4.57s" repeatCount="indefinite"/>
+  <circle cx="534" cy="228" r="34" fill="#3F6B62"/>
+  <circle cx="534" cy="228" r="29" fill="#1E2026"/>
+  <circle cx="534" cy="228" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="517.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="523.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="532.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="544.5" y="220.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="517.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="523.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="529.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="535.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="541.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="517.5" y="226.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="532.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="544.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="517.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="523.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="529.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="535.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="547.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="517.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="523.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="532.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="541.5" y="232.5" width="6" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="4.300000000000001s" repeatCount="indefinite"/>
-  <circle cx="720" cy="198" r="38" fill="#C4897A"/>
-  <circle cx="720" cy="198" r="32" fill="#F6EFE4"/>
-  <circle cx="720" cy="198" r="28" fill="#C4897A" opacity=".16"/>
-  <rect x="696" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="712" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="728" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="736" y="190" width="4" height="4" fill="#2A1810"/>
-<rect x="696" y="194" width="4" height="4" fill="#2A1810"/>
-<rect x="712" y="194" width="4" height="4" fill="#2A1810"/>
-<rect x="728" y="194" width="12" height="4" fill="#2A1810"/>
-<rect x="696" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="712" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="728" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="736" y="198" width="4" height="4" fill="#2A1810"/>
-<rect x="696" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="712" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="728" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="736" y="202" width="4" height="4" fill="#2A1810"/>
-<rect x="696" y="206" width="12" height="4" fill="#2A1810"/>
-<rect x="712" y="206" width="12" height="4" fill="#2A1810"/>
-<rect x="728" y="206" width="4" height="4" fill="#2A1810"/>
-<rect x="736" y="206" width="4" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="4.7s" repeatCount="indefinite"/>
+  <circle cx="680" cy="228" r="34" fill="#A33418"/>
+  <circle cx="680" cy="228" r="29" fill="#1E2026"/>
+  <circle cx="680" cy="228" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="666.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="675.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="681.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="690.5" y="220.5" width="6" height="3" fill="#E9E6DF"/>
+<rect x="663.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="669.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="675.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="681.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="687.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="663.5" y="226.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="675.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="681.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="690.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="663.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="669.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="675.5" y="229.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="693.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="663.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="669.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="675.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="681.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="687.5" y="232.5" width="6" height="3" fill="#E9E6DF"/>
 </g><g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="4.41s" repeatCount="indefinite"/>
-  <circle cx="840" cy="188" r="38" fill="#4F6B45"/>
-  <circle cx="840" cy="188" r="32" fill="#F6EFE4"/>
-  <circle cx="840" cy="188" r="28" fill="#4F6B45" opacity=".16"/>
-  <rect x="820" y="180" width="8" height="4" fill="#2A1810"/>
-<rect x="832" y="180" width="12" height="4" fill="#2A1810"/>
-<rect x="848" y="180" width="12" height="4" fill="#2A1810"/>
-<rect x="816" y="184" width="4" height="4" fill="#2A1810"/>
-<rect x="836" y="184" width="4" height="4" fill="#2A1810"/>
-<rect x="852" y="184" width="4" height="4" fill="#2A1810"/>
-<rect x="816" y="188" width="4" height="4" fill="#2A1810"/>
-<rect x="824" y="188" width="4" height="4" fill="#2A1810"/>
-<rect x="836" y="188" width="4" height="4" fill="#2A1810"/>
-<rect x="852" y="188" width="4" height="4" fill="#2A1810"/>
-<rect x="816" y="192" width="4" height="4" fill="#2A1810"/>
-<rect x="824" y="192" width="4" height="4" fill="#2A1810"/>
-<rect x="836" y="192" width="4" height="4" fill="#2A1810"/>
-<rect x="852" y="192" width="4" height="4" fill="#2A1810"/>
-<rect x="820" y="196" width="8" height="4" fill="#2A1810"/>
-<rect x="832" y="196" width="12" height="4" fill="#2A1810"/>
-<rect x="852" y="196" width="4" height="4" fill="#2A1810"/>
+  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="4.83s" repeatCount="indefinite"/>
+  <circle cx="826" cy="228" r="34" fill="#3A3E48"/>
+  <circle cx="826" cy="228" r="29" fill="#1E2026"/>
+  <circle cx="826" cy="228" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
+  <rect x="809.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="821.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="839.5" y="220.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="809.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="821.5" y="223.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="223.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="809.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="821.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="839.5" y="226.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="809.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="821.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="839.5" y="229.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="809.5" y="232.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="821.5" y="232.5" width="9" height="3" fill="#E9E6DF"/>
+<rect x="833.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
+<rect x="839.5" y="232.5" width="3" height="3" fill="#E9E6DF"/>
 </g>
 
 </svg>

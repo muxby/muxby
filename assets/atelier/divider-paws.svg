@@ -1,122 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="56" viewBox="0 0 1200 56" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
-  <title id="title">Pawprint divider</title>
-  <desc id="desc">Fox and dragon pawprints walking across the page.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="40" viewBox="0 0 1200 40" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+  <title id="title">Brass rule</title>
+  <desc id="desc">A thin brass rule with a diamond at the centre.</desc>
   <defs>
     <linearGradient id="duskSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E7C4A2"/>
-      <stop offset=".42" stop-color="#F0D3B0"/>
-      <stop offset="1" stop-color="#C9B48A"/>
+      <stop offset="0" stop-color="#0F1013"/>
+      <stop offset=".42" stop-color="#1A1C22"/>
+      <stop offset="1" stop-color="#20272A"/>
     </linearGradient>
     <linearGradient id="paperSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F6EFE4"/>
-      <stop offset="1" stop-color="#E4D3B4"/>
+      <stop offset="0" stop-color="#1E2026"/>
+      <stop offset="1" stop-color="#141519"/>
     </linearGradient>
     <linearGradient id="hillA" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8AA078"/>
-      <stop offset="1" stop-color="#5F734C"/>
+      <stop offset="0" stop-color="#232B2E"/>
+      <stop offset="1" stop-color="#191F22"/>
     </linearGradient>
     <linearGradient id="hillB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6F8F5E"/>
-      <stop offset="1" stop-color="#4F6B45"/>
+      <stop offset="0" stop-color="#26332F"/>
+      <stop offset="1" stop-color="#1A2421"/>
     </linearGradient>
     <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6B4A32"/>
-      <stop offset="1" stop-color="#4A3224"/>
+      <stop offset="0" stop-color="#2A2D35"/>
+      <stop offset="1" stop-color="#1A1C22"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A6E1F"/>
+      <stop offset=".55" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#E0B94A"/>
     </linearGradient>
     <radialGradient id="lamp" cx="50%" cy="40%" r="50%">
-      <stop offset="0" stop-color="#FFF3A0" stop-opacity=".9"/>
-      <stop offset=".45" stop-color="#E8A070" stop-opacity=".28"/>
-      <stop offset="1" stop-color="#E07A3D" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F2C14E" stop-opacity=".85"/>
+      <stop offset=".45" stop-color="#E4572E" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="hearth" cx="50%" cy="60%" r="50%">
-      <stop offset="0" stop-color="#FFF3A0" stop-opacity=".7"/>
-      <stop offset="1" stop-color="#C45C32" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FFE3A3" stop-opacity=".6"/>
+      <stop offset=".5" stop-color="#E4572E" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
-    <filter id="softPaper" x="-2%" y="-2%" width="104%" height="108%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#3A2418" flood-opacity=".18"/>
+    <filter id="softPaper" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity=".5"/>
     </filter>
     
   </defs>
-  <rect width='1200' height='64' fill='none'/>
-<g opacity="1">
-<rect x="44" y="18" width="8" height="4" fill="#3A2418"/>
-<rect x="40" y="22" width="16" height="4" fill="#3A2418"/>
-<rect x="44" y="26" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="0.0s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="114" y="26" width="8" height="4" fill="#3A2418"/>
-<rect x="110" y="30" width="16" height="4" fill="#3A2418"/>
-<rect x="114" y="34" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="0.18s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="184" y="18" width="8" height="4" fill="#3A2418"/>
-<rect x="180" y="22" width="16" height="4" fill="#3A2418"/>
-<rect x="184" y="26" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="0.36s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="254" y="26" width="8" height="4" fill="#3A2418"/>
-<rect x="250" y="30" width="16" height="4" fill="#3A2418"/>
-<rect x="254" y="34" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="0.54s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="324" y="18" width="8" height="4" fill="#3A2418"/>
-<rect x="320" y="22" width="16" height="4" fill="#3A2418"/>
-<rect x="324" y="26" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="0.72s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="394" y="26" width="8" height="4" fill="#3A2418"/>
-<rect x="390" y="30" width="16" height="4" fill="#3A2418"/>
-<rect x="394" y="34" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="0.8999999999999999s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="464" y="18" width="8" height="4" fill="#3A2418"/>
-<rect x="460" y="22" width="16" height="4" fill="#3A2418"/>
-<rect x="464" y="26" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="1.08s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="534" y="26" width="8" height="4" fill="#3A2418"/>
-<rect x="530" y="30" width="16" height="4" fill="#3A2418"/>
-<rect x="534" y="34" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="1.26s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="604" y="18" width="8" height="4" fill="#3A2418"/>
-<rect x="600" y="22" width="16" height="4" fill="#3A2418"/>
-<rect x="604" y="26" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="1.44s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="674" y="26" width="8" height="4" fill="#3A2418"/>
-<rect x="670" y="30" width="16" height="4" fill="#3A2418"/>
-<rect x="674" y="34" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="1.6199999999999999s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="744" y="18" width="8" height="4" fill="#3A2418"/>
-<rect x="740" y="22" width="16" height="4" fill="#3A2418"/>
-<rect x="744" y="26" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="1.7999999999999998s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="814" y="26" width="8" height="4" fill="#3A2418"/>
-<rect x="810" y="30" width="16" height="4" fill="#3A2418"/>
-<rect x="814" y="34" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="1.98s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="884" y="18" width="8" height="4" fill="#3A2418"/>
-<rect x="880" y="22" width="16" height="4" fill="#3A2418"/>
-<rect x="884" y="26" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="2.16s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="954" y="26" width="8" height="4" fill="#3A2418"/>
-<rect x="950" y="30" width="16" height="4" fill="#3A2418"/>
-<rect x="954" y="34" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="2.34s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="1024" y="18" width="8" height="4" fill="#3A2418"/>
-<rect x="1020" y="22" width="16" height="4" fill="#3A2418"/>
-<rect x="1024" y="26" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="2.52s" repeatCount="indefinite"/>
-</g><g opacity="1">
-<rect x="1094" y="26" width="8" height="4" fill="#3A2418"/>
-<rect x="1090" y="30" width="16" height="4" fill="#3A2418"/>
-<rect x="1094" y="34" width="8" height="4" fill="#3A2418"/>
-<animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="2.6999999999999997s" repeatCount="indefinite"/>
-</g>
+  <rect width="1200" height="40" fill="none"/>
+  <path d="M40 20 H560" stroke="#8A6E1F" stroke-width="1">
+    <animate attributeName="stroke-dasharray" values="0 520;520 0" dur="1.6s" fill="freeze"/>
+  </path>
+  <path d="M640 20 H1160" stroke="#8A6E1F" stroke-width="1">
+    <animate attributeName="stroke-dasharray" values="0 520;520 0" dur="1.6s" fill="freeze"/>
+  </path>
+  <path d="M600 10 L610 20 L600 30 L590 20 Z" fill="#C9A227"/>
+  <path d="M566 20 H580" stroke="#C9A227" stroke-width="2"/>
+  <path d="M620 20 H634" stroke="#C9A227" stroke-width="2"/>
+  <circle cx="40" cy="20" r="2" fill="#8A6E1F"/>
+  <circle cx="1160" cy="20" r="2" fill="#8A6E1F"/>
+
 </svg>

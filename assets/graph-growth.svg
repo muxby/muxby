@@ -1,75 +1,87 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="280" viewBox="0 0 420 280" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
-  <title id="title">Copper kettle brewing</title>
-  <desc id="desc">A copper kettle with bouncing lid and steam, labeled now brewing.</desc>
+  <title id="title">Iron kettle on the hob</title>
+  <desc id="desc">An iron kettle with a brass band and handle, steaming over an ember glow.</desc>
   <defs>
     <linearGradient id="duskSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E7C4A2"/>
-      <stop offset=".42" stop-color="#F0D3B0"/>
-      <stop offset="1" stop-color="#C9B48A"/>
+      <stop offset="0" stop-color="#0F1013"/>
+      <stop offset=".42" stop-color="#1A1C22"/>
+      <stop offset="1" stop-color="#20272A"/>
     </linearGradient>
     <linearGradient id="paperSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F6EFE4"/>
-      <stop offset="1" stop-color="#E4D3B4"/>
+      <stop offset="0" stop-color="#1E2026"/>
+      <stop offset="1" stop-color="#141519"/>
     </linearGradient>
     <linearGradient id="hillA" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8AA078"/>
-      <stop offset="1" stop-color="#5F734C"/>
+      <stop offset="0" stop-color="#232B2E"/>
+      <stop offset="1" stop-color="#191F22"/>
     </linearGradient>
     <linearGradient id="hillB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6F8F5E"/>
-      <stop offset="1" stop-color="#4F6B45"/>
+      <stop offset="0" stop-color="#26332F"/>
+      <stop offset="1" stop-color="#1A2421"/>
     </linearGradient>
     <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6B4A32"/>
-      <stop offset="1" stop-color="#4A3224"/>
+      <stop offset="0" stop-color="#2A2D35"/>
+      <stop offset="1" stop-color="#1A1C22"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A6E1F"/>
+      <stop offset=".55" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#E0B94A"/>
     </linearGradient>
     <radialGradient id="lamp" cx="50%" cy="40%" r="50%">
-      <stop offset="0" stop-color="#FFF3A0" stop-opacity=".9"/>
-      <stop offset=".45" stop-color="#E8A070" stop-opacity=".28"/>
-      <stop offset="1" stop-color="#E07A3D" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F2C14E" stop-opacity=".85"/>
+      <stop offset=".45" stop-color="#E4572E" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="hearth" cx="50%" cy="60%" r="50%">
-      <stop offset="0" stop-color="#FFF3A0" stop-opacity=".7"/>
-      <stop offset="1" stop-color="#C45C32" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FFE3A3" stop-opacity=".6"/>
+      <stop offset=".5" stop-color="#E4572E" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
-    <filter id="softPaper" x="-2%" y="-2%" width="104%" height="108%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#3A2418" flood-opacity=".18"/>
+    <filter id="softPaper" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity=".5"/>
     </filter>
     
   </defs>
-  <rect width="420" height="280" fill="#F4EBD8"/>
-  <text x="210" y="36" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#3A2418">now brewing</text>
-  <ellipse cx="210" cy="210" rx="70" ry="14" fill="#C4A574" opacity=".35"/>
-  <path d="M150 150 C150 110 270 110 270 150 L262 200 C262 226 158 226 158 200 Z" fill="#C45C32" stroke="#3A2418" stroke-width="3"/>
-  <path d="M270 156 C318 156 318 198 268 198" fill="none" stroke="#3A2418" stroke-width="6" stroke-linecap="round"/>
-  <ellipse cx="210" cy="128" rx="46" ry="10" fill="#8B3A22"/>
-  <rect x="198" y="96" width="24" height="18" rx="3" fill="#8B3A22">
+  <rect width="420" height="280" fill="#17181C"/>
+  <rect x="8" y="8" width="404" height="264" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
+  <text x="210" y="40" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#E9E6DF" letter-spacing="6">ON THE HOB</text>
+  <ellipse cx="210" cy="212" rx="78" ry="20" fill="url(#hearth)">
+    <animate attributeName="opacity" values=".5;.95;.5" dur="2.6s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="210" cy="216" rx="66" ry="10" fill="#0F1013"/>
+  <path d="M154 152 L112 136 L106 150 L150 174 Z" fill="#2A2D35" stroke="#3A3E48" stroke-width="2"/>
+  <path d="M150 150 C150 112 270 112 270 150 L262 200 C262 224 158 224 158 200 Z" fill="#2A2D35" stroke="#3A3E48" stroke-width="2"/>
+  <path d="M160 176 H260" stroke="#C9A227" stroke-width="3" opacity=".9"/>
+  <path d="M270 156 C316 156 316 198 268 198" fill="none" stroke="#C9A227" stroke-width="6"/>
+  <ellipse cx="210" cy="128" rx="46" ry="9" fill="#3A3E48"/>
+  <rect x="198" y="104" width="24" height="16" fill="#C9A227">
     <animateTransform attributeName="transform" type="rotate" values="0 210 114; -8 210 114; 6 210 114; 0 210 114" dur="1.2s" repeatCount="indefinite"/>
   </rect>
-  <g fill="#D4C8B8" opacity="0">
+  <g fill="#6B7078" opacity="0">
   <ellipse cx="208" cy="70" rx="8" ry="12"/>
-  <animate attributeName="opacity" values="0;0.7;0" dur="2.4s" begin="0.0s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.75;0" dur="2.4s" begin="0.0s" repeatCount="indefinite"/>
   <animateTransform attributeName="transform" type="translate" values="0 0; -8 -40" dur="2.4s" begin="0.0s" repeatCount="indefinite"/>
-</g><g fill="#D4C8B8" opacity="0">
+</g><g fill="#6B7078" opacity="0">
   <ellipse cx="230" cy="70" rx="8" ry="12"/>
-  <animate attributeName="opacity" values="0;0.7;0" dur="2.6s" begin="0.3s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.75;0" dur="2.6s" begin="0.3s" repeatCount="indefinite"/>
   <animateTransform attributeName="transform" type="translate" values="0 0; -4 -40" dur="2.6s" begin="0.3s" repeatCount="indefinite"/>
-</g><g fill="#D4C8B8" opacity="0">
+</g><g fill="#6B7078" opacity="0">
   <ellipse cx="252" cy="70" rx="8" ry="12"/>
-  <animate attributeName="opacity" values="0;0.7;0" dur="2.8s" begin="0.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.75;0" dur="2.8s" begin="0.6s" repeatCount="indefinite"/>
   <animateTransform attributeName="transform" type="translate" values="0 0; 0 -40" dur="2.8s" begin="0.6s" repeatCount="indefinite"/>
 </g>
-  <text x="210" y="250" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#6B4A32">agentic systems, poured slowly</text>
-<rect x="330" y="200" width="25" height="5" fill="#F3D2B0"/>
-<rect x="325" y="205" width="5" height="5" fill="#F3D2B0"/>
-<rect x="330" y="205" width="20" height="5" fill="#F4EBD8"/>
-<rect x="350" y="205" width="5" height="5" fill="#F3D2B0"/>
-<rect x="355" y="205" width="10" height="5" fill="#3A2418"/>
-<rect x="325" y="210" width="5" height="5" fill="#F3D2B0"/>
-<rect x="330" y="210" width="20" height="5" fill="#F4EBD8"/>
-<rect x="350" y="210" width="5" height="5" fill="#F3D2B0"/>
-<rect x="355" y="210" width="5" height="5" fill="#3A2418"/>
-<rect x="330" y="215" width="25" height="5" fill="#F3D2B0"/>
-<rect x="335" y="220" width="15" height="5" fill="#8B6E58"/>
+  <text x="210" y="252" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#9AA0AC" letter-spacing="3">AGENTIC SYSTEMS, POURED SLOWLY</text>
+<rect x="334" y="198" width="25" height="5" fill="#E0B457"/>
+<rect x="329" y="203" width="5" height="5" fill="#E0B457"/>
+<rect x="334" y="203" width="20" height="5" fill="#F7F5F0"/>
+<rect x="354" y="203" width="5" height="5" fill="#E0B457"/>
+<rect x="359" y="203" width="10" height="5" fill="#14161A"/>
+<rect x="329" y="208" width="5" height="5" fill="#E0B457"/>
+<rect x="334" y="208" width="20" height="5" fill="#F7F5F0"/>
+<rect x="354" y="208" width="5" height="5" fill="#E0B457"/>
+<rect x="359" y="208" width="5" height="5" fill="#14161A"/>
+<rect x="334" y="213" width="25" height="5" fill="#E0B457"/>
+<rect x="339" y="218" width="15" height="5" fill="#3A342C"/>
 
 </svg>

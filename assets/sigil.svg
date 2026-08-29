@@ -1,16 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" role="img" aria-label="Wax seal monogram">
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" role="img" aria-label="Forged monogram seal">
   <defs>
-    <radialGradient id="wax" cx="50%" cy="38%" r="62%">
-      <stop offset="0" stop-color="#E2703A"/>
-      <stop offset="1" stop-color="#8E3320"/>
+    <radialGradient id="wax" cx="50%" cy="34%" r="66%">
+      <stop offset="0" stop-color="#E4572E"/>
+      <stop offset=".62" stop-color="#A33418"/>
+      <stop offset="1" stop-color="#5E1C0C"/>
     </radialGradient>
   </defs>
-  <circle cx="70" cy="70" r="58" fill="url(#wax)"/>
-  <circle cx="70" cy="70" r="48" fill="none" stroke="#EDCB94" stroke-width="3" stroke-dasharray="4 6">
-    <animateTransform attributeName="transform" type="rotate" from="0 70 70" to="360 70 70" dur="28s" repeatCount="indefinite"/>
+  <circle cx="70" cy="70" r="58" fill="#14161A"/>
+  <circle cx="70" cy="70" r="54" fill="url(#wax)"/>
+  <circle cx="70" cy="70" r="47" fill="none" stroke="#C9A227" stroke-width="2" stroke-dasharray="3 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 70 70" to="360 70 70" dur="30s" repeatCount="indefinite"/>
   </circle>
-  <path d="M48 96 L48 50 L70 78 L92 50 L92 96" fill="none" stroke="#FBF6E9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="70" cy="70" r="3" fill="#FBF6E9" opacity="0">
-    <animate attributeName="opacity" values="0;.55;0" dur="3.4s" repeatCount="indefinite"/>
+  <circle cx="70" cy="70" r="41" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".8"/>
+  <path d="M48 96 L48 50 L70 78 L92 50 L92 96" fill="none" stroke="#F7F5F0" stroke-width="7" stroke-linejoin="miter"/>
+  <circle cx="70" cy="70" r="3" fill="#F2C14E" opacity="0">
+    <animate attributeName="opacity" values="0;.7;0" dur="3.4s" repeatCount="indefinite"/>
   </circle>
 </svg>
