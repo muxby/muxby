@@ -17,7 +17,7 @@ deliberately not neon, not a cockpit, not a dashboard, and not a nursery.
 | `assets/atelier/trail.svg` | The same route as a night walk |
 | `assets/atelier/postcard.svg` | Short calling card |
 | `assets/atelier/wax-seal.svg` | Ember and brass M seal |
-| `assets/atelier/corkboard.svg` | Workbench cards (ink on bone, aligned grid) |
+| `assets/atelier/corkboard.svg` | Forge workbench scene (tools, ingots, jars, crates, hearth, anvil) |
 | `assets/atelier/kettle.svg` | Iron kettle and steam |
 | `assets/atelier/lantern.svg` | Brass lantern and drifting embers |
 | `assets/atelier/ember.svg` | Dish of banked embers |
@@ -34,6 +34,7 @@ deliberately not neon, not a cockpit, not a dashboard, and not a nursery.
 | `assets/dragon/pixel-dragon-fire.svg` | Close-up fire breath |
 | `assets/dragon/pixel-dragon-tiny.svg` | Sitting mascot |
 | `scripts/build_atelier.py` | Regenerates the pixel scenes from sprite tables |
+| `scripts/build_workbench.py` | Regenerates the forge workbench scene (`corkboard.svg`) |
 | `scripts/typeset.py` | The type system: faces, the scale, and glyph outlining |
 | `scripts/sprite_lab.py` | Rasterizes a sprite table to a big PNG in `/tmp` |
 | `.github/workflows/snake.yml` | Contribution snake to the `output` branch |
@@ -153,7 +154,9 @@ inside each `build_*()` function, so recolor per scene rather than by global rep
 `scripts/sprite_lab.py` rasterizes a sprite to a large PNG in `/tmp` so pixel work can be
 checked by eye.
 
-Hand-drawn pieces (roadmap, trail, corkboard, desk, wax seal, signature) are plain SVG
+The workbench scene is generated with `python3 scripts/build_workbench.py`.
+
+Hand-drawn pieces (roadmap, trail, desk, wax seal, signature) are plain SVG
 files under `assets/atelier/` and are edited directly. Their text face and glyph
 positioning hang off each root `<svg>` as presentation attributes, so an element only names
 a family when it needs the serif or the mono. Presentation attributes rather than a

@@ -127,7 +127,7 @@ Currently building agentic systems that review work before a human has to.
 
 <br />
 
-<img src="assets/atelier/corkboard.svg" width="100%" alt="Workbench board of stack notes" />
+<img src="assets/atelier/corkboard.svg" width="100%" alt="Forge workbench: languages hang as tools, web cools as ingots, data in jars, infrastructure in crates, intelligence in the hearth, current work on the anvil" />
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 
