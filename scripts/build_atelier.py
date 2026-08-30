@@ -1119,21 +1119,10 @@ def build_lantern() -> None:
 
 
 def build_mail() -> None:
-    w, h = 520, 220
-    body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
-  <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
-  {ts.outline("Dragon post", "plate", 260, 38, "#E9E6DF", "middle", size=15)}
-  <g>
-    <animateTransform attributeName="transform" type="translate" values="0 18; 330 0; 0 18" dur="8s" repeatCount="indefinite"/>
-{rle_rects(DRAGON_IDLE, 12, 42, 4)}
-{rle_rects(ENVELOPE, 176, 118, 4)}
-  </g>
-  {ts.outline("The post goes out at dusk", "eyebrow", 260, 208, "#9AA0AC", "middle")}
-'''
-    write(
-        OUT / "atelier" / "mail.svg",
-        svg_wrap(w, h, "Dragon post", "A pixel dragon carrying a bone envelope across a graphite field.", body),
-    )
+    # Walk cycle lives in dragon_post.py so the pose tables stay next to the card.
+    import dragon_post
+
+    dragon_post.build()
 
 
 def build_ember_dish() -> None:
