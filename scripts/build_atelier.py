@@ -1252,6 +1252,8 @@ def build_hero() -> None:
             breath_css,
             chimney_css,
             coal_css,
+            ".moon{animation:moonPulse 7.5s ease-in-out infinite}",
+            "@keyframes moonPulse{0%,100%{opacity:.88}50%{opacity:1}}",
             ".grate-glow{animation:gratePulse 2.6s ease-in-out infinite}",
             "@keyframes gratePulse{0%,100%{opacity:.4}50%{opacity:.75}}",
         ]
