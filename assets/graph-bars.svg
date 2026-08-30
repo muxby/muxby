@@ -392,19 +392,24 @@
 <rect x="66" y="373" width="21" height="3" fill="#14161A"/>
 <rect x="96" y="373" width="21" height="3" fill="#14161A"/>
 <g opacity="0">
-<rect x="126" y="268" width="3" height="3" fill="#FFE3A3"/>
+<rect x="123" y="268" width="3" height="3" fill="#E4572E"/>
+<rect x="126" y="268" width="3" height="3" fill="#F2A03C"/>
+<rect x="132" y="268" width="3" height="3" fill="#F2A03C"/>
+<rect x="135" y="268" width="3" height="3" fill="#E4572E"/>
+<rect x="120" y="271" width="3" height="3" fill="#E4572E"/>
 <rect x="123" y="271" width="3" height="3" fill="#FFE3A3"/>
-<rect x="126" y="271" width="3" height="3" fill="#F2A03C"/>
-<rect x="129" y="271" width="3" height="3" fill="#FFE3A3"/>
-<rect x="120" y="274" width="3" height="3" fill="#FFE3A3"/>
-<rect x="123" y="274" width="3" height="3" fill="#F2A03C"/>
-<rect x="126" y="274" width="3" height="3" fill="#E4572E"/>
+<rect x="126" y="271" width="9" height="3" fill="#E4572E"/>
+<rect x="135" y="271" width="3" height="3" fill="#F2A03C"/>
+<rect x="138" y="271" width="3" height="3" fill="#E4572E"/>
+<rect x="120" y="274" width="6" height="3" fill="#E4572E"/>
+<rect x="126" y="274" width="3" height="3" fill="#FFE3A3"/>
 <rect x="129" y="274" width="3" height="3" fill="#F2A03C"/>
-<rect x="132" y="274" width="3" height="3" fill="#FFE3A3"/>
-<rect x="123" y="277" width="3" height="3" fill="#FFE3A3"/>
-<rect x="126" y="277" width="3" height="3" fill="#F2A03C"/>
-<rect x="129" y="277" width="3" height="3" fill="#FFE3A3"/>
-<rect x="126" y="280" width="3" height="3" fill="#FFE3A3"/>
+<rect x="132" y="274" width="9" height="3" fill="#E4572E"/>
+<rect x="123" y="277" width="6" height="3" fill="#E4572E"/>
+<rect x="129" y="277" width="3" height="3" fill="#F2A03C"/>
+<rect x="132" y="277" width="6" height="3" fill="#E4572E"/>
+<rect x="126" y="280" width="9" height="3" fill="#E4572E"/>
+<rect x="129" y="283" width="3" height="3" fill="#E4572E"/>
 <animate attributeName="opacity" values="0;1;0" dur="3.2s" begin="0s" repeatCount="indefinite"/>
 </g>
 </g>
