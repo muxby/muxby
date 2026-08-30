@@ -22,7 +22,7 @@ deliberately not neon, not a cockpit, not a dashboard, and not a nursery.
 | `assets/atelier/kettle.svg` | Iron kettle and steam |
 | `assets/atelier/lantern.svg` | Brass lantern and drifting embers |
 | `assets/atelier/ember.svg` | Dish of banked embers |
-| `assets/atelier/mail.svg` | Dragon post |
+| `assets/atelier/dragon-post.svg` | Dragon post walk: CSS pose-swap, feet and tail |
 | `assets/atelier/desk.svg` | Polaroid on an iron desk |
 | `assets/atelier/napping-banner.svg` | Break sign |
 | `assets/atelier/quote.svg` | Quote card |
