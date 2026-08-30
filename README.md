@@ -16,8 +16,6 @@
 
 <div align="center">
 
-<img src="assets/atelier/avatar-blood-moon.svg" width="168" alt="Ink blood-moon avatar" />
-
 <img src="assets/atelier/intro.svg" width="520" alt="Molten wax M dripping onto a brass nameplate: Mubeen, Pakistan" />
 
 **Mubeen** &mdash; software engineer in Pakistan.

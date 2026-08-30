@@ -1077,11 +1077,18 @@ def coal_pit(cx: float, cy: float, w: float, h: float) -> str:
 
 
 def blood_moon(cx: float, cy: float, r: float = 28) -> str:
-    """Fluid ink crescent. `r` is the old disc radius; scale is derived from it."""
-    import build_avatar as moon
-
-    scale = max(float(r) / 78.0, 0.28)
-    return moon.hero_moon(cx + 28, cy + 12, scale, sink=0)
+    """Deep crimson disc with a gold rim and a few craters. Not neon."""
+    return f'''<g class="moon">
+  <circle cx="{cx}" cy="{cy}" r="{r + 14}" fill="url(#moonHalo)"/>
+  <circle cx="{cx}" cy="{cy}" r="{r}" fill="#A33418"/>
+  <circle cx="{cx}" cy="{cy}" r="{r - 1.5}" fill="#E4572E"/>
+  <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="#C9A227" stroke-width="1.3" opacity=".5"/>
+  <circle cx="{cx + 9}" cy="{cy - 5}" r="{r - 7}" fill="#7E2A12" opacity=".5"/>
+  <circle cx="{cx - 9}" cy="{cy + 7}" r="4.2" fill="#7E2A12" opacity=".75"/>
+  <circle cx="{cx + 5}" cy="{cy + 11}" r="3" fill="#A33418" opacity=".85"/>
+  <circle cx="{cx - 3}" cy="{cy - 11}" r="2.4" fill="#7E2A12" opacity=".7"/>
+  <circle cx="{cx + 11}" cy="{cy + 2}" r="2" fill="#F2A03C" opacity=".35"/>
+</g>'''
 
 
 def css_puff_stack(
@@ -1611,9 +1618,6 @@ def main() -> None:
     build_tiny_dragon()
     build_napping()
     build_hero()
-    import build_avatar
-
-    build_avatar.build()
     build_tool_rack()
     build_kettle()
     build_lantern()
