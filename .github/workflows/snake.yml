@@ -36,6 +36,9 @@ jobs:
 
       - name: Lay the snake on liquid glass over the sky
         run: |
+          # Platane/snk writes dist/ as root inside Docker, so the
+          # runner user cannot overwrite those files in place.
+          sudo chmod -R a+rwX dist
           python3 scripts/glass_snake.py \
             dist/github-contribution-grid-snake-sky.svg \
             dist/github-contribution-grid-snake.svg \
