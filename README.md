@@ -16,28 +16,17 @@
 
 <div align="center">
 
-<table align="center">
-<tr>
-<td width="58%" valign="middle">
-<img src="assets/atelier/postcard.svg" width="100%" alt="Calling card from the workshop" />
-</td>
-<td width="42%" valign="middle" align="center">
-
-<img src="assets/atelier/wax-seal.svg" width="112" alt="Forged monogram seal" />
+<img src="assets/atelier/intro.svg" width="520" alt="Molten wax M dripping onto a brass nameplate: Mubeen, Pakistan" />
 
 **Mubeen** &mdash; software engineer in Pakistan.
 
-Interfaces, service contracts, data models, and the operational story that keeps them alive after the demo.
-
 Currently building agentic systems that review work before a human has to.
-
-</td>
-</tr>
-</table>
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 
 </div>
+
+<!-- /01 intro -->
 
 <!-- 02 dragon -->
 
