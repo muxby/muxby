@@ -23,7 +23,6 @@ deliberately not neon, not a cockpit, not a dashboard, and not a nursery.
 | `assets/atelier/ember.svg` | Dish of banked embers |
 | `assets/atelier/mail.svg` | Dragon post |
 | `assets/atelier/desk.svg` | Polaroid on an iron desk |
-| `assets/atelier/stickers.svg` | Forged medallion sheet |
 | `assets/atelier/napping-banner.svg` | Break sign |
 | `assets/atelier/quote.svg` | Quote card |
 | `assets/atelier/signature.svg` | Brass signature |
@@ -31,7 +30,6 @@ deliberately not neon, not a cockpit, not a dashboard, and not a nursery.
 | `assets/atelier/divider-ember.svg` | Ember spark rule |
 | `assets/atelier/garden.svg` | Tool rack of etched brass tags (kept for old links) |
 | `assets/dragon/pixel-dragon.svg` | Night ridge, fire-breathing pixel dragon |
-| `assets/dragon/pixel-dragon-fire.svg` | Close-up fire breath |
 | `assets/dragon/pixel-dragon-tiny.svg` | Sitting mascot |
 | `scripts/build_atelier.py` | Regenerates the pixel scenes from sprite tables |
 | `scripts/typeset.py` | The type system: faces, the scale, and glyph outlining |

@@ -45,8 +45,6 @@ Currently building agentic systems that review work before a human has to.
 
 <img src="assets/dragon/pixel-dragon.svg" width="100%" alt="Pixel dragon breathing fire on a night ridge beside a fox and a campfire" />
 
-<img src="assets/dragon/pixel-dragon-fire.svg" width="72%" alt="Close-up of the pixel dragon breathing fire" />
-
 <img src="assets/atelier/napping-banner.svg" width="100%" alt="Workshop sign: the forge is open, the dragon is on break" />
 
 <img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
@@ -58,8 +56,6 @@ Currently building agentic systems that review work before a human has to.
 <h3 align="center">STACK</h3>
 
 <div align="center">
-
-<img src="assets/atelier/stickers.svg" width="100%" alt="Forged medallions for the working stack" />
 
 <img src="https://img.shields.io/badge/Python-1E2026?style=flat-square&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/TypeScript-1E2026?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
