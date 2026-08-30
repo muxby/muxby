@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/atelier/hero.svg" width="100%" alt="Iron studio window at night with a pixel dragon on the sill" />
+<img src="assets/atelier/hero-hearth.svg" width="100%" alt="Night forge yard with a pixel dragon breathing fire over the hearth" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=19&letterSpacing=1.5px&duration=3600&pause=1400&color=C9A227&center=true&vCenter=true&width=720&height=40&lines=Software%2C+systems%2C+and+a+small+fire-breathing+dragon;Built+to+be+used%2C+not+just+demoed" alt="Software, systems, and a small fire-breathing dragon" />
 

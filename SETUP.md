@@ -12,7 +12,7 @@ deliberately not neon, not a cockpit, not a dashboard, and not a nursery.
 | File | Purpose |
 |---|---|
 | `README.md` | The profile itself, centered end to end |
-| `assets/atelier/hero.svg` | Studio window at night with the dragon on the sill |
+| `assets/atelier/hero-hearth.svg` | Night forge yard: name in the sky, dragon on the hearth |
 | `assets/atelier/roadmap.svg` | **The roadmap** - brass rail, stations, legend, you-are-here |
 | `assets/atelier/trail.svg` | The same route as a night walk |
 | `assets/atelier/postcard.svg` | Short calling card |
