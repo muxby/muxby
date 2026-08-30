@@ -1423,7 +1423,6 @@ def mirror_legacy() -> None:
 def main() -> None:
     build_dragon_camp()
     build_tiny_dragon()
-    build_fire_closeup()
     build_napping()
     build_hero()
     build_tool_rack()
