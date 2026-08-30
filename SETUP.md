@@ -31,7 +31,6 @@ deliberately not neon, not a cockpit, not a dashboard, and not a nursery.
 | `assets/atelier/divider-ember.svg` | Ember spark rule |
 | `assets/atelier/garden.svg` | Tool rack of etched brass tags (kept for old links) |
 | `assets/dragon/pixel-dragon.svg` | Night ridge, fire-breathing pixel dragon |
-| `assets/dragon/pixel-dragon-fire.svg` | Close-up fire breath |
 | `assets/dragon/pixel-dragon-tiny.svg` | Sitting mascot |
 | `scripts/build_atelier.py` | Regenerates the pixel scenes from sprite tables |
 | `scripts/typeset.py` | The type system: faces, the scale, and glyph outlining |
