@@ -23,7 +23,6 @@ deliberately not neon, not a cockpit, not a dashboard, and not a nursery.
 | `assets/atelier/ember.svg` | Dish of banked embers |
 | `assets/atelier/mail.svg` | Dragon post |
 | `assets/atelier/desk.svg` | Polaroid on an iron desk |
-| `assets/atelier/stickers.svg` | Forged medallion sheet |
 | `assets/atelier/napping-banner.svg` | Break sign |
 | `assets/atelier/quote.svg` | Quote card |
 | `assets/atelier/signature.svg` | Brass signature |

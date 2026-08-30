@@ -1292,39 +1292,6 @@ def build_fire_closeup() -> None:
     )
 
 
-def build_stickers() -> None:
-    """Struck medallions on a graphite sheet, on a strict grid. The old sheet
-    was a scatter of pastel enamel pins."""
-    w, h = 920, 300
-    labels = ["PY", "TS", "JS", "C++", "GO", "SQL", "REACT", "NODE", "PG", "K8S", "AWS", "LLM"]
-    rings = ["#C9A227", "#3F6B62", "#A33418", "#3A3E48"]
-    badges = []
-    for i, label in enumerate(labels):
-        col, row = i % 6, i // 6
-        cx = 96 + col * 146
-        cy = 140 + row * 88
-        badges.append(
-            f'''<g>
-  <animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="{3.4 + i*0.13}s" repeatCount="indefinite"/>
-  <circle cx="{cx}" cy="{cy}" r="34" fill="{rings[i % len(rings)]}"/>
-  <circle cx="{cx}" cy="{cy}" r="29" fill="#1E2026"/>
-  <circle cx="{cx}" cy="{cy}" r="29" fill="none" stroke="#14161A" stroke-width="2"/>
-  {sprite_text(label, "tag", cx, cy + ts.cap_height("tag") / 2, "P", anchor="middle", max_width=46)}
-</g>'''
-        )
-    body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
-  <rect x="18" y="14" width="{w-36}" height="{h-28}" fill="#17181C"/>
-  <rect x="18" y="14" width="{w-36}" height="{h-28}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
-  {ts.outline("Struck at the bench", "plate", 460, 62, "#E9E6DF", "middle", size=17)}
-  <path d="M340 78 H580" stroke="#C9A227" stroke-width="1" opacity=".7"/>
-  {"".join(badges)}
-'''
-    write(
-        OUT / "atelier" / "stickers.svg",
-        svg_wrap(w, h, "Struck medallion sheet", "A graphite sheet of struck technology medallions ringed in brass, patina, and ember.", body),
-    )
-
-
 # Filenames from older versions of this profile. They are kept as copies of the
 # current artwork so stale external links cannot resurrect a dead theme.
 LEGACY_MIRRORS = {
@@ -1342,7 +1309,6 @@ LEGACY_MIRRORS = {
     "graph-donut.svg": "atelier/ember.svg",
     "graph-gauges.svg": "atelier/mail.svg",
     "graph-growth.svg": "atelier/kettle.svg",
-    "graph-heatmap.svg": "atelier/stickers.svg",
     "graph-oscilloscope.svg": "atelier/lantern.svg",
     "graph-polar-clock.svg": "atelier/postcard.svg",
     "divider-beam.svg": "atelier/divider-rule.svg",
@@ -1376,7 +1342,6 @@ def main() -> None:
     build_dividers()
     build_postcard()
     build_quote()
-    build_stickers()
     mirror_legacy()
 
 

@@ -57,8 +57,6 @@ Currently building agentic systems that review work before a human has to.
 
 <div align="center">
 
-<img src="assets/atelier/stickers.svg" width="100%" alt="Forged medallions for the working stack" />
-
 <img src="https://img.shields.io/badge/Python-1E2026?style=flat-square&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/TypeScript-1E2026?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
 <img src="https://img.shields.io/badge/JavaScript-1E2026?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript" />
