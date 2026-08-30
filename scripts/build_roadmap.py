@@ -297,7 +297,7 @@ def build_roadmap() -> None:
   <path d="M0 820 C 200 786, 380 808, 580 796 C 800 786, 980 768, 1200 790 L1200 920 L0 920 Z" fill="#1E262A"/>
   <path d="M0 864 C 240 840, 460 858, 680 848 C 900 838, 1060 852, 1200 836 L1200 920 L0 920 Z" fill="#243230"/>
   <rect x="18" y="18" width="1164" height="884" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".45"/>
-  {chapter_title(600, 64, "The", "forge map")}
+  {chapter_title(600, 64, "The", "roadmap")}
   {ornament(600, 80, 118)}
   {ts.outline("A direction of travel, kept honest.", "standfirst", 600, 104, "#9AA0AC", "middle")}
   {ts.outline("Start", "standfirst", 128, 208, "#C9A227", "middle", size=11)}
@@ -312,8 +312,8 @@ def build_roadmap() -> None:
     art = _svg(
         w,
         h,
-        "The forge map",
-        "A winding brass river of fifteen stations. Tickets hang off the path. Gold is the work in hand, patina is what comes next.",
+        "The roadmap",
+        "A winding path of fifteen stations. Gold is the work in hand. What comes next is quieter.",
         defs,
         css,
         body,
@@ -587,13 +587,13 @@ def build_trail() -> None:
   <g class="tr-walk">
 {tiny_walker()}
   </g>
-  {ts.outline("Later: distributed systems, and a forge worth keeping.", "standfirst", 500, 400, "#6E9C90", "middle", size=12)}
+  {ts.outline("Later: distributed systems, and work worth keeping.", "standfirst", 500, 400, "#6E9C90", "middle", size=12)}
 '''
     art = _svg(
         w,
         h,
         "The long walk",
-        "The same route on foot after dark: brass signposts across cold ridges toward a lit forge house under a blood moon, with a small dragon on the path.",
+        "The same route on foot after dark: signposts across the ridges toward a lit cottage, with a small companion on the path.",
         defs,
         css,
         body,

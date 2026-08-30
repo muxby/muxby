@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/atelier/hero-blood-moon.svg" width="100%" alt="Night forge yard with a pixel dragon, a blood moon, and a looping fire-to-heart breath" />
+<img src="assets/atelier/hero-blood-moon.svg" width="100%" alt="Night yard under a blood moon" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=19&letterSpacing=1.5px&duration=3600&pause=1400&color=C9A227&center=true&vCenter=true&width=720&height=40&lines=Software%2C+systems%2C+and+a+small+fire-breathing+dragon;Built+to+be+used%2C+not+just+demoed" alt="Software, systems, and a small fire-breathing dragon" />
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=19&letterSpacing=1.5px&duration=3600&pause=1400&color=C9A227&center=true&vCenter=true&width=720&height=40&lines=Software%2C+systems%2C+and+work+that+ships;Built+to+be+used%2C+not+just+demoed" alt="Software, systems, and work that ships" />
 
 <img src="https://komarev.com/ghpvc/?username=muxby&style=flat-square&color=C9A227&label=VISITORS" alt="Profile views" />
 <img src="https://img.shields.io/github/followers/muxby?style=flat-square&logo=github&color=3F6B62&label=FOLLOWERS" alt="Followers" />
@@ -32,9 +32,9 @@ Currently building agentic systems that review work before a human has to.
 
 <div align="center">
 
-<img src="assets/dragon/pixel-dragon.svg" width="100%" alt="Pixel dragon breathing fire on a night ridge beside a fox and a campfire" />
+<img src="assets/dragon/pixel-dragon.svg" width="100%" alt="Night ridge, a small companion on the path" />
 
-<img src="assets/atelier/napping-banner.svg" width="100%" alt="Workshop sign: the forge is open, the dragon is on break" />
+<img src="assets/atelier/napping-banner.svg" width="100%" alt="Workshop sign: back shortly" />
 
 <img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
 
@@ -112,7 +112,7 @@ Currently building agentic systems that review work before a human has to.
 
 <br />
 
-<img src="assets/atelier/corkboard.svg" width="100%" alt="Forge workbench: languages hang as tools, web cools as ingots, data in jars, infrastructure in crates, intelligence in the hearth, current work on the anvil" />
+<img src="assets/atelier/corkboard.svg" width="100%" alt="Workbench: languages, web, data, infrastructure, and current work" />
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 
@@ -124,9 +124,9 @@ Currently building agentic systems that review work before a human has to.
 
 <div align="center">
 
-<img src="assets/atelier/roadmap-river.svg" width="100%" alt="Forge-lit winding river of fifteen stations, from first programs through agentic systems, with Rust and distributed systems ahead" />
+<img src="assets/atelier/roadmap-river.svg" width="100%" alt="Winding path of fifteen stations, from first programs through agentic systems, with Rust and distributed systems ahead" />
 
-<img src="assets/atelier/trail-cottage.svg" width="92%" alt="The same route as a night walk under a blood moon toward a lit forge cottage" />
+<img src="assets/atelier/trail-cottage.svg" width="92%" alt="The same route as a night walk toward a lit cottage" />
 
 <img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
 
@@ -156,7 +156,7 @@ Currently building agentic systems that review work before a human has to.
 
 <br />
 
-<img src="assets/atelier/desk-night.svg" width="72%" alt="Night desk: a bone polaroid of a sitting dragon, a brass lamp, and a window with a blood moon" />
+<img src="assets/atelier/desk-night.svg" width="72%" alt="Night desk: a polaroid, a lamp, and a window" />
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 
@@ -170,9 +170,9 @@ Currently building agentic systems that review work before a human has to.
 
 <table align="center">
 <tr>
-<td width="33%" align="center"><img src="assets/atelier/kettle-hob.svg" width="100%" alt="Iron kettle steaming on the hob" /></td>
-<td width="33%" align="center"><img src="assets/atelier/lantern-keep.svg" width="82%" alt="Brass lantern hanging, flame pulsing" /></td>
-<td width="33%" align="center"><img src="assets/atelier/coals-dish.svg" width="100%" alt="Iron dish of banked embers" /></td>
+<td width="33%" align="center"><img src="assets/atelier/kettle-hob.svg" width="100%" alt="Kettle on the bench" /></td>
+<td width="33%" align="center"><img src="assets/atelier/lantern-keep.svg" width="82%" alt="Lamp still on" /></td>
+<td width="33%" align="center"><img src="assets/atelier/coals-dish.svg" width="100%" alt="Still running" /></td>
 </tr>
 </table>
 
@@ -184,7 +184,7 @@ Evaluation a skeptic would still respect.
 
 <br />
 
-<img src="assets/atelier/dragon-post.svg" width="82%" alt="Pixel dragon walking in place, feet and tail cycling" />
+<img src="assets/atelier/dragon-post.svg" width="82%" alt="A small walker on the path" />
 
 <img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
 
@@ -215,8 +215,6 @@ Evaluation a skeptic would still respect.
 
 <img src="assets/atelier/signature.svg" width="260" alt="Muxby signature" />
 
-<img src="assets/dragon/pixel-dragon-tiny.svg" width="140" alt="Tiny sitting dragon" />
-
-<sub>MIND THE FIRE.</sub>
+<img src="assets/dragon/pixel-dragon-tiny.svg" width="140" alt="A small sitting companion" />
 
 </div>

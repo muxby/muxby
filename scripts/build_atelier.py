@@ -956,13 +956,9 @@ def build_dragon_camp() -> None:
 </ellipse>'''
     frame = f'''<rect x="16" y="16" width="{w-32}" height="{h-32}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".5"/>'''
     caption = f'''<g>
-  {ts.outline("A small dragon lives here", "plate", 460, 50, "#E9E6DF", "middle", max_width=760)}
+  {ts.outline("Still here after dark", "plate", 460, 50, "#E9E6DF", "middle", max_width=760)}
   <rect x="330" y="66" width="260" height="1" fill="#C9A227" opacity=".8"/>
-  {ts.outline("Fire is the last stage of review", "eyebrow", 460, 94, "#C6C2B8", "middle")}
-</g>'''
-    rawr = f'''<g opacity="0">
-{sprite_text("Rawr", "label", 560, 146, "9", size=18, tracking=0.14)}
-{animate_opacity("0;0;1;1;0;0", "5.5s", "0s", "0;0.48;0.52;0.62;0.68;1")}
+  {ts.outline("Review is the last stage that counts", "eyebrow", 460, 94, "#C6C2B8", "middle")}
 </g>'''
     body = f'''{meadow_background(w, h)}
   {camp_glow}
@@ -970,7 +966,6 @@ def build_dragon_camp() -> None:
   {extras}
   {fox}
   {dragon}
-  {rawr}
   {fireflies([(120, 90, "3.2s"), (260, 60, "4s"), (540, 80, "3.6s"), (800, 100, "4.4s"), (880, 140, "3s")])}
   {caption}
   {frame}
@@ -980,8 +975,8 @@ def build_dragon_camp() -> None:
         svg_wrap(
             w,
             h,
-            "Pixel dragon breathing fire",
-            "A pixel dragon on a cold night ridge, breathing looping fire beside a fox, an anvil, and a campfire.",
+            "Night ridge",
+            "A night ridge with a small companion, a fox, and a camp.",
             body,
         ),
     )
@@ -996,7 +991,7 @@ def build_tiny_dragon() -> None:
 '''
     write(
         OUT / "dragon" / "pixel-dragon-tiny.svg",
-        svg_wrap(w, h, "Tiny forge dragon", "A sitting pixel dragon mascot on graphite, framed in brass.", body),
+        svg_wrap(w, h, "A small companion", "A sitting companion on graphite, framed in brass.", body),
     )
 
 
@@ -1008,14 +1003,14 @@ def build_napping() -> None:
 {sitting_dragon(26, 20, 3, napping=True)}
 {fox_group(140, 48, 3)}
   <g>
-    {ts.outline("The forge is open. The dragon is on break.", "plate", 248, 56, "#E9E6DF", size=15, max_width=560)}
+    {ts.outline("The shop is open. Back shortly.", "plate", 248, 56, "#E9E6DF", size=15, max_width=560)}
     <rect x="248" y="68" width="400" height="1" fill="#C9A227" opacity=".7"/>
-    {ts.outline("Fire-breathing resumes shortly", "eyebrow", 248, 88, "#C6C2B8")}
+    {ts.outline("Shipping resumes shortly", "eyebrow", 248, 88, "#C6C2B8")}
   </g>
 '''
     write(
         OUT / "atelier" / "napping-banner.svg",
-        svg_wrap(w, h, "Dragon break banner", "A slate workshop sign with a napping pixel dragon and a fox.", body),
+        svg_wrap(w, h, "Break sign", "A slate workshop sign: the shop is open, back shortly.", body),
     )
 
 
@@ -1319,14 +1314,14 @@ def build_hero() -> None:
   <g>
     {ts.outline("Mubeen", "hero", 600, 72, "#E9E6DF", "middle")}
     <rect x="454" y="88" width="292" height="1" fill="#C9A227"/>
-    {ts.outline("Software, systems, and a small fire-breathing dragon", "eyebrow", 600, 116, "#C6C2B8", "middle", size=11, tracking=0.16)}
+    {ts.outline("Software, systems, and work that ships", "eyebrow", 600, 116, "#C6C2B8", "middle", size=11, tracking=0.16)}
   </g>
 '''
     art = svg_wrap(
         w,
         h,
-        "Muxby forge yard",
-        "A night forge yard under a blood moon: a pixel dragon breathes fire that turns into a heart, smoke lifts from the chimney, and banked coals sit in an iron grate.",
+        "Muxby night yard",
+        "A night yard under a blood moon: a small companion on the path, smoke from the chimney, and a lamp still on.",
         body,
         extra_defs=extra_defs,
         extra_css=extra_css,
@@ -1460,7 +1455,7 @@ def build_postcard() -> None:
   <rect x="16" y="16" width="608" height="328" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
   <rect x="16" y="16" width="608" height="4" fill="#C9A227"/>
   <path d="M330 40 V320" stroke="#3A3E48" stroke-width="1" stroke-dasharray="3 7"/>
-  {ts.outline("From the forge", "plate", 174, 70, "#E9E6DF", "middle", size=17)}
+  {ts.outline("From the desk", "plate", 174, 70, "#E9E6DF", "middle", size=17)}
   <path d="M64 86 H284" stroke="#C9A227" stroke-width="1" opacity=".7"/>
   <text x="44" y="122" {ts.text_attrs("body")} fill="#C6C2B8">
     <tspan x="44" dy="0">Sharp tools, one warm light, and one</tspan>
@@ -1473,12 +1468,12 @@ def build_postcard() -> None:
   <rect x="380" y="160" width="210" height="5" fill="#3A3E48"/>
   <rect x="380" y="184" width="210" height="5" fill="#3A3E48"/>
   <rect x="380" y="208" width="160" height="5" fill="#3A3E48"/>
-  {ts.outline("Muxby / The forge", "label", 486, 252, "#C9A227", "middle")}
+  {ts.outline("Muxby / Pakistan", "label", 486, 252, "#C9A227", "middle")}
   {ts.outline("Stamp of a finished thought", "label", 486, 308, "#E4572E", "middle", size=10, tracking=0.14)}
 '''
     write(
         OUT / "atelier" / "postcard.svg",
-        svg_wrap(w, h, "Calling card from the forge", "A slate calling card with an ember seal and a sitting dragon.", body),
+        svg_wrap(w, h, "Calling card", "A slate calling card with a seal and a sitting companion.", body),
     )
 
 

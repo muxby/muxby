@@ -156,7 +156,7 @@ def build_desk() -> None:
   <rect x="{px + 16}" y="{py + 16}" width="{pw - 32}" height="176" fill="#141519"/>
   <rect x="{px + 16}" y="{py + 16}" width="{pw - 32}" height="176" fill="none" stroke="#2A2D35" stroke-width="1"/>
 {A.rle_rects(A.DRAGON_SIT, px + 28, py + 28, 2.6)}
-  {ts.outline("First useful spark", "heading", px + pw / 2, py + 224, "#1B1D22", "middle", size=13, face="display", tracking=-0.01, caps=False, max_width=pw - 24)}
+  {ts.outline("First useful commit", "heading", px + pw / 2, py + 224, "#1B1D22", "middle", size=13, face="display", tracking=-0.01, caps=False, max_width=pw - 24)}
   {ts.outline("the night it compiled", "standfirst", px + pw / 2, py + 246, "#5A564E", "middle", size=11)}
 </g>'''
 
@@ -182,7 +182,7 @@ def build_desk() -> None:
         w,
         h,
         "The desk, not the cockpit",
-        "A night desk: a bone polaroid of a sitting dragon, a brass lamp, an open notebook, and a window with a blood moon.",
+        "A night desk: a polaroid, a brass lamp, an open notebook, and a window.",
         body,
         extra_defs=extra_defs,
         extra_css=css,
@@ -204,7 +204,7 @@ def build_kettle() -> None:
 {spark_css}
 """
     body = f'''  {plate_frame(w, h)}
-  {chapter_title(210, 42, "On the", "hob", rest_size=20)}
+  {chapter_title(210, 42, "On the", "bench", rest_size=20)}
   {ornament(210, 56, 54)}
   <ellipse class="hob-glow" cx="210" cy="218" rx="86" ry="22" fill="url(#hearth)"/>
   <ellipse cx="210" cy="224" rx="70" ry="11" fill="#0F1013"/>
@@ -226,8 +226,8 @@ def build_kettle() -> None:
         A.svg_wrap(
             w,
             h,
-            "On the hob",
-            "An iron kettle with a brass band, steaming over a hob, a teacup waiting beside it.",
+            "On the bench",
+            "A kettle steaming, a cup waiting beside it.",
             body,
             extra_css=css,
         ),
@@ -272,8 +272,8 @@ def build_lantern() -> None:
     art = A.svg_wrap(
         w,
         h,
-        "Keep a light on",
-        "A brass lantern hanging on graphite, flame pulsing, sparks drifting.",
+        "Lamp still on",
+        "A lamp hanging, still on for the late review.",
         body,
         extra_css=css,
     )
@@ -310,7 +310,7 @@ def build_coals() -> None:
 {spark_css}
 """
     body = f'''  {plate_frame(w, h)}
-  {chapter_title(260, 40, "Banked", "coals", rest_size=20)}
+  {chapter_title(260, 40, "Still", "running", rest_size=20)}
   {ornament(260, 54, 58)}
   <ellipse class="coal-halo" cx="260" cy="118" rx="150" ry="56" fill="url(#hearth)"/>
   <ellipse cx="260" cy="148" rx="132" ry="40" fill="#2A2D35"/>
@@ -320,13 +320,13 @@ def build_coals() -> None:
   <rect x="364" y="168" width="8" height="22" fill="#2A2D35"/>
   {chr(10).join(coal_svg)}
 {sparks}
-  {ts.outline("Never fully out.", "standfirst", 260, 212, "#9AA0AC", "middle", size=13)}
+  {ts.outline("Still shipping.", "standfirst", 260, 212, "#9AA0AC", "middle", size=13)}
 '''
     art = A.svg_wrap(
         w,
         h,
-        "Banked coals",
-        "An iron dish of banked embers, still glowing, with sparks lifting off.",
+        "Still running",
+        "Still going. Still shipping.",
         body,
         extra_css=css,
     )
