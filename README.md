@@ -184,7 +184,7 @@ Evaluation a skeptic would still respect.
 
 <br />
 
-<img src="assets/atelier/mail.svg" width="72%" alt="Dragon carrying post" />
+<img src="assets/atelier/dragon-post.svg" width="82%" alt="Pixel dragon walking in place, feet and tail cycling" />
 
 <img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
 
