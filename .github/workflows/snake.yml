@@ -1,7 +1,8 @@
 # ══════════════════════════════════════════════════════════════
-#  CONTRIBUTION SNAKE — the other creature in the garden
-#  Generates the snake SVGs and publishes them to the `output`
-#  branch, which the README embeds.
+#  CONTRIBUTION SNAKE — green glass over the sky field
+#  Platane/snk draws the snake; scripts/glass_snake.py lays it
+#  on the Ghibli photograph with a frosted plate. Published to
+#  the `output` branch, which the README embeds.
 # ══════════════════════════════════════════════════════════════
 name: Generate Contribution Snake
 
@@ -21,14 +22,24 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Checkout sky photograph and glass script
+        uses: actions/checkout@v4
+
       - name: Generate snake animations
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#C45C32&color_dots=#F4EBD8,#E8C49A,#C4897A,#C45C32,#6F8F5E
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#E07A3D&color_dots=#1C1510,#3D2B1F,#4F6B45,#C45C32,#E07A3D
-            dist/ocean.gif?color_snake=#C45C32&color_dots=#F4EBD8,#E8C49A,#C4897A,#C45C32,#6F8F5E
+            dist/github-contribution-grid-snake-sky.svg?color_snake=#56d364&color_dots=#9be9a822,#9be9a8,#40c463,#30a14e,#216e39
+            dist/github-contribution-grid-snake.svg?color_snake=#56d364&color_dots=#9be9a822,#9be9a8,#40c463,#30a14e,#216e39
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#56d364&color_dots=#9be9a822,#9be9a8,#40c463,#30a14e,#216e39
+
+      - name: Lay the snake on liquid glass over the sky
+        run: |
+          python3 scripts/glass_snake.py \
+            dist/github-contribution-grid-snake-sky.svg \
+            dist/github-contribution-grid-snake.svg \
+            dist/github-contribution-grid-snake-dark.svg
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4

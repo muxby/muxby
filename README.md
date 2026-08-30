@@ -209,7 +209,7 @@ Evaluation a skeptic would still respect.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution snake" />
+<img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-sky.svg" width="100%" alt="Contribution snake" />
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 
