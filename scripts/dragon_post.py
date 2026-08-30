@@ -22,11 +22,11 @@ DRAGON_TORSO = A.pad(A.DRAGON_BODY[:-5])
 
 _FOOT_HIND = A.pad(
     [
-        "kbbbbkk...",
-        ".kbbbkk...",
-        "kdBbkbkk..",
-        "kHHdHkHkk.",
-        "kkk.kkkkk.",
+        "kdbbkk.kk.",
+        ".kbkk.kBbk",
+        "kdkk.kbkHk",
+        "kHkk.kHdHk",
+        "kkk..kkkkk",
     ]
 )
 _FOOT_FORE = A.pad(

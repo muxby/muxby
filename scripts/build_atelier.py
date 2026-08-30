@@ -159,15 +159,15 @@ DRAGON_BODY = pad(
         ".kbbbbbbbCCCCCCCCCCk..........",
         "kkbbbbbbbcccccccccckk.........",
         "kBbbbbbbCCCCCCCCCCCCk.........",
-        "kkbbbbbkCCCCCCCCCCCkk.........",
+        "kkbbbbk.CCCCCCCCCCCkk.........",
         ".kbbbbk.CCCCCCCCCCCk..........",
-        ".kkbbbk.kcccccccccck..........",
-        "kkbbbbk..kkkCCCCCCCk..........",
-        "kbbbbkk....kbbbbbbbk..........",
-        ".kbbbkk....kbbbbbbbkk.........",
-        "kdBbkbkk...kdbkbkbbBk.........",
-        "kHHdHkHkk..kHdkHkdHkk.........",
-        "kkk.kkkkk..kkkkkkkkk..........",
+        "kkbbbkk.kcccccccccck..........",
+        "kbbbkk...kkkCCCCCCCk..........",
+        "kdbbkk.kk..kbbbbbbbk..........",
+        ".kbkk.kBbk.kbbbbbbbkk.........",
+        "kdkk.kbkHk.kdbkbkbbBk.........",
+        "kHkk.kHdHk.kHdkHkdHkk.........",
+        "kkk..kkkkk.kkkkkkkkk..........",
     ]
 )
 
@@ -1076,19 +1076,11 @@ def coal_pit(cx: float, cy: float, w: float, h: float) -> str:
     return "".join(parts)
 
 
-def blood_moon(cx: float, cy: float, r: float = 28) -> str:
-    """Deep crimson disc with a gold rim and a few craters. Not neon."""
-    return f'''<g class="moon">
-  <circle cx="{cx}" cy="{cy}" r="{r + 14}" fill="url(#moonHalo)"/>
-  <circle cx="{cx}" cy="{cy}" r="{r}" fill="#A33418"/>
-  <circle cx="{cx}" cy="{cy}" r="{r - 1.5}" fill="#E4572E"/>
-  <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="#C9A227" stroke-width="1.3" opacity=".5"/>
-  <circle cx="{cx + 9}" cy="{cy - 5}" r="{r - 7}" fill="#7E2A12" opacity=".5"/>
-  <circle cx="{cx - 9}" cy="{cy + 7}" r="4.2" fill="#7E2A12" opacity=".75"/>
-  <circle cx="{cx + 5}" cy="{cy + 11}" r="3" fill="#A33418" opacity=".85"/>
-  <circle cx="{cx - 3}" cy="{cy - 11}" r="2.4" fill="#7E2A12" opacity=".7"/>
-  <circle cx="{cx + 11}" cy="{cy + 2}" r="2" fill="#F2A03C" opacity=".35"/>
-</g>'''
+def blood_moon(cx: float, cy: float, scale: float = 0.34) -> str:
+    """Fluid ink crescent — same language as the profile avatar, not a disc."""
+    import build_avatar as moon
+
+    return moon.hero_moon(cx, cy, scale, sink=0)
 
 
 def css_puff_stack(
@@ -1252,8 +1244,6 @@ def build_hero() -> None:
             breath_css,
             chimney_css,
             coal_css,
-            ".moon{animation:moonPulse 7.5s ease-in-out infinite}",
-            "@keyframes moonPulse{0%,100%{opacity:.88}50%{opacity:1}}",
             ".grate-glow{animation:gratePulse 2.6s ease-in-out infinite}",
             "@keyframes gratePulse{0%,100%{opacity:.4}50%{opacity:.75}}",
         ]
@@ -1283,13 +1273,13 @@ def build_hero() -> None:
     </radialGradient>
 '''
     # Feet land ~x 400–547, y ~381. Ring sits under that stance, not a yard-wide pancake.
-    hearth_cx, hearth_cy = 478.0, 396.0
+    hearth_cx, hearth_cy = 478.0, 402.0
     body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
   <rect width="{w}" height="{h}" fill="url(#duskSky)"/>
   <rect x="0" y="0" width="{w}" height="10" fill="#2A2D35"/>
   <rect x="0" y="10" width="{w}" height="1" fill="#8A6E1F" opacity=".7"/>
   <rect x="0" y="0" width="2" height="{h}" fill="#C9A227"/>
-  {blood_moon(168, 64, 26)}
+  {blood_moon(196, 76, 0.33)}
   <!-- framing peaks so the name sits in a valley, not a void -->
   <path d="M0 168 C 70 78, 170 70, 270 128 C 330 162, 380 198, 430 210 C 500 128, 620 118, 760 150 C 880 90, 1020 70, 1200 128 L1200 {h} L0 {h} Z" fill="url(#ridgeFar)"/>
   <path d="M0 168 C 70 78, 170 70, 270 128 C 330 162, 380 198, 430 210 C 500 128, 620 118, 760 150 C 880 90, 1020 70, 1200 128" fill="none" stroke="#6E9C90" stroke-width="1.4" opacity=".55"/>
@@ -1306,8 +1296,8 @@ def build_hero() -> None:
   <!-- near bank into the hearth -->
   <path d="M0 348 C 200 322, 400 338, 600 328 C 820 316, 1020 340, 1200 330 L1200 {h} L0 {h} Z" fill="#1A2421"/>
   <rect x="0" y="392" width="{w}" height="88" fill="url(#forgeFloor)"/>
-  <ellipse class="grate-glow" cx="{hearth_cx}" cy="{hearth_cy}" rx="150" ry="38" fill="url(#grateGlow)"/>
-  {coal_pit(hearth_cx, hearth_cy, 236, 44)}
+  <ellipse class="grate-glow" cx="{hearth_cx}" cy="{hearth_cy}" rx="132" ry="48" fill="url(#grateGlow)"/>
+  {coal_pit(hearth_cx, hearth_cy, 210, 58)}
   <rect x="0" y="{h - 3}" width="{w}" height="3" fill="#C9A227"/>
   {vector_lantern(1048, 300)}
 {rle_rects(ANVIL, 56, 356, 7)}
@@ -1620,6 +1610,9 @@ def main() -> None:
     build_tiny_dragon()
     build_napping()
     build_hero()
+    import build_avatar
+
+    build_avatar.build()
     build_tool_rack()
     build_kettle()
     build_lantern()
