@@ -1384,57 +1384,15 @@ def build_tool_rack() -> None:
 
 
 def build_kettle() -> None:
-    w, h = 420, 280
-    steam = []
-    for i, x in enumerate((208, 230, 252)):
-        steam.append(
-            f'''<g fill="#6B7078" opacity="0">
-  <ellipse cx="{x}" cy="70" rx="8" ry="12"/>
-  {animate_opacity("0;0.75;0", f"{2.4 + i*0.2}s", f"{i*0.3}s")}
-  <animateTransform attributeName="transform" type="translate" values="0 0; {(-8)+i*4} -40" dur="{2.4+i*0.2}s" begin="{i*0.3}s" repeatCount="indefinite"/>
-</g>'''
-        )
-    body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
-  <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
-  {ts.outline("On the hob", "plate", 210, 40, "#E9E6DF", "middle", size=15)}
-  <ellipse cx="210" cy="212" rx="78" ry="20" fill="url(#hearth)">
-    <animate attributeName="opacity" values=".5;.95;.5" dur="2.6s" repeatCount="indefinite"/>
-  </ellipse>
-  <ellipse cx="210" cy="216" rx="66" ry="10" fill="#0F1013"/>
-  <path d="M154 152 L112 136 L106 150 L150 174 Z" fill="#2A2D35" stroke="#3A3E48" stroke-width="2"/>
-  <path d="M150 150 C150 112 270 112 270 150 L262 200 C262 224 158 224 158 200 Z" fill="#2A2D35" stroke="#3A3E48" stroke-width="2"/>
-  <path d="M160 176 H260" stroke="#C9A227" stroke-width="3" opacity=".9"/>
-  <path d="M270 156 C316 156 316 198 268 198" fill="none" stroke="#C9A227" stroke-width="6"/>
-  <ellipse cx="210" cy="128" rx="46" ry="9" fill="#3A3E48"/>
-  <rect x="198" y="104" width="24" height="16" fill="#C9A227">
-    <animateTransform attributeName="transform" type="rotate" values="0 210 114; -8 210 114; 6 210 114; 0 210 114" dur="1.2s" repeatCount="indefinite"/>
-  </rect>
-  {"".join(steam)}
-  {ts.outline("Agentic systems, poured slowly", "eyebrow", 210, 252, "#9AA0AC", "middle", size=9.5, tracking=0.16)}
-{rle_rects(TEACUP, 324, 198, 5)}
-'''
-    write(
-        OUT / "atelier" / "kettle.svg",
-        svg_wrap(w, h, "Iron kettle on the hob", "An iron kettle with a brass band and handle, steaming over an ember glow.", body),
-    )
+    import build_hearth
+
+    build_hearth.build_kettle()
 
 
 def build_lantern() -> None:
-    w, h = 280, 300
-    body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
-  <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
-  <ellipse cx="140" cy="150" rx="72" ry="84" fill="url(#lamp)">
-    <animate attributeName="opacity" values=".45;1;.45" dur="2.8s" repeatCount="indefinite"/>
-  </ellipse>
-  <path d="M140 44 V62" stroke="#8A6E1F" stroke-width="3"/>
-{rle_rects(LANTERN_CORE, 92, 70, 8)}
-{fireflies([(84, 108, "3.4s"), (198, 92, "4.1s"), (172, 158, "3.7s"), (96, 176, "4.5s")])}
-  {ts.outline("Keep a light on", "plate", 140, 266, "#C9A227", "middle", size=14)}
-'''
-    write(
-        OUT / "atelier" / "lantern.svg",
-        svg_wrap(w, h, "Brass lantern", "A brass lantern burning on graphite with embers drifting around it.", body),
-    )
+    import build_hearth
+
+    build_hearth.build_lantern()
 
 
 def build_mail() -> None:
@@ -1445,45 +1403,9 @@ def build_mail() -> None:
 
 
 def build_ember_dish() -> None:
-    """Banked coals in an iron dish. Replaces the old koi pond."""
-    w, h = 520, 220
-    coals = []
-    for i, (cx, cy, rx, ry, fill) in enumerate(
-        [
-            (200, 132, 26, 12, "#A33418"),
-            (248, 126, 30, 13, "#E4572E"),
-            (300, 134, 24, 11, "#A33418"),
-            (224, 144, 22, 9, "#F2A03C"),
-            (280, 146, 20, 9, "#E4572E"),
-        ]
-    ):
-        coals.append(
-            f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="{fill}">'
-            f'<animate attributeName="opacity" values=".55;1;.55" dur="{2.4 + i * 0.35}s" '
-            f'begin="{i * 0.4}s" repeatCount="indefinite"/></ellipse>'
-        )
-    body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
-  <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
-  {ts.outline("Banked coals", "plate", 260, 38, "#E9E6DF", "middle", size=15)}
-  <ellipse cx="260" cy="118" rx="150" ry="58" fill="url(#hearth)">
-    <animate attributeName="opacity" values=".5;.9;.5" dur="3.2s" repeatCount="indefinite"/>
-  </ellipse>
-  <ellipse cx="260" cy="140" rx="130" ry="42" fill="#2A2D35"/>
-  <ellipse cx="260" cy="138" rx="118" ry="34" fill="#1A1C22"/>
-  <path d="M142 140 A118 34 0 0 0 378 140" fill="none" stroke="#8A6E1F" stroke-width="2" opacity=".7"/>
-  {"".join(coals)}
-{fireflies([(214, 96, "3.1s"), (262, 84, "3.8s"), (312, 98, "3.4s")])}
-  {ts.outline("Never fully out", "eyebrow", 260, 198, "#9AA0AC", "middle")}
-'''
-    art = svg_wrap(
-        w,
-        h,
-        "Banked coals",
-        "An iron dish of banked embers glowing on graphite, with sparks rising.",
-        body,
-    )
-    write(OUT / "atelier" / "ember.svg", art)
-    write(OUT / "atelier" / "koi.svg", art)
+    import build_hearth
+
+    build_hearth.build_coals()
 
 
 def build_dividers() -> None:
@@ -1627,10 +1549,10 @@ def main() -> None:
 
     build_roadmap.build()
     build_tool_rack()
-    build_kettle()
-    build_lantern()
+    import build_hearth
+
+    build_hearth.build()
     build_mail()
-    build_ember_dish()
     build_dividers()
     build_postcard()
     build_quote()
