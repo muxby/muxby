@@ -1581,7 +1581,7 @@ def build_quote() -> None:
 # current artwork so stale external links cannot resurrect a dead theme.
 LEGACY_MIRRORS = {
     "constellation.svg": "atelier/corkboard.svg",
-    "odyssey.svg": "atelier/trail.svg",
+    "odyssey.svg": "atelier/trail-cottage.svg",
     "hologram.svg": "atelier/desk.svg",
     "radar-chart.svg": "atelier/desk.svg",
     "signature.svg": "atelier/signature.svg",
@@ -1620,6 +1620,9 @@ def main() -> None:
     build_tiny_dragon()
     build_napping()
     build_hero()
+    import build_roadmap
+
+    build_roadmap.build()
     build_tool_rack()
     build_kettle()
     build_lantern()

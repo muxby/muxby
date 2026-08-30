@@ -124,9 +124,9 @@ Currently building agentic systems that review work before a human has to.
 
 <div align="center">
 
-<img src="assets/atelier/roadmap.svg" width="100%" alt="Forge-lit roadmap of fifteen stations, from first programs through C, C++, PHP, databases, TypeScript, Python and machine learning to agentic systems, with Rust and distributed systems ahead" />
+<img src="assets/atelier/roadmap-river.svg" width="100%" alt="Forge-lit winding river of fifteen stations, from first programs through agentic systems, with Rust and distributed systems ahead" />
 
-<img src="assets/atelier/trail.svg" width="92%" alt="The same route as a night walk" />
+<img src="assets/atelier/trail-cottage.svg" width="92%" alt="The same route as a night walk under a blood moon toward a lit forge cottage" />
 
 <img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
 

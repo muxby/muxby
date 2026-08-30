@@ -42,6 +42,8 @@ FACES = {
     "sans-medium": FONT_DIR / "macos/Inter-Medium.ttf",
     "sans-semibold": FONT_DIR / "macos/Inter-SemiBold.ttf",
     "sans-bold": FONT_DIR / "macos/Inter-Bold.ttf",
+    "display": FONT_DIR / "noto/NotoSansDisplay-Bold.ttf",
+    "display-italic": FONT_DIR / "noto/NotoSansDisplay-Italic.ttf",
     "mono": FONT_DIR / "jetbrains-mono/JetBrainsMono-Medium.ttf",
     "mono-bold": FONT_DIR / "jetbrains-mono/JetBrainsMono-Bold.ttf",
 }
@@ -77,14 +79,17 @@ class Style:
 # The scale. Sizes are for artwork at its natural viewBox size; the README scales
 # the images down, so nothing here renders larger than it reads.
 #
-# Display type is set in caps with wide tracking, which is what carries the
-# editorial feel; running copy is the grotesque at its natural spacing; technical
-# labels are the mono so they read as identifiers rather than prose.
+# Display type is set in caps with wide tracking on the older plates; newer
+# scenes (the map, the night walk) override to sentence-case italic so the
+# letterforms stay readable at README scale. Running copy is the grotesque at
+# its natural spacing; technical labels are the mono.
 SCALE = {
     "hero": Style("serif", 44, 0.22, caps=True),        # the one name on the page
     "plate": Style("serif", 20, 0.30, caps=True),       # scene and card titles
+    "chapter": Style("serif-italic", 26, 0.03, caps=False),  # book-title scenes
     "heading": Style("serif", 18, 0.0),                 # sentence-case display
     "eyebrow": Style("sans-semibold", 11, 0.22, caps=True),   # standfirst under a plate
+    "standfirst": Style("serif-italic", 13, 0.02, caps=False),
     "label": Style("sans-semibold", 11, 0.16, caps=True),     # small caps callouts
     "lede": Style("sans", 15, 0.0),                     # card body, one step up
     "body": Style("sans", 13, 0.0),                     # running copy
