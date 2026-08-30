@@ -16,8 +16,6 @@
 
 <div align="center">
 
-<img src="assets/atelier/avatar-blood-moon.svg" width="168" alt="Ink blood-moon avatar" />
-
 <img src="assets/atelier/intro.svg" width="520" alt="Molten wax M dripping onto a brass nameplate: Mubeen, Pakistan" />
 
 **Mubeen** &mdash; software engineer in Pakistan.
@@ -158,7 +156,7 @@ Currently building agentic systems that review work before a human has to.
 
 <br />
 
-<img src="assets/atelier/desk.svg" width="64%" alt="Iron desk with a polaroid of a tiny dragon" />
+<img src="assets/atelier/desk-night.svg" width="72%" alt="Night desk: a bone polaroid of a sitting dragon, a brass lamp, and a window with a blood moon" />
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 
@@ -172,9 +170,9 @@ Currently building agentic systems that review work before a human has to.
 
 <table align="center">
 <tr>
-<td width="33%" align="center"><img src="assets/atelier/kettle.svg" width="100%" alt="Iron kettle with steam" /></td>
-<td width="33%" align="center"><img src="assets/atelier/lantern.svg" width="82%" alt="Brass lantern with drifting embers" /></td>
-<td width="33%" align="center"><img src="assets/atelier/ember.svg" width="100%" alt="Dish of banked embers" /></td>
+<td width="33%" align="center"><img src="assets/atelier/kettle-hob.svg" width="100%" alt="Iron kettle steaming on the hob" /></td>
+<td width="33%" align="center"><img src="assets/atelier/lantern-keep.svg" width="82%" alt="Brass lantern hanging, flame pulsing" /></td>
+<td width="33%" align="center"><img src="assets/atelier/coals-dish.svg" width="100%" alt="Iron dish of banked embers" /></td>
 </tr>
 </table>
 
