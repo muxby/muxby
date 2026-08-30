@@ -416,13 +416,19 @@ FOX_SIT = pad(
 
 # Breath, not a campfire: a jet that leaves the mouth sideways. Hottest at the
 # lips (Y), cooling outward through O and R to the F fringe, with 9 for sparks.
-# Frames go smallest to largest and are drawn centred on the mouth row.
+# Frame 0 is a full jet so fire reads even when SMIL is off (cairosvg, first paint).
 FIRE_FRAMES = [
     pad(
         [
-            ".9.",
-            "YOR",
-            ".R.",
+            "......FF...F...9......",
+            "...FFFFFFFF..F..9.....",
+            ".YOOORRRRRRRFFF.......",
+            "YYOOOORRRRRRRRRFFF....",
+            "YYYOOOOORRRRRRRRRRFFF.",
+            "YYOOOORRRRRRRRRFFF....",
+            ".YOOORRRRRRRFFF.......",
+            "...FFFFFFFF..F..9.....",
+            "......FF...F...9......",
         ]
     ),
     pad(
@@ -737,14 +743,13 @@ def dragon_group(ox: float, oy: float, size: float, fire: bool = True, bob: bool
     if fire:
         rest = FIRE_FRAMES[0]
         layers.append(
-            f'<g>\n{gap_opacity(0.52, 2.72, 0.95)}\n<g>\n'
-            f'{place(rest, (lip_x, lip_y - len(rest) // 2))}\n'
-            f'{animate_opacity("0.55;1;0.7;1;0.55", "1.3s")}\n</g>\n</g>'
+            f'<ellipse cx="{ox + (lip_x + 12) * size}" cy="{oy + (lip_y + 0.5) * size}" '
+            f'rx="{22 * size}" ry="{5 * size}" fill="url(#hearth)" opacity=".4"/>'
         )
         layers.append(
-            f'<ellipse cx="{ox + (lip_x + 9) * size}" cy="{oy + (lip_y + 0.5) * size}" '
-            f'rx="{13 * size}" ry="{7 * size}" fill="url(#hearth)" opacity="0">\n'
-            f'{timed_opacity(0.62, 2.45, 0.9, 0.3)}\n</ellipse>'
+            f'<g>\n'
+            f'{place(rest, (lip_x, lip_y - len(rest) // 2))}\n'
+            f'{animate_opacity("0.9;1;0.92;1;0.9", "1.1s")}\n</g>'
         )
         for index, on, off in BREATH_FRAMES:
             frame = FIRE_FRAMES[index]
@@ -957,62 +962,171 @@ def build_napping() -> None:
     )
 
 
-def build_hero() -> None:
-    w, h = 1200, 390
-    size = 6
-    body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
-  <rect x="48" y="28" width="1104" height="334" fill="url(#duskSky)"/>
-  <!-- window frame: iron with a brass hairline -->
-  <rect x="48" y="28" width="1104" height="334" fill="none" stroke="#2A2D35" stroke-width="18"/>
-  <rect x="57" y="37" width="1086" height="316" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
-  <rect x="592" y="28" width="14" height="334" fill="#2A2D35"/>
-  <rect x="48" y="188" width="1104" height="12" fill="#2A2D35"/>
-  <rect x="48" y="28" width="1104" height="18" fill="#3A3E48"/>
-  <!-- sill -->
-  <rect x="32" y="348" width="1136" height="20" fill="#2A2D35"/>
-  <rect x="32" y="348" width="1136" height="3" fill="#8A6E1F"/>
-  <rect x="24" y="366" width="1152" height="16" fill="#1A1C22"/>
-  <!-- left pane: cold ridges -->
-  <path d="M66 188 C 160 152, 260 170, 360 172 C 460 174, 530 152, 590 170 L590 188 L66 188 Z" fill="#232B2E"/>
-  <path d="M66 188 C 180 178, 300 198, 590 188 L590 348 L66 188 Z" fill="#1E2624"/>
-  <path d="M66 262 C 200 242, 340 270, 590 252 L590 348 L66 348 Z" fill="#1A2421"/>
-  <!-- right pane: lamp glow and desk -->
-  <rect x="608" y="200" width="536" height="148" fill="#141519"/>
-  <ellipse cx="1082" cy="252" rx="76" ry="64" fill="url(#lamp)">
-    <animate attributeName="opacity" values=".55;.9;.55" dur="3.4s" repeatCount="indefinite"/>
-  </ellipse>
-  <rect x="1076" y="268" width="12" height="80" fill="#8A6E1F"/>
-  <path d="M1056 268 L1068 242 L1096 242 L1108 268 Z" fill="#C9A227"/>
-  <rect x="620" y="300" width="150" height="48" fill="#2A2D35"/>
-  <rect x="620" y="300" width="150" height="3" fill="#8A6E1F"/>
-  <rect x="632" y="312" width="64" height="8" fill="#E9E6DF"/>
-  <rect x="632" y="326" width="78" height="6" fill="#C6C2B8"/>
-  <rect x="632" y="338" width="48" height="4" fill="#C9A227"/>
-{dragon_group(800, 175, 5, fire=True, bob=True)}
-{fox_group(96, 286, 4)}
-{rle_rects(TEACUP, 632, 280, 4)}
-{rle_rects(STAR, 140, 70, 4)}
-{rle_rects(STAR, 420, 88, 3)}
-{rle_rects(STAR, 700, 64, 4)}
-{rle_rects(STAR, 860, 108, 3)}
-{fireflies([(220, 90, "3.5s"), (340, 60, "4.2s"), (760, 80, "3.8s"), (1040, 100, "4.6s")])}
-  <g>
-    {ts.outline("Mubeen", "hero", 328, 92, "#E9E6DF", "middle")}
-    <rect x="196" y="110" width="264" height="1" fill="#C9A227"/>
-    {ts.outline("Software, systems, and a small fire-breathing dragon", "eyebrow", 328, 136, "#C6C2B8", "middle", size=10, tracking=0.14)}
-  </g>
-  {ts.outline("The forge window", "label", 1128, 76, "#C9A227", "end")}
-'''
-    write(
-        OUT / "atelier" / "hero.svg",
-        svg_wrap(
-            w,
-            h,
-            "Muxby forge window",
-            "An iron window at night with a pixel dragon on the sill, a fox on the ridge, and a brass lamp.",
-            body,
-        ),
+def four_star(cx: float, cy: float, r: float, fill: str = "#F2C14E", opacity: str = ".85") -> str:
+    """A small four-pointed brass spark. Vector, not a pixel letter."""
+    inner = r * 0.28
+    return (
+        f'<path d="M{cx} {cy - r} L{cx + inner} {cy - inner} L{cx + r} {cy} '
+        f'L{cx + inner} {cy + inner} L{cx} {cy + r} L{cx - inner} {cy + inner} '
+        f'L{cx - r} {cy} L{cx - inner} {cy - inner} Z" fill="{fill}" opacity="{opacity}"/>'
     )
+
+
+def coal_pit(cx: float, cy: float, w: float, h: float) -> str:
+    """Banked coals in an iron pit, with a few brass bars. Not a spreadsheet."""
+    coals = []
+    specs = (
+        (cx - w * 0.32, cy + 4, 38, 14, "#A33418", 2.6),
+        (cx - w * 0.12, cy - 2, 44, 16, "#E4572E", 2.1),
+        (cx + w * 0.08, cy + 2, 40, 15, "#C0431F", 2.8),
+        (cx + w * 0.28, cy + 6, 36, 13, "#A33418", 2.4),
+        (cx - w * 0.22, cy + 10, 28, 10, "#F2A03C", 1.8),
+        (cx + w * 0.16, cy + 12, 26, 9, "#E4572E", 2.0),
+        (cx, cy + 8, 34, 11, "#F2C14E", 1.6),
+    )
+    for i, (x, y, rx, ry, fill, dur) in enumerate(specs):
+        coals.append(
+            f'<ellipse cx="{x:.0f}" cy="{y:.0f}" rx="{rx:.0f}" ry="{ry:.0f}" fill="{fill}">'
+            f'<animate attributeName="opacity" values=".55;1;.55" dur="{dur}s" '
+            f'begin="{i * 0.25}s" repeatCount="indefinite"/></ellipse>'
+        )
+    bars = []
+    for i, x in enumerate((cx - w * 0.38, cx - w * 0.18, cx + 4, cx + w * 0.22, cx + w * 0.40)):
+        bars.append(
+            f'<rect x="{x - 3:.0f}" y="{cy - h / 2:.0f}" width="6" height="{h:.0f}" '
+            f'fill="#8A6E1F" opacity=".75"/>'
+        )
+    return (
+        f'<ellipse cx="{cx}" cy="{cy}" rx="{w / 2}" ry="{h / 2}" fill="#141519"/>'
+        f'<ellipse cx="{cx}" cy="{cy}" rx="{w / 2 - 8}" ry="{h / 2 - 6}" fill="#1A1C22"/>'
+        + "".join(coals)
+        + "".join(bars)
+        + f'<path d="M{cx - w / 2:.0f} {cy - h / 2 + 4:.0f} H{cx + w / 2:.0f}" '
+        f'stroke="#C9A227" stroke-width="2"/>'
+    )
+
+
+def vector_lantern(cx: float, cy: float) -> str:
+    """Brass lantern that still reads when the pixel core is small."""
+    return f'''<g>
+  <ellipse cx="{cx}" cy="{cy + 8}" rx="46" ry="54" fill="url(#lamp)">
+    <animate attributeName="opacity" values=".4;.95;.4" dur="3.2s" repeatCount="indefinite"/>
+  </ellipse>
+  <path d="M{cx} {cy - 52} V{cy - 38}" stroke="#8A6E1F" stroke-width="3"/>
+  <rect x="{cx - 16}" y="{cy - 38}" width="32" height="8" fill="#C9A227"/>
+  <rect x="{cx - 18}" y="{cy - 30}" width="36" height="52" fill="#2A2D35"/>
+  <rect x="{cx - 14}" y="{cy - 26}" width="28" height="44" fill="#1A1C22"/>
+  <rect x="{cx - 10}" y="{cy - 18}" width="20" height="28" fill="#F2C14E" opacity=".85">
+    <animate attributeName="opacity" values=".55;1;.55" dur="1.8s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="{cx - 18}" y="{cy + 22}" width="36" height="6" fill="#C9A227"/>
+  <rect x="{cx - 4}" y="{cy + 28}" width="8" height="10" fill="#8A6E1F"/>
+</g>'''
+
+
+def build_hero() -> None:
+    """Night forge yard. Type sits in the sky, the dragon holds the middle,
+    the floor is a hearth. Not a title card with a lonely sprite in the corner."""
+    w, h = 1200, 480
+    size = 7
+    # Body is 40 cells; the rest jet is 16. Centre the breath, not just the body.
+    ox = 330
+    oy = 150
+    stars = "\n".join(
+        [
+            four_star(300, 26, 7),
+            four_star(900, 32, 5, opacity=".7"),
+            four_star(220, 70, 4, opacity=".55"),
+            four_star(980, 74, 4, opacity=".5"),
+            four_star(600, 20, 3, opacity=".45"),
+            four_star(1088, 50, 3, "#C9A227", ".4"),
+            four_star(140, 48, 3, "#C9A227", ".4"),
+            four_star(470, 96, 3, opacity=".35"),
+            four_star(740, 88, 3, opacity=".35"),
+        ]
+    )
+    smoke = []
+    for i, (sx, sy) in enumerate(((300, 368), (620, 360), (860, 372))):
+        drift = 12 + i * 5
+        smoke.append(
+            f'''<g opacity="0">
+{rle_rects(SMOKE, sx, sy, 4)}
+{timed_opacity(0.4 + i * 0.8, 3.2 + i * 0.4, 0.5, 0.4)}
+<animateTransform attributeName="transform" type="translate" values="0 0;{drift} {-42 - i * 8}" dur="{BREATH}s" begin="{i * 0.5}s" repeatCount="indefinite"/>
+</g>'''
+        )
+    ember_drift = f'''<g>
+{rle_rects(HEART, 700, 378, 3)}
+<animate attributeName="opacity" values=".2;1;.2" dur="4.8s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="0 0; 28 -70; 48 -130" dur="6.4s" repeatCount="indefinite"/>
+</g>'''
+    extra_defs = '''
+    <linearGradient id="forgeFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A2D35"/>
+      <stop offset="1" stop-color="#141519"/>
+    </linearGradient>
+    <linearGradient id="ridgeFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A4A46"/>
+      <stop offset="1" stop-color="#232B2E"/>
+    </linearGradient>
+    <linearGradient id="ridgeMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3F6B62"/>
+      <stop offset="1" stop-color="#243832"/>
+    </linearGradient>
+    <radialGradient id="grateGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0" stop-color="#E4572E" stop-opacity=".62"/>
+      <stop offset=".5" stop-color="#A33418" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
+    </radialGradient>
+'''
+    body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
+  <rect width="{w}" height="{h}" fill="url(#duskSky)"/>
+  <rect x="0" y="0" width="{w}" height="10" fill="#2A2D35"/>
+  <rect x="0" y="10" width="{w}" height="1" fill="#8A6E1F" opacity=".7"/>
+  <rect x="0" y="0" width="2" height="{h}" fill="#C9A227"/>
+  <!-- framing peaks so the name sits in a valley, not a void -->
+  <path d="M0 168 C 70 78, 170 70, 270 128 C 330 162, 380 198, 430 210 C 500 128, 620 118, 760 150 C 880 90, 1020 70, 1200 128 L1200 {h} L0 {h} Z" fill="url(#ridgeFar)"/>
+  <path d="M0 168 C 70 78, 170 70, 270 128 C 330 162, 380 198, 430 210 C 500 128, 620 118, 760 150 C 880 90, 1020 70, 1200 128" fill="none" stroke="#6E9C90" stroke-width="1.4" opacity=".55"/>
+  <path d="M0 268 C 140 222, 280 248, 430 236 C 580 222, 740 258, 900 230 C 1040 212, 1140 228, 1200 224 L1200 {h} L0 {h} Z" fill="url(#ridgeMid)"/>
+  <!-- forge shed on the right ridge -->
+  <rect x="1008" y="156" width="92" height="52" fill="#1B1D22"/>
+  <path d="M998 156 L1054 128 L1110 156 Z" fill="#2A2D35"/>
+  <rect x="1072" y="114" width="16" height="46" fill="#1B1D22"/>
+  <rect x="1068" y="110" width="24" height="6" fill="#3A3E48"/>
+  <rect x="1076" y="118" width="8" height="6" fill="#E4572E">
+    <animate attributeName="opacity" values=".4;1;.4" dur="1.8s" repeatCount="indefinite"/>
+  </rect>
+  <!-- near bank into the hearth -->
+  <path d="M0 348 C 200 322, 400 338, 600 328 C 820 316, 1020 340, 1200 330 L1200 {h} L0 {h} Z" fill="#1A2421"/>
+  <rect x="0" y="392" width="{w}" height="88" fill="url(#forgeFloor)"/>
+  <ellipse cx="620" cy="418" rx="360" ry="52" fill="url(#grateGlow)">
+    <animate attributeName="opacity" values=".5;1;.5" dur="2.2s" repeatCount="indefinite"/>
+  </ellipse>
+  {coal_pit(620, 428, 720, 56)}
+  <rect x="0" y="{h - 3}" width="{w}" height="3" fill="#C9A227"/>
+{chr(10).join(smoke)}
+  {vector_lantern(1048, 300)}
+{rle_rects(ANVIL, 56, 356, 7)}
+{sitting_dragon(96, 368, 3, napping=False)}
+{dragon_group(ox, oy, size, fire=True, bob=True)}
+{ember_drift}
+{fireflies([(280, 384, "3.1s"), (500, 372, "3.8s"), (680, 360, "3.3s"), (860, 378, "4.2s"), (360, 110, "4.6s"), (840, 92, "3.9s"), (180, 200, "5.1s")])}
+  {stars}
+  <g>
+    {ts.outline("Mubeen", "hero", 600, 72, "#E9E6DF", "middle")}
+    <rect x="454" y="88" width="292" height="1" fill="#C9A227"/>
+    {ts.outline("Software, systems, and a small fire-breathing dragon", "eyebrow", 600, 116, "#C6C2B8", "middle", size=11, tracking=0.16)}
+  </g>
+'''
+    art = svg_wrap(
+        w,
+        h,
+        "Muxby forge yard",
+        "A night forge yard: outlined serif name in a valley of patina ridges, and a pixel dragon breathing a fire jet over banked coals.",
+        body,
+        extra_defs=extra_defs,
+    )
+    write(OUT / "atelier" / "hero-hearth.svg", art)
 
 
 def build_tool_rack() -> None:
@@ -1119,21 +1233,10 @@ def build_lantern() -> None:
 
 
 def build_mail() -> None:
-    w, h = 520, 220
-    body = f'''  <rect width="{w}" height="{h}" fill="#17181C"/>
-  <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".6"/>
-  {ts.outline("Dragon post", "plate", 260, 38, "#E9E6DF", "middle", size=15)}
-  <g>
-    <animateTransform attributeName="transform" type="translate" values="0 18; 330 0; 0 18" dur="8s" repeatCount="indefinite"/>
-{rle_rects(DRAGON_IDLE, 12, 42, 4)}
-{rle_rects(ENVELOPE, 176, 118, 4)}
-  </g>
-  {ts.outline("The post goes out at dusk", "eyebrow", 260, 208, "#9AA0AC", "middle")}
-'''
-    write(
-        OUT / "atelier" / "mail.svg",
-        svg_wrap(w, h, "Dragon post", "A pixel dragon carrying a bone envelope across a graphite field.", body),
-    )
+    # Walk cycle lives in dragon_post.py so the pose tables stay next to the card.
+    import dragon_post
+
+    dragon_post.build()
 
 
 def build_ember_dish() -> None:
@@ -1269,29 +1372,6 @@ def build_quote() -> None:
     )
 
 
-def build_fire_closeup() -> None:
-    w, h = 640, 380
-    size = 8
-    body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
-  <rect x="14" y="14" width="{w-28}" height="{h-28}" fill="#17181C"/>
-  <rect x="14" y="14" width="{w-28}" height="{h-28}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
-  {ts.outline("Ember, on purpose", "plate", 320, 48, "#E9E6DF", "middle", size=16)}
-  <path d="M240 62 H400" stroke="#C9A227" stroke-width="1" opacity=".6"/>
-{dragon_group(44, 74, size, fire=True)}
-{sprite_text("Fire please", "label", 508, 332, "X", anchor="middle", size=14, max_width=200)}
-'''
-    write(
-        OUT / "dragon" / "pixel-dragon-fire.svg",
-        svg_wrap(
-            w,
-            h,
-            "Pixel dragon breathing fire, close",
-            "A large pixel dragon on graphite with a constant ember and looping fire breath.",
-            body,
-        ),
-    )
-
-
 # Filenames from older versions of this profile. They are kept as copies of the
 # current artwork so stale external links cannot resurrect a dead theme.
 LEGACY_MIRRORS = {
@@ -1301,8 +1381,9 @@ LEGACY_MIRRORS = {
     "radar-chart.svg": "atelier/desk.svg",
     "signature.svg": "atelier/signature.svg",
     "sigil.svg": "atelier/wax-seal.svg",
-    "hero-banner.svg": "atelier/hero.svg",
-    "hero-editorial.svg": "atelier/hero.svg",
+    "hero-banner.svg": "atelier/hero-hearth.svg",
+    "hero-editorial.svg": "atelier/hero-hearth.svg",
+    "atelier/hero.svg": "atelier/hero-hearth.svg",
     "aurora-header.svg": "atelier/quote.svg",
     "glitch-restricted.svg": "atelier/napping-banner.svg",
     "graph-bars.svg": "atelier/garden.svg",
@@ -1331,7 +1412,6 @@ def mirror_legacy() -> None:
 def main() -> None:
     build_dragon_camp()
     build_tiny_dragon()
-    build_fire_closeup()
     build_napping()
     build_hero()
     build_tool_rack()

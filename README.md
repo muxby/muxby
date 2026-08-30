@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/atelier/hero.svg" width="100%" alt="Iron studio window at night with a pixel dragon on the sill" />
+<img src="assets/atelier/hero-hearth.svg" width="100%" alt="Night forge yard with a pixel dragon breathing fire over the hearth" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=19&letterSpacing=1.5px&duration=3600&pause=1400&color=C9A227&center=true&vCenter=true&width=720&height=40&lines=Software%2C+systems%2C+and+a+small+fire-breathing+dragon;Built+to+be+used%2C+not+just+demoed" alt="Software, systems, and a small fire-breathing dragon" />
 
@@ -16,28 +16,17 @@
 
 <div align="center">
 
-<table align="center">
-<tr>
-<td width="58%" valign="middle">
-<img src="assets/atelier/postcard.svg" width="100%" alt="Calling card from the workshop" />
-</td>
-<td width="42%" valign="middle" align="center">
-
-<img src="assets/atelier/wax-seal.svg" width="112" alt="Forged monogram seal" />
+<img src="assets/atelier/intro.svg" width="520" alt="Molten wax M dripping onto a brass nameplate: Mubeen, Pakistan" />
 
 **Mubeen** &mdash; software engineer in Pakistan.
 
-Interfaces, service contracts, data models, and the operational story that keeps them alive after the demo.
-
 Currently building agentic systems that review work before a human has to.
-
-</td>
-</tr>
-</table>
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 
 </div>
+
+<!-- /01 intro -->
 
 <!-- 02 dragon -->
 
@@ -123,7 +112,7 @@ Currently building agentic systems that review work before a human has to.
 
 <br />
 
-<img src="assets/atelier/corkboard.svg" width="100%" alt="Workbench board of stack notes" />
+<img src="assets/atelier/corkboard.svg" width="100%" alt="Forge workbench: languages hang as tools, web cools as ingots, data in jars, infrastructure in crates, intelligence in the hearth, current work on the anvil" />
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 
@@ -205,7 +194,7 @@ Evaluation a skeptic would still respect.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution snake" />
+<img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-sky.svg" width="100%" alt="Contribution snake" />
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 

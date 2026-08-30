@@ -97,3 +97,35 @@ if __name__ == "__main__":
             h=A.DRAGON_H,
             scale=11,
         )
+
+    import dragon_post as D
+
+    # Dragon Post walk cycle: four discrete frames, feet and tail actually change.
+    sheet_w, sheet_h = A.DRAGON_W + 8, A.DRAGON_H + 2
+    sheet = [["." for _ in range(sheet_w * 4)] for _ in range(sheet_h)]
+    for i in range(len(D.DRAGON_FEET_POSES)):
+        compose(
+            D.walk_layers(i),
+            f"lab_walk{i}",
+            w=A.DRAGON_W + 16,
+            h=A.DRAGON_H + 2,
+            scale=12,
+        )
+        render(D.DRAGON_FEET_POSES[i], f"lab_feet{i}", scale=18, bg=(0x9A, 0x9A, 0x9A))
+        render(
+            A.DRAGON_TAIL_POSES[D.WALK_TAIL_ORDER[i]],
+            f"lab_walk_tail{i}",
+            scale=14,
+            bg=(0x9A, 0x9A, 0x9A),
+        )
+        ox = i * sheet_w
+        for sprite, sx, sy in D.walk_layers(i):
+            sprite = pad(sprite)
+            for y, line in enumerate(sprite):
+                for x, ch in enumerate(line):
+                    if ch == ".":
+                        continue
+                    cy, cx = sy + y, ox + sx + x
+                    if 0 <= cy < sheet_h and 0 <= cx < sheet_w * 4:
+                        sheet[cy][cx] = ch
+    render(["".join(row) for row in sheet], "lab_walk_sheet", scale=8)
