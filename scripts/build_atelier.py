@@ -1616,10 +1616,13 @@ def mirror_legacy() -> None:
 
 
 def main() -> None:
+    import build_avatar
+
     build_dragon_camp()
     build_tiny_dragon()
     build_napping()
     build_hero()
+    build_avatar.build()
     build_tool_rack()
     build_kettle()
     build_lantern()
