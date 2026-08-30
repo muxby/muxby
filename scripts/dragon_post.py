@@ -4,7 +4,8 @@
 GitHub README <img> SVGs run CSS keyframes (the contribution snake does).
 SMIL <animate> opacity swaps freeze as a still, which is what the card was
 doing. The walk is four redrawn poses swapped by CSS, discrete so pixels stay
-sharp. Feet step, tail wags, wings bob. The torso stays put.
+sharp. Feet step, tail wags, wings bob. The whole dragon patrols left and
+right so the stride actually travels.
 """
 
 from __future__ import annotations
@@ -17,6 +18,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_atelier as A  # noqa: E402
 import typeset as ts  # noqa: E402
 
+# Last five rows are the planted feet. Thighs stay on the torso so a lifted
+# foot never leaves a hole under the chest.
 DRAGON_TORSO = A.pad(A.DRAGON_BODY[:-5])
 
 _FOOT_HIND = A.pad(
@@ -28,31 +31,34 @@ _FOOT_HIND = A.pad(
         "kkk..kkkkk",
     ]
 )
+# Matches body cols 11–19: a column out of the chest, not a 10-wide slab.
 _FOOT_FORE = A.pad(
     [
-        "kbbbbbbbk.",
-        "kbbbbbbbkk",
-        "kdbkbkbbBk",
-        "kHdkHkdHkk",
-        ".kkkkkkkkk",
+        ".kbbbbbk.",
+        "kbbbbbkk.",
+        "kbkbbBk..",
+        "kHdkHkk..",
+        "kkkkkk...",
     ]
 )
 
-FEET_W, FEET_H = 28, 10
-FEET_AT = (A.BODY_AT[0], A.BODY_AT[1] + len(DRAGON_TORSO) - 5)
+LIFT = 3
+FEET_W, FEET_H = 24, 5 + LIFT
+FEET_AT = (A.BODY_AT[0], A.BODY_AT[1] + len(DRAGON_TORSO) - LIFT)
+FORE_X = 11
 
 
 def _feet_pose(hind: tuple[int, int], fore: tuple[int, int]) -> list[str]:
     return A.stack([(_FOOT_HIND, *hind), (_FOOT_FORE, *fore)], FEET_W, FEET_H)
 
 
-# Planted y=5, lifted y=0 (five rows of air). x is the stride.
-# At size 6 that is a 30px lift — readable at README width.
+# Planted y=LIFT (flush with torso bottom). Lifted y=0 is three pixels up,
+# still overlapping the thigh. Fore stays under the chest, never at x=16.
 DRAGON_FEET_POSES = [
-    _feet_pose((0, 5), (14, 5)),  # both down, hind back
-    _feet_pose((1, 0), (12, 5)),  # hind up and passing
-    _feet_pose((4, 5), (13, 5)),  # both down, hind forward
-    _feet_pose((3, 5), (16, 0)),  # fore up and reaching
+    _feet_pose((0, LIFT), (FORE_X, LIFT)),       # contact: hind back, fore planted
+    _feet_pose((1, 0), (FORE_X - 1, LIFT)),       # hind passing, fore planted
+    _feet_pose((3, LIFT), (FORE_X + 1, LIFT)),     # contact: hind forward
+    _feet_pose((2, LIFT), (FORE_X + 2, 0)),       # fore reaching, still on the chest line
 ]
 
 PUFF_FRAMES = [
@@ -120,6 +126,10 @@ def name_safe(cls: str) -> str:
     return cls.replace("-", "_")
 
 
+PATROL_PX = 90
+PATROL_DUR = "7.2s"
+
+
 def walking_dragon(ox: float, oy: float, size: float) -> tuple[str, str]:
     css_parts: list[str] = []
     svg_parts: list[str] = []
@@ -135,12 +145,33 @@ def walking_dragon(ox: float, oy: float, size: float) -> tuple[str, str]:
     torso = A.rle_rects(
         DRAGON_TORSO, ox + A.BODY_AT[0] * size, oy + A.BODY_AT[1] * size, size
     )
-    svg = f"""<g>
+    css_parts.append(
+        ".dp-patrol{animation:dp-patrol "
+        + PATROL_DUR
+        + " linear infinite}"
+        "@keyframes dp-patrol{"
+        f"0%{{transform:translateX(-{PATROL_PX}px)}}"
+        f"45%{{transform:translateX({PATROL_PX}px)}}"
+        f"50%{{transform:translateX({PATROL_PX}px)}}"
+        f"95%{{transform:translateX(-{PATROL_PX}px)}}"
+        f"100%{{transform:translateX(-{PATROL_PX}px)}}"
+        "}"
+        ".dp-face{animation:dp-face "
+        + PATROL_DUR
+        + " linear infinite;transform-box:fill-box;transform-origin:50% 72%}"
+        "@keyframes dp-face{"
+        "0%,49.9%{transform:scaleX(1)}"
+        "50%,99.9%{transform:scaleX(-1)}"
+        "100%{transform:scaleX(1)}}"
+    )
+    svg = f"""<g class="dp-patrol">
+<g class="dp-face">
 {svg_parts[0]}
 {torso}
 {svg_parts[1]}
 {svg_parts[2]}
 {svg_parts[3]}
+</g>
 </g>"""
     return "\n".join(css_parts), svg
 
@@ -171,7 +202,7 @@ def build() -> None:
   <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#C9A227" stroke-width="1.5"/>
   <rect x="13" y="13" width="{w-26}" height="{h-26}" fill="none" stroke="#C9A227" stroke-width="1"/>
   {ts.outline("Dragon post", "plate", 320, 40, "#E9E6DF", "middle", size=16)}
-  <path d="M{ox + 8:.1f} {ground_y} H{ox + A.DRAGON_W * size - 8:.1f}" stroke="#8A6E1F" stroke-width="2" opacity=".7"/>
+  <path d="M40 {ground_y} H{w - 40}" stroke="#8A6E1F" stroke-width="2" opacity=".7"/>
 {dragon}
   {ts.outline("The post goes out at dusk", "eyebrow", 320, 258, "#9AA0AC", "middle")}
 '''
@@ -179,7 +210,7 @@ def build() -> None:
         w,
         h,
         "Dragon post",
-        "A pixel dragon walking in place: feet step, tail wags, and a white breath puff pulses.",
+        "A pixel dragon walking left and right: front leg planted on the chest, feet stepping, facing the direction of travel.",
         body,
     )
     A.write(A.OUT / "atelier" / "dragon-post.svg", wrapped)

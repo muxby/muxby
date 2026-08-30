@@ -186,7 +186,7 @@ Evaluation a skeptic would still respect.
 
 <br />
 
-<img src="assets/atelier/dragon-post.svg" width="82%" alt="Pixel dragon walking in place, feet and tail cycling" />
+<img src="assets/atelier/dragon-post.svg" width="82%" alt="Pixel dragon walking left and right, front leg planted on the chest" />
 
 <img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
 
