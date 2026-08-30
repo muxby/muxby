@@ -220,7 +220,7 @@ Evaluation a skeptic would still respect.
 <table align="center">
 <tr>
 <td align="center"><img src="assets/github-qr.png" width="160" alt="GitHub QR code" /></td>
-<td align="center"><img src="assets/linkedin-qr.png" width="160" alt="LinkedIn QR code" /></td>
+<td align="center"><img src="assets/linkedin-qr-muxby.png" width="160" alt="LinkedIn QR code" /></td>
 </tr>
 </table>
 
