@@ -87,8 +87,6 @@
 .coal-4{opacity:.7;animation:coal_4 3.5999999999999996s ease-in-out infinite}@keyframes coal_4{0%,100%{opacity:.6}50%{opacity:1}}
 .coal-5{opacity:.7;animation:coal_5 3.9s ease-in-out infinite}@keyframes coal_5{0%,100%{opacity:.6}50%{opacity:1}}
 .coal-6{opacity:.7;animation:coal_6 4.199999999999999s ease-in-out infinite}@keyframes coal_6{0%,100%{opacity:.6}50%{opacity:1}}
-.moon{animation:moonPulse 7.5s ease-in-out infinite}
-@keyframes moonPulse{0%,100%{opacity:.88}50%{opacity:1}}
 .grate-glow{animation:gratePulse 2.6s ease-in-out infinite}
 @keyframes gratePulse{0%,100%{opacity:.4}50%{opacity:.75}}
   </style>
