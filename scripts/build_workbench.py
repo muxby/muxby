@@ -330,7 +330,7 @@ def job_ticket(x: float, y: float) -> str:
   <circle cx="{n(x + w - 18)}" cy="{n(y + 20)}" r="4" fill="{EMBER}">
     <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/>
   </circle>
-  {outline("On the anvil", "label", x + 14, y + 24, EMBER_DK, size=9.5, tracking=0.16)}
+  {outline("In hand", "label", x + 14, y + 24, EMBER_DK, size=9.5, tracking=0.16)}
   <path d="M{n(x + 14)} {n(y + 32)} H{n(x + w - 20)}" stroke="{BRASS}" stroke-width="1"/>
   <path d="M{n(x + 14)} {n(y + 50)} H{n(x + w - 18)}" stroke="{ASH}" stroke-width="1"/>
   <path d="M{n(x + 14)} {n(y + 70)} H{n(x + w - 18)}" stroke="{ASH}" stroke-width="1"/>
@@ -410,7 +410,7 @@ def hearth_basin() -> str:
         f'<ellipse cx="828" cy="594" rx="18" ry="8" fill="{GOLD}" opacity=".8"/>',
         f'<ellipse cx="786" cy="598" rx="14" ry="7" fill="{EMBER}"/>',
         f'<ellipse cx="818" cy="586" rx="10" ry="5" fill="{GOLD}"/>',
-        rail_stamp(748, 542, "HEARTH", 70),
+        rail_stamp(748, 542, "AGENTS", 70),
     ]
     for x, y, label, rot in tags:
         tw = max(ts.measure(label, "tag", size=8, tracking=0.04) + 12, 36)
@@ -511,7 +511,7 @@ def build_workbench_scene() -> None:
   {fireflies([(650, 340, "3.1s"), (710, 318, "3.8s"), (800, 574, "2.9s"), (850, 556, "3.4s"), (318, 360, "4.2s")])}
 
   <path d="M48 688 H1152" stroke="{BRASS_DK}" stroke-width="1" opacity=".55"/>
-  {outline("Steel, brass, ember", "label", 48, 716, BRASS, size=10, tracking=0.18)}
+  {outline("Steel, brass, bone", "label", 48, 716, BRASS, size=10, tracking=0.18)}
   {outline("Muxby", "label", 1152, 716, BRASS, "end", size=10, tracking=0.18)}
   <path d="M48 736 H1152" stroke="{STEEL}" stroke-width="2"/>
   <path d="M48 736 H220" stroke="{PATINA}" stroke-width="2"/>
@@ -527,7 +527,7 @@ def build_workbench_scene() -> None:
         w,
         h,
         "The workbench",
-        "A smithy interior: languages hang as tools on a pegboard, web cools as labeled ingots, data sits in jars, infrastructure is a crate pile, intelligence burns in the hearth, and current work is a job ticket on the anvil.",
+        "Languages hang as tools, web as labeled ingots, data in jars, infrastructure in crates, current work on a ticket.",
         body,
     )
     write(OUT / "atelier" / "corkboard.svg", art)

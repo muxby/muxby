@@ -170,7 +170,7 @@ def build() -> None:
   <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="#17181C"/>
   <rect x="8" y="8" width="{w-16}" height="{h-16}" fill="none" stroke="#C9A227" stroke-width="1.5"/>
   <rect x="13" y="13" width="{w-26}" height="{h-26}" fill="none" stroke="#C9A227" stroke-width="1"/>
-  {ts.outline("Dragon post", "plate", 320, 40, "#E9E6DF", "middle", size=16)}
+  {ts.outline("Night walk", "plate", 320, 40, "#E9E6DF", "middle", size=16)}
   <path d="M{ox + 8:.1f} {ground_y} H{ox + A.DRAGON_W * size - 8:.1f}" stroke="#8A6E1F" stroke-width="2" opacity=".7"/>
 {dragon}
   {ts.outline("The post goes out at dusk", "eyebrow", 320, 258, "#9AA0AC", "middle")}
@@ -178,8 +178,8 @@ def build() -> None:
     wrapped = A.svg_wrap(
         w,
         h,
-        "Dragon post",
-        "A pixel dragon walking in place: feet step, tail wags, and a white breath puff pulses.",
+        "Night walk",
+        "A small companion walking the path. The post goes out at dusk.",
         body,
     )
     A.write(A.OUT / "atelier" / "dragon-post.svg", wrapped)

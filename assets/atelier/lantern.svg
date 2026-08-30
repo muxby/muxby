@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="320" viewBox="0 0 300 320" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
-  <title id="title">Keep a light on</title>
-  <desc id="desc">A brass lantern hanging on graphite, flame pulsing, sparks drifting.</desc>
+  <title id="title">Lamp still on</title>
+  <desc id="desc">A lamp hanging, still on for the late review.</desc>
   <defs>
     <linearGradient id="duskSky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#0F1013"/>
