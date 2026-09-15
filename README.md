@@ -16,10 +16,9 @@
 
 <div align="center">
 
+I am **Mubeen**, a software engineer in Pakistan.
 
-**Mubeen** &mdash; software engineer in Pakistan.
-
-Currently building agentic systems that review work before a human has to.
+I build agentic systems that review work before a human has to.
 
 <img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
 
