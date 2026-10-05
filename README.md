@@ -11,6 +11,15 @@
 <img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
 
 </div>
+<!-- 00 snake -->
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-sky.svg" width="100%" alt="Contribution snake" />
+
+<img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
+
+</div>
 
 <!-- 01 intro -->
 
@@ -189,15 +198,6 @@ Evaluation a skeptic would still respect.
 
 </div>
 
-<!-- 07 snake -->
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/muxby/muxby/output/github-contribution-grid-snake-sky.svg" width="100%" alt="Contribution snake" />
-
-<img src="assets/atelier/divider-ember.svg" width="100%" alt="" />
-
-</div>
 
 <!-- 08 close -->
 
