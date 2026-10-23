@@ -5,9 +5,11 @@
 <img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=19&letterSpacing=1.5px&duration=3600&pause=1400&color=C9A227&center=true&vCenter=true&width=720&height=40&lines=Software%2C+systems%2C+and+work+that+ships;Built+to+be+used%2C+not+just+demoed" alt="Software, systems, and work that ships" />
 
 
+<img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
 <img src="https://img.shields.io/github/followers/muxby?style=flat-square&logo=github&color=3F6B62&label=FOLLOWERS" alt="Followers" />
 <img src="https://img.shields.io/github/stars/muxby?style=flat-square&logo=github&color=8A6E1F&label=STARS" alt="Stars" />
 <img src="https://komarev.com/ghpvc/?username=muxby&style=flat-square&color=C9A227&label=VISITORS" alt="Profile views" />
+
 <img src="assets/atelier/divider-rule.svg" width="100%" alt="" />
 
 </div>
