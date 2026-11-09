@@ -79,13 +79,24 @@ black, and props stay tools rather than toys.
 
 ## 3. Type system
 
-Three faces, all under the SIL Open Font License, defined once in `scripts/typeset.py`:
+One typeface, **Fraunces** (SIL Open Font License), cut into six static instances along its
+optical-size and weight axes and vendored in `scripts/fonts/` with its licence. Every role
+in `scripts/typeset.py` maps to one of them:
 
-| Role | Face | Used for |
+| File | wght / opsz | Used for |
 |---|---|---|
-| Display | Noto Serif Display | titles, wordmarks, the one name |
-| Text | Inter | standfirsts, card copy, captions |
-| Mono | JetBrains Mono | tags, medallions, technical labels |
+| `Fraunces-Text.ttf` | 430 / 28 | the name, plates, headings, quotes |
+| `Fraunces-Bold.ttf` | 640 / 36 | wordmarks, bold title words |
+| `Fraunces-Italic.ttf` | 430 / 24 | standfirsts, chapter leads, the signature |
+| `Fraunces-Label.ttf` | 600 / 14 | small caps labels, station names, tags |
+| `Fraunces-Small.ttf` | 460 / 12 | the smallest roman copy |
+| `Fraunces-ItalicSmall.ttf` | 460 / 14 | small italic captions and legends |
+
+Why Fraunces: the README shrinks the artwork to roughly 70% of its drawn size, and the old
+hairline display serif lost its thin strokes there. Fraunces is a soft old-style serif with
+a real optical-size axis, so small roles get a low-opsz cut with open counters and sturdy
+hairlines, while the name and titles get the refined high-opsz cut. The instances are
+Latin-subset (about 35 KB each) and set `SOFT=0, WONK=0` for a clean, classical shape.
 
 ### Why the artwork embeds glyph outlines
 
@@ -100,26 +111,28 @@ a glyph, so pushing paragraphs through it would add close to a megabyte, and liv
 stays selectable, translatable, and searchable.
 
 The one place a real web font does work is `readme-typing-svg.demolab.com`, which renders
-server-side and inlines the font as a data URI. That line uses Playfair Display.
+server-side and inlines the font as a data URI. That line uses Fraunces too.
 
 ### The scale
 
 Sizes are for artwork at its natural `viewBox` size; the README scales the images down.
-Tracking is in em. Display type is caps with wide tracking, which is what carries the
-editorial feel; running copy is the grotesque at its natural spacing.
+Tracking is in em. Caps are tracked open but not airy: past about 0.16em the words fall
+apart into letters once the art is scaled down.
 
-| Role | Face | Size | Tracking | Case |
+| Role | Instance | Size | Tracking | Case |
 |---|---|---|---|---|
-| `hero` | serif | 44 | 0.22 | caps |
-| `plate` | serif | 20 | 0.30 | caps |
-| `heading` | serif | 18 | 0 | sentence |
-| `eyebrow` | Inter SemiBold | 11 | 0.22 | caps |
-| `label` | Inter SemiBold | 11 | 0.16 | caps |
-| `lede` | Inter | 15 | 0 | sentence |
-| `body` | Inter | 13 | 0 | sentence |
-| `caption` | Inter | 11.5 | 0 | sentence |
-| `tag` | JetBrains Mono Bold | 12 | 0.08 | caps |
-| `wordmark` | Noto Serif Display Bold | 20 | 0.22 | caps |
+| `hero` | Text | 46 | 0.14 | caps |
+| `plate` | Text | 20 | 0.16 | caps |
+| `chapter` | Italic | 26 | 0.03 | sentence |
+| `heading` | Text | 18 | 0 | sentence |
+| `eyebrow` | Label | 12.5 | 0.12 | caps |
+| `standfirst` | Italic | 14 | 0.01 | sentence |
+| `label` | Label | 12 | 0.10 | caps |
+| `lede` | Small | 15 | 0 | sentence |
+| `body` | Small | 13 | 0 | sentence |
+| `caption` | Small | 11.5 | 0 | sentence |
+| `tag` | Label | 12 | 0.06 | caps |
+| `wordmark` | Bold | 20 | 0.14 | caps |
 
 Call sites override `size` where a card is smaller, and pass `max_width` to have a label
 shrink to fit its tag or medallion rather than overflow it.
@@ -139,12 +152,13 @@ just a smaller size, and all SVG content stays ASCII.
 pip install fonttools uharfbuzz
 python3 scripts/build_atelier.py
 python3 scripts/build_intro.py
+python3 scripts/build_workbench.py
 ```
 
-The two packages are what shapes and outlines the display type. The build also needs the
-three TrueType files on disk (Noto Serif Display, Inter, JetBrains Mono); `scripts/typeset.py`
-lists the paths it expects and fails with the missing one named rather than quietly
-substituting a different face. Regenerating is only needed after editing a sprite, a color,
+The two packages are what shapes and outlines the display type. The fonts ship in
+`scripts/fonts/`, so no system fonts are needed; set `MUXBY_FONT_DIR` to use another folder
+with the same file names. `scripts/typeset.py` fails with the missing file named rather
+than quietly substituting a different face. Regenerating is only needed after editing a sprite, a color,
 or a piece of copy - the committed SVGs are the artifact.
 
 Sprites live at the top of that file (`DRAGON_*`, `FOX_SIT`, fire frames) and colors come

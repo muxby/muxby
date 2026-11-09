@@ -142,7 +142,7 @@ def wax_seal_mark(
 
 def write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(content, encoding="utf-8")
+    path.write_text(content, encoding="utf-8", newline="\n")
     print(f"wrote {path.relative_to(ROOT)} ({path.stat().st_size} bytes)")
 
 
@@ -203,7 +203,7 @@ def build_intro() -> None:
         "#E9E6DF",
         "middle",
         size=22,
-        tracking=0.18,
+        tracking=0.12,
     )
     kicker = ts.outline(
         "Pakistan",
@@ -213,7 +213,7 @@ def build_intro() -> None:
         "#C9A227",
         "middle",
         size=9,
-        tracking=0.22,
+        tracking=0.14,
     )
     body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
   <rect x="18" y="14" width="{w - 36}" height="{h - 28}" fill="#17181C"/>

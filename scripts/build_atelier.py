@@ -155,19 +155,19 @@ DRAGON_BODY = pad(
         "...kkBBBbbbbbbbbbbbbdddddddkk.",
         "..kkBbbbbbbbbcccbbddkkkkkkkk..",
         ".kkBbbbbbbbCCCCCCCkkk.........",
-        ".kBbbbbbbbCCCCCCCCCk..........",
-        ".kbbbbbbbCCCCCCCCCCk..........",
-        "kkbbbbbbbcccccccccckk.........",
-        "kBbbbbbbCCCCCCCCCCCCk.........",
-        "kkbbbbk.CCCCCCCCCCCkk.........",
-        ".kbbbbk.CCCCCCCCCCCk..........",
-        "kkbbbkk.kcccccccccck..........",
-        "kbbbkk...kkkCCCCCCCk..........",
-        "kdbbkk.kk..kbbbbbbbk..........",
-        ".kbkk.kBbk.kbbbbbbbkk.........",
-        "kdkk.kbkHk.kdbkbkbbBk.........",
-        "kHkk.kHdHk.kHdkHkdHkk.........",
-        "kkk..kkkkk.kkkkkkkkk..........",
+        ".kBbbbbbbbCCCCCCCCCbk.........",
+        ".kbbbbbbbCCCCCCCCCCbbk........",
+        "kkbbbbbbbcccccccccckbbk.......",
+        "kBbbbbBBkCCCCCCCCCCkbbbk......",
+        "kbbbBBbbbkCCCCCCCCCkkbbbbk....",
+        "kbbBbbdbbbkCCCCCCCCk.kHkHk....",
+        "kbbBbbbbbbkcccccccck..k.k.....",
+        "kbbbbdbbdbkCCCCCCCk...........",
+        "kdbbbbbbbdkCCCCCCk............",
+        ".kdbbbbbddkkcccckk............",
+        ".kkddddddkkbbbbbbbbbBk........",
+        "kHdbbbbbbbbbHkbbHkbbbHk.......",
+        "kkkkkkkkkkkkkkkkkkkkkkk.......",
     ]
 )
 
@@ -393,84 +393,195 @@ DRAGON_SIT = pad(
     ]
 )
 
-FOX_SIT = pad(
+def mirror(half: list[str]) -> list[str]:
+    """Symmetric sprite from its left half, so faces stay even."""
+    return [row + row[::-1] for row in half]
+
+
+# Front-on sitting fox: tall ears, bone cheeks and bib, a black nose, and a
+# white-tipped brush curled up behind the right hip.
+_FOX_FRONT = mirror(
     [
-        "......kkkk.......",
-        ".....koookk......",
-        "....kqoqoqok.....",
-        "....kqppppqk.....",
-        "....kqoqqqok.....",
-        ".....kuqquk......",
-        "....kooooouk.....",
-        "...koooqqoouk....",
-        "...kooqqqqook....",
-        "....koooooookk...",
-        ".....kuk..kuk....",
-        ".....kkk..kkk.q..",
-        "...............q.",
-        "............qquk.",
-        "...........kuuuk.",
-        "............kkk..",
+        "..kk....",
+        "..kuk...",
+        "..kuokkk",
+        ".koooooo",
+        ".koopeoo",
+        "kqoooooo",
+        "kqqqoooo",
+        ".kqqqqqp",
+        "..kqqqqq",
+        "...kkqqq",
+        "...kooqq",
+        "..kooqqq",
+        "..koooqq",
+        ".kooooqq",
+        ".koooukq",
+        ".kqqqkqq",
+        "..kkkkkk",
+    ]
+)
+_FOX_BRUSH = [
+    "......kk.",
+    ".....kqqk",
+    "....kqqqk",
+    "...kooouk",
+    "..kooouk.",
+    ".kooouk..",
+    "kooouk...",
+    "kouuk....",
+    "kkkk.....",
+]
+FOX_SIT = stack([(_FOX_BRUSH, 11, 8), (_FOX_FRONT, 0, 0)], 20, 17)
+
+# A dragon's hoard: a heaped mound of brass coin, a patina gem, and a ruby.
+HOARD = pad(
+    [
+        "........9.............",
+        ".......CXC......A.....",
+        ".....CCXCXC....AGa....",
+        "....CXcXCXcXC..Gga.R..",
+        "...CXCcXCXCXcXC.g.RRm.",
+        "..CXcCXcXCXcXCXCXCXmm.",
+        ".CXCXcXCXCcXCXcXCXCXC.",
+        "cXcXcXcXcXcXcXcXcXcXcX",
     ]
 )
 
-# Breath, not a campfire: a jet that leaves the mouth sideways. Hottest at the
-# lips (Y), cooling outward through O and R to the F fringe, with 9 for sparks.
-# Frame 0 is a full jet so fire reads even when SMIL is off (cairosvg, first paint).
+# A blade left standing in a stone, brass hilt up. Forge yard, not a legend.
+SWORD_STONE = pad(
+    [
+        ".....X.....",
+        "....XCX....",
+        ".....X.....",
+        ".....N.....",
+        ".....N.....",
+        "..XXXCXXX..",
+        "...kPzk....",
+        "...kPzk....",
+        "...kPzk....",
+        "..khhShk...",
+        ".kShSSSShk.",
+        "kSSSShSSSSk",
+        "kNSSSSSNSSk",
+        "kkkkkkkkkkk",
+    ]
+)
+
+# Iron-grey canvas tent with a brass ridge pole and a lamp lit inside.
+TENT = pad(
+    [
+        "......k......",
+        ".....kXk.....",
+        "....kNXNk....",
+        "...kNNXNNk...",
+        "..kNNkXkNNk..",
+        ".kNNk6X6kNNk.",
+        "kNNk66X66kNNk",
+        "kkkkkkkkkkkkk",
+    ]
+)
+
+# Campfire flicker: same logs, the flame redrawn leaning the other way.
+CAMPFIRE_FLICKER = pad(
+    [
+        "..9Y..9..",
+        "..YOYOY..",
+        ".YOROROY.",
+        ".ORFFRRO.",
+        "..RFkFR..",
+        "...kNk...",
+        "..N.N.N..",
+        ".N.....N.",
+    ]
+)
+
+# Toasted marshmallow, the same shape as MARSHMALLOW once the breath has had it.
+MARSHMALLOW_GOLD = pad([".OO.", "OCCO", "OCCO"])
+MARSHMALLOW_DONE = pad([".nn.", "nrrn", "nOrn"])
+
+# Breath, not a campfire: a jet that leaves the mouth sideways and widens as it
+# goes. White-hot at the lips (y, Y), cooling outward through O and R to the F
+# fringe, with 9 for loose sparks. Tongues lean upward because heat rises.
+# Index 0 is a full jet, kept so static renderers (no CSS) still show breath.
+# 1-3 swell, 4/5 are two full-blast shapes swapped fast so the flame flickers
+# instead of sitting still, and 6 is the jet tearing off into loose puffs.
+FIRE_FULL_A = pad(
+    [
+        "...................F....9.....",
+        "..............F..FRRF.F.......",
+        "........FF..FRRFRRORRFRF..9...",
+        ".....FFRRRFRROOOOOOORRRFF.....",
+        "..RRROOOOOOOOYYYYOOOOORRRF.F..",
+        "yyYYYYOYYYYYYYOYYYOOOOORRRFF..",
+        "..RRROOOOOOOOYYYYOOOOORRRF....",
+        ".....FFRRROOROOOOOORRRFF......",
+        "........FF..FRRFRORRFF..F.....",
+        "..............FF..FRF.........",
+        "....................F...9.....",
+    ]
+)
+FIRE_FULL_B = pad(
+    [
+        ".................F......9.....",
+        "............F..FRF..FF........",
+        ".......FF.FRRFRRORRRRF.F......",
+        "....FFRRRRROOOOOOORRRRRF..9...",
+        "..RROOOOOOOOYYYYYOOOOORRRFF...",
+        "yyYYYYYOYYYYYYYOYYYOOOOORRRF.F",
+        "..RROOOOOOOOYYYYYOOOOORRRFF...",
+        "....FFRRRROOOROOOOORRRRF......",
+        ".......FF.FRRFRRORRFF.F.......",
+        "............F..FRF..F...9.....",
+        "..................F...........",
+    ]
+)
 FIRE_FRAMES = [
+    FIRE_FULL_A,
     pad(
         [
-            "......FF...F...9......",
-            "...FFFFFFFF..F..9.....",
-            ".YOOORRRRRRRFFF.......",
-            "YYOOOORRRRRRRRRFFF....",
-            "YYYOOOOORRRRRRRRRRFFF.",
-            "YYOOOORRRRRRRRRFFF....",
-            ".YOOORRRRRRRFFF.......",
-            "...FFFFFFFF..F..9.....",
-            "......FF...F...9......",
+            ".FF..",
+            "YOORF",
+            "yYORF",
+            "YOORF",
+            ".FF..",
         ]
     ),
     pad(
         [
-            "..F....",
-            ".YOORF.",
-            "YYOORRF",
-            ".YOORF.",
-            "..F....",
+            "....F..9.",
+            "..FRRFF..",
+            ".YOOORRF.",
+            "yYYYOORRF",
+            ".YOOORRF.",
+            "..FRRFF..",
+            "....F....",
         ]
     ),
     pad(
         [
-            "...FF...9..",
-            ".YOORRRFF..",
-            "YYOOORRRRFF",
-            ".YOORRRFF..",
-            "...FF......",
+            "..........F...9",
+            "......FFRRF.F..",
+            "...FRRROORRFF..",
+            ".RROOOYYOOORRF.",
+            "yYYYYYYYOOORRRF",
+            ".RROOOYYOOORRF.",
+            "...FRRROORRFF..",
+            "......FFRRF....",
+            "..........F....",
         ]
     ),
+    FIRE_FULL_A,
+    FIRE_FULL_B,
     pad(
         [
-            ".....FFF...9....",
-            "..FFFFFFF..F....",
-            ".YOOORRRRRFF....",
-            "YYOOOORRRRRRFF..",
-            ".YOOORRRRRFF....",
-            "..FFFFFFF..F....",
-            ".....FFF........",
-        ]
-    ),
-    pad(
-        [
-            "......FF...F...9......",
-            "...FFFFFFFF..F..9.....",
-            ".YOOORRRRRRRFFF.......",
-            "YYOOOORRRRRRRRRFFF....",
-            "YYYOOOOORRRRRRRRRRFFF.",
-            "YYOOOORRRRRRRRRFFF....",
-            ".YOOORRRRRRRFFF.......",
-            "...FFFFFFFF..F..9.....",
-            "......FF...F...9......",
+            "..............S..9...",
+            "...........FRRF......",
+            "........FRROORRF...S.",
+            "..F.F..FRROOOORRF....",
+            "........FRROORRF.....",
+            "...........FRRF......",
+            "..............S......",
         ]
     ),
 ]
@@ -718,68 +829,69 @@ def css_rise_rule(cls: str, dur: str, delay: str, dx: float, dy: float, peak: fl
     )
 
 
-HERO_BREATH = 6.0  # seconds. CSS loop: inhale, blast, heart, rest. Overlaps so it never sits still.
+HERO_BREATH = 6.0  # seconds. CSS loop: glow, swell, flicker, tear off, smoke, heart, rest.
 
 
-BREATH = 5.6  # seconds for one full ember-burst-smoke-spark loop (SMIL cards only)
-
-
-def timed_opacity(start: float, end: float, peak: float = 1.0, fade: float = 0.09) -> str:
-    """Hold at 0, ramp to `peak` at `start`, hold, ramp back down after `end`."""
-    stops = [0.0, max(start - fade, 0.0), start, end, min(end + fade, BREATH), BREATH]
-    keys = ";".join(f"{s / BREATH:.4f}" for s in stops)
+def css_pose_cycle(cls: str, order: list[int], pose_index: int, dur: float) -> str:
+    """Hard-cut pose swap. step-end holds each keyframe until the next one, so
+    exactly one pose is ever showing and no frame is a half-faded blend."""
+    steps = len(order)
+    name = css_name(cls)
+    first = 1 if order[0] == pose_index else 0
+    frames = [f"{100 * i / steps:.2f}%{{opacity:{1 if slot == pose_index else 0}}}" for i, slot in enumerate(order)]
+    frames.append(f"100%{{opacity:{first}}}")
     return (
-        f'<animate attributeName="opacity" values="0;0;{peak};{peak};0;0" keyTimes="{keys}" '
-        f'dur="{BREATH}s" repeatCount="indefinite"/>'
+        f".{cls}{{opacity:{first};animation:{name} {dur}s step-end infinite}}"
+        f"@keyframes {name}{{{''.join(frames)}}}"
     )
 
 
-def gap_opacity(start: float, end: float, peak: float = 1.0, fade: float = 0.09) -> str:
-    """The inverse of timed_opacity: visible except for a hole between the two."""
-    stops = [0.0, max(start - fade, 0.0), start, end, min(end + fade, BREATH), BREATH]
-    keys = ";".join(f"{s / BREATH:.4f}" for s in stops)
+def css_fly_rule(cls: str, dur: str, start: float, end: float, dx: float, dy: float, peak: float = 1.0) -> str:
+    """Hidden until `start`%, then travels (dx, dy) and fades out by `end`%."""
+    name = css_name(cls)
+    mid = start + (end - start) * 0.3
     return (
-        f'<animate attributeName="opacity" values="{peak};{peak};0;0;{peak};{peak}" '
-        f'keyTimes="{keys}" dur="{BREATH}s" repeatCount="indefinite"/>'
+        f".{cls}{{opacity:0;animation:{name} {dur} linear infinite}}"
+        f"@keyframes {name}{{"
+        f"0%,{max(start - 0.1, 0):.2f}%{{opacity:0;transform:translate(0,0)}}"
+        f"{start:.2f}%{{opacity:{peak};transform:translate(0,0)}}"
+        f"{mid:.2f}%{{opacity:{peak};transform:translate({dx * 0.35:.1f}px,{dy * 0.35:.1f}px)}}"
+        f"{end:.2f}%,100%{{opacity:0;transform:translate({dx:.1f}px,{dy:.1f}px)}}"
+        f"}}"
     )
 
 
-# Frame index, on, off. Swells out and settles back so the loop reads as one breath.
-BREATH_FRAMES = [
-    (1, 0.60, 0.80),
-    (2, 0.78, 1.00),
-    (3, 0.98, 1.32),
-    (4, 1.30, 2.10),
-    (3, 2.08, 2.32),
-    (2, 2.30, 2.48),
-    (1, 2.46, 2.62),
-]
+def mouth_cell() -> tuple[int, int]:
+    """Where breath leaves: just past the lip opening, in scene cells."""
+    mouth = find_pixels(DRAGON_BODY, "M")
+    mx = max(x for x, _ in mouth)
+    lips = [y for x, y in mouth if x == mx]
+    return BODY_AT[0] + mx + 1, BODY_AT[1] + round(sum(lips) / len(lips))
 
 
-def dragon_group(ox: float, oy: float, size: float, fire: bool = True, bob: bool = True) -> str:
-    """Assemble the side-on dragon from its three layers so parts can move."""
+def dragon_group(ox: float, oy: float, size: float, prefix: str = "dg") -> tuple[str, str]:
+    """Assemble the side-on dragon from its three layers so parts can move.
+
+    Returns (css, svg). All motion is CSS, the one animation system every
+    scene here uses. The dragon does not bob: it stands on its feet, so the
+    feet stay planted and the life comes from the wing, tail, and blink.
+    """
 
     def place(sprite: list[str], cell: tuple[float, float]) -> str:
         return rle_rects(sprite, ox + cell[0] * size, oy + cell[1] * size, size)
 
-    def cycle(poses: list[list[str]], cell: tuple[int, int], order: list[int], dur: float) -> str:
-        """Flip between redrawn poses. Discrete keyTimes keep every frame crisp;
-        rotating the pixels instead would resample them into mush."""
-        steps = len(order)
-        keys = ";".join(f"{i / steps:.4f}" for i in range(steps + 1))
-        parts = []
-        for index, pose in enumerate(poses):
-            on = [1 if slot == index else 0 for slot in order]
-            values = ";".join(str(v) for v in on + [on[0]])
-            parts.append(
-                f'<g opacity="{on[0]}">\n{place(pose, cell)}\n'
-                f'  <animate attributeName="opacity" values="{values}" keyTimes="{keys}" '
-                f'calcMode="discrete" dur="{dur}s" repeatCount="indefinite"/>\n</g>'
-            )
-        return "\n".join(parts)
+    rules: list[str] = []
 
-    tail_layer = cycle(DRAGON_TAIL_POSES, TAIL_AT, [0, 1, 0, 2], 3.6)
-    wing_layer = cycle(DRAGON_WING_POSES, WING_AT, [0, 1, 0, 2], 2.4)
+    def cycle(part: str, poses: list[list[str]], cell: tuple[int, int], order: list[int], dur: float) -> str:
+        out = []
+        for index, pose in enumerate(poses):
+            cls = f"{prefix}-{part}{index}"
+            rules.append(css_pose_cycle(cls, order, index, dur))
+            out.append(f'<g class="{cls}">\n{place(pose, cell)}\n</g>')
+        return "\n".join(out)
+
+    tail_layer = cycle("tail", DRAGON_TAIL_POSES, TAIL_AT, [0, 1, 0, 2], 3.6)
+    wing_layer = cycle("wing", DRAGON_WING_POSES, WING_AT, [0, 1, 0, 2], 2.4)
 
     # Blink: drop a lid the exact size of the eye over it.
     eye = find_pixels(DRAGON_BODY, "pe")
@@ -787,63 +899,17 @@ def dragon_group(ox: float, oy: float, size: float, fire: bool = True, bob: bool
     ey0, ey1 = min(y for _, y in eye), max(y for _, y in eye)
     span = ex1 - ex0 + 1
     lid = ["b" * span, "k" * span, "b" * span][: max(ey1 - ey0 + 1, 2)]
-    blink = place(lid, (BODY_AT[0] + ex0, BODY_AT[1] + ey0))
+    blink_cls = f"{prefix}-blink"
+    rules.append(css_hold_rule(blink_cls, "4.4s", [(76.0, 83.0)]))
+    blink = f'<g class="{blink_cls}">\n{place(lid, (BODY_AT[0] + ex0, BODY_AT[1] + ey0))}\n</g>'
 
-    # Breath leaves from the front of the mouth, centred on the lip opening.
-    mouth = find_pixels(DRAGON_BODY, "M")
-    mx = max(x for x, _ in mouth)
-    lips = [y for x, y in mouth if x == mx]
-    lip_x = BODY_AT[0] + mx + 1
-    lip_y = BODY_AT[1] + round(sum(lips) / len(lips))
-
-    layers: list[str] = []
-    if fire:
-        rest = FIRE_FRAMES[0]
-        layers.append(
-            f'<ellipse cx="{ox + (lip_x + 12) * size}" cy="{oy + (lip_y + 0.5) * size}" '
-            f'rx="{22 * size}" ry="{5 * size}" fill="url(#hearth)" opacity=".4"/>'
-        )
-        layers.append(
-            f'<g>\n'
-            f'{place(rest, (lip_x, lip_y - len(rest) // 2))}\n'
-            f'{animate_opacity("0.9;1;0.92;1;0.9", "1.1s")}\n</g>'
-        )
-        for index, on, off in BREATH_FRAMES:
-            frame = FIRE_FRAMES[index]
-            layers.append(
-                f'<g opacity="0">\n{place(frame, (lip_x, lip_y - len(frame) // 2))}\n'
-                f'{timed_opacity(on, off, 1.0, 0.05)}\n</g>'
-            )
-        drift = 6 * size
-        layers.append(
-            f'<g opacity="0">\n{place(SMOKE, (lip_x + 3, lip_y - 4))}\n'
-            f'{timed_opacity(2.6, 3.9, 0.6, 0.35)}\n'
-            f'<animateTransform attributeName="transform" type="translate" '
-            f'values="0 0;{drift} {-drift * 1.6}" dur="{BREATH}s" repeatCount="indefinite"/>\n</g>'
-        )
-        layers.append(
-            f'<g opacity="0">\n{place(HEART, (lip_x + 6, lip_y - 7))}\n'
-            f'{timed_opacity(3.9, 4.8, 1.0, 0.3)}\n'
-            f'<animateTransform attributeName="transform" type="translate" '
-            f'values="0 0;{size} {-3 * size}" dur="{BREATH}s" repeatCount="indefinite"/>\n</g>'
-        )
-
-    bob_open = (
-        f'<g>\n  <animateTransform attributeName="transform" type="translate" '
-        f'values="0 0; 0 {-size / 2}; 0 0" dur="2.6s" repeatCount="indefinite"/>'
-        if bob
-        else "<g>"
-    )
-    return f'''{bob_open}
+    svg = f"""<g>
 {tail_layer}
 {place(DRAGON_BODY, BODY_AT)}
 {wing_layer}
-<g opacity="0">
 {blink}
-{animate_opacity("0;0;1;1;0;0", "4.4s", "0s", "0;0.76;0.78;0.83;0.85;1")}
-</g>
-{chr(10).join(layers)}
-</g>'''
+</g>"""
+    return "\n".join(rules), svg
 
 
 def shut_eyes(ox: float, oy: float, size: float) -> str:
@@ -924,36 +990,208 @@ def fireflies(positions: list[tuple[float, float, str]]) -> str:
 
 def write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(content, encoding="utf-8")
+    path.write_text(content, encoding="utf-8", newline="\n")
     print(f"wrote {path.relative_to(ROOT)} ({path.stat().st_size} bytes)")
 
 
+def twinkle_stars(specs: list[tuple[float, float, float, str]], prefix: str = "tw") -> tuple[str, str]:
+    """Brass four-point stars that breathe in and out on their own clocks."""
+    rules, marks = [], []
+    for i, (x, y, r, dur) in enumerate(specs):
+        cls = f"{prefix}{i}"
+        rules.append(
+            f".{cls}{{animation:{cls} {dur} ease-in-out infinite;animation-delay:{-i * 0.7:.1f}s}}"
+            f"@keyframes {cls}{{0%,100%{{opacity:.25}}50%{{opacity:1}}}}"
+        )
+        marks.append(f'<g class="{cls}">{four_star(x, y, r)}</g>')
+    return "\n".join(rules), "\n".join(marks)
+
+
+def shooting_star(x: float, y: float, dx: float, dy: float, dur: str = "9s", delay: str = "2s") -> tuple[str, str]:
+    """A streak that crosses the sky once per loop and is gone most of the time."""
+    import math
+
+    angle = math.degrees(math.atan2(dy, dx))
+    css = (
+        f".shoot{{opacity:0;animation:shoot {dur} linear infinite;animation-delay:{delay}}}"
+        f"@keyframes shoot{{0%{{opacity:0;transform:translate(0,0)}}"
+        f"1%{{opacity:1;transform:translate(0,0)}}"
+        f"7%{{opacity:0;transform:translate({dx}px,{dy}px)}}"
+        f"100%{{opacity:0;transform:translate({dx}px,{dy}px)}}}}"
+    )
+    svg = (
+        f'<g class="shoot"><g transform="translate({x} {y}) rotate({angle:.1f})">'
+        f'<rect x="-46" y="-0.8" width="46" height="1.6" fill="url(#streak)"/>'
+        f'<circle cx="0" cy="0" r="1.8" fill="#FFE3A3"/></g></g>'
+    )
+    return css, svg
+
+
+def bat_flock(path: list[tuple[float, float]], dur: float, count: int = 3) -> tuple[str, str]:
+    """Small bats crossing the sky. Each one flaps by squashing its own wings."""
+    rules = [
+        ".bat-flap{animation:batFlap .32s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}",
+        "@keyframes batFlap{from{transform:scaleY(1)}to{transform:scaleY(-.45)}}",
+    ]
+    keys = "".join(
+        f"{100 * i / (len(path) - 1):.1f}%{{transform:translate({x}px,{y}px)}}" for i, (x, y) in enumerate(path)
+    )
+    rules.append(f"@keyframes batPath{{{keys}}}")
+    bats = []
+    for i in range(count):
+        scale = 1 - i * 0.18
+        rules.append(
+            f".bat-{i}{{animation:batPath {dur}s linear infinite;animation-delay:{-i * 0.9 - 3:.1f}s}}"
+        )
+        bats.append(
+            f'<g class="bat-{i}"><g transform="translate({i * 16} {(-1) ** i * 7}) scale({scale:.2f})">'
+            f'<g class="bat-flap"><path d="M0 0 Q-3 -5 -10 -4 Q-7 -1 -7 2 Q-4 0 -2 2 L0 1 L2 2 Q4 0 7 2 '
+            f'Q7 -1 10 -4 Q3 -5 0 0 Z" fill="#0B0C0F"/></g>'
+            f'<circle cx="0" cy="0.5" r="1.6" fill="#0B0C0F"/></g></g>'
+        )
+    return "\n".join(rules), "\n".join(bats)
+
+
+def drifting_clouds(specs: list[tuple[float, float, float, float, float]], prefix: str = "cl") -> tuple[str, str]:
+    """Thin night cloud bands that slide slowly sideways and back."""
+    rules, shapes = [], []
+    for i, (x, y, rx, ry, dur) in enumerate(specs):
+        cls = f"{prefix}{i}"
+        rules.append(
+            f".{cls}{{animation:{cls} {dur}s ease-in-out infinite alternate}}"
+            f"@keyframes {cls}{{from{{transform:translate(-30px,0)}}to{{transform:translate(30px,0)}}}}"
+        )
+        shapes.append(
+            f'<g class="{cls}" opacity=".55"><ellipse cx="{x}" cy="{y}" rx="{rx}" ry="{ry}" fill="#2A2D35"/>'
+            f'<ellipse cx="{x + rx * 0.35}" cy="{y - ry * 0.6}" rx="{rx * 0.5}" ry="{ry * 0.8}" fill="#2A2D35"/></g>'
+        )
+    return "\n".join(rules), "\n".join(shapes)
+
+
+def rising_embers(origins: list[tuple[float, float]], prefix: str = "emb") -> tuple[str, str]:
+    """Hot flecks that lift off a fire, drift, and go out."""
+    rules, flecks = [], []
+    colors = ("#F2A03C", "#FFE3A3", "#E4572E")
+    for i, (x, y) in enumerate(origins):
+        cls = f"{prefix}{i}"
+        dx = (-1) ** i * (6 + i % 3 * 5)
+        rules.append(css_rise_rule(cls, f"{2.4 + (i % 4) * 0.5:.1f}s", f"{i * 0.37:.2f}s", dx, -58 - (i % 3) * 18, 0.95))
+        flecks.append(f'<rect class="{cls}" x="{x}" y="{y}" width="3" height="3" fill="{colors[i % 3]}"/>')
+    return "\n".join(rules), "\n".join(flecks)
+
+
+def glints(points: list[tuple[float, float, float]], prefix: str = "gl") -> tuple[str, str]:
+    """Quick brass sparkles on treasure, each on its own beat."""
+    rules, marks = [], []
+    for i, (x, y, r) in enumerate(points):
+        cls = f"{prefix}{i}"
+        rules.append(
+            f".{cls}{{opacity:0;animation:{cls} {2.2 + i * 0.6:.1f}s ease-in-out infinite;animation-delay:{i * 0.5:.1f}s}}"
+            f"@keyframes {cls}{{0%,70%,100%{{opacity:0}}82%{{opacity:1}}}}"
+        )
+        marks.append(f'<g class="{cls}">{four_star(x, y, r, "#FFE3A3", "1")}</g>')
+    return "\n".join(rules), "\n".join(marks)
+
+
+def pine_silhouette(x: float, y: float, hgt: float, fill: str = "#1B2A2A") -> str:
+    half = hgt * 0.3
+    return (
+        f'<path d="M{x} {y - hgt} L{x + half * 0.55} {y - hgt * 0.62} L{x + half * 0.32} {y - hgt * 0.62} '
+        f'L{x + half * 0.8} {y - hgt * 0.3} L{x + half * 0.48} {y - hgt * 0.3} L{x + half} {y} '
+        f'L{x - half} {y} L{x - half * 0.48} {y - hgt * 0.3} L{x - half * 0.8} {y - hgt * 0.3} '
+        f'L{x - half * 0.32} {y - hgt * 0.62} L{x - half * 0.55} {y - hgt * 0.62} Z" fill="{fill}"/>'
+    )
+
+
+STREAK_DEF = """
+    <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFE3A3" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFE3A3" stop-opacity=".9"/>
+    </linearGradient>
+    <radialGradient id="footShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#000000" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>"""
+
+
+def marshmallow_roast(tip_x: float, tip_y: float, ground_y: float, size: float, prefix: str) -> tuple[str, str]:
+    """A marshmallow on a stick, planted so it pokes into the breath and toasts.
+
+    Fresh at the top of the loop, golden mid-blast, well done after. The stick
+    is stepped pixels, so it stays on the grid like everything else.
+    """
+    dur = f"{HERO_BREATH}s"
+    steps = int((ground_y - tip_y) / size)
+    stick = "".join(
+        f'<rect x="{tip_x + 1.2 * size + i * size * 0.45:.1f}" y="{tip_y + 3 * size + i * size:.1f}" '
+        f'width="{size}" height="{size}" fill="#3A342C"/>'
+        for i in range(max(steps - 3, 0))
+    )
+    rules = [
+        css_hold_rule(f"{prefix}-gold", dur, [(36.0, 50.0)]),
+        css_hold_rule(f"{prefix}-done", dur, [(50.0, 100.0)]),
+    ]
+    svg = (
+        f"<g>{stick}\n{rle_rects(MARSHMALLOW[:3], tip_x, tip_y, size)}\n"
+        f'<g class="{prefix}-gold">{rle_rects(MARSHMALLOW_GOLD, tip_x, tip_y, size)}</g>\n'
+        f'<g class="{prefix}-done">{rle_rects(MARSHMALLOW_DONE, tip_x, tip_y, size)}</g></g>'
+    )
+    return "\n".join(rules), svg
+
+
 def build_dragon_camp() -> None:
+    """Night ridge camp. The dragon stands on the ground with its feet planted,
+    breathes over the camp, and toasts a marshmallow on a stick in passing."""
     w, h = 920, 420
     size = 8
-    dragon = dragon_group(210, 118, size, fire=True)
-    fox = fox_group(80, 268, 5)
-    plants = "\n".join(
+    dox, doy = 210, 110
+    dragon_css, dragon = dragon_group(dox, doy, size, prefix="dg")
+    breath_css, breath = dragon_breath(dox, doy, size, prefix="cf")
+    lip_x, lip_y = mouth_cell()
+    feet_y = doy + len(DRAGON_BODY) * size
+    jet_y = doy + lip_y * size
+    roast_css, roast = marshmallow_roast(dox + (lip_x + 23) * size, jet_y - size, 352, 6, "mm")
+    star_css, stars = twinkle_stars(
+        [(80, 70, 6, "3.4s"), (160, 40, 4, "2.8s"), (700, 36, 4, "3.9s"), (612, 112, 3, "2.6s"), (300, 32, 3, "3.1s"), (870, 160, 3, "4.2s")]
+    )
+    shoot_css, shoot = shooting_star(560, 34, -220, 70, "11s", "3s")
+    ember_css, embers = rising_embers([(640, 300), (650, 296), (660, 302), (646, 292), (656, 298)], "ce")
+    fire_css = "\n".join(
         [
-            rle_rects(GRASS, x, 340, 5)
-            for x in (40, 70, 110, 150, 560, 600, 650, 700, 760, 820)
+            css_hold_rule("cfire-a", "0.7s", [(0.0, 50.0)]),
+            css_hold_rule("cfire-b", "0.7s", [(50.0, 100.0)]),
+            ".camp-glow{animation:campGlow 1.4s ease-in-out infinite}",
+            "@keyframes campGlow{0%,100%{opacity:.45}50%{opacity:.9}}",
+            ".ground-lit{opacity:0;animation:groundLit 6s linear infinite}",
+            "@keyframes groundLit{0%,13%{opacity:0}18%,62%{opacity:.75}68%,100%{opacity:0}}",
         ]
     )
+    fox = fox_group(64, 262, 5)
+    plants = "\n".join(rle_rects(GRASS, x, 340, 5) for x in (34, 146, 520, 600, 700, 760, 880))
+    moon = f"""<g>
+  <circle cx="820" cy="70" r="40" fill="url(#moonHalo)"/>
+  <circle cx="820" cy="70" r="22" fill="#E4572E"/>
+  <circle cx="812" cy="64" r="20" fill="#14161A" opacity=".88"/>
+  <circle cx="820" cy="70" r="22" fill="none" stroke="#C9A227" stroke-width="1" opacity=".45"/>
+</g>"""
     extras = "\n".join(
         [
-            rle_rects(ANVIL, 44, 322, 5),
-            rle_rects(CAMPFIRE, 620, 292, 6),
-            rle_rects(MARSHMALLOW, 598, 268, 5),
-            rle_rects(TEACUP, 780, 328, 5),
-            rle_rects(STAR, 80, 70, 4),
-            rle_rects(STAR, 160, 40, 3),
-            rle_rects(STAR, 840, 60, 4),
-            rle_rects(STAR, 700, 36, 3),
+            rle_rects(ANVIL, 162, 322, 5),
+            rle_rects(TENT, 796, 296, 6),
+            f'<g class="cfire-a">{rle_rects(CAMPFIRE, 620, 292, 6)}</g>',
+            f'<g class="cfire-b">{rle_rects(CAMPFIRE_FLICKER, 620, 292, 6)}</g>',
+            rle_rects(TEACUP, 556, 330, 5),
+            rle_rects(HOARD, 470, 352, 3),
         ]
     )
-    camp_glow = '''<ellipse cx="644" cy="330" rx="60" ry="26" fill="url(#hearth)">
-  <animate attributeName="opacity" values=".45;.9;.45" dur="1.4s" repeatCount="indefinite"/>
-</ellipse>'''
+    foot_shadow = (
+        f'<ellipse cx="{dox + 21 * size}" cy="{feet_y + 2}" rx="{15 * size}" ry="{1.6 * size}" fill="url(#footShadow)"/>'
+    )
+    ground_lit = (
+        f'<ellipse class="ground-lit" cx="{dox + (lip_x + 14) * size}" cy="{feet_y}" rx="{18 * size}" ry="{3 * size}" '
+        f'fill="url(#hearth)"/>'
+    )
+    camp_glow = '<ellipse class="camp-glow" cx="644" cy="330" rx="66" ry="28" fill="url(#hearth)"/>'
     frame = f'''<rect x="16" y="16" width="{w-32}" height="{h-32}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".5"/>'''
     caption = f'''<g>
   {ts.outline("Still here after dark", "plate", 460, 50, "#E9E6DF", "middle", max_width=760)}
@@ -961,23 +1199,40 @@ def build_dragon_camp() -> None:
   {ts.outline("Review is the last stage that counts", "eyebrow", 460, 94, "#C6C2B8", "middle")}
 </g>'''
     body = f'''{meadow_background(w, h)}
+  {moon}
+  {stars}
+  {shoot}
   {camp_glow}
+  {ground_lit}
   {plants}
   {extras}
+  {embers}
   {fox}
+  {foot_shadow}
   {dragon}
-  {fireflies([(120, 90, "3.2s"), (260, 60, "4s"), (540, 80, "3.6s"), (800, 100, "4.4s"), (880, 140, "3s")])}
+  {breath}
+  {roast}
+  {fireflies([(120, 90, "3.2s"), (260, 60, "4s"), (540, 80, "3.6s"), (800, 130, "4.4s"), (880, 200, "3s")])}
   {caption}
   {frame}
 '''
+    css = "\n".join([dragon_css, breath_css, roast_css, star_css, shoot_css, ember_css, fire_css])
+    defs = STREAK_DEF + """
+    <radialGradient id="moonHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E4572E" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
+    </radialGradient>"""
     write(
         OUT / "dragon" / "pixel-dragon.svg",
         svg_wrap(
             w,
             h,
             "Night ridge",
-            "A night ridge with a small companion, a fox, and a camp.",
+            "A night ridge camp: a dragon breathes fire over the camp and toasts a marshmallow, "
+            "with a fox, a tent, a small hoard, and a shooting star.",
             body,
+            extra_defs=defs,
+            extra_css=css,
         ),
     )
 
@@ -1112,23 +1367,21 @@ def css_puff_stack(
     return "\n".join(rules), "\n".join(groups)
 
 
-def hero_breath(ox: float, oy: float, size: float) -> tuple[str, str]:
-    """CSS breath cycle for the forge-yard hero. GitHub will not play SMIL.
+def dragon_breath(ox: float, oy: float, size: float, prefix: str = "hf") -> tuple[str, str]:
+    """One CSS breath cycle, shared by every scene with the standing dragon.
 
-    ~6s loop, overlapping: nose smoke always, fire 15–66%, heart 40–70%.
-    No always-on rest jet.
+    Timeline in % of HERO_BREATH: the throat lights first (7%), the jet swells
+    through three frames (12-27%), flickers between two full-blast shapes
+    (27-57%) while sparks spit off the end, shrinks back, tears off into loose
+    puffs (66-71%), and leaves smoke and a heart drifting up. Nose smoke runs
+    the whole time, so the dragon never sits completely still.
     """
     dur = f"{HERO_BREATH}s"
 
     def cell(c: tuple[float, float]) -> tuple[float, float]:
         return ox + c[0] * size, oy + c[1] * size
 
-    mouth = find_pixels(DRAGON_BODY, "M")
-    mx = max(x for x, _ in mouth)
-    lips = [y for x, y in mouth if x == mx]
-    lip_x = BODY_AT[0] + mx + 1
-    lip_y = BODY_AT[1] + round(sum(lips) / len(lips))
-
+    lip_x, lip_y = mouth_cell()
     nose = find_pixels(DRAGON_BODY, "n")
     nx = BODY_AT[0] + sum(x for x, _ in nose) / len(nose)
     ny = BODY_AT[1] + min(y for _, y in nose) - 1
@@ -1136,47 +1389,83 @@ def hero_breath(ox: float, oy: float, size: float) -> tuple[str, str]:
     rules: list[str] = []
     groups: list[str] = []
 
-    # Frame 0 is the old always-on rest spark — skip it. Swell 1→4, then settle.
+    # Glow behind the jet first, so the flame sits on top of its own light.
+    glow_cls = f"{prefix}-glow"
+    rules.append(css_hold_rule(glow_cls, dur, [(14.0, 66.0)], peak=0.95))
+    gx, gy = cell((lip_x + 13, lip_y + 0.5))
+    groups.append(
+        f'<ellipse class="{glow_cls}" cx="{gx:.1f}" cy="{gy:.1f}" '
+        f'rx="{17 * size}" ry="{8 * size}" fill="url(#hearth)"/>'
+    )
+
+    # Throat light: the mouth seam smoulders ember before and during the jet,
+    # and only the lips themselves go gold where the flame leaves.
+    seam = find_pixels(DRAGON_BODY, "M")
+    lips_x = max(x for x, _ in seam) - 1
+    for key, cells, windows in (
+        ("R", seam, [(7.0, 70.0)]),
+        ("O", [(x, y) for x, y in seam if x >= lips_x], [(14.0, 62.0)]),
+    ):
+        cls = f"{prefix}-throat{key}"
+        rules.append(css_hold_rule(cls, dur, windows))
+        rects = "".join(
+            f'<rect x="{ox + (BODY_AT[0] + x) * size}" y="{oy + (BODY_AT[1] + y) * size}" '
+            f'width="{size}" height="{size}" fill="{PALETTE[key]}"/>'
+            for x, y in cells
+        )
+        groups.append(f'<g class="{cls}">{rects}</g>')
+
+    blast = [(27.0 + 3 * i, 30.0 + 3 * i) for i in range(10)]
     fire_windows = {
-        1: [(15.0, 24.0), (60.0, 66.0)],
-        2: [(22.0, 32.0), (56.0, 62.0)],
-        3: [(30.0, 42.0), (50.0, 58.0)],
-        4: [(38.0, 52.0)],
+        1: [(12.0, 16.0)],
+        2: [(16.0, 21.0), (62.0, 66.0)],
+        3: [(21.0, 27.0), (57.0, 62.0)],
+        4: blast[0::2],
+        5: blast[1::2],
+        6: [(66.0, 71.0)],
     }
     for index, windows in fire_windows.items():
-        cls = f"hf-{index}"
+        cls = f"{prefix}-{index}"
         rules.append(css_hold_rule(cls, dur, windows))
         frame = FIRE_FRAMES[index]
         fx, fy = cell((lip_x, lip_y - len(frame) // 2))
         groups.append(f'<g class="{cls}">\n{rle_rects(frame, fx, fy, size)}\n</g>')
 
-    glow_cls = "hf-glow"
-    rules.append(css_hold_rule(glow_cls, dur, [(18.0, 52.0)], peak=0.9))
-    gx, gy = cell((lip_x + 8, lip_y + 0.4))
-    groups.append(
-        f'<ellipse class="{glow_cls}" cx="{gx:.1f}" cy="{gy:.1f}" '
-        f'rx="{12 * size}" ry="{6.5 * size}" fill="url(#hearth)"/>'
-    )
+    # Sparks spit off the far end of the jet and arc up and away.
+    reach = len(FIRE_FULL_A[0]) - 3
+    sparks = [
+        (30.0, 2, -3, 9, -7, "9"),
+        (34.0, 0, 1, 11, 3, "O"),
+        (38.0, 1, -1, 8, -10, "Y"),
+        (43.0, 3, 0, 12, -4, "9"),
+        (47.0, 0, -2, 10, -9, "O"),
+        (51.0, 2, 2, 9, 5, "Y"),
+        (55.0, 1, -1, 12, -6, "9"),
+    ]
+    for i, (start, cx_, cy_, dx, dy, key) in enumerate(sparks):
+        cls = f"{prefix}-spark{i}"
+        rules.append(css_fly_rule(cls, dur, start, start + 9.0, dx * size, dy * size))
+        sx, sy = cell((lip_x + reach + cx_, lip_y + cy_))
+        groups.append(
+            f'<rect class="{cls}" x="{sx:.1f}" y="{sy:.1f}" width="{size}" height="{size}" fill="{PALETTE[key]}"/>'
+        )
 
-    heart_cls = "hf-heart"
-    hdx, hdy = 36.0, -42.0
-    rules.append(
-        f".{heart_cls}{{opacity:0;animation:{css_name(heart_cls)} {dur} linear infinite}}"
-        f"@keyframes {css_name(heart_cls)}{{"
-        f"0%,39.5%{{opacity:0;transform:translate(0,0)}}"
-        f"44%{{opacity:1;transform:translate({hdx * 0.12:.1f}px,{hdy * 0.12:.1f}px)}}"
-        f"58%{{opacity:1;transform:translate({hdx * 0.62:.1f}px,{hdy * 0.62:.1f}px)}}"
-        f"70%,100%{{opacity:0;transform:translate({hdx:.1f}px,{hdy:.1f}px)}}"
-        f"}}"
-    )
-    biggest = FIRE_FRAMES[4]
-    hx, hy = cell((lip_x + len(biggest[0]) - 4, lip_y - 6))
+    # Spent breath curls up as smoke after the jet tears off.
+    for i, (start, cx_, cy_) in enumerate(((68.0, 10, -3), (71.0, 15, -1), (74.0, 6, -2))):
+        cls = f"{prefix}-smoke{i}"
+        rules.append(css_fly_rule(cls, dur, start, start + 20.0, 3 * size, -9 * size, peak=0.6))
+        sx, sy = cell((lip_x + cx_, lip_y + cy_))
+        groups.append(f'<g class="{cls}">\n{rle_rects(SMOKE, sx, sy, size * 0.8)}\n</g>')
+
+    heart_cls = f"{prefix}-heart"
+    rules.append(css_fly_rule(heart_cls, dur, 70.0, 92.0, 5 * size, -7 * size))
+    hx, hy = cell((lip_x + 16, lip_y - 5))
     groups.append(f'<g class="{heart_cls}">\n{rle_rects(HEART, hx, hy, size)}\n</g>')
 
     nose_sprite = pad([".S.", "S.S", ".S."])
     nx_px, ny_px = cell((nx, ny))
     nose_css, nose_svg = css_puff_stack(
-        "hnose", (nx_px, ny_px - 2 * size), 3, nose_sprite, max(size - 2, 3), "2.6s", 6, -28, 0.85, 0.6
+        f"{prefix}nose", (nx_px, ny_px - 2 * size), 3, nose_sprite, max(size - 2, 3), "2.6s", 6, -28, 0.85, 0.6
     )
     rules.append(nose_css)
     groups.append(nose_svg)
@@ -1202,39 +1491,49 @@ def vector_lantern(cx: float, cy: float) -> str:
 </g>'''
 
 
+def ruined_tower(x: float, y: float) -> str:
+    """Broken watchtower on the far ridge, one window still lit."""
+    return f'''<g>
+  <path d="M{x} {y} V{y - 64} H{x + 6} V{y - 72} H{x + 12} V{y - 64} H{x + 18} V{y - 70} H{x + 24} V{y - 58} L{x + 30} {y - 52} V{y} Z" fill="#1E2629"/>
+  <rect x="{x + 10}" y="{y - 44}" width="5" height="8" fill="#F2C14E" opacity=".8" class="tower-lamp"/>
+  <rect x="{x + 6}" y="{y - 22}" width="3" height="6" fill="#141519"/>
+  <path d="M{x + 30} {y - 30} H{x + 44} V{y}" fill="none" stroke="#1E2629" stroke-width="5"/>
+</g>'''
+
+
 def build_hero() -> None:
     """Night forge yard. Type sits in the sky, the dragon holds the middle,
-    the floor is a hearth. Motion on GitHub is CSS, never SMIL."""
+    the floor is a hearth. Every moving part is CSS."""
     w, h = 1200, 480
     size = 7
     ox = 330
     oy = 150
-    stars = "\n".join(
+    feet_y = oy + len(DRAGON_BODY) * size
+    star_css, stars = twinkle_stars(
         [
-            four_star(300, 26, 7),
-            four_star(900, 32, 5, opacity=".7"),
-            four_star(220, 70, 4, opacity=".55"),
-            four_star(980, 74, 4, opacity=".5"),
-            four_star(600, 20, 3, opacity=".45"),
-            four_star(1088, 50, 3, "#C9A227", ".4"),
-            four_star(140, 48, 3, "#C9A227", ".4"),
-            four_star(470, 96, 3, opacity=".35"),
-            four_star(740, 88, 3, opacity=".35"),
+            (300, 26, 7, "3.6s"),
+            (900, 32, 5, "2.9s"),
+            (220, 70, 4, "4.1s"),
+            (980, 74, 4, "3.3s"),
+            (600, 20, 3, "2.7s"),
+            (1088, 50, 3, "3.8s"),
+            (140, 48, 3, "3.1s"),
+            (470, 96, 3, "4.4s"),
+            (740, 88, 3, "3.5s"),
+            (60, 120, 3, "2.6s"),
+            (1150, 100, 3, "4.0s"),
         ]
     )
-    breath_css, breath_svg = hero_breath(ox, oy, size)
-    chimney_css, chimney_svg = css_puff_stack(
-        "hchimney",
-        (1074, 102),
-        4,
-        SMOKE,
-        3.5,
-        "3.2s",
-        8,
-        -46,
-        0.72,
-        0.55,
+    shoot_css, shoot = shooting_star(1020, 24, -260, 80, "12s", "4s")
+    bat_css, bats = bat_flock([(-40, 80), (120, 52), (260, 74), (420, 40), (620, 64), (1260, 30)], 16.0)
+    cloud_css, clouds = drifting_clouds([(196, 82, 46, 5, 19.0), (120, 52, 34, 4, 23.0), (980, 120, 60, 5, 27.0)])
+    dragon_css, dragon = dragon_group(ox, oy, size, prefix="dg")
+    breath_css, breath_svg = dragon_breath(ox, oy, size, prefix="hf")
+    ember_css, embers = rising_embers(
+        [(430, 392), (452, 396), (470, 390), (492, 398), (512, 393), (536, 396), (458, 404), (500, 404)], "pit"
     )
+    glint_css, glint_marks = glints([(642, 404, 5), (668, 420, 4), (700, 412, 4), (618, 424, 3)])
+    chimney_css, chimney_svg = css_puff_stack("hchimney", (1074, 102), 4, SMOKE, 3.5, "3.2s", 8, -46, 0.72, 0.55)
     coal_css = "\n".join(
         (
             f".coal-{i}{{opacity:.7;animation:coal_{i} {2.4 + i * 0.3}s ease-in-out infinite}}"
@@ -1244,16 +1543,27 @@ def build_hero() -> None:
     )
     extra_css = "\n".join(
         [
+            star_css,
+            shoot_css,
+            bat_css,
+            cloud_css,
+            dragon_css,
             breath_css,
+            ember_css,
+            glint_css,
             chimney_css,
             coal_css,
             ".moon{animation:moonPulse 7.5s ease-in-out infinite}",
             "@keyframes moonPulse{0%,100%{opacity:.88}50%{opacity:1}}",
             ".grate-glow{animation:gratePulse 2.6s ease-in-out infinite}",
             "@keyframes gratePulse{0%,100%{opacity:.4}50%{opacity:.75}}",
+            ".tower-lamp{animation:towerLamp 3.7s ease-in-out infinite}",
+            "@keyframes towerLamp{0%,100%{opacity:.35}50%{opacity:.95}}",
+            ".floor-lit{opacity:0;animation:floorLit 6s linear infinite}",
+            "@keyframes floorLit{0%,13%{opacity:0}18%,62%{opacity:.8}68%,100%{opacity:0}}",
         ]
     )
-    extra_defs = '''
+    extra_defs = STREAK_DEF + '''
     <linearGradient id="forgeFloor" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#2A2D35"/>
       <stop offset="1" stop-color="#141519"/>
@@ -1277,23 +1587,38 @@ def build_hero() -> None:
       <stop offset="1" stop-color="#7E2A12" stop-opacity="0"/>
     </radialGradient>
 '''
-    # Feet land ~x 400–547, y ~381. Ring sits under that stance, not a yard-wide pancake.
-    hearth_cx, hearth_cy = 478.0, 402.0
+    # The ring sits under the planted foot, so the dragon stands on the grate.
+    hearth_cx, hearth_cy = 478.0, float(feet_y + 6)
+    pines = "\n".join(
+        pine_silhouette(x, y, hgt)
+        for x, y, hgt in ((36, 262, 46), (70, 258, 58), (104, 262, 40), (796, 254, 44), (830, 250, 56), (868, 248, 38), (1150, 236, 50))
+    )
+    lit_floor = (
+        f'<ellipse class="floor-lit" cx="{ox + 52 * size}" cy="{feet_y + 14}" rx="{24 * size}" ry="{4 * size}" '
+        f'fill="url(#hearth)"/>'
+    )
     body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
   <rect width="{w}" height="{h}" fill="url(#duskSky)"/>
   <rect x="0" y="0" width="{w}" height="10" fill="#2A2D35"/>
   <rect x="0" y="10" width="{w}" height="1" fill="#8A6E1F" opacity=".7"/>
   <rect x="0" y="0" width="2" height="{h}" fill="#C9A227"/>
+  {stars}
+  {shoot}
   {blood_moon(168, 64, 26)}
+  {clouds}
+  {bats}
   <!-- framing peaks so the name sits in a valley, not a void -->
   <path d="M0 168 C 70 78, 170 70, 270 128 C 330 162, 380 198, 430 210 C 500 128, 620 118, 760 150 C 880 90, 1020 70, 1200 128 L1200 {h} L0 {h} Z" fill="url(#ridgeFar)"/>
   <path d="M0 168 C 70 78, 170 70, 270 128 C 330 162, 380 198, 430 210 C 500 128, 620 118, 760 150 C 880 90, 1020 70, 1200 128" fill="none" stroke="#6E9C90" stroke-width="1.4" opacity=".55"/>
+  {ruined_tower(880, 112)}
   <path d="M0 268 C 140 222, 280 248, 430 236 C 580 222, 740 258, 900 230 C 1040 212, 1140 228, 1200 224 L1200 {h} L0 {h} Z" fill="url(#ridgeMid)"/>
+  {pines}
   <!-- forge shed on the right ridge -->
   <rect x="1008" y="156" width="92" height="52" fill="#1B1D22"/>
   <path d="M998 156 L1054 128 L1110 156 Z" fill="#2A2D35"/>
   <rect x="1072" y="114" width="16" height="46" fill="#1B1D22"/>
   <rect x="1068" y="110" width="24" height="6" fill="#3A3E48"/>
+  <rect x="1022" y="174" width="14" height="12" fill="#F2C14E" opacity=".7" class="tower-lamp"/>
   <rect x="1076" y="118" width="8" height="6" fill="#E4572E">
     <animate attributeName="opacity" values=".4;1;.4" dur="1.8s" repeatCount="indefinite"/>
   </rect>
@@ -1301,27 +1626,33 @@ def build_hero() -> None:
   <!-- near bank into the hearth -->
   <path d="M0 348 C 200 322, 400 338, 600 328 C 820 316, 1020 340, 1200 330 L1200 {h} L0 {h} Z" fill="#1A2421"/>
   <rect x="0" y="392" width="{w}" height="88" fill="url(#forgeFloor)"/>
+  {lit_floor}
   <ellipse class="grate-glow" cx="{hearth_cx}" cy="{hearth_cy}" rx="132" ry="48" fill="url(#grateGlow)"/>
   {coal_pit(hearth_cx, hearth_cy, 210, 58)}
   <rect x="0" y="{h - 3}" width="{w}" height="3" fill="#C9A227"/>
   {vector_lantern(1048, 300)}
 {rle_rects(ANVIL, 56, 356, 7)}
+{rle_rects(SWORD_STONE, 236, 352, 4)}
+{rle_rects(HOARD, 610, 398, 4)}
+{glint_marks}
 {sitting_dragon(96, 368, 3, napping=False)}
-{dragon_group(ox, oy, size, fire=False, bob=True)}
+{embers}
+  <ellipse cx="{ox + 21 * size}" cy="{feet_y + 1}" rx="{14 * size}" ry="{1.4 * size}" fill="url(#footShadow)"/>
+{dragon}
 {breath_svg}
-{fireflies([(280, 384, "3.1s"), (500, 372, "3.8s"), (680, 360, "3.3s"), (860, 378, "4.2s"), (360, 110, "4.6s"), (840, 92, "3.9s"), (180, 200, "5.1s")])}
-  {stars}
+{fireflies([(280, 384, "3.1s"), (760, 372, "3.8s"), (880, 360, "3.3s"), (960, 378, "4.2s"), (360, 110, "4.6s"), (840, 92, "3.9s"), (180, 200, "5.1s")])}
   <g>
     {ts.outline("Mubeen", "hero", 600, 72, "#E9E6DF", "middle")}
     <rect x="454" y="88" width="292" height="1" fill="#C9A227"/>
-    {ts.outline("Software, systems, and work that ships", "eyebrow", 600, 116, "#C6C2B8", "middle", size=11, tracking=0.16)}
+    {ts.outline("Software, systems, and work that ships", "eyebrow", 600, 120, "#C6C2B8", "middle", size=15, tracking=0.12)}
   </g>
 '''
     art = svg_wrap(
         w,
         h,
         "Muxby night yard",
-        "A night yard under a blood moon: a small companion on the path, smoke from the chimney, and a lamp still on.",
+        "A night forge yard under a blood moon: a dragon standing on a coal grate breathes fire past its hoard, "
+        "bats cross the moon, a shooting star falls, and a lamp is still on in the shed.",
         body,
         extra_defs=extra_defs,
         extra_css=extra_css,
@@ -1457,11 +1788,9 @@ def build_postcard() -> None:
   <path d="M330 40 V320" stroke="#3A3E48" stroke-width="1" stroke-dasharray="3 7"/>
   {ts.outline("From the desk", "plate", 174, 70, "#E9E6DF", "middle", size=17)}
   <path d="M64 86 H284" stroke="#C9A227" stroke-width="1" opacity=".7"/>
-  <text x="44" y="122" {ts.text_attrs("body")} fill="#C6C2B8">
-    <tspan x="44" dy="0">Sharp tools, one warm light, and one</tspan>
-    <tspan x="44" dy="24">creature allowed to scorch the drafts.</tspan>
-    <tspan x="44" dy="30">Pakistan. Still shipping.</tspan>
-  </text>
+  {ts.outline("Sharp tools, one warm light, and one", "body", 44, 122, "#C6C2B8", size=14.5)}
+  {ts.outline("creature allowed to scorch the drafts.", "body", 44, 146, "#C6C2B8", size=14.5)}
+  {ts.outline("Pakistan. Still shipping.", "standfirst", 44, 178, "#C9A227", size=15)}
 {sitting_dragon(64, 240, 3)}
 {rle_rects(WAX_STAMP, 400, 52, 8)}
   {ts.outline("M", "wordmark", 428, 84, "#F7F5F0", "middle", size=22, tracking=0)}
@@ -1477,21 +1806,131 @@ def build_postcard() -> None:
     )
 
 
+# Workshop rules for the quote card. Two lines each, set by hand so the breaks
+# fall on the phrase rather than wherever the measure runs out.
+QUOTES = [
+    ("Build something this week that a future", "teammate will be glad still exists.", "Rule of the bench"),
+    ("Ship the small version first.", "Then make it honest.", "Rule of the forge"),
+    ("Read the error. Then read it again,", "slower, before you touch the code.", "Rule of the lamp"),
+    ("Leave every codebase a little warmer", "than the way you found it.", "Rule of the hearth"),
+]
+QUOTE_DUR = 28.0  # seconds for the full rotation, seven per quote
+
+
 def build_quote() -> None:
-    w, h = 720, 160
-    body = f'''  <rect width="{w}" height="{h}" fill="#0F1013"/>
-  <rect x="16" y="14" width="{w-32}" height="{h-28}" fill="#1E2026"/>
-  <rect x="16" y="14" width="{w-32}" height="{h-28}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>
-  <rect x="16" y="14" width="5" height="{h-28}" fill="#E4572E"/>
-  {ts.outline('"', "heading", 46, 126, "#C9A227", size=88, opacity=".5")}
-  {ts.outline("Build something this week that a future teammate", "heading", 376, 76, "#E9E6DF", "middle", max_width=540)}
-  {ts.outline("will be glad still exists.", "heading", 376, 104, "#E9E6DF", "middle", max_width=540)}
-  <path d="M300 122 H452" stroke="#C9A227" stroke-width="1" opacity=".6"/>
-'''
+    """Quote card: curly brass marks, a rotating set of workshop rules, an
+    attribution line, and pips that show which rule is up. Fades are CSS; a
+    renderer with no animation shows the first rule, fully set."""
+    w, h = 760, 220
+    cx = 380
+    n = len(QUOTES)
+    rules: list[str] = []
+    slides: list[str] = []
+    pips: list[str] = []
+    pip_x0 = cx - (n - 1) * 9
+    for i, (line1, line2, source) in enumerate(QUOTES):
+        start, end = 100 * i / n, 100 * (i + 1) / n
+        fade = 2.2
+        name = f"quote{i}"
+        if i == 0:
+            frames = f"0%,{end - fade:.1f}%{{opacity:1}}{end:.1f}%,{100 - fade:.1f}%{{opacity:0}}100%{{opacity:1}}"
+        else:
+            frames = (
+                f"0%,{start:.1f}%{{opacity:0}}{start + fade:.1f}%,{end - fade:.1f}%{{opacity:1}}"
+                f"{end:.1f}%,100%{{opacity:0}}"
+            )
+        rules.append(
+            f".{name}{{opacity:{1 if i == 0 else 0};animation:{name} {QUOTE_DUR}s linear infinite}}"
+            f"@keyframes {name}{{{frames}}}"
+        )
+        slides.append(
+            f'<g class="{name}">\n'
+            f'  {ts.outline(line1, "heading", cx, 98, "#E9E6DF", "middle", size=21, max_width=540)}\n'
+            f'  {ts.outline(line2, "heading", cx, 128, "#E9E6DF", "middle", size=21, max_width=540)}\n'
+            f'  {ts.outline(source, "label", cx, 174, "#C9A227", "middle", size=11, tracking=0.14)}\n'
+            f"</g>"
+        )
+        rules.append(css_hold_rule(f"pip{i}", f"{QUOTE_DUR}s", [(start, end)]))
+        px = pip_x0 + i * 18
+        pips.append(
+            f'<circle cx="{px}" cy="196" r="3" fill="none" stroke="#8A6E1F" stroke-width="1"/>'
+            f'<circle class="pip{i}" cx="{px}" cy="196" r="3" fill="#E4572E"/>'
+        )
+
+    ember_css, embers = rising_embers([(54, 182), (60, 186), (66, 183)], "qe")
+    rules.append(ember_css)
+    rules.append(".q-ember{animation:qEmber 2.6s ease-in-out infinite}@keyframes qEmber{0%,100%{opacity:.55}50%{opacity:1}}")
+    open_mark = ts.outline("“", "heading", 66, 112, "#C9A227", "middle", size=96, face="serif-bold", opacity=".85")
+    close_mark = ts.outline("”", "heading", w - 66, 172, "#C9A227", "middle", size=96, face="serif-bold", opacity=".85")
+    rivets = "".join(
+        f'<circle cx="{x}" cy="{y}" r="2" fill="#8A6E1F"/>' for x, y in ((30, 28), (w - 30, 28), (30, h - 28), (w - 30, h - 28))
+    )
+    body = "\n".join(
+        [
+            f'  <rect width="{w}" height="{h}" fill="#0F1013"/>',
+            f'  <rect x="16" y="14" width="{w - 32}" height="{h - 28}" fill="#1E2026"/>',
+            f'  <rect x="22" y="20" width="{w - 44}" height="{h - 40}" fill="none" stroke="#3A3E48" stroke-width="1"/>',
+            f'  <rect x="16" y="14" width="{w - 32}" height="{h - 28}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".7"/>',
+            f'  <rect x="16" y="14" width="5" height="{h - 28}" fill="#E4572E"/>',
+            f"  {rivets}",
+            f"  {open_mark}",
+            f"  {close_mark}",
+            f'  {ts.outline("Words from the workshop", "eyebrow", cx, 52, "#9AA0AC", "middle", size=11, tracking=0.16)}',
+            f'  <path d="M{cx - 120} 64 H{cx - 10} M{cx + 10} 64 H{cx + 120}" stroke="#C9A227" stroke-width="1" opacity=".55"/>',
+            f'  <path d="M{cx} 59 L{cx + 5} 64 L{cx} 69 L{cx - 5} 64 Z" fill="#C9A227"/>',
+            "\n".join(slides),
+            f'  <path d="M{cx - 76} 152 H{cx + 76}" stroke="#C9A227" stroke-width="1" opacity=".6"/>',
+            "  " + "".join(pips),
+            '  <ellipse class="q-ember" cx="60" cy="190" rx="16" ry="6" fill="url(#hearth)"/>',
+            "  " + rle_rects(pad([".R.", "ROR", "mRm"]), 54, 184, 4),
+            embers,
+            "",
+        ]
+    )
     write(
         OUT / "atelier" / "quote.svg",
-        svg_wrap(w, h, "Working principle", "A slate card with a brass rule and a working principle in bone text.", body),
+        svg_wrap(
+            w,
+            h,
+            "Words from the workshop",
+            "A slate card that rotates through four workshop rules in bone serif, framed by brass quote marks: "
+            + " ".join(f"{a} {b}" for a, b, _ in QUOTES),
+            body,
+            extra_css="\n".join(rules),
+        ),
     )
+
+
+def build_signature() -> None:
+    """Brass signature: the name in Fraunces italic, revealed left to right once
+    by a CSS clip, with a rule and small caps under it. No background, so it
+    sits on GitHub's light and dark themes alike."""
+    w, h = 360, 140
+    name = ts.outline("Muxby", "chapter", w / 2, 86, "url(#ink)", "middle", size=64, face="serif-italic", tracking=0.01)
+    css = (
+        ".sig-wipe{transform-box:fill-box;transform-origin:left center;"
+        "animation:sigWipe 2.4s cubic-bezier(.6,.05,.3,1) .2s both}"
+        "@keyframes sigWipe{from{transform:scaleX(0)}to{transform:scaleX(1)}}"
+        ".sig-rule{transform-box:fill-box;transform-origin:center;animation:sigRule 1.4s ease-out 1.6s both}"
+        "@keyframes sigRule{from{transform:scaleX(0)}to{transform:scaleX(1)}}"
+    )
+    art = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title">
+  <title id="title">Muxby signature</title>
+  <defs>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="300" y2="0">
+      <stop offset="0" stop-color="#8A6E1F"/>
+      <stop offset=".5" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#F2C14E"/>
+    </linearGradient>
+    <clipPath id="reveal"><rect class="sig-wipe" x="0" y="0" width="{w}" height="{h}"/></clipPath>
+    <style>{css}</style>
+  </defs>
+  <g clip-path="url(#reveal)">{name}</g>
+  <rect class="sig-rule" x="40" y="104" width="280" height="1.5" fill="url(#ink)"/>
+  {ts.outline("Muxby", "label", w / 2, 128, "#C9A227", "middle", size=11, tracking=0.3)}
+</svg>
+'''
+    write(OUT / "atelier" / "signature.svg", art)
 
 
 # Filenames from older versions of this profile. They are kept as copies of the
@@ -1551,6 +1990,7 @@ def main() -> None:
     build_dividers()
     build_postcard()
     build_quote()
+    build_signature()
     mirror_legacy()
 
 
