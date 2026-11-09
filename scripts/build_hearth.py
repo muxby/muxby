@@ -17,12 +17,12 @@ import build_atelier as A  # noqa: E402
 import typeset as ts  # noqa: E402
 
 
-def chapter_title(cx: float, y: float, lead: str, rest: str, fill: str = "#E9E6DF", rest_size: float = 18) -> str:
-    lead_w = ts.measure(lead + " ", "standfirst", size=13)
+def chapter_title(cx: float, y: float, lead: str, rest: str, fill: str = "#E9E6DF", rest_size: float = 23) -> str:
+    lead_w = ts.measure(lead + " ", "standfirst", size=16)
     rest_w = ts.measure(rest, "heading", size=rest_size, face="serif-bold", tracking=0.02, caps=False)
     x0 = cx - (lead_w + rest_w) / 2
     return (
-        ts.outline(lead, "standfirst", x0, y, fill, size=13)
+        ts.outline(lead, "standfirst", x0, y, fill, size=16)
         + ts.outline(
             rest,
             "heading",
@@ -219,7 +219,7 @@ def build_kettle() -> None:
 {steam}
 {sparks}
   {A.rle_rects(A.TEACUP, 318, 206, 5)}
-  {ts.outline("Agentic systems, poured slowly.", "standfirst", 210, 270, "#9AA0AC", "middle", size=12)}
+  {ts.outline("Agentic systems, poured slowly.", "standfirst", 210, 270, "#B4B0A6", "middle", size=15.5)}
 '''
     A.write(
         A.OUT / "atelier" / "kettle-hob.svg",
@@ -267,7 +267,7 @@ def build_lantern() -> None:
   {hanging_lantern(150, 148)}
 {sparks}
   {chapter_title(150, 278, "Keep a", "light on", "#C9A227", rest_size=18)}
-  {ts.outline("For the late review.", "standfirst", 150, 298, "#9AA0AC", "middle", size=12)}
+  {ts.outline("For the late review.", "standfirst", 150, 298, "#B4B0A6", "middle", size=15.5)}
 '''
     art = A.svg_wrap(
         w,
@@ -320,7 +320,7 @@ def build_coals() -> None:
   <rect x="364" y="168" width="8" height="22" fill="#2A2D35"/>
   {chr(10).join(coal_svg)}
 {sparks}
-  {ts.outline("Still shipping.", "standfirst", 260, 212, "#9AA0AC", "middle", size=13)}
+  {ts.outline("Still shipping.", "standfirst", 260, 212, "#B4B0A6", "middle", size=16)}
 '''
     art = A.svg_wrap(
         w,

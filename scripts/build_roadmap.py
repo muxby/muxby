@@ -3,7 +3,7 @@
 
 GitHub <img> SVGs cannot load webfonts, so every visible word is glyph outlines
 from typeset. Titles are sentence-case italic (a chapter head, not a HUD).
-Station names are Noto Sans Display so they stay dense and readable on the
+Station names are the sturdy small Fraunces cut so they stay dense and readable on the
 tickets. The path is a Catmull-Rom river, not a 90-degree flowchart. The trail
 moon has a terminator; the house is a forge cottage with a smoking chimney.
 """
@@ -19,7 +19,8 @@ import build_atelier as A  # noqa: E402
 import typeset as ts  # noqa: E402
 
 # n, title, subtitle, kind, rail_x, rail_y, side
-# side: which way the ticket hangs off the river
+# side: which way the ticket hangs off the river.
+# kind: walked, here (one station), next (the targets in reach), later.
 STATIONS = [
     (1, "First programs", "CS50, print and loop", "walked", 128, 228, "up"),
     (2, "C and memory", "pointers, arrays", "walked", 318, 292, "down"),
@@ -32,14 +33,19 @@ STATIONS = [
     (9, "Data analysis", "networks, prices", "walked", 380, 528, "up"),
     (10, "Machine learning", "features and error", "walked", 168, 470, "up"),
     (11, "Applied AI", "CITY-MIND, smart city", "walked", 150, 718, "down"),
-    (12, "Cloud and CI", "Docker, AWS, pipelines", "walked", 352, 658, "up"),
-    (13, "Agentic systems", "review loops, tools, evals", "here", 575, 742, "up"),
-    (14, "Rust", "next: ship one CLI", "next", 800, 668, "down"),
-    (15, "Distributed systems", "later: read the papers", "later", 1018, 726, "up"),
+    (12, "Agentic systems", "review loops, tools, evals", "here", 400, 742, "up"),
+    (13, "Cloud", "AWS, IAM, serverless", "next", 640, 668, "down"),
+    (14, "DevOps", "CI/CD, K8s, Terraform", "next", 880, 742, "up"),
+    (15, "Observability", "logs, metrics, traces", "later", 1060, 930, "up"),
+    (16, "System design", "caches, queues, scale", "later", 880, 1010, "down"),
+    (17, "Security", "auth, OWASP, secrets", "later", 690, 940, "up"),
+    (18, "MLOps", "serving, evals in prod", "later", 500, 1010, "down"),
+    (19, "Rust", "ship one CLI", "later", 310, 940, "up"),
+    (20, "Distributed systems", "consensus, the papers", "later", 130, 1010, "down"),
 ]
 
-PW, PH = 168, 56
-HERE_W, HERE_H = 186, 74
+PW, PH = 184, 62
+HERE_W, HERE_H = 204, 84
 STEM = 16
 
 
@@ -157,14 +163,14 @@ def compass(cx: float, cy: float) -> str:
 
 def plaque(st) -> str:
     n, title, sub, kind, rx, ry, side = st
-    w, h = (HERE_W, HERE_H) if kind == "here" else (PW, PH)
+    w, h = (HERE_W, HERE_H) if kind in ("here", "next") else (PW, PH)
     px, py = plaque_box(rx, ry, side, w, h)
     if kind == "walked":
         plate, inset, rail, ink, mute = "#1B1D22", "#E9E6DF", "#C9A227", "#1B1D22", "#5A564E"
     elif kind == "here":
         plate, inset, rail, ink, mute = "#2C1A12", "#F7F5F0", "#F2C14E", "#1B1D22", "#8A2E12"
     elif kind == "next":
-        plate, inset, rail, ink, mute = "#1A1C22", "#D4D0C6", "#6E9C90", "#1B1D22", "#3F6B62"
+        plate, inset, rail, ink, mute = "#1A1C22", "#E4E1D8", "#6E9C90", "#1B1D22", "#3F6B62"
     else:
         plate, inset, rail, ink, mute = "#14161A", "#B8B4AA", "#3F6B62", "#1B1D22", "#3F6B62"
 
@@ -188,11 +194,21 @@ def plaque(st) -> str:
             py + h - 10,
             "#A33418",
             "middle",
-            size=11,
+            size=12.5,
+        )
+    elif kind == "next":
+        here_mark = ts.outline(
+            "Next target",
+            "standfirst",
+            px + w / 2 + 6,
+            py + h - 10,
+            "#2F5A52",
+            "middle",
+            size=12.5,
         )
 
-    title_y = py + (26 if kind != "here" else 24)
-    sub_y = py + (44 if kind != "here" else 44)
+    title_y = py + (27 if kind in ("here", "next") else 28)
+    sub_y = py + 49
     tab_x, tab_y, tab_w = px + 14, py - 9, 28
     return f'''<g class="{"rm-here" if kind == "here" else ""}">
 {glow}
@@ -201,8 +217,8 @@ def plaque(st) -> str:
 {ticket(px, py, w, h, inset, rail)}
   <rect x="{tab_x}" y="{tab_y}" width="{tab_w}" height="16" rx="2" fill="{plate}" stroke="{rail}" stroke-width="1.2"/>
   {ts.outline(f"{n:02d}", "tag", tab_x + tab_w / 2, tab_y + 12, rail, "middle", size=9, tracking=0.04)}
-  {ts.outline(title, "heading", px + w / 2 + 6, title_y, ink, "middle", size=12.5, face="display", tracking=-0.01, caps=False, max_width=w - 28)}
-  {ts.outline(sub, "standfirst", px + w / 2 + 6, sub_y, mute, "middle", size=10.5, max_width=w - 24)}
+  {ts.outline(title, "heading", px + w / 2 + 6, title_y, ink, "middle", size=15, face="display", tracking=-0.01, caps=False, max_width=w - 28)}
+  {ts.outline(sub, "standfirst", px + w / 2 + 6, sub_y, mute, "middle", size=13, max_width=w - 24)}
 {here_mark}
 </g>'''
 
@@ -230,8 +246,64 @@ def mini_house(x: float, y: float) -> str:
 </g>'''
 
 
+def mountains(x: float, y: float, peaks: list[tuple[float, float]], fill: str = "#20262B") -> str:
+    """Map-style mountain range: flat-shaded peaks with a bone snow cap."""
+    out = []
+    for dx, hgt in peaks:
+        px, half = x + dx, hgt * 0.75
+        cap = hgt * 0.28
+        out.append(
+            f'<path d="M{px - half} {y} L{px} {y - hgt} L{px + half} {y} Z" fill="{fill}"/>'
+            f'<path d="M{px} {y - hgt} L{px + half} {y} L{px + half * 0.25} {y} Z" fill="#14161A" opacity=".55"/>'
+            f'<path d="M{px - cap * 0.75} {y - hgt + cap} L{px} {y - hgt} L{px + cap * 0.75} {y - hgt + cap} '
+            f'L{px + cap * 0.3} {y - hgt + cap * 0.8} L{px} {y - hgt + cap * 1.05} L{px - cap * 0.35} {y - hgt + cap * 0.75} Z" '
+            f'fill="#C6C2B8" opacity=".55"/>'
+        )
+    return "".join(out)
+
+
+def map_pines(points: list[tuple[float, float, float]]) -> str:
+    return "".join(
+        f'<path d="M{x} {y - s} L{x + s * 0.42} {y} L{x - s * 0.42} {y} Z" fill="#243530"/>'
+        f'<rect x="{x - 1}" y="{y}" width="2" height="{s * 0.2:.1f}" fill="#2A2620"/>'
+        for x, y, s in points
+    )
+
+
+def lake(cx: float, cy: float, rx: float, ry: float) -> str:
+    waves = "".join(
+        f'<path d="M{cx - rx * 0.5 + i * rx * 0.34} {cy - ry * 0.15 + (i % 2) * ry * 0.4} q5 -3 10 0 t10 0" '
+        f'fill="none" stroke="#6E9C90" stroke-width="1" opacity=".55"/>'
+        for i in range(3)
+    )
+    return (
+        f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="#1B2A2A" stroke="#3F6B62" stroke-width="1.2" opacity=".9"/>'
+        + waves
+    )
+
+
+def region_label(x: float, y: float, numeral: str, name: str, fill: str = "#8A8F99") -> str:
+    """Cartographer's region name: roman numeral in brass, name in italic."""
+    return (
+        ts.outline(numeral, "label", x, y, "#C9A227", "middle", size=10, tracking=0.16)
+        + ts.outline(name, "standfirst", x, y + 20, fill, "middle", size=17)
+    )
+
+
+def scale_bar(x: float, y: float) -> str:
+    seg = 28
+    blocks = "".join(
+        f'<rect x="{x + i * seg}" y="{y}" width="{seg}" height="5" fill="{"#C9A227" if i % 2 == 0 else "#1B1D22"}" '
+        f'stroke="#8A6E1F" stroke-width=".8"/>'
+        for i in range(4)
+    )
+    return blocks + ts.outline(
+        "one station, one shipped thing", "standfirst", x + 2 * seg, y + 22, "#8A8F99", "middle", size=12.5
+    )
+
+
 def build_roadmap() -> None:
-    w, h = 1200, 920
+    w, h = 1200, 1250
     css = """
 .rm-pulse{animation:rmPulse 2.4s ease-in-out infinite}
 @keyframes rmPulse{0%,100%{r:11}50%{r:14}}
@@ -243,6 +315,11 @@ def build_roadmap() -> None:
 @keyframes rmHere{0%,100%{opacity:1}50%{opacity:.92}}
 .rm-dash{stroke-dasharray:11 9;animation:rmDash 1.8s linear infinite}
 @keyframes rmDash{to{stroke-dashoffset:-40}}
+.rm-next{stroke-dasharray:8 8;animation:rmDash 2.6s linear infinite}
+.rm-beacon{animation:rmBeacon 2.8s ease-in-out infinite}
+@keyframes rmBeacon{0%,100%{opacity:.35}50%{opacity:1}}
+.rm-wyrm{animation:rmWyrm 5s ease-in-out infinite}
+@keyframes rmWyrm{0%,100%{transform:translate(0,0)}50%{transform:translate(0,-4px)}}
 """
     defs = '''
     <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
@@ -264,56 +341,115 @@ def build_roadmap() -> None:
       <stop offset=".55" stop-color="#E4572E" stop-opacity=".14"/>
       <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="nextGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#6E9C90" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#6E9C90" stop-opacity="0"/>
+    </radialGradient>
 '''
     rails = [(s[4], s[5]) for s in STATIONS]
-    walked = rails[:13]
-    working = rails[12:14]
-    later = rails[12:]
-    river = catmull_d(walked)
-    working_d = catmull_d(working)
-    later_d = catmull_d(later)
+    kinds = [s[3] for s in STATIONS]
+    here = kinds.index("here")
+    last_next = max(i for i, k in enumerate(kinds) if k == "next")
+    walked_d = catmull_d(rails[: here + 1])
+    working_d = catmull_d(rails[here : here + 2])
+    next_d = catmull_d(rails[here + 1 : last_next + 1])
+    later_d = catmull_d(rails[last_next:])
 
-    rail = f'''  <path d="{river}" fill="none" stroke="#16181E" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="{river}" fill="none" stroke="url(#brass)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    rail = f'''  <path d="{walked_d}" fill="none" stroke="#16181E" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="{walked_d}" fill="none" stroke="url(#brass)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="{working_d}" fill="none" stroke="url(#gold)" stroke-width="4.5" stroke-linecap="round" class="rm-dash"/>
+  <path d="{next_d}" fill="none" stroke="#6E9C90" stroke-width="4" stroke-linecap="round" class="rm-next"/>
   <path d="{later_d}" fill="none" stroke="#3F6B62" stroke-width="3.5" stroke-dasharray="3 10" stroke-linecap="round" opacity=".9"/>'''
 
+    beacons = "\n".join(
+        f'<ellipse class="rm-beacon" cx="{s[4]}" cy="{s[5]}" rx="46" ry="34" fill="url(#nextGlow)"/>'
+        for s in STATIONS
+        if s[3] == "next"
+    )
     plaques = "\n".join(plaque(s) for s in STATIONS)
     marks = "\n".join(station_mark(s) for s in STATIONS)
 
-    legend_y = 878
+    counts = {k: kinds.count(k) for k in ("walked", "here", "next", "later")}
+    tally = (
+        f'{counts["walked"]} walked  ·  {counts["here"]} in hand  ·  '
+        f'{counts["next"]} next  ·  {counts["later"]} on the horizon'
+    )
+
+    # Terrain lives in the gaps between the rows of the river, never under a ticket.
+    terrain = "\n".join(
+        [
+            mountains(36, 600, [(18, 40), (52, 58), (88, 36)]),
+            mountains(1070, 600, [(10, 34), (44, 52), (80, 40)]),
+            mountains(980, 1150, [(0, 30), (34, 46), (70, 32)]),
+            map_pines(
+                [
+                    (250, 600, 18), (268, 606, 14), (232, 608, 13),
+                    (700, 596, 16), (718, 602, 12),
+                    (560, 1110, 16), (578, 1116, 12), (542, 1118, 11),
+                    (760, 820, 14), (776, 826, 11),
+                ]
+            ),
+            lake(1104, 800, 50, 18),
+            lake(66, 878, 34, 13),
+        ]
+    )
+    regions = "\n".join(
+        [
+            region_label(880, 384, "I", "Foundations"),
+            region_label(470, 598, "II", "Data country"),
+            region_label(160, 808, "III", "The workshop"),
+            region_label(1060, 662, "IV", "Infrastructure", "#9DBDB4"),
+            region_label(400, 1130, "V", "The frontier", "#6E9C90"),
+        ]
+    )
+    # A tiny side-on dragon in the frontier corner, where old maps put them.
+    wyrm = (
+        f'<g class="rm-wyrm" opacity=".85">{A.rle_rects(A.DRAGON_IDLE, 1080, 1074, 1.8)}</g>'
+        + ts.outline("here be dragons", "standfirst", 1116, 1160, "#A33418", "middle", size=11)
+    )
+
+    legend_y = 1190
     legend = f'''  <g>
-  <circle cx="390" cy="{legend_y}" r="6" fill="#C9A227"/>
-  {ts.outline("walked", "caption", 404, legend_y + 4, "#C6C2B8", size=12, face="display-italic", tracking=0, caps=False)}
-  <circle cx="510" cy="{legend_y}" r="6" fill="#F2C14E"/>
-  {ts.outline("working", "caption", 524, legend_y + 4, "#C6C2B8", size=12, face="display-italic", tracking=0, caps=False)}
-  <circle cx="640" cy="{legend_y}" r="6" fill="#17181C" stroke="#6E9C90" stroke-width="2"/>
-  {ts.outline("next", "caption", 654, legend_y + 4, "#C6C2B8", size=12, face="display-italic", tracking=0, caps=False)}
-  <circle cx="738" cy="{legend_y}" r="6" fill="#17181C" stroke="#3F6B62" stroke-width="2"/>
-  {ts.outline("later", "caption", 752, legend_y + 4, "#C6C2B8", size=12, face="display-italic", tracking=0, caps=False)}
+  <circle cx="300" cy="{legend_y}" r="6" fill="#C9A227"/>
+  {ts.outline("walked", "caption", 314, legend_y + 4, "#C6C2B8", size=14, face="display-italic", tracking=0, caps=False)}
+  <circle cx="430" cy="{legend_y}" r="6" fill="#F2C14E"/>
+  {ts.outline("working", "caption", 444, legend_y + 4, "#C6C2B8", size=14, face="display-italic", tracking=0, caps=False)}
+  <circle cx="570" cy="{legend_y}" r="6" fill="#17181C" stroke="#6E9C90" stroke-width="2"/>
+  {ts.outline("next target", "caption", 584, legend_y + 4, "#C6C2B8", size=14, face="display-italic", tracking=0, caps=False)}
+  <circle cx="740" cy="{legend_y}" r="6" fill="#17181C" stroke="#3F6B62" stroke-width="2"/>
+  {ts.outline("on the horizon", "caption", 754, legend_y + 4, "#C6C2B8", size=14, face="display-italic", tracking=0, caps=False)}
   </g>'''
 
     body = f'''  <rect width="{w}" height="{h}" fill="url(#deck)"/>
-  <path d="M0 820 C 200 786, 380 808, 580 796 C 800 786, 980 768, 1200 790 L1200 920 L0 920 Z" fill="#1E262A"/>
-  <path d="M0 864 C 240 840, 460 858, 680 848 C 900 838, 1060 852, 1200 836 L1200 920 L0 920 Z" fill="#243230"/>
-  <rect x="18" y="18" width="1164" height="884" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".45"/>
+  <path d="M0 1120 C 200 1092, 380 1110, 580 1100 C 800 1090, 980 1076, 1200 1094 L1200 {h} L0 {h} Z" fill="#1E262A"/>
+  <path d="M0 1164 C 240 1142, 460 1158, 680 1150 C 900 1140, 1060 1154, 1200 1140 L1200 {h} L0 {h} Z" fill="#243230"/>
+  <rect x="18" y="18" width="1164" height="{h - 36}" fill="none" stroke="#8A6E1F" stroke-width="1" opacity=".45"/>
+  <rect x="24" y="24" width="1152" height="{h - 48}" fill="none" stroke="#8A6E1F" stroke-width=".6" opacity=".25"/>
   {chapter_title(600, 64, "The", "roadmap")}
   {ornament(600, 80, 118)}
   {ts.outline("A direction of travel, kept honest.", "standfirst", 600, 104, "#9AA0AC", "middle")}
-  {ts.outline("Start", "standfirst", 128, 208, "#C9A227", "middle", size=11)}
-  {ts.outline("The long run", "standfirst", 1018, 698, "#6E9C90", "middle", size=11)}
-{compass(90, 820)}
-{mini_house(1088, 698)}
+  {terrain}
+  {regions}
+  {ts.outline("Start", "standfirst", 128, 206, "#C9A227", "middle", size=13)}
+  {ts.outline("The long run", "standfirst", 130, 1098, "#6E9C90", "middle", size=13)}
+{compass(1120, 196)}
+{mini_house(232, 1046)}
+{scale_bar(64, 1150)}
+{wyrm}
+{beacons}
 {rail}
 {plaques}
 {marks}
 {legend}
+  {ts.outline(tally, "standfirst", 600, 1224, "#6E9C90", "middle", size=14)}
 '''
     art = _svg(
         w,
         h,
         "The roadmap",
-        "A winding path of fifteen stations. Gold is the work in hand. What comes next is quieter.",
+        "A winding map of twenty stations across five regions: foundations, data, the workshop, "
+        "infrastructure, and the frontier. Agentic systems is in hand; Cloud and DevOps are the next "
+        "targets; observability, system design, security, MLOps, Rust, and distributed systems lie beyond.",
         defs,
         css,
         body,
@@ -520,18 +656,21 @@ def build_trail() -> None:
       <stop offset="1" stop-color="#E4572E" stop-opacity="0"/>
     </radialGradient>
 '''
+    # x, y, sign width, label, state, lean. state: walked, here, next.
     posts = [
-        (78, 268, 98, "Fundamentals", False, -2.2),
-        (220, 258, 86, "Web craft", False, 1.8),
-        (360, 248, 88, "Backends", False, -1.4),
-        (510, 256, 72, "Cloud", False, 2.0),
-        (655, 246, 128, "Agentic systems", True, 0.0),
-        (748, 258, 64, "Rust", False, -1.6),
+        (64, 268, 98, "Fundamentals", "walked", -2.2),
+        (176, 260, 84, "Web craft", "walked", 1.8),
+        (290, 250, 86, "Backends", "walked", -1.4),
+        (404, 254, 92, "Data and AI", "walked", 1.2),
+        (540, 246, 128, "Agentic systems", "here", 0.0),
+        (668, 252, 66, "Cloud", "next", -1.6),
+        (770, 256, 74, "DevOps", "next", 1.4),
     ]
     signs = []
-    for x, y, bw, label, here, rot in posts:
-        fill = "#F7F5F0" if here else "#E9E6DF"
-        stroke = "#F2C14E" if here else "#8A6E1F"
+    for x, y, bw, label, state, rot in posts:
+        here = state == "here"
+        fill = {"here": "#F7F5F0", "next": "#D4D0C6"}.get(state, "#E9E6DF")
+        stroke = {"here": "#F2C14E", "next": "#6E9C90"}.get(state, "#8A6E1F")
         extra = ""
         hgt = 36 if here else 28
         sy = y - (hgt + 8)
@@ -557,11 +696,12 @@ def build_trail() -> None:
 
     trees = "\n".join(
         [
-            pine(70, 268, 62),
-            pine(248, 258, 78),
-            pine(402, 248, 70),
-            pine(598, 242, 54),
-            pine(742, 252, 48),
+            pine(30, 270, 56),
+            pine(232, 258, 74),
+            pine(350, 250, 64),
+            pine(470, 246, 58),
+            pine(616, 242, 52),
+            pine(722, 250, 44),
         ]
     )
 
@@ -587,7 +727,7 @@ def build_trail() -> None:
   <g class="tr-walk">
 {tiny_walker()}
   </g>
-  {ts.outline("Later: distributed systems, and work worth keeping.", "standfirst", 500, 400, "#6E9C90", "middle", size=12)}
+  {ts.outline("Then: observability, system design, security, MLOps, Rust, distributed systems.", "standfirst", 500, 400, "#6E9C90", "middle", size=12)}
 '''
     art = _svg(
         w,

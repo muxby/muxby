@@ -75,14 +75,14 @@ def hook(cx: float, cy: float) -> str:
 
 
 def name_tag(cx: float, y: float, text: str) -> str:
-    tw = ts.measure(text, "tag", size=9, tracking=0.05)
+    tw = ts.measure(text, "tag", size=10.5, tracking=0.05)
     w = max(tw + 14, 46)
     x = cx - w / 2
     return (
         f'<path d="M{n(cx)} {n(y - 7)} V{n(y)}" stroke="{BRASS_DK}" stroke-width="1"/>'
         f'<rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="15" fill="{BONE}"/>'
         f'<rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="2" fill="{BRASS}"/>'
-        f'{outline(text, "tag", cx, y + 12, INK, "middle", size=9, tracking=0.05, max_width=w - 8)}'
+        f'{outline(text, "tag", cx, y + 12, INK, "middle", size=10.5, tracking=0.05, max_width=w - 8)}'
     )
 
 
@@ -223,7 +223,7 @@ def rail_stamp(x: float, y: float, text: str, w: float) -> str:
         f'<rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="16" fill="none" stroke="{BRASS}" stroke-width="1"/>'
         f'<circle cx="{n(x + 5)}" cy="{n(y + 8)}" r="1.4" fill="{BRASS}"/>'
         f'<circle cx="{n(x + w - 5)}" cy="{n(y + 8)}" r="1.4" fill="{BRASS}"/>'
-        f'{outline(text, "label", x + w / 2, y + 12, BRASS, "middle", size=8, tracking=0.16, max_width=w - 16)}'
+        f'{outline(text, "label", x + w / 2, y + 12, BRASS, "middle", size=10.5, tracking=0.1, max_width=w - 16)}'
     )
 
 
@@ -236,7 +236,7 @@ def ingot(x: float, y: float, w: float, label: str, top: str, front: str) -> str
   <path d="M{n(x + w)} {n(y)} L{n(x + w + 8)} {n(y + 5)} L{n(x + w + 8)} {n(y + 15 + fh)} L{n(x + w)} {n(y + 15 + fh)}" fill="{ASH}"/>
   <rect x="{n(x)}" y="{n(y)}" width="6" height="{15 + fh}" fill="{BRASS}"/>
   <rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="{15 + fh}" fill="none" stroke="{BRASS_DK}" stroke-width="0.8"/>
-  {outline(label, "tag", x + 12, y + 12, INK, size=9.5, tracking=0.06, max_width=w - 18)}
+  {outline(label, "tag", x + 12, y + 12, INK, size=11, tracking=0.06, max_width=w - 18)}
 </g>'''
 
 
@@ -247,7 +247,7 @@ def jar(cx: float, y: float, label: str) -> str:
   <rect x="{n(cx - 12)}" y="{n(y + 4)}" width="4" height="28" fill="{PATINA_LT}" opacity=".4"/>
   <ellipse cx="{n(cx)}" cy="{n(y + 44)}" rx="15" ry="5" fill="#2F5A52"/>
   <rect x="{n(cx - 17)}" y="{n(y + 16)}" width="34" height="13" fill="{BONE}"/>
-  {outline(label, "tag", cx, y + 26, INK, "middle", size=7.5, tracking=0.04, max_width=32)}
+  {outline(label, "tag", cx, y + 26, INK, "middle", size=9.5, tracking=0.04, max_width=32)}
 </g>'''
 
 
@@ -262,7 +262,7 @@ def crate(x: float, y: float, w: float, h: float, label: str, rot: float = 0) ->
   <rect x="{n(x + w - 7)}" y="{n(y)}" width="7" height="7" fill="{BRASS_DK}"/>
   <rect x="{n(x)}" y="{n(y + h - 7)}" width="7" height="7" fill="{BRASS_DK}"/>
   <rect x="{n(x + w - 7)}" y="{n(y + h - 7)}" width="7" height="7" fill="{BRASS_DK}"/>
-  {outline(label, "tag", x + w / 2, y + h / 2 + 4, BONE, "middle", size=9, tracking=0.05, max_width=w - 12)}
+  {outline(label, "tag", x + w / 2, y + h / 2 + 4, BONE, "middle", size=10.5, tracking=0.05, max_width=w - 12)}
 </g>'''
 
 
@@ -294,7 +294,7 @@ def letter_stamp(x: float, y: float, label: str) -> str:
         f'<rect x="{n(x)}" y="{n(y)}" width="26" height="26" fill="{IRON}"/>'
         f'<rect x="{n(x)}" y="{n(y)}" width="26" height="3" fill="{BRASS_DK}"/>'
         f'<rect x="{n(x)}" y="{n(y)}" width="26" height="26" fill="none" stroke="{STEEL}" stroke-width="1"/>'
-        f'{outline(label, "tag", x + 13, y + 18, BONE, "middle", size=9, tracking=0.04, max_width=20)}'
+        f'{outline(label, "tag", x + 13, y + 18, BONE, "middle", size=10.5, tracking=0.04, max_width=20)}'
     )
 
 
@@ -330,7 +330,7 @@ def job_ticket(x: float, y: float) -> str:
   <circle cx="{n(x + w - 18)}" cy="{n(y + 20)}" r="4" fill="{EMBER}">
     <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/>
   </circle>
-  {outline("In hand", "label", x + 14, y + 24, EMBER_DK, size=9.5, tracking=0.16)}
+  {outline("In hand", "label", x + 14, y + 24, EMBER_DK, size=11.5, tracking=0.1)}
   <path d="M{n(x + 14)} {n(y + 32)} H{n(x + w - 20)}" stroke="{BRASS}" stroke-width="1"/>
   <path d="M{n(x + 14)} {n(y + 50)} H{n(x + w - 18)}" stroke="{ASH}" stroke-width="1"/>
   <path d="M{n(x + 14)} {n(y + 70)} H{n(x + w - 18)}" stroke="{ASH}" stroke-width="1"/>
@@ -413,13 +413,13 @@ def hearth_basin() -> str:
         rail_stamp(748, 542, "AGENTS", 70),
     ]
     for x, y, label, rot in tags:
-        tw = max(ts.measure(label, "tag", size=8, tracking=0.04) + 12, 36)
+        tw = max(ts.measure(label, "tag", size=10, tracking=0.04) + 12, 36)
         bits.append(
             f'<g transform="rotate({rot} {n(x)} {n(y)})">'
             f'<rect x="{n(x - tw / 2)}" y="{n(y)}" width="{n(tw)}" height="13" fill="{IRON}"/>'
             f'<rect x="{n(x - tw / 2)}" y="{n(y)}" width="{n(tw)}" height="13" fill="none" stroke="{BRASS_DK}" stroke-width="1"/>'
             f'<rect x="{n(x - 1)}" y="{n(y - 8)}" width="2" height="8" fill="{STEEL}"/>'
-            f'{outline(label, "tag", x, y + 10, BONE, "middle", size=8, tracking=0.04, max_width=tw - 6)}'
+            f'{outline(label, "tag", x, y + 10, BONE, "middle", size=10, tracking=0.04, max_width=tw - 6)}'
             f"</g>"
         )
     return "\n".join(bits)
@@ -511,8 +511,8 @@ def build_workbench_scene() -> None:
   {fireflies([(650, 340, "3.1s"), (710, 318, "3.8s"), (800, 574, "2.9s"), (850, 556, "3.4s"), (318, 360, "4.2s")])}
 
   <path d="M48 688 H1152" stroke="{BRASS_DK}" stroke-width="1" opacity=".55"/>
-  {outline("Steel, brass, bone", "label", 48, 716, BRASS, size=10, tracking=0.18)}
-  {outline("Muxby", "label", 1152, 716, BRASS, "end", size=10, tracking=0.18)}
+  {outline("Steel, brass, bone", "label", 48, 716, BRASS, size=10.5, tracking=0.12)}
+  {outline("Muxby", "label", 1152, 716, BRASS, "end", size=10.5, tracking=0.12)}
   <path d="M48 736 H1152" stroke="{STEEL}" stroke-width="2"/>
   <path d="M48 736 H220" stroke="{PATINA}" stroke-width="2"/>
   <path d="M220 736 H420" stroke="{EMBER}" stroke-width="2"/>

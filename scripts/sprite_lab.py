@@ -83,7 +83,7 @@ if __name__ == "__main__":
     lip_y = A.BODY_AT[1] + round(sum(lips) / len(lips))
     print(f"breath leaves the mouth at cell {(lip_x, lip_y)}")
 
-    biggest = A.FIRE_FRAMES[-1]
+    biggest = A.FIRE_FULL_A
     for i in range(len(A.DRAGON_WING_POSES)):
         compose(
             [

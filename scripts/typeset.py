@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """The type system for the profile artwork.
 
-One display serif, one grotesque, one mono, and a single scale that every asset
-draws from. See SETUP.md for the scale table and the reasoning.
+One typeface, Fraunces, cut at six optical sizes and weights, and a single
+scale that every asset draws from. See SETUP.md for the scale table.
 
 Why outlines. These SVGs are embedded in README.md with <img src="...">, and
 GitHub renders them in an isolated context where external web fonts never load:
@@ -16,14 +16,20 @@ so pushing running copy through it would add close to a megabyte across the
 README. Body copy stays as real <text> in a curated stack led by the same
 families, which also keeps it selectable, translatable, and searchable.
 
-Fonts are Noto Serif Display, Inter, and JetBrains Mono, all under the SIL Open
-Font License. Only the outlines of the glyphs actually used are embedded.
+Why Fraunces. It is a soft old-style display serif with a real optical-size
+axis, so the same family can be cut sturdy for 10px captions and refined for a
+44px name. The earlier hairline display serif lost its thin strokes when the
+README scaled the art down; Fraunces keeps its weight at every size. It is
+under the SIL Open Font License (scripts/fonts/OFL.txt), and the static,
+Latin-subset instances live in scripts/fonts so a rebuild needs no system
+fonts. Only the outlines of the glyphs actually used are embedded.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
 from functools import lru_cache
+import os
 from pathlib import Path
 
 import uharfbuzz as hb
@@ -32,31 +38,37 @@ from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont
 
-FONT_DIR = Path("/usr/share/fonts/truetype")
+# Vendored Fraunces instances. MUXBY_FONT_DIR can point at another folder that
+# holds the same six file names.
+FONT_DIR = Path(os.environ.get("MUXBY_FONT_DIR", Path(__file__).resolve().parent / "fonts"))
 
+# The face keys are roles, not families: every role is a Fraunces instance cut
+# for its size. Small roles use a low optical size (opsz 12-14) with more weight,
+# which opens the counters and thickens the hairlines so labels survive the
+# README scaling them down; display roles use opsz 24-36 for finer contrast.
 FACES = {
-    "serif": FONT_DIR / "noto/NotoSerifDisplay-Regular.ttf",
-    "serif-bold": FONT_DIR / "noto/NotoSerifDisplay-Bold.ttf",
-    "serif-italic": FONT_DIR / "noto/NotoSerifDisplay-Italic.ttf",
-    "sans": FONT_DIR / "macos/Inter-Regular.ttf",
-    "sans-medium": FONT_DIR / "macos/Inter-Medium.ttf",
-    "sans-semibold": FONT_DIR / "macos/Inter-SemiBold.ttf",
-    "sans-bold": FONT_DIR / "macos/Inter-Bold.ttf",
-    "display": FONT_DIR / "noto/NotoSansDisplay-Bold.ttf",
-    "display-italic": FONT_DIR / "noto/NotoSansDisplay-Italic.ttf",
-    "mono": FONT_DIR / "jetbrains-mono/JetBrainsMono-Medium.ttf",
-    "mono-bold": FONT_DIR / "jetbrains-mono/JetBrainsMono-Bold.ttf",
+    "serif": FONT_DIR / "Fraunces-Text.ttf",              # wght 430, opsz 28
+    "serif-bold": FONT_DIR / "Fraunces-Bold.ttf",         # wght 640, opsz 36
+    "serif-italic": FONT_DIR / "Fraunces-Italic.ttf",     # wght 430, opsz 24
+    "sans": FONT_DIR / "Fraunces-Small.ttf",              # wght 460, opsz 12
+    "sans-medium": FONT_DIR / "Fraunces-Small.ttf",
+    "sans-semibold": FONT_DIR / "Fraunces-Label.ttf",     # wght 600, opsz 14
+    "sans-bold": FONT_DIR / "Fraunces-Label.ttf",
+    "display": FONT_DIR / "Fraunces-Label.ttf",
+    "display-italic": FONT_DIR / "Fraunces-ItalicSmall.ttf",  # wght 460, opsz 14
+    "mono": FONT_DIR / "Fraunces-Label.ttf",
+    "mono-bold": FONT_DIR / "Fraunces-Label.ttf",
 }
 
 # Fallbacks for the <text> elements that stay live. Ordered so the first hit on
 # each platform is a face that belongs next to the outlined display type.
 STACKS = {
     "serif": (
-        "'Noto Serif Display','Iowan Old Style','Palatino Linotype',Palatino,"
+        "Fraunces,'Iowan Old Style','Palatino Linotype',Palatino,"
         "'Book Antiqua',Georgia,'Times New Roman',serif"
     ),
     "sans": (
-        "Inter,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',"
+        "Fraunces,Inter,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',"
         "Helvetica,Arial,sans-serif"
     ),
     "mono": (
@@ -79,23 +91,22 @@ class Style:
 # The scale. Sizes are for artwork at its natural viewBox size; the README scales
 # the images down, so nothing here renders larger than it reads.
 #
-# Display type is set in caps with wide tracking on the older plates; newer
-# scenes (the map, the night walk) override to sentence-case italic so the
-# letterforms stay readable at README scale. Running copy is the grotesque at
-# its natural spacing; technical labels are the mono.
+# Caps are tracked open but not airy: past ~0.16em the words fall apart into
+# letters once the README shrinks the art. Running copy sits at its natural
+# spacing; small caps labels use the sturdy low-opsz cut.
 SCALE = {
-    "hero": Style("serif", 44, 0.22, caps=True),        # the one name on the page
-    "plate": Style("serif", 20, 0.30, caps=True),       # scene and card titles
+    "hero": Style("serif", 46, 0.14, caps=True),        # the one name on the page
+    "plate": Style("serif", 20, 0.16, caps=True),       # scene and card titles
     "chapter": Style("serif-italic", 26, 0.03, caps=False),  # book-title scenes
     "heading": Style("serif", 18, 0.0),                 # sentence-case display
-    "eyebrow": Style("sans-semibold", 11, 0.22, caps=True),   # standfirst under a plate
-    "standfirst": Style("serif-italic", 13, 0.02, caps=False),
-    "label": Style("sans-semibold", 11, 0.16, caps=True),     # small caps callouts
+    "eyebrow": Style("sans-semibold", 12.5, 0.12, caps=True),   # standfirst under a plate
+    "standfirst": Style("serif-italic", 14, 0.01, caps=False),
+    "label": Style("sans-semibold", 12, 0.1, caps=True),     # small caps callouts
     "lede": Style("sans", 15, 0.0),                     # card body, one step up
     "body": Style("sans", 13, 0.0),                     # running copy
     "caption": Style("sans", 11.5, 0.0),                # smallest live text
-    "tag": Style("mono-bold", 12, 0.08, caps=True),     # tags and medallions
-    "wordmark": Style("serif-bold", 20, 0.22, caps=True),
+    "tag": Style("mono-bold", 12, 0.06, caps=True),     # tags and medallions
+    "wordmark": Style("serif-bold", 20, 0.14, caps=True),
 }
 
 
@@ -119,8 +130,8 @@ def _font(face: str):
     path = FACES[face]
     if not path.exists():
         raise FileNotFoundError(
-            f"missing font for face {face!r}: {path}. Install the Noto Serif "
-            "Display, Inter, and JetBrains Mono TrueType files before rebuilding."
+            f"missing font for face {face!r}: {path}. The Fraunces instances "
+            "ship in scripts/fonts; check MUXBY_FONT_DIR if you overrode it."
         )
     tt = TTFont(str(path), fontNumber=0)
     hb_font = hb.Font(hb.Face(hb.Blob.from_file_path(str(path))))
@@ -149,7 +160,7 @@ def _shape(text: str, face: str) -> tuple[tuple[str, float, float, float], ...]:
     buf = hb.Buffer()
     buf.add_str(text)
     buf.guess_segment_properties()
-    # JetBrains Mono ships coding ligatures that would fuse "++" into one arrow.
+    # Tag roles keep ligatures off so code names like "C++" and "fi" stay literal.
     ligatures = not face.startswith("mono")
     hb.shape(hb_font, buf, {"kern": True, "liga": ligatures, "clig": ligatures, "calt": ligatures})
     out = []
